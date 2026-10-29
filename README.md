@@ -1,6 +1,6 @@
 # reasoning-relay-benchmark
 
-**English abstract.** On 2026-10-28 we ran the same 20 DeepSWE v1.1 coding tasks, four rounds each, through three local relays — Stravia, CLIProxyAPI (CPA) and sub2api — with the same DSH client speaking Chat Completions, the same model (`gpt-6-luna`, reasoning effort `xhigh`), the same ChatGPT account, the same machine and a one-hour agent limit per task. After voiding 6 of 80 task-rounds for all three routes alike, Stravia passed 47/74 (63.5%), CPA 13/74 (17.6%) and sub2api 18/74 (24.3%); Stravia minus the mean of the other two is +42.6 pp (task-clustered bootstrap 95% CI +29.1 to +56.3 pp). 98.3% of Stravia's upstream requests carried the model's encrypted reasoning back to the model; none of CPA's or sub2api's did. This repository publishes the harness, the frozen task list, sanitized per-attempt evidence for the batch (3.77 billion tokens across 279 attempts, 97.6% of them cached input) and a script that rebuilds every published number from that evidence. Code is MIT; data is CC BY 4.0.
+**English abstract.** On 2026-10-28 we ran the same 20 DeepSWE v1.1 coding tasks, four rounds each, through three local relays — Stravia, CLIProxyAPI (CPA) and sub2api — with the same DSH client speaking Chat Completions, the same model (`gpt-6-luna`, reasoning effort `xhigh`), the same ChatGPT account, the same machine and a one-hour agent limit per task. After voiding 6 of 80 task-rounds for all three routes alike, Stravia passed 47/74 (63.5%), CPA 13/74 (17.6%) and sub2api 18/74 (24.3%); Stravia minus the mean of the other two is +42.6 pp (task-clustered bootstrap 95% CI +29.05 to +56.25 pp). 98.3% of Stravia's upstream requests carried the model's encrypted reasoning back to the model; none of CPA's or sub2api's did. This repository publishes the harness, the frozen task list, sanitized per-attempt evidence for the batch (3.77 billion tokens across 279 attempts, 97.6% of them cached input) and a script that rebuilds every published number from that evidence. Code is MIT; data is CC BY 4.0.
 
 ## 目录
 
@@ -54,7 +54,7 @@
 | CPA | v8.0.43 | 13/74 | 17.6% | 6.9%–30.0% | 59.6 min | 35 | 0 / 13,772 |
 | sub2api | v0.2.18 | 18/74 | 24.3% | 11.7%–38.9% | 41.0 min | 14 | 0 / 15,220 |
 
-- Stravia 通过率 − 另两路平均 = **+42.6 个百分点**，95% CI [+29.1, +56.3]（按 20 个任务聚类，10,000 次 bootstrap，seed 0）。分别对 CPA +45.9 [+31.5, +60.5]、对 sub2api +39.2 [+22.7, +55.4]。
+- Stravia 通过率 − 另两路平均 = **+42.6 个百分点**，95% CI [+29.05, +56.25]（按 20 个任务聚类，10,000 次 bootstrap，seed 0）。分别对 CPA +45.9 [+31.5, +60.5]、对 sub2api +39.2 [+22.7, +55.4]。
 - 通过率是另两路平均的 **3.03 倍**（63.5% ÷ 20.9%）。单看每一家：CPA 的 3.6 倍，sub2api 的 2.6 倍。
 - 配对：同一任务同一轮，Stravia 过而 CPA 没过 35 次，反过来 1 次；对 sub2api 是 33 比 4。
 - agent 耗时中位数（每个试验把重试时间加在一起）：另两路中位数的平均是 Stravia 的 2.76 倍；CPA 3.27 倍，sub2api 2.25 倍。
