@@ -1,0 +1,28 @@
+{
+  "schema": "workload/v1",
+  "benchmark": "DeepSWE v1.1",
+  "repository": "https://github.com/datacurve-ai/deep-swe",
+  "commit": "0b9fabbb63b9104d678fe965e1632f2dd9eaa2ea",
+  "pool_size": 113,
+  "selected": 20,
+  "seed": 0,
+  "rules_version": "1",
+  "rules": [
+    "gpus == 0（本机无 GPU）",
+    "memory_mb <= 8192（单任务 8 GB 上限）",
+    "镜像 pull 失败（来自 probes/image-survey.json）",
+    "task.toml 无法解析",
+    "不按难度 / 语言 / 历史通过率过滤"
+  ],
+  "excluded": [],
+  "selected_languages": {
+    "go": 4,
+    "typescript": 7,
+    "python": 6,
+    "rust": 2,
+    "javascript": 1
+  },
+  "sample_sha256": "e265786e01fa91315145ea176277f72b66b294cfebb59adad0e5e957b6d8b096",
+  "formal_plan_tasks_sha256": "e265786e01fa91315145ea176277f72b66b294cfebb59adad0e5e957b6d8b096",
+  "note": "sample.json 与正式批次 plan.json 记录的 tasks_sha256 相同；任务本体不在本仓库，按 commit 从上游取。"
+}

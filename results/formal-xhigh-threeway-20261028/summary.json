@@ -1,0 +1,3511 @@
+{
+  "schema": "orchestrate-summary/v1",
+  "batch_id": "formal-xhigh-threeway-20261028",
+  "generated_at": "2026-10-29T04:20:36+08:00",
+  "plan": {
+    "mode": "batch",
+    "seed": 0,
+    "tasks": 20,
+    "rounds": 4,
+    "groups": 80,
+    "max_groups": 5,
+    "mock": false,
+    "routes": [
+      {
+        "name": "stravia",
+        "port": 23481,
+        "base_url": "http://127.0.0.1:23481/v1"
+      },
+      {
+        "name": "cpa",
+        "port": 23482,
+        "base_url": "http://127.0.0.1:23482/v1"
+      },
+      {
+        "name": "sub2api",
+        "port": 23483,
+        "base_url": "http://127.0.0.1:23483/v1"
+      }
+    ]
+  },
+  "totals": {
+    "groups_planned": 80,
+    "groups_done": 74,
+    "groups_void": 6,
+    "groups_incomplete": 0,
+    "trials_planned": 240,
+    "trials_scored": 222,
+    "passes": 78,
+    "fails": 144,
+    "attempts": 279,
+    "retries": 39,
+    "infra_errors": 44,
+    "harness_errors": 1,
+    "interrupted": 0,
+    "key_leak_events": 0
+  },
+  "routes": {
+    "stravia": {
+      "trials_planned": 80,
+      "trials_terminal": 80,
+      "trials_scored": 74,
+      "passes": 47,
+      "pass_rate": 0.6351,
+      "attempts": 80,
+      "retries": 0,
+      "infra_errors": 0,
+      "harness_errors": 0,
+      "interrupted": 0,
+      "void_groups": 6,
+      "status_codes": {},
+      "terminal_error_kinds": {
+        "other": 1
+      },
+      "tokens": {
+        "input": 21245180,
+        "cached": 1311161088,
+        "output": 5778389,
+        "reasoning": 0,
+        "llm_calls": 11815,
+        "known_attempts": 80
+      },
+      "wall_seconds": {
+        "count": 80,
+        "sum": 103574.115,
+        "median": 1092.382,
+        "p90": 2174.846,
+        "max": 3602.073
+      }
+    },
+    "cpa": {
+      "trials_planned": 80,
+      "trials_terminal": 80,
+      "trials_scored": 74,
+      "passes": 13,
+      "pass_rate": 0.1757,
+      "attempts": 92,
+      "retries": 12,
+      "infra_errors": 12,
+      "harness_errors": 1,
+      "interrupted": 0,
+      "void_groups": 6,
+      "status_codes": {
+        "503": 12
+      },
+      "terminal_error_kinds": {
+        "other": 10,
+        "http": 12
+      },
+      "tokens": {
+        "input": 19882060,
+        "cached": 1054855680,
+        "output": 11233708,
+        "reasoning": 0,
+        "llm_calls": 13764,
+        "known_attempts": 92
+      },
+      "wall_seconds": {
+        "count": 92,
+        "sum": 246493.493,
+        "median": 3002.09,
+        "p90": 3600.507,
+        "max": 3606.7
+      }
+    },
+    "sub2api": {
+      "trials_planned": 80,
+      "trials_terminal": 80,
+      "trials_scored": 74,
+      "passes": 18,
+      "pass_rate": 0.2432,
+      "attempts": 107,
+      "retries": 27,
+      "infra_errors": 32,
+      "harness_errors": 0,
+      "interrupted": 0,
+      "void_groups": 6,
+      "status_codes": {},
+      "terminal_error_kinds": {
+        "other": 18,
+        "concurrency": 32
+      },
+      "tokens": {
+        "input": 19993136,
+        "cached": 1316103808,
+        "output": 13272713,
+        "reasoning": 0,
+        "llm_calls": 15170,
+        "known_attempts": 107
+      },
+      "wall_seconds": {
+        "count": 107,
+        "sum": 200181.997,
+        "median": 1837.458,
+        "p90": 3600.197,
+        "max": 3605.902
+      }
+    }
+  },
+  "groups": [
+    {
+      "group_id": "oxvg-structural-selector-preservation@r1",
+      "task": "oxvg-structural-selector-preservation",
+      "round": 1,
+      "status": "done",
+      "voided_by_route": null,
+      "started_at": 1793161629.8850229,
+      "finished_at": 1793165532.9835477,
+      "wall_seconds": 3903.099,
+      "trials": [
+        {
+          "route": "stravia",
+          "slot": 0,
+          "classification": "fail",
+          "reason": "reward",
+          "reward": 0.0,
+          "attempts": 1,
+          "agent_wall_seconds": 1888.015,
+          "trial_dir": "<repo>/.scratch/research/chat-reasoning-replay/pier/batches/formal-xhigh-threeway-20261028/jobs/formal-xhigh-threeway-20261028--oxvg-structural-selector-preservation--r1--stravia-a1/oxvg-structural-selector-preserv__6FWdS2L"
+        },
+        {
+          "route": "cpa",
+          "slot": 1,
+          "classification": "fail",
+          "reason": "timed_out",
+          "reward": 0.0,
+          "attempts": 1,
+          "agent_wall_seconds": 3606.7,
+          "trial_dir": "<repo>/.scratch/research/chat-reasoning-replay/pier/batches/formal-xhigh-threeway-20261028/jobs/formal-xhigh-threeway-20261028--oxvg-structural-selector-preservation--r1--cpa-a1/oxvg-structural-selector-preserv__wvKDUTU"
+        },
+        {
+          "route": "sub2api",
+          "slot": 2,
+          "classification": "fail",
+          "reason": "timed_out",
+          "reward": 0.0,
+          "attempts": 1,
+          "agent_wall_seconds": 3605.902,
+          "trial_dir": "<repo>/.scratch/research/chat-reasoning-replay/pier/batches/formal-xhigh-threeway-20261028/jobs/formal-xhigh-threeway-20261028--oxvg-structural-selector-preservation--r1--sub2api-a1/oxvg-structural-selector-preserv__qD9e6RF"
+        }
+      ]
+    },
+    {
+      "group_id": "mnamer-daemon-watch-lifecycle@r1",
+      "task": "mnamer-daemon-watch-lifecycle",
+      "round": 1,
+      "status": "done",
+      "voided_by_route": null,
+      "started_at": 1793161629.910347,
+      "finished_at": 1793163107.8095424,
+      "wall_seconds": 1477.899,
+      "trials": [
+        {
+          "route": "sub2api",
+          "slot": 0,
+          "classification": "fail",
+          "reason": "reward",
+          "reward": 0.0,
+          "attempts": 1,
+          "agent_wall_seconds": 1071.777,
+          "trial_dir": "<repo>/.scratch/research/chat-reasoning-replay/pier/batches/formal-xhigh-threeway-20261028/jobs/formal-xhigh-threeway-20261028--mnamer-daemon-watch-lifecycle--r1--sub2api-a1/mnamer-daemon-watch-lifecycle__f823rBk"
+        },
+        {
+          "route": "stravia",
+          "slot": 1,
+          "classification": "pass",
+          "reason": "reward",
+          "reward": 1.0,
+          "attempts": 1,
+          "agent_wall_seconds": 601.11,
+          "trial_dir": "<repo>/.scratch/research/chat-reasoning-replay/pier/batches/formal-xhigh-threeway-20261028/jobs/formal-xhigh-threeway-20261028--mnamer-daemon-watch-lifecycle--r1--stravia-a1/mnamer-daemon-watch-lifecycle__ZbrqdEM"
+        },
+        {
+          "route": "cpa",
+          "slot": 2,
+          "classification": "pass",
+          "reason": "reward",
+          "reward": 1.0,
+          "attempts": 1,
+          "agent_wall_seconds": 1347.502,
+          "trial_dir": "<repo>/.scratch/research/chat-reasoning-replay/pier/batches/formal-xhigh-threeway-20261028/jobs/formal-xhigh-threeway-20261028--mnamer-daemon-watch-lifecycle--r1--cpa-a1/mnamer-daemon-watch-lifecycle__ZAUEKfQ"
+        }
+      ]
+    },
+    {
+      "group_id": "meriyah-explicit-resource-declarations@r3",
+      "task": "meriyah-explicit-resource-declarations",
+      "round": 3,
+      "status": "done",
+      "voided_by_route": null,
+      "started_at": 1793161629.9117668,
+      "finished_at": 1793165395.473527,
+      "wall_seconds": 3765.562,
+      "trials": [
+        {
+          "route": "stravia",
+          "slot": 0,
+          "classification": "fail",
+          "reason": "reward",
+          "reward": 0.0,
+          "attempts": 1,
+          "agent_wall_seconds": 980.667,
+          "trial_dir": "<repo>/.scratch/research/chat-reasoning-replay/pier/batches/formal-xhigh-threeway-20261028/jobs/formal-xhigh-threeway-20261028--meriyah-explicit-resource-declarations--r3--stravia-a1/meriyah-explicit-resource-declar__k58oopY"
+        },
+        {
+          "route": "cpa",
+          "slot": 1,
+          "classification": "fail",
+          "reason": "timed_out",
+          "reward": 0.0,
+          "attempts": 1,
+          "agent_wall_seconds": 3600.341,
+          "trial_dir": "<repo>/.scratch/research/chat-reasoning-replay/pier/batches/formal-xhigh-threeway-20261028/jobs/formal-xhigh-threeway-20261028--meriyah-explicit-resource-declarations--r3--cpa-a1/meriyah-explicit-resource-declar__xyMtLwE"
+        },
+        {
+          "route": "sub2api",
+          "slot": 2,
+          "classification": "fail",
+          "reason": "agent-error:other:None",
+          "reward": 0.0,
+          "attempts": 1,
+          "agent_wall_seconds": 537.306,
+          "trial_dir": "<repo>/.scratch/research/chat-reasoning-replay/pier/batches/formal-xhigh-threeway-20261028/jobs/formal-xhigh-threeway-20261028--meriyah-explicit-resource-declarations--r3--sub2api-a1/meriyah-explicit-resource-declar__MAUhrPx"
+        }
+      ]
+    },
+    {
+      "group_id": "narwhals-rolling-window-suite@r3",
+      "task": "narwhals-rolling-window-suite",
+      "round": 3,
+      "status": "done",
+      "voided_by_route": null,
+      "started_at": 1793161629.9120011,
+      "finished_at": 1793163105.8481512,
+      "wall_seconds": 1475.936,
+      "trials": [
+        {
+          "route": "sub2api",
+          "slot": 0,
+          "classification": "pass",
+          "reason": "reward",
+          "reward": 1.0,
+          "attempts": 1,
+          "agent_wall_seconds": 1031.474,
+          "trial_dir": "<repo>/.scratch/research/chat-reasoning-replay/pier/batches/formal-xhigh-threeway-20261028/jobs/formal-xhigh-threeway-20261028--narwhals-rolling-window-suite--r3--sub2api-a1/narwhals-rolling-window-suite__GhhvqmJ"
+        },
+        {
+          "route": "stravia",
+          "slot": 1,
+          "classification": "pass",
+          "reason": "reward",
+          "reward": 1.0,
+          "attempts": 1,
+          "agent_wall_seconds": 659.505,
+          "trial_dir": "<repo>/.scratch/research/chat-reasoning-replay/pier/batches/formal-xhigh-threeway-20261028/jobs/formal-xhigh-threeway-20261028--narwhals-rolling-window-suite--r3--stravia-a1/narwhals-rolling-window-suite__Lq8DgRu"
+        },
+        {
+          "route": "cpa",
+          "slot": 2,
+          "classification": "fail",
+          "reason": "agent-error:other:None",
+          "reward": 0.0,
+          "attempts": 1,
+          "agent_wall_seconds": 1358.637,
+          "trial_dir": "<repo>/.scratch/research/chat-reasoning-replay/pier/batches/formal-xhigh-threeway-20261028/jobs/formal-xhigh-threeway-20261028--narwhals-rolling-window-suite--r3--cpa-a1/narwhals-rolling-window-suite__aPDzTzY"
+        }
+      ]
+    },
+    {
+      "group_id": "ink-grid-box-layout@r1",
+      "task": "ink-grid-box-layout",
+      "round": 1,
+      "status": "done",
+      "voided_by_route": null,
+      "started_at": 1793161629.8886771,
+      "finished_at": 1793163924.48592,
+      "wall_seconds": 2294.597,
+      "trials": [
+        {
+          "route": "sub2api",
+          "slot": 0,
+          "classification": "fail",
+          "reason": "reward",
+          "reward": 0.0,
+          "attempts": 1,
+          "agent_wall_seconds": 1245.267,
+          "trial_dir": "<repo>/.scratch/research/chat-reasoning-replay/pier/batches/formal-xhigh-threeway-20261028/jobs/formal-xhigh-threeway-20261028--ink-grid-box-layout--r1--sub2api-a1/ink-grid-box-layout__ZmB5NvN"
+        },
+        {
+          "route": "stravia",
+          "slot": 1,
+          "classification": "pass",
+          "reason": "reward",
+          "reward": 1.0,
+          "attempts": 1,
+          "agent_wall_seconds": 856.995,
+          "trial_dir": "<repo>/.scratch/research/chat-reasoning-replay/pier/batches/formal-xhigh-threeway-20261028/jobs/formal-xhigh-threeway-20261028--ink-grid-box-layout--r1--stravia-a1/ink-grid-box-layout__uKAJaqi"
+        },
+        {
+          "route": "cpa",
+          "slot": 2,
+          "classification": "fail",
+          "reason": "reward",
+          "reward": 0.0,
+          "attempts": 1,
+          "agent_wall_seconds": 2167.664,
+          "trial_dir": "<repo>/.scratch/research/chat-reasoning-replay/pier/batches/formal-xhigh-threeway-20261028/jobs/formal-xhigh-threeway-20261028--ink-grid-box-layout--r1--cpa-a1/ink-grid-box-layout__SpdNh25"
+        }
+      ]
+    },
+    {
+      "group_id": "kea-atomic-signal-selectors@r4",
+      "task": "kea-atomic-signal-selectors",
+      "round": 4,
+      "status": "done",
+      "voided_by_route": null,
+      "started_at": 1793163105.8522766,
+      "finished_at": 1793166753.887353,
+      "wall_seconds": 3648.035,
+      "trials": [
+        {
+          "route": "cpa",
+          "slot": 0,
+          "classification": "fail",
+          "reason": "timed_out",
+          "reward": 0.0,
+          "attempts": 1,
+          "agent_wall_seconds": 3600.111,
+          "trial_dir": "<repo>/.scratch/research/chat-reasoning-replay/pier/batches/formal-xhigh-threeway-20261028/jobs/formal-xhigh-threeway-20261028--kea-atomic-signal-selectors--r4--cpa-a1/kea-atomic-signal-selectors__QtKDiQd"
+        },
+        {
+          "route": "sub2api",
+          "slot": 1,
+          "classification": "fail",
+          "reason": "reward",
+          "reward": 0.0,
+          "attempts": 1,
+          "agent_wall_seconds": 3330.486,
+          "trial_dir": "<repo>/.scratch/research/chat-reasoning-replay/pier/batches/formal-xhigh-threeway-20261028/jobs/formal-xhigh-threeway-20261028--kea-atomic-signal-selectors--r4--sub2api-a1/kea-atomic-signal-selectors__c2cmM5U"
+        },
+        {
+          "route": "stravia",
+          "slot": 2,
+          "classification": "pass",
+          "reason": "reward",
+          "reward": 1.0,
+          "attempts": 1,
+          "agent_wall_seconds": 2411.554,
+          "trial_dir": "<repo>/.scratch/research/chat-reasoning-replay/pier/batches/formal-xhigh-threeway-20261028/jobs/formal-xhigh-threeway-20261028--kea-atomic-signal-selectors--r4--stravia-a1/kea-atomic-signal-selectors__rVN9ecN"
+        }
+      ]
+    },
+    {
+      "group_id": "textual-richlog-follow-state@r1",
+      "task": "textual-richlog-follow-state",
+      "round": 1,
+      "status": "done",
+      "voided_by_route": null,
+      "started_at": 1793163107.8140647,
+      "finished_at": 1793166779.9331486,
+      "wall_seconds": 3672.119,
+      "trials": [
+        {
+          "route": "sub2api",
+          "slot": 0,
+          "classification": "fail",
+          "reason": "reward",
+          "reward": 0.0,
+          "attempts": 1,
+          "agent_wall_seconds": 2564.138,
+          "trial_dir": "<repo>/.scratch/research/chat-reasoning-replay/pier/batches/formal-xhigh-threeway-20261028/jobs/formal-xhigh-threeway-20261028--textual-richlog-follow-state--r1--sub2api-a1/textual-richlog-follow-state__CAaMEDm"
+        },
+        {
+          "route": "cpa",
+          "slot": 1,
+          "classification": "fail",
+          "reason": "timed_out",
+          "reward": 0.0,
+          "attempts": 1,
+          "agent_wall_seconds": 3600.13,
+          "trial_dir": "<repo>/.scratch/research/chat-reasoning-replay/pier/batches/formal-xhigh-threeway-20261028/jobs/formal-xhigh-threeway-20261028--textual-richlog-follow-state--r1--cpa-a1/textual-richlog-follow-state__tagW9zt"
+        },
+        {
+          "route": "stravia",
+          "slot": 2,
+          "classification": "fail",
+          "reason": "reward",
+          "reward": 0.0,
+          "attempts": 1,
+          "agent_wall_seconds": 854.144,
+          "trial_dir": "<repo>/.scratch/research/chat-reasoning-replay/pier/batches/formal-xhigh-threeway-20261028/jobs/formal-xhigh-threeway-20261028--textual-richlog-follow-state--r1--stravia-a1/textual-richlog-follow-state__QnfvNk8"
+        }
+      ]
+    },
+    {
+      "group_id": "expr-try-catch-errors@r4",
+      "task": "expr-try-catch-errors",
+      "round": 4,
+      "status": "done",
+      "voided_by_route": null,
+      "started_at": 1793163924.488853,
+      "finished_at": 1793167928.6778622,
+      "wall_seconds": 4004.189,
+      "trials": [
+        {
+          "route": "sub2api",
+          "slot": 0,
+          "classification": "pass",
+          "reason": "reward",
+          "reward": 1.0,
+          "attempts": 1,
+          "agent_wall_seconds": 2967.612,
+          "trial_dir": "<repo>/.scratch/research/chat-reasoning-replay/pier/batches/formal-xhigh-threeway-20261028/jobs/formal-xhigh-threeway-20261028--expr-try-catch-errors--r4--sub2api-a1/expr-try-catch-errors__xXrCd3g"
+        },
+        {
+          "route": "stravia",
+          "slot": 1,
+          "classification": "pass",
+          "reason": "reward",
+          "reward": 1.0,
+          "attempts": 1,
+          "agent_wall_seconds": 1774.36,
+          "trial_dir": "<repo>/.scratch/research/chat-reasoning-replay/pier/batches/formal-xhigh-threeway-20261028/jobs/formal-xhigh-threeway-20261028--expr-try-catch-errors--r4--stravia-a1/expr-try-catch-errors__bFnJzms"
+        },
+        {
+          "route": "cpa",
+          "slot": 2,
+          "classification": "fail",
+          "reason": "timed_out",
+          "reward": 0.0,
+          "attempts": 1,
+          "agent_wall_seconds": 3600.215,
+          "trial_dir": "<repo>/.scratch/research/chat-reasoning-replay/pier/batches/formal-xhigh-threeway-20261028/jobs/formal-xhigh-threeway-20261028--expr-try-catch-errors--r4--cpa-a1/expr-try-catch-errors__KyVPspk"
+        }
+      ]
+    },
+    {
+      "group_id": "testem-bail-on-test-failure@r3",
+      "task": "testem-bail-on-test-failure",
+      "round": 3,
+      "status": "done",
+      "voided_by_route": null,
+      "started_at": 1793165395.4767222,
+      "finished_at": 1793169054.0036652,
+      "wall_seconds": 3658.527,
+      "trials": [
+        {
+          "route": "cpa",
+          "slot": 0,
+          "classification": "fail",
+          "reason": "timed_out",
+          "reward": 0.0,
+          "attempts": 1,
+          "agent_wall_seconds": 3600.534,
+          "trial_dir": "<repo>/.scratch/research/chat-reasoning-replay/pier/batches/formal-xhigh-threeway-20261028/jobs/formal-xhigh-threeway-20261028--testem-bail-on-test-failure--r3--cpa-a1/testem-bail-on-test-failure__gGHJoWB"
+        },
+        {
+          "route": "sub2api",
+          "slot": 1,
+          "classification": "fail",
+          "reason": "agent-error:other:None",
+          "reward": 0.0,
+          "attempts": 1,
+          "agent_wall_seconds": 2012.957,
+          "trial_dir": "<repo>/.scratch/research/chat-reasoning-replay/pier/batches/formal-xhigh-threeway-20261028/jobs/formal-xhigh-threeway-20261028--testem-bail-on-test-failure--r3--sub2api-a1/testem-bail-on-test-failure__CHyWWyp"
+        },
+        {
+          "route": "stravia",
+          "slot": 2,
+          "classification": "fail",
+          "reason": "reward",
+          "reward": 0.0,
+          "attempts": 1,
+          "agent_wall_seconds": 1216.076,
+          "trial_dir": "<repo>/.scratch/research/chat-reasoning-replay/pier/batches/formal-xhigh-threeway-20261028/jobs/formal-xhigh-threeway-20261028--testem-bail-on-test-failure--r3--stravia-a1/testem-bail-on-test-failure__C6xA4BL"
+        }
+      ]
+    },
+    {
+      "group_id": "meriyah-explicit-resource-declarations@r2",
+      "task": "meriyah-explicit-resource-declarations",
+      "round": 2,
+      "status": "done",
+      "voided_by_route": null,
+      "started_at": 1793165532.9936445,
+      "finished_at": 1793169221.055629,
+      "wall_seconds": 3688.062,
+      "trials": [
+        {
+          "route": "cpa",
+          "slot": 0,
+          "classification": "fail",
+          "reason": "timed_out",
+          "reward": 0.0,
+          "attempts": 1,
+          "agent_wall_seconds": 3601.485,
+          "trial_dir": "<repo>/.scratch/research/chat-reasoning-replay/pier/batches/formal-xhigh-threeway-20261028/jobs/formal-xhigh-threeway-20261028--meriyah-explicit-resource-declarations--r2--cpa-a1/meriyah-explicit-resource-declar__mxhpKFW"
+        },
+        {
+          "route": "sub2api",
+          "slot": 1,
+          "classification": "fail",
+          "reason": "agent-error:other:None",
+          "reward": 0.0,
+          "attempts": 1,
+          "agent_wall_seconds": 1353.334,
+          "trial_dir": "<repo>/.scratch/research/chat-reasoning-replay/pier/batches/formal-xhigh-threeway-20261028/jobs/formal-xhigh-threeway-20261028--meriyah-explicit-resource-declarations--r2--sub2api-a1/meriyah-explicit-resource-declar__QV9RYcP"
+        },
+        {
+          "route": "stravia",
+          "slot": 2,
+          "classification": "pass",
+          "reason": "reward",
+          "reward": 1.0,
+          "attempts": 1,
+          "agent_wall_seconds": 917.661,
+          "trial_dir": "<repo>/.scratch/research/chat-reasoning-replay/pier/batches/formal-xhigh-threeway-20261028/jobs/formal-xhigh-threeway-20261028--meriyah-explicit-resource-declarations--r2--stravia-a1/meriyah-explicit-resource-declar__srXHDVJ"
+        }
+      ]
+    },
+    {
+      "group_id": "vitest-duration-sharding@r4",
+      "task": "vitest-duration-sharding",
+      "round": 4,
+      "status": "done",
+      "voided_by_route": null,
+      "started_at": 1793166753.891176,
+      "finished_at": 1793170425.5145707,
+      "wall_seconds": 3671.623,
+      "trials": [
+        {
+          "route": "sub2api",
+          "slot": 0,
+          "classification": "fail",
+          "reason": "timed_out",
+          "reward": 0.0,
+          "attempts": 1,
+          "agent_wall_seconds": 3600.189,
+          "trial_dir": "<repo>/.scratch/research/chat-reasoning-replay/pier/batches/formal-xhigh-threeway-20261028/jobs/formal-xhigh-threeway-20261028--vitest-duration-sharding--r4--sub2api-a1/vitest-duration-sharding__22vkDV6"
+        },
+        {
+          "route": "cpa",
+          "slot": 1,
+          "classification": "fail",
+          "reason": "timed_out",
+          "reward": 1.0,
+          "attempts": 1,
+          "agent_wall_seconds": 3600.402,
+          "trial_dir": "<repo>/.scratch/research/chat-reasoning-replay/pier/batches/formal-xhigh-threeway-20261028/jobs/formal-xhigh-threeway-20261028--vitest-duration-sharding--r4--cpa-a1/vitest-duration-sharding__omgn9p8"
+        },
+        {
+          "route": "stravia",
+          "slot": 2,
+          "classification": "pass",
+          "reason": "reward",
+          "reward": 1.0,
+          "attempts": 1,
+          "agent_wall_seconds": 1327.108,
+          "trial_dir": "<repo>/.scratch/research/chat-reasoning-replay/pier/batches/formal-xhigh-threeway-20261028/jobs/formal-xhigh-threeway-20261028--vitest-duration-sharding--r4--stravia-a1/vitest-duration-sharding__g6ZPoRR"
+        }
+      ]
+    },
+    {
+      "group_id": "expr-try-catch-errors@r1",
+      "task": "expr-try-catch-errors",
+      "round": 1,
+      "status": "done",
+      "voided_by_route": null,
+      "started_at": 1793166780.0313797,
+      "finished_at": 1793170437.863883,
+      "wall_seconds": 3657.833,
+      "trials": [
+        {
+          "route": "stravia",
+          "slot": 0,
+          "classification": "pass",
+          "reason": "reward",
+          "reward": 1.0,
+          "attempts": 1,
+          "agent_wall_seconds": 1070.741,
+          "trial_dir": "<repo>/.scratch/research/chat-reasoning-replay/pier/batches/formal-xhigh-threeway-20261028/jobs/formal-xhigh-threeway-20261028--expr-try-catch-errors--r1--stravia-a1/expr-try-catch-errors__FhRdCd2"
+        },
+        {
+          "route": "cpa",
+          "slot": 1,
+          "classification": "fail",
+          "reason": "reward",
+          "reward": 0.0,
+          "attempts": 1,
+          "agent_wall_seconds": 3553.497,
+          "trial_dir": "<repo>/.scratch/research/chat-reasoning-replay/pier/batches/formal-xhigh-threeway-20261028/jobs/formal-xhigh-threeway-20261028--expr-try-catch-errors--r1--cpa-a1/expr-try-catch-errors__9MDk7sE"
+        },
+        {
+          "route": "sub2api",
+          "slot": 2,
+          "classification": "fail",
+          "reason": "agent-error:other:None",
+          "reward": 0.0,
+          "attempts": 1,
+          "agent_wall_seconds": 1062.745,
+          "trial_dir": "<repo>/.scratch/research/chat-reasoning-replay/pier/batches/formal-xhigh-threeway-20261028/jobs/formal-xhigh-threeway-20261028--expr-try-catch-errors--r1--sub2api-a1/expr-try-catch-errors__QxPL4dT"
+        }
+      ]
+    },
+    {
+      "group_id": "koota-composite-trait-aspects@r2",
+      "task": "koota-composite-trait-aspects",
+      "round": 2,
+      "status": "void",
+      "voided_by_route": "cpa",
+      "started_at": 1793167928.6807523,
+      "finished_at": 1793177620.1769743,
+      "wall_seconds": 9691.496,
+      "trials": [
+        {
+          "route": "cpa",
+          "slot": 0,
+          "classification": "void",
+          "reason": "group-void: retries-exhausted: cpa 尝试 3 次仍失败（infra-error:infra:http:503）",
+          "reward": 0.0,
+          "attempts": 3,
+          "agent_wall_seconds": 2576.198,
+          "trial_dir": "<repo>/.scratch/research/chat-reasoning-replay/pier/batches/formal-xhigh-threeway-20261028/jobs/formal-xhigh-threeway-20261028--koota-composite-trait-aspects--r2--cpa-a3/koota-composite-trait-aspects__DXtNxsT"
+        },
+        {
+          "route": "stravia",
+          "slot": 1,
+          "classification": "void",
+          "reason": "group-void: retries-exhausted: cpa 尝试 3 次仍失败（infra-error:infra:http:503）",
+          "reward": 1.0,
+          "attempts": 1,
+          "agent_wall_seconds": 1996.505,
+          "trial_dir": "<repo>/.scratch/research/chat-reasoning-replay/pier/batches/formal-xhigh-threeway-20261028/jobs/formal-xhigh-threeway-20261028--koota-composite-trait-aspects--r2--stravia-a1/koota-composite-trait-aspects__JRjAUHV"
+        },
+        {
+          "route": "sub2api",
+          "slot": 2,
+          "classification": "void",
+          "reason": "group-void: retries-exhausted: cpa 尝试 3 次仍失败（infra-error:infra:http:503）",
+          "reward": 0.0,
+          "attempts": 1,
+          "agent_wall_seconds": 3600.276,
+          "trial_dir": "<repo>/.scratch/research/chat-reasoning-replay/pier/batches/formal-xhigh-threeway-20261028/jobs/formal-xhigh-threeway-20261028--koota-composite-trait-aspects--r2--sub2api-a1/koota-composite-trait-aspects__rQaFyEx"
+        }
+      ]
+    },
+    {
+      "group_id": "kea-atomic-signal-selectors@r2",
+      "task": "kea-atomic-signal-selectors",
+      "round": 2,
+      "status": "done",
+      "voided_by_route": null,
+      "started_at": 1793169054.0074341,
+      "finished_at": 1793172694.8448825,
+      "wall_seconds": 3640.837,
+      "trials": [
+        {
+          "route": "sub2api",
+          "slot": 0,
+          "classification": "fail",
+          "reason": "agent-error:other:None",
+          "reward": 0.0,
+          "attempts": 1,
+          "agent_wall_seconds": 1134.848,
+          "trial_dir": "<repo>/.scratch/research/chat-reasoning-replay/pier/batches/formal-xhigh-threeway-20261028/jobs/formal-xhigh-threeway-20261028--kea-atomic-signal-selectors--r2--sub2api-a1/kea-atomic-signal-selectors__nbUXnYV"
+        },
+        {
+          "route": "cpa",
+          "slot": 1,
+          "classification": "fail",
+          "reason": "timed_out",
+          "reward": 0.0,
+          "attempts": 1,
+          "agent_wall_seconds": 3600.332,
+          "trial_dir": "<repo>/.scratch/research/chat-reasoning-replay/pier/batches/formal-xhigh-threeway-20261028/jobs/formal-xhigh-threeway-20261028--kea-atomic-signal-selectors--r2--cpa-a1/kea-atomic-signal-selectors__W6VjMdU"
+        },
+        {
+          "route": "stravia",
+          "slot": 2,
+          "classification": "pass",
+          "reason": "reward",
+          "reward": 1.0,
+          "attempts": 1,
+          "agent_wall_seconds": 807.909,
+          "trial_dir": "<repo>/.scratch/research/chat-reasoning-replay/pier/batches/formal-xhigh-threeway-20261028/jobs/formal-xhigh-threeway-20261028--kea-atomic-signal-selectors--r2--stravia-a1/kea-atomic-signal-selectors__wfoEwD3"
+        }
+      ]
+    },
+    {
+      "group_id": "anko-default-function-arguments@r2",
+      "task": "anko-default-function-arguments",
+      "round": 2,
+      "status": "done",
+      "voided_by_route": null,
+      "started_at": 1793169221.0591972,
+      "finished_at": 1793172872.949589,
+      "wall_seconds": 3651.89,
+      "trials": [
+        {
+          "route": "stravia",
+          "slot": 0,
+          "classification": "pass",
+          "reason": "reward",
+          "reward": 1.0,
+          "attempts": 1,
+          "agent_wall_seconds": 846.78,
+          "trial_dir": "<repo>/.scratch/research/chat-reasoning-replay/pier/batches/formal-xhigh-threeway-20261028/jobs/formal-xhigh-threeway-20261028--anko-default-function-arguments--r2--stravia-a1/anko-default-function-arguments__JHjvsdu"
+        },
+        {
+          "route": "cpa",
+          "slot": 1,
+          "classification": "fail",
+          "reason": "timed_out",
+          "reward": 0.0,
+          "attempts": 1,
+          "agent_wall_seconds": 3600.227,
+          "trial_dir": "<repo>/.scratch/research/chat-reasoning-replay/pier/batches/formal-xhigh-threeway-20261028/jobs/formal-xhigh-threeway-20261028--anko-default-function-arguments--r2--cpa-a1/anko-default-function-arguments__oD9LYwi"
+        },
+        {
+          "route": "sub2api",
+          "slot": 2,
+          "classification": "fail",
+          "reason": "reward",
+          "reward": 0.0,
+          "attempts": 1,
+          "agent_wall_seconds": 2384.81,
+          "trial_dir": "<repo>/.scratch/research/chat-reasoning-replay/pier/batches/formal-xhigh-threeway-20261028/jobs/formal-xhigh-threeway-20261028--anko-default-function-arguments--r2--sub2api-a1/anko-default-function-arguments__sZzmucJ"
+        }
+      ]
+    },
+    {
+      "group_id": "go-genai-streamed-function-args@r3",
+      "task": "go-genai-streamed-function-args",
+      "round": 3,
+      "status": "done",
+      "voided_by_route": null,
+      "started_at": 1793170425.5190654,
+      "finished_at": 1793173992.3661532,
+      "wall_seconds": 3566.847,
+      "trials": [
+        {
+          "route": "stravia",
+          "slot": 0,
+          "classification": "pass",
+          "reason": "reward",
+          "reward": 1.0,
+          "attempts": 1,
+          "agent_wall_seconds": 928.149,
+          "trial_dir": "<repo>/.scratch/research/chat-reasoning-replay/pier/batches/formal-xhigh-threeway-20261028/jobs/formal-xhigh-threeway-20261028--go-genai-streamed-function-args--r3--stravia-a1/go-genai-streamed-function-args__rpCXbNy"
+        },
+        {
+          "route": "sub2api",
+          "slot": 1,
+          "classification": "pass",
+          "reason": "reward",
+          "reward": 1.0,
+          "attempts": 1,
+          "agent_wall_seconds": 2094.189,
+          "trial_dir": "<repo>/.scratch/research/chat-reasoning-replay/pier/batches/formal-xhigh-threeway-20261028/jobs/formal-xhigh-threeway-20261028--go-genai-streamed-function-args--r3--sub2api-a1/go-genai-streamed-function-args__ZkCjETd"
+        },
+        {
+          "route": "cpa",
+          "slot": 2,
+          "classification": "pass",
+          "reason": "reward",
+          "reward": 1.0,
+          "attempts": 1,
+          "agent_wall_seconds": 3490.561,
+          "trial_dir": "<repo>/.scratch/research/chat-reasoning-replay/pier/batches/formal-xhigh-threeway-20261028/jobs/formal-xhigh-threeway-20261028--go-genai-streamed-function-args--r3--cpa-a1/go-genai-streamed-function-args__X9trWmi"
+        }
+      ]
+    },
+    {
+      "group_id": "numba-stencil-boundary-modes@r1",
+      "task": "numba-stencil-boundary-modes",
+      "round": 1,
+      "status": "done",
+      "voided_by_route": null,
+      "started_at": 1793170437.9415262,
+      "finished_at": 1793173570.0403528,
+      "wall_seconds": 3132.099,
+      "trials": [
+        {
+          "route": "stravia",
+          "slot": 0,
+          "classification": "fail",
+          "reason": "reward",
+          "reward": 0.0,
+          "attempts": 1,
+          "agent_wall_seconds": 982.091,
+          "trial_dir": "<repo>/.scratch/research/chat-reasoning-replay/pier/batches/formal-xhigh-threeway-20261028/jobs/formal-xhigh-threeway-20261028--numba-stencil-boundary-modes--r1--stravia-a1/numba-stencil-boundary-modes__EYVvkaU"
+        },
+        {
+          "route": "cpa",
+          "slot": 1,
+          "classification": "pass",
+          "reason": "reward",
+          "reward": 1.0,
+          "attempts": 1,
+          "agent_wall_seconds": 2879.261,
+          "trial_dir": "<repo>/.scratch/research/chat-reasoning-replay/pier/batches/formal-xhigh-threeway-20261028/jobs/formal-xhigh-threeway-20261028--numba-stencil-boundary-modes--r1--cpa-a1/numba-stencil-boundary-modes__7rDDscF"
+        },
+        {
+          "route": "sub2api",
+          "slot": 2,
+          "classification": "pass",
+          "reason": "reward",
+          "reward": 1.0,
+          "attempts": 1,
+          "agent_wall_seconds": 2709.867,
+          "trial_dir": "<repo>/.scratch/research/chat-reasoning-replay/pier/batches/formal-xhigh-threeway-20261028/jobs/formal-xhigh-threeway-20261028--numba-stencil-boundary-modes--r1--sub2api-a1/numba-stencil-boundary-modes__gAvkN8r"
+        }
+      ]
+    },
+    {
+      "group_id": "oxvg-structural-selector-preservation@r4",
+      "task": "oxvg-structural-selector-preservation",
+      "round": 4,
+      "status": "done",
+      "voided_by_route": null,
+      "started_at": 1793172694.847935,
+      "finished_at": 1793178586.889609,
+      "wall_seconds": 5892.042,
+      "trials": [
+        {
+          "route": "sub2api",
+          "slot": 0,
+          "classification": "fail",
+          "reason": "agent-error:other:None",
+          "reward": 1.0,
+          "attempts": 1,
+          "agent_wall_seconds": 2269.241,
+          "trial_dir": "<repo>/.scratch/research/chat-reasoning-replay/pier/batches/formal-xhigh-threeway-20261028/jobs/formal-xhigh-threeway-20261028--oxvg-structural-selector-preservation--r4--sub2api-a1/oxvg-structural-selector-preserv__Kqwqnvi"
+        },
+        {
+          "route": "cpa",
+          "slot": 1,
+          "classification": "fail",
+          "reason": "agent-error:other:None",
+          "reward": 0.0,
+          "attempts": 2,
+          "agent_wall_seconds": 3276.526,
+          "trial_dir": "<repo>/.scratch/research/chat-reasoning-replay/pier/batches/formal-xhigh-threeway-20261028/jobs/formal-xhigh-threeway-20261028--oxvg-structural-selector-preservation--r4--cpa-a2/oxvg-structural-selector-preserv__wqLPQaj"
+        },
+        {
+          "route": "stravia",
+          "slot": 2,
+          "classification": "fail",
+          "reason": "reward",
+          "reward": 0.0,
+          "attempts": 1,
+          "agent_wall_seconds": 1838.759,
+          "trial_dir": "<repo>/.scratch/research/chat-reasoning-replay/pier/batches/formal-xhigh-threeway-20261028/jobs/formal-xhigh-threeway-20261028--oxvg-structural-selector-preservation--r4--stravia-a1/oxvg-structural-selector-preserv__L9qpgoq"
+        }
+      ]
+    },
+    {
+      "group_id": "termenv-preserve-ansi-resets@r4",
+      "task": "termenv-preserve-ansi-resets",
+      "round": 4,
+      "status": "done",
+      "voided_by_route": null,
+      "started_at": 1793172872.9555566,
+      "finished_at": 1793175158.1060834,
+      "wall_seconds": 2285.151,
+      "trials": [
+        {
+          "route": "cpa",
+          "slot": 0,
+          "classification": "fail",
+          "reason": "reward",
+          "reward": 0.0,
+          "attempts": 1,
+          "agent_wall_seconds": 1964.1,
+          "trial_dir": "<repo>/.scratch/research/chat-reasoning-replay/pier/batches/formal-xhigh-threeway-20261028/jobs/formal-xhigh-threeway-20261028--termenv-preserve-ansi-resets--r4--cpa-a1/termenv-preserve-ansi-resets__xqWHoLi"
+        },
+        {
+          "route": "stravia",
+          "slot": 1,
+          "classification": "fail",
+          "reason": "reward",
+          "reward": 0.0,
+          "attempts": 1,
+          "agent_wall_seconds": 653.181,
+          "trial_dir": "<repo>/.scratch/research/chat-reasoning-replay/pier/batches/formal-xhigh-threeway-20261028/jobs/formal-xhigh-threeway-20261028--termenv-preserve-ansi-resets--r4--stravia-a1/termenv-preserve-ansi-resets__CAoxQb5"
+        },
+        {
+          "route": "sub2api",
+          "slot": 2,
+          "classification": "fail",
+          "reason": "reward",
+          "reward": 0.0,
+          "attempts": 1,
+          "agent_wall_seconds": 2240.14,
+          "trial_dir": "<repo>/.scratch/research/chat-reasoning-replay/pier/batches/formal-xhigh-threeway-20261028/jobs/formal-xhigh-threeway-20261028--termenv-preserve-ansi-resets--r4--sub2api-a1/termenv-preserve-ansi-resets__NhnDUW7"
+        }
+      ]
+    },
+    {
+      "group_id": "gql-incremental-graphql-delivery@r3",
+      "task": "gql-incremental-graphql-delivery",
+      "round": 3,
+      "status": "done",
+      "voided_by_route": null,
+      "started_at": 1793173570.0479524,
+      "finished_at": 1793177510.106889,
+      "wall_seconds": 3940.059,
+      "trials": [
+        {
+          "route": "stravia",
+          "slot": 0,
+          "classification": "fail",
+          "reason": "reward",
+          "reward": 0.0,
+          "attempts": 1,
+          "agent_wall_seconds": 1182.926,
+          "trial_dir": "<repo>/.scratch/research/chat-reasoning-replay/pier/batches/formal-xhigh-threeway-20261028/jobs/formal-xhigh-threeway-20261028--gql-incremental-graphql-delivery--r3--stravia-a1/gql-incremental-graphql-delivery__9dyk2rV"
+        },
+        {
+          "route": "sub2api",
+          "slot": 1,
+          "classification": "fail",
+          "reason": "reward",
+          "reward": 0.0,
+          "attempts": 1,
+          "agent_wall_seconds": 2791.826,
+          "trial_dir": "<repo>/.scratch/research/chat-reasoning-replay/pier/batches/formal-xhigh-threeway-20261028/jobs/formal-xhigh-threeway-20261028--gql-incremental-graphql-delivery--r3--sub2api-a1/gql-incremental-graphql-delivery__kQRUSPA"
+        },
+        {
+          "route": "cpa",
+          "slot": 2,
+          "classification": "fail",
+          "reason": "reward",
+          "reward": 0.0,
+          "attempts": 2,
+          "agent_wall_seconds": 2453.004,
+          "trial_dir": "<repo>/.scratch/research/chat-reasoning-replay/pier/batches/formal-xhigh-threeway-20261028/jobs/formal-xhigh-threeway-20261028--gql-incremental-graphql-delivery--r3--cpa-a2/gql-incremental-graphql-delivery__DCKRz85"
+        }
+      ]
+    },
+    {
+      "group_id": "mnamer-daemon-watch-lifecycle@r4",
+      "task": "mnamer-daemon-watch-lifecycle",
+      "round": 4,
+      "status": "done",
+      "voided_by_route": null,
+      "started_at": 1793173992.708284,
+      "finished_at": 1793176592.203079,
+      "wall_seconds": 2599.495,
+      "trials": [
+        {
+          "route": "cpa",
+          "slot": 0,
+          "classification": "pass",
+          "reason": "reward",
+          "reward": 1.0,
+          "attempts": 2,
+          "agent_wall_seconds": 1123.92,
+          "trial_dir": "<repo>/.scratch/research/chat-reasoning-replay/pier/batches/formal-xhigh-threeway-20261028/jobs/formal-xhigh-threeway-20261028--mnamer-daemon-watch-lifecycle--r4--cpa-a2/mnamer-daemon-watch-lifecycle__th8UmSZ"
+        },
+        {
+          "route": "sub2api",
+          "slot": 1,
+          "classification": "pass",
+          "reason": "reward",
+          "reward": 1.0,
+          "attempts": 1,
+          "agent_wall_seconds": 2525.731,
+          "trial_dir": "<repo>/.scratch/research/chat-reasoning-replay/pier/batches/formal-xhigh-threeway-20261028/jobs/formal-xhigh-threeway-20261028--mnamer-daemon-watch-lifecycle--r4--sub2api-a1/mnamer-daemon-watch-lifecycle__KrVzjgk"
+        },
+        {
+          "route": "stravia",
+          "slot": 2,
+          "classification": "pass",
+          "reason": "reward",
+          "reward": 1.0,
+          "attempts": 1,
+          "agent_wall_seconds": 744.618,
+          "trial_dir": "<repo>/.scratch/research/chat-reasoning-replay/pier/batches/formal-xhigh-threeway-20261028/jobs/formal-xhigh-threeway-20261028--mnamer-daemon-watch-lifecycle--r4--stravia-a1/mnamer-daemon-watch-lifecycle__2vRmGwZ"
+        }
+      ]
+    },
+    {
+      "group_id": "anko-default-function-arguments@r3",
+      "task": "anko-default-function-arguments",
+      "round": 3,
+      "status": "done",
+      "voided_by_route": null,
+      "started_at": 1793175158.1091995,
+      "finished_at": 1793178437.2387493,
+      "wall_seconds": 3279.13,
+      "trials": [
+        {
+          "route": "sub2api",
+          "slot": 0,
+          "classification": "pass",
+          "reason": "reward",
+          "reward": 1.0,
+          "attempts": 1,
+          "agent_wall_seconds": 2223.076,
+          "trial_dir": "<repo>/.scratch/research/chat-reasoning-replay/pier/batches/formal-xhigh-threeway-20261028/jobs/formal-xhigh-threeway-20261028--anko-default-function-arguments--r3--sub2api-a1/anko-default-function-arguments__gP5u5Ya"
+        },
+        {
+          "route": "cpa",
+          "slot": 1,
+          "classification": "fail",
+          "reason": "agent-error:other:None",
+          "reward": 0.0,
+          "attempts": 2,
+          "agent_wall_seconds": 723.693,
+          "trial_dir": "<repo>/.scratch/research/chat-reasoning-replay/pier/batches/formal-xhigh-threeway-20261028/jobs/formal-xhigh-threeway-20261028--anko-default-function-arguments--r3--cpa-a2/anko-default-function-arguments__MM3mAbe"
+        },
+        {
+          "route": "stravia",
+          "slot": 2,
+          "classification": "pass",
+          "reason": "reward",
+          "reward": 1.0,
+          "attempts": 1,
+          "agent_wall_seconds": 789.892,
+          "trial_dir": "<repo>/.scratch/research/chat-reasoning-replay/pier/batches/formal-xhigh-threeway-20261028/jobs/formal-xhigh-threeway-20261028--anko-default-function-arguments--r3--stravia-a1/anko-default-function-arguments__Xr28vCy"
+        }
+      ]
+    },
+    {
+      "group_id": "wasmi-trap-coredumps@r3",
+      "task": "wasmi-trap-coredumps",
+      "round": 3,
+      "status": "done",
+      "voided_by_route": null,
+      "started_at": 1793176592.2076626,
+      "finished_at": 1793179283.4204955,
+      "wall_seconds": 2691.213,
+      "trials": [
+        {
+          "route": "cpa",
+          "slot": 0,
+          "classification": "fail",
+          "reason": "agent-error:other:None",
+          "reward": 0.0,
+          "attempts": 1,
+          "agent_wall_seconds": 1775.391,
+          "trial_dir": "<repo>/.scratch/research/chat-reasoning-replay/pier/batches/formal-xhigh-threeway-20261028/jobs/formal-xhigh-threeway-20261028--wasmi-trap-coredumps--r3--cpa-a1/wasmi-trap-coredumps__tJDRETD"
+        },
+        {
+          "route": "sub2api",
+          "slot": 1,
+          "classification": "fail",
+          "reason": "agent-error:other:None",
+          "reward": 0.0,
+          "attempts": 1,
+          "agent_wall_seconds": 1774.863,
+          "trial_dir": "<repo>/.scratch/research/chat-reasoning-replay/pier/batches/formal-xhigh-threeway-20261028/jobs/formal-xhigh-threeway-20261028--wasmi-trap-coredumps--r3--sub2api-a1/wasmi-trap-coredumps__geLwxLh"
+        },
+        {
+          "route": "stravia",
+          "slot": 2,
+          "classification": "fail",
+          "reason": "reward",
+          "reward": 0.0,
+          "attempts": 1,
+          "agent_wall_seconds": 2639.011,
+          "trial_dir": "<repo>/.scratch/research/chat-reasoning-replay/pier/batches/formal-xhigh-threeway-20261028/jobs/formal-xhigh-threeway-20261028--wasmi-trap-coredumps--r3--stravia-a1/wasmi-trap-coredumps__YLB6fSH"
+        }
+      ]
+    },
+    {
+      "group_id": "vitest-duration-sharding@r3",
+      "task": "vitest-duration-sharding",
+      "round": 3,
+      "status": "done",
+      "voided_by_route": null,
+      "started_at": 1793177510.1105325,
+      "finished_at": 1793181171.1313963,
+      "wall_seconds": 3661.021,
+      "trials": [
+        {
+          "route": "sub2api",
+          "slot": 0,
+          "classification": "fail",
+          "reason": "timed_out",
+          "reward": 1.0,
+          "attempts": 1,
+          "agent_wall_seconds": 3600.21,
+          "trial_dir": "<repo>/.scratch/research/chat-reasoning-replay/pier/batches/formal-xhigh-threeway-20261028/jobs/formal-xhigh-threeway-20261028--vitest-duration-sharding--r3--sub2api-a1/vitest-duration-sharding__BR94Kf2"
+        },
+        {
+          "route": "stravia",
+          "slot": 1,
+          "classification": "pass",
+          "reason": "reward",
+          "reward": 1.0,
+          "attempts": 1,
+          "agent_wall_seconds": 1325.295,
+          "trial_dir": "<repo>/.scratch/research/chat-reasoning-replay/pier/batches/formal-xhigh-threeway-20261028/jobs/formal-xhigh-threeway-20261028--vitest-duration-sharding--r3--stravia-a1/vitest-duration-sharding__2EPMhNt"
+        },
+        {
+          "route": "cpa",
+          "slot": 2,
+          "classification": "fail",
+          "reason": "agent-error:other:None",
+          "reward": 0.0,
+          "attempts": 2,
+          "agent_wall_seconds": 711.729,
+          "trial_dir": "<repo>/.scratch/research/chat-reasoning-replay/pier/batches/formal-xhigh-threeway-20261028/jobs/formal-xhigh-threeway-20261028--vitest-duration-sharding--r3--cpa-a2/vitest-duration-sharding__rZYDRj5"
+        }
+      ]
+    },
+    {
+      "group_id": "happy-dom-deterministic-intersectionobserver@r4",
+      "task": "happy-dom-deterministic-intersectionobserver",
+      "round": 4,
+      "status": "done",
+      "voided_by_route": null,
+      "started_at": 1793177620.1826057,
+      "finished_at": 1793179463.1442573,
+      "wall_seconds": 1842.962,
+      "trials": [
+        {
+          "route": "stravia",
+          "slot": 0,
+          "classification": "fail",
+          "reason": "reward",
+          "reward": 0.0,
+          "attempts": 1,
+          "agent_wall_seconds": 1233.489,
+          "trial_dir": "<repo>/.scratch/research/chat-reasoning-replay/pier/batches/formal-xhigh-threeway-20261028/jobs/formal-xhigh-threeway-20261028--happy-dom-deterministic-intersectionobserver--r4--stravia-a1/happy-dom-deterministic-intersec__dHtqJkC"
+        },
+        {
+          "route": "sub2api",
+          "slot": 1,
+          "classification": "fail",
+          "reason": "reward",
+          "reward": 0.0,
+          "attempts": 1,
+          "agent_wall_seconds": 1788.432,
+          "trial_dir": "<repo>/.scratch/research/chat-reasoning-replay/pier/batches/formal-xhigh-threeway-20261028/jobs/formal-xhigh-threeway-20261028--happy-dom-deterministic-intersectionobserver--r4--sub2api-a1/happy-dom-deterministic-intersec__iMTqbtC"
+        },
+        {
+          "route": "cpa",
+          "slot": 2,
+          "classification": "fail",
+          "reason": "agent-error:other:None",
+          "reward": 0.0,
+          "attempts": 1,
+          "agent_wall_seconds": 729.788,
+          "trial_dir": "<repo>/.scratch/research/chat-reasoning-replay/pier/batches/formal-xhigh-threeway-20261028/jobs/formal-xhigh-threeway-20261028--happy-dom-deterministic-intersectionobserver--r4--cpa-a1/happy-dom-deterministic-intersec__bCkx2zp"
+        }
+      ]
+    },
+    {
+      "group_id": "cliffy-config-file-parsing@r4",
+      "task": "cliffy-config-file-parsing",
+      "round": 4,
+      "status": "done",
+      "voided_by_route": null,
+      "started_at": 1793178437.241872,
+      "finished_at": 1793182216.365655,
+      "wall_seconds": 3779.124,
+      "trials": [
+        {
+          "route": "cpa",
+          "slot": 0,
+          "classification": "fail",
+          "reason": "timed_out",
+          "reward": 1.0,
+          "attempts": 1,
+          "agent_wall_seconds": 3600.543,
+          "trial_dir": "<repo>/.scratch/research/chat-reasoning-replay/pier/batches/formal-xhigh-threeway-20261028/jobs/formal-xhigh-threeway-20261028--cliffy-config-file-parsing--r4--cpa-a1/cliffy-config-file-parsing__VZqoUiM"
+        },
+        {
+          "route": "sub2api",
+          "slot": 1,
+          "classification": "pass",
+          "reason": "reward",
+          "reward": 1.0,
+          "attempts": 2,
+          "agent_wall_seconds": 3445.93,
+          "trial_dir": "<repo>/.scratch/research/chat-reasoning-replay/pier/batches/formal-xhigh-threeway-20261028/jobs/formal-xhigh-threeway-20261028--cliffy-config-file-parsing--r4--sub2api-a2/cliffy-config-file-parsing__rtURozF"
+        },
+        {
+          "route": "stravia",
+          "slot": 2,
+          "classification": "pass",
+          "reason": "reward",
+          "reward": 1.0,
+          "attempts": 1,
+          "agent_wall_seconds": 2156.689,
+          "trial_dir": "<repo>/.scratch/research/chat-reasoning-replay/pier/batches/formal-xhigh-threeway-20261028/jobs/formal-xhigh-threeway-20261028--cliffy-config-file-parsing--r4--stravia-a1/cliffy-config-file-parsing__9NKvZfz"
+        }
+      ]
+    },
+    {
+      "group_id": "expr-try-catch-errors@r3",
+      "task": "expr-try-catch-errors",
+      "round": 3,
+      "status": "done",
+      "voided_by_route": null,
+      "started_at": 1793178586.8933563,
+      "finished_at": 1793182297.0185485,
+      "wall_seconds": 3710.125,
+      "trials": [
+        {
+          "route": "cpa",
+          "slot": 0,
+          "classification": "fail",
+          "reason": "timed_out",
+          "reward": 0.0,
+          "attempts": 1,
+          "agent_wall_seconds": 3600.51,
+          "trial_dir": "<repo>/.scratch/research/chat-reasoning-replay/pier/batches/formal-xhigh-threeway-20261028/jobs/formal-xhigh-threeway-20261028--expr-try-catch-errors--r3--cpa-a1/expr-try-catch-errors__YUHpAug"
+        },
+        {
+          "route": "sub2api",
+          "slot": 1,
+          "classification": "fail",
+          "reason": "reward",
+          "reward": 0.0,
+          "attempts": 1,
+          "agent_wall_seconds": 1518.92,
+          "trial_dir": "<repo>/.scratch/research/chat-reasoning-replay/pier/batches/formal-xhigh-threeway-20261028/jobs/formal-xhigh-threeway-20261028--expr-try-catch-errors--r3--sub2api-a1/expr-try-catch-errors__pZsGavH"
+        },
+        {
+          "route": "stravia",
+          "slot": 2,
+          "classification": "pass",
+          "reason": "reward",
+          "reward": 1.0,
+          "attempts": 1,
+          "agent_wall_seconds": 1609.128,
+          "trial_dir": "<repo>/.scratch/research/chat-reasoning-replay/pier/batches/formal-xhigh-threeway-20261028/jobs/formal-xhigh-threeway-20261028--expr-try-catch-errors--r3--stravia-a1/expr-try-catch-errors__JMPg9o3"
+        }
+      ]
+    },
+    {
+      "group_id": "termenv-preserve-ansi-resets@r1",
+      "task": "termenv-preserve-ansi-resets",
+      "round": 1,
+      "status": "done",
+      "voided_by_route": null,
+      "started_at": 1793179283.423986,
+      "finished_at": 1793182848.5656426,
+      "wall_seconds": 3565.142,
+      "trials": [
+        {
+          "route": "cpa",
+          "slot": 0,
+          "classification": "pass",
+          "reason": "reward",
+          "reward": 1.0,
+          "attempts": 1,
+          "agent_wall_seconds": 3517.66,
+          "trial_dir": "<repo>/.scratch/research/chat-reasoning-replay/pier/batches/formal-xhigh-threeway-20261028/jobs/formal-xhigh-threeway-20261028--termenv-preserve-ansi-resets--r1--cpa-a1/termenv-preserve-ansi-resets__Y8YToE4"
+        },
+        {
+          "route": "sub2api",
+          "slot": 1,
+          "classification": "fail",
+          "reason": "reward",
+          "reward": 0.0,
+          "attempts": 1,
+          "agent_wall_seconds": 2007.189,
+          "trial_dir": "<repo>/.scratch/research/chat-reasoning-replay/pier/batches/formal-xhigh-threeway-20261028/jobs/formal-xhigh-threeway-20261028--termenv-preserve-ansi-resets--r1--sub2api-a1/termenv-preserve-ansi-resets__WWDfYtN"
+        },
+        {
+          "route": "stravia",
+          "slot": 2,
+          "classification": "pass",
+          "reason": "reward",
+          "reward": 1.0,
+          "attempts": 1,
+          "agent_wall_seconds": 895.193,
+          "trial_dir": "<repo>/.scratch/research/chat-reasoning-replay/pier/batches/formal-xhigh-threeway-20261028/jobs/formal-xhigh-threeway-20261028--termenv-preserve-ansi-resets--r1--stravia-a1/termenv-preserve-ansi-resets__uFuLHMV"
+        }
+      ]
+    },
+    {
+      "group_id": "ink-grid-box-layout@r3",
+      "task": "ink-grid-box-layout",
+      "round": 3,
+      "status": "done",
+      "voided_by_route": null,
+      "started_at": 1793179463.147145,
+      "finished_at": 1793182132.011724,
+      "wall_seconds": 2668.865,
+      "trials": [
+        {
+          "route": "cpa",
+          "slot": 0,
+          "classification": "pass",
+          "reason": "reward",
+          "reward": 1.0,
+          "attempts": 1,
+          "agent_wall_seconds": 2260.687,
+          "trial_dir": "<repo>/.scratch/research/chat-reasoning-replay/pier/batches/formal-xhigh-threeway-20261028/jobs/formal-xhigh-threeway-20261028--ink-grid-box-layout--r3--cpa-a1/ink-grid-box-layout__5BJRy2R"
+        },
+        {
+          "route": "sub2api",
+          "slot": 1,
+          "classification": "fail",
+          "reason": "reward",
+          "reward": 0.0,
+          "attempts": 1,
+          "agent_wall_seconds": 1786.135,
+          "trial_dir": "<repo>/.scratch/research/chat-reasoning-replay/pier/batches/formal-xhigh-threeway-20261028/jobs/formal-xhigh-threeway-20261028--ink-grid-box-layout--r3--sub2api-a1/ink-grid-box-layout__a8LAMwh"
+        },
+        {
+          "route": "stravia",
+          "slot": 2,
+          "classification": "pass",
+          "reason": "reward",
+          "reward": 1.0,
+          "attempts": 1,
+          "agent_wall_seconds": 2620.7,
+          "trial_dir": "<repo>/.scratch/research/chat-reasoning-replay/pier/batches/formal-xhigh-threeway-20261028/jobs/formal-xhigh-threeway-20261028--ink-grid-box-layout--r3--stravia-a1/ink-grid-box-layout__MY6di6z"
+        }
+      ]
+    },
+    {
+      "group_id": "go-genai-streamed-function-args@r4",
+      "task": "go-genai-streamed-function-args",
+      "round": 4,
+      "status": "done",
+      "voided_by_route": null,
+      "started_at": 1793181171.135299,
+      "finished_at": 1793186570.0011053,
+      "wall_seconds": 5398.866,
+      "trials": [
+        {
+          "route": "cpa",
+          "slot": 0,
+          "classification": "fail",
+          "reason": "reward",
+          "reward": 0.0,
+          "attempts": 1,
+          "agent_wall_seconds": 3126.573,
+          "trial_dir": "<repo>/.scratch/research/chat-reasoning-replay/pier/batches/formal-xhigh-threeway-20261028/jobs/formal-xhigh-threeway-20261028--go-genai-streamed-function-args--r4--cpa-a1/go-genai-streamed-function-args__B5YZFxM"
+        },
+        {
+          "route": "stravia",
+          "slot": 1,
+          "classification": "pass",
+          "reason": "reward",
+          "reward": 1.0,
+          "attempts": 1,
+          "agent_wall_seconds": 769.411,
+          "trial_dir": "<repo>/.scratch/research/chat-reasoning-replay/pier/batches/formal-xhigh-threeway-20261028/jobs/formal-xhigh-threeway-20261028--go-genai-streamed-function-args--r4--stravia-a1/go-genai-streamed-function-args__eKkSGPb"
+        },
+        {
+          "route": "sub2api",
+          "slot": 2,
+          "classification": "pass",
+          "reason": "reward",
+          "reward": 1.0,
+          "attempts": 2,
+          "agent_wall_seconds": 2778.124,
+          "trial_dir": "<repo>/.scratch/research/chat-reasoning-replay/pier/batches/formal-xhigh-threeway-20261028/jobs/formal-xhigh-threeway-20261028--go-genai-streamed-function-args--r4--sub2api-a2/go-genai-streamed-function-args__7M29gLv"
+        }
+      ]
+    },
+    {
+      "group_id": "numba-stencil-boundary-modes@r4",
+      "task": "numba-stencil-boundary-modes",
+      "round": 4,
+      "status": "void",
+      "voided_by_route": "sub2api",
+      "started_at": 1793182132.0183947,
+      "finished_at": 1793187895.2113044,
+      "wall_seconds": 5763.193,
+      "trials": [
+        {
+          "route": "cpa",
+          "slot": 0,
+          "classification": "void",
+          "reason": "group-void: retries-exhausted: sub2api 尝试 3 次仍失败（infra-error:infra:concurrency）",
+          "reward": 1.0,
+          "attempts": 1,
+          "agent_wall_seconds": 2960.349,
+          "trial_dir": "<repo>/.scratch/research/chat-reasoning-replay/pier/batches/formal-xhigh-threeway-20261028/jobs/formal-xhigh-threeway-20261028--numba-stencil-boundary-modes--r4--cpa-a1/numba-stencil-boundary-modes__mVfR8Fz"
+        },
+        {
+          "route": "stravia",
+          "slot": 1,
+          "classification": "void",
+          "reason": "group-void: retries-exhausted: sub2api 尝试 3 次仍失败（infra-error:infra:concurrency）",
+          "reward": 1.0,
+          "attempts": 1,
+          "agent_wall_seconds": 1113.822,
+          "trial_dir": "<repo>/.scratch/research/chat-reasoning-replay/pier/batches/formal-xhigh-threeway-20261028/jobs/formal-xhigh-threeway-20261028--numba-stencil-boundary-modes--r4--stravia-a1/numba-stencil-boundary-modes__dUjzAQw"
+        },
+        {
+          "route": "sub2api",
+          "slot": 2,
+          "classification": "void",
+          "reason": "group-void: retries-exhausted: sub2api 尝试 3 次仍失败（infra-error:infra:concurrency）",
+          "reward": 1.0,
+          "attempts": 3,
+          "agent_wall_seconds": 936.939,
+          "trial_dir": "<repo>/.scratch/research/chat-reasoning-replay/pier/batches/formal-xhigh-threeway-20261028/jobs/formal-xhigh-threeway-20261028--numba-stencil-boundary-modes--r4--sub2api-a3/numba-stencil-boundary-modes__yueTnqv"
+        }
+      ]
+    },
+    {
+      "group_id": "textual-richlog-follow-state@r4",
+      "task": "textual-richlog-follow-state",
+      "round": 4,
+      "status": "done",
+      "voided_by_route": null,
+      "started_at": 1793182216.3968594,
+      "finished_at": 1793185871.9890647,
+      "wall_seconds": 3655.592,
+      "trials": [
+        {
+          "route": "sub2api",
+          "slot": 0,
+          "classification": "fail",
+          "reason": "reward",
+          "reward": 0.0,
+          "attempts": 3,
+          "agent_wall_seconds": 2638.599,
+          "trial_dir": "<repo>/.scratch/research/chat-reasoning-replay/pier/batches/formal-xhigh-threeway-20261028/jobs/formal-xhigh-threeway-20261028--textual-richlog-follow-state--r4--sub2api-a3/textual-richlog-follow-state__N4FL4fx"
+        },
+        {
+          "route": "stravia",
+          "slot": 1,
+          "classification": "fail",
+          "reason": "reward",
+          "reward": 0.0,
+          "attempts": 1,
+          "agent_wall_seconds": 1183.112,
+          "trial_dir": "<repo>/.scratch/research/chat-reasoning-replay/pier/batches/formal-xhigh-threeway-20261028/jobs/formal-xhigh-threeway-20261028--textual-richlog-follow-state--r4--stravia-a1/textual-richlog-follow-state__8wmWp97"
+        },
+        {
+          "route": "cpa",
+          "slot": 2,
+          "classification": "fail",
+          "reason": "timed_out",
+          "reward": 1.0,
+          "attempts": 1,
+          "agent_wall_seconds": 3600.938,
+          "trial_dir": "<repo>/.scratch/research/chat-reasoning-replay/pier/batches/formal-xhigh-threeway-20261028/jobs/formal-xhigh-threeway-20261028--textual-richlog-follow-state--r4--cpa-a1/textual-richlog-follow-state__F5tJ3QY"
+        }
+      ]
+    },
+    {
+      "group_id": "ink-grid-box-layout@r2",
+      "task": "ink-grid-box-layout",
+      "round": 2,
+      "status": "done",
+      "voided_by_route": null,
+      "started_at": 1793182297.0319657,
+      "finished_at": 1793187220.9698298,
+      "wall_seconds": 4923.938,
+      "trials": [
+        {
+          "route": "sub2api",
+          "slot": 0,
+          "classification": "fail",
+          "reason": "reward",
+          "reward": 0.0,
+          "attempts": 3,
+          "agent_wall_seconds": 3155.501,
+          "trial_dir": "<repo>/.scratch/research/chat-reasoning-replay/pier/batches/formal-xhigh-threeway-20261028/jobs/formal-xhigh-threeway-20261028--ink-grid-box-layout--r2--sub2api-a3/ink-grid-box-layout__nFGJMDe"
+        },
+        {
+          "route": "stravia",
+          "slot": 1,
+          "classification": "pass",
+          "reason": "reward",
+          "reward": 1.0,
+          "attempts": 1,
+          "agent_wall_seconds": 1003.501,
+          "trial_dir": "<repo>/.scratch/research/chat-reasoning-replay/pier/batches/formal-xhigh-threeway-20261028/jobs/formal-xhigh-threeway-20261028--ink-grid-box-layout--r2--stravia-a1/ink-grid-box-layout__c7huihD"
+        },
+        {
+          "route": "cpa",
+          "slot": 2,
+          "classification": "fail",
+          "reason": "reward",
+          "reward": 0.0,
+          "attempts": 1,
+          "agent_wall_seconds": 3038.029,
+          "trial_dir": "<repo>/.scratch/research/chat-reasoning-replay/pier/batches/formal-xhigh-threeway-20261028/jobs/formal-xhigh-threeway-20261028--ink-grid-box-layout--r2--cpa-a1/ink-grid-box-layout__kCLghGi"
+        }
+      ]
+    },
+    {
+      "group_id": "wasmi-trap-coredumps@r2",
+      "task": "wasmi-trap-coredumps",
+      "round": 2,
+      "status": "done",
+      "voided_by_route": null,
+      "started_at": 1793182848.5697885,
+      "finished_at": 1793186516.5035872,
+      "wall_seconds": 3667.934,
+      "trials": [
+        {
+          "route": "cpa",
+          "slot": 0,
+          "classification": "fail",
+          "reason": "timed_out",
+          "reward": 0.0,
+          "attempts": 1,
+          "agent_wall_seconds": 3600.294,
+          "trial_dir": "<repo>/.scratch/research/chat-reasoning-replay/pier/batches/formal-xhigh-threeway-20261028/jobs/formal-xhigh-threeway-20261028--wasmi-trap-coredumps--r2--cpa-a1/wasmi-trap-coredumps__CYwLCTv"
+        },
+        {
+          "route": "sub2api",
+          "slot": 1,
+          "classification": "fail",
+          "reason": "timed_out",
+          "reward": 1.0,
+          "attempts": 1,
+          "agent_wall_seconds": 3600.416,
+          "trial_dir": "<repo>/.scratch/research/chat-reasoning-replay/pier/batches/formal-xhigh-threeway-20261028/jobs/formal-xhigh-threeway-20261028--wasmi-trap-coredumps--r2--sub2api-a1/wasmi-trap-coredumps__C6NjMQF"
+        },
+        {
+          "route": "stravia",
+          "slot": 2,
+          "classification": "fail",
+          "reason": "reward",
+          "reward": 0.0,
+          "attempts": 1,
+          "agent_wall_seconds": 2338.255,
+          "trial_dir": "<repo>/.scratch/research/chat-reasoning-replay/pier/batches/formal-xhigh-threeway-20261028/jobs/formal-xhigh-threeway-20261028--wasmi-trap-coredumps--r2--stravia-a1/wasmi-trap-coredumps__RHCrGqK"
+        }
+      ]
+    },
+    {
+      "group_id": "anko-default-function-arguments@r1",
+      "task": "anko-default-function-arguments",
+      "round": 1,
+      "status": "done",
+      "voided_by_route": null,
+      "started_at": 1793185871.993409,
+      "finished_at": 1793187698.3111548,
+      "wall_seconds": 1826.318,
+      "trials": [
+        {
+          "route": "cpa",
+          "slot": 0,
+          "classification": "fail",
+          "reason": "agent-error:other:None",
+          "reward": 0.0,
+          "attempts": 1,
+          "agent_wall_seconds": 1709.248,
+          "trial_dir": "<repo>/.scratch/research/chat-reasoning-replay/pier/batches/formal-xhigh-threeway-20261028/jobs/formal-xhigh-threeway-20261028--anko-default-function-arguments--r1--cpa-a1/anko-default-function-arguments__8Um5mGL"
+        },
+        {
+          "route": "sub2api",
+          "slot": 1,
+          "classification": "fail",
+          "reason": "agent-error:other:None",
+          "reward": 1.0,
+          "attempts": 1,
+          "agent_wall_seconds": 1707.898,
+          "trial_dir": "<repo>/.scratch/research/chat-reasoning-replay/pier/batches/formal-xhigh-threeway-20261028/jobs/formal-xhigh-threeway-20261028--anko-default-function-arguments--r1--sub2api-a1/anko-default-function-arguments__bE3WP8S"
+        },
+        {
+          "route": "stravia",
+          "slot": 2,
+          "classification": "fail",
+          "reason": "agent-error:other:None",
+          "reward": 1.0,
+          "attempts": 1,
+          "agent_wall_seconds": 663.322,
+          "trial_dir": "<repo>/.scratch/research/chat-reasoning-replay/pier/batches/formal-xhigh-threeway-20261028/jobs/formal-xhigh-threeway-20261028--anko-default-function-arguments--r1--stravia-a1/anko-default-function-arguments__yTHrNaY"
+        }
+      ]
+    },
+    {
+      "group_id": "anko-default-function-arguments@r4",
+      "task": "anko-default-function-arguments",
+      "round": 4,
+      "status": "done",
+      "voided_by_route": null,
+      "started_at": 1793186516.5378585,
+      "finished_at": 1793191377.1449924,
+      "wall_seconds": 4860.607,
+      "trials": [
+        {
+          "route": "cpa",
+          "slot": 0,
+          "classification": "fail",
+          "reason": "timed_out",
+          "reward": 0.0,
+          "attempts": 2,
+          "agent_wall_seconds": 3600.351,
+          "trial_dir": "<repo>/.scratch/research/chat-reasoning-replay/pier/batches/formal-xhigh-threeway-20261028/jobs/formal-xhigh-threeway-20261028--anko-default-function-arguments--r4--cpa-a2/anko-default-function-arguments__g9ubnTs"
+        },
+        {
+          "route": "stravia",
+          "slot": 1,
+          "classification": "pass",
+          "reason": "reward",
+          "reward": 1.0,
+          "attempts": 1,
+          "agent_wall_seconds": 691.345,
+          "trial_dir": "<repo>/.scratch/research/chat-reasoning-replay/pier/batches/formal-xhigh-threeway-20261028/jobs/formal-xhigh-threeway-20261028--anko-default-function-arguments--r4--stravia-a1/anko-default-function-arguments__N4ZzmPr"
+        },
+        {
+          "route": "sub2api",
+          "slot": 2,
+          "classification": "fail",
+          "reason": "agent-error:other:None",
+          "reward": 0.0,
+          "attempts": 1,
+          "agent_wall_seconds": 1042.092,
+          "trial_dir": "<repo>/.scratch/research/chat-reasoning-replay/pier/batches/formal-xhigh-threeway-20261028/jobs/formal-xhigh-threeway-20261028--anko-default-function-arguments--r4--sub2api-a1/anko-default-function-arguments__hei94LJ"
+        }
+      ]
+    },
+    {
+      "group_id": "gql-incremental-graphql-delivery@r1",
+      "task": "gql-incremental-graphql-delivery",
+      "round": 1,
+      "status": "done",
+      "voided_by_route": null,
+      "started_at": 1793186570.0567398,
+      "finished_at": 1793187835.5121205,
+      "wall_seconds": 1265.455,
+      "trials": [
+        {
+          "route": "sub2api",
+          "slot": 0,
+          "classification": "fail",
+          "reason": "agent-error:other:None",
+          "reward": 0.0,
+          "attempts": 2,
+          "agent_wall_seconds": 150.89,
+          "trial_dir": "<repo>/.scratch/research/chat-reasoning-replay/pier/batches/formal-xhigh-threeway-20261028/jobs/formal-xhigh-threeway-20261028--gql-incremental-graphql-delivery--r1--sub2api-a2/gql-incremental-graphql-delivery__BJjedVt"
+        },
+        {
+          "route": "stravia",
+          "slot": 1,
+          "classification": "fail",
+          "reason": "reward",
+          "reward": 0.0,
+          "attempts": 1,
+          "agent_wall_seconds": 1188.673,
+          "trial_dir": "<repo>/.scratch/research/chat-reasoning-replay/pier/batches/formal-xhigh-threeway-20261028/jobs/formal-xhigh-threeway-20261028--gql-incremental-graphql-delivery--r1--stravia-a1/gql-incremental-graphql-delivery__Zh4ctP6"
+        },
+        {
+          "route": "cpa",
+          "slot": 2,
+          "classification": "fail",
+          "reason": "agent-error:other:None",
+          "reward": 0.0,
+          "attempts": 1,
+          "agent_wall_seconds": 1017.688,
+          "trial_dir": "<repo>/.scratch/research/chat-reasoning-replay/pier/batches/formal-xhigh-threeway-20261028/jobs/formal-xhigh-threeway-20261028--gql-incremental-graphql-delivery--r1--cpa-a1/gql-incremental-graphql-delivery__LhHg3QM"
+        }
+      ]
+    },
+    {
+      "group_id": "wasmi-trap-coredumps@r1",
+      "task": "wasmi-trap-coredumps",
+      "round": 1,
+      "status": "done",
+      "voided_by_route": null,
+      "started_at": 1793187220.975882,
+      "finished_at": 1793190894.844994,
+      "wall_seconds": 3673.869,
+      "trials": [
+        {
+          "route": "cpa",
+          "slot": 0,
+          "classification": "fail",
+          "reason": "agent-error:other:None",
+          "reward": 0.0,
+          "attempts": 1,
+          "agent_wall_seconds": 340.94,
+          "trial_dir": "<repo>/.scratch/research/chat-reasoning-replay/pier/batches/formal-xhigh-threeway-20261028/jobs/formal-xhigh-threeway-20261028--wasmi-trap-coredumps--r1--cpa-a1/wasmi-trap-coredumps__QcHUKo6"
+        },
+        {
+          "route": "stravia",
+          "slot": 1,
+          "classification": "fail",
+          "reason": "timed_out",
+          "reward": 1.0,
+          "attempts": 1,
+          "agent_wall_seconds": 3602.073,
+          "trial_dir": "<repo>/.scratch/research/chat-reasoning-replay/pier/batches/formal-xhigh-threeway-20261028/jobs/formal-xhigh-threeway-20261028--wasmi-trap-coredumps--r1--stravia-a1/wasmi-trap-coredumps__Ei6jwyY"
+        },
+        {
+          "route": "sub2api",
+          "slot": 2,
+          "classification": "fail",
+          "reason": "agent-error:other:None",
+          "reward": 0.0,
+          "attempts": 1,
+          "agent_wall_seconds": 341.235,
+          "trial_dir": "<repo>/.scratch/research/chat-reasoning-replay/pier/batches/formal-xhigh-threeway-20261028/jobs/formal-xhigh-threeway-20261028--wasmi-trap-coredumps--r1--sub2api-a1/wasmi-trap-coredumps__BLT3Fux"
+        }
+      ]
+    },
+    {
+      "group_id": "kea-atomic-signal-selectors@r1",
+      "task": "kea-atomic-signal-selectors",
+      "round": 1,
+      "status": "done",
+      "voided_by_route": null,
+      "started_at": 1793187698.328174,
+      "finished_at": 1793191362.888482,
+      "wall_seconds": 3664.56,
+      "trials": [
+        {
+          "route": "cpa",
+          "slot": 0,
+          "classification": "fail",
+          "reason": "timed_out",
+          "reward": 0.0,
+          "attempts": 1,
+          "agent_wall_seconds": 3600.38,
+          "trial_dir": "<repo>/.scratch/research/chat-reasoning-replay/pier/batches/formal-xhigh-threeway-20261028/jobs/formal-xhigh-threeway-20261028--kea-atomic-signal-selectors--r1--cpa-a1/kea-atomic-signal-selectors__pRJHFxV"
+        },
+        {
+          "route": "stravia",
+          "slot": 1,
+          "classification": "fail",
+          "reason": "reward",
+          "reward": 0.0,
+          "attempts": 1,
+          "agent_wall_seconds": 1378.872,
+          "trial_dir": "<repo>/.scratch/research/chat-reasoning-replay/pier/batches/formal-xhigh-threeway-20261028/jobs/formal-xhigh-threeway-20261028--kea-atomic-signal-selectors--r1--stravia-a1/kea-atomic-signal-selectors__nBaWFVu"
+        },
+        {
+          "route": "sub2api",
+          "slot": 2,
+          "classification": "fail",
+          "reason": "agent-error:other:None",
+          "reward": 0.0,
+          "attempts": 1,
+          "agent_wall_seconds": 2397.2,
+          "trial_dir": "<repo>/.scratch/research/chat-reasoning-replay/pier/batches/formal-xhigh-threeway-20261028/jobs/formal-xhigh-threeway-20261028--kea-atomic-signal-selectors--r1--sub2api-a1/kea-atomic-signal-selectors__BtkDcio"
+        }
+      ]
+    },
+    {
+      "group_id": "wasmi-trap-coredumps@r4",
+      "task": "wasmi-trap-coredumps",
+      "round": 4,
+      "status": "done",
+      "voided_by_route": null,
+      "started_at": 1793187835.5223145,
+      "finished_at": 1793191503.9994593,
+      "wall_seconds": 3668.477,
+      "trials": [
+        {
+          "route": "stravia",
+          "slot": 0,
+          "classification": "pass",
+          "reason": "reward",
+          "reward": 1.0,
+          "attempts": 1,
+          "agent_wall_seconds": 3494.182,
+          "trial_dir": "<repo>/.scratch/research/chat-reasoning-replay/pier/batches/formal-xhigh-threeway-20261028/jobs/formal-xhigh-threeway-20261028--wasmi-trap-coredumps--r4--stravia-a1/wasmi-trap-coredumps__z9ZjeeT"
+        },
+        {
+          "route": "cpa",
+          "slot": 1,
+          "classification": "fail",
+          "reason": "timed_out",
+          "reward": 0.0,
+          "attempts": 1,
+          "agent_wall_seconds": 3600.587,
+          "trial_dir": "<repo>/.scratch/research/chat-reasoning-replay/pier/batches/formal-xhigh-threeway-20261028/jobs/formal-xhigh-threeway-20261028--wasmi-trap-coredumps--r4--cpa-a1/wasmi-trap-coredumps__PKkXX87"
+        },
+        {
+          "route": "sub2api",
+          "slot": 2,
+          "classification": "fail",
+          "reason": "timed_out",
+          "reward": 0.0,
+          "attempts": 1,
+          "agent_wall_seconds": 3602.337,
+          "trial_dir": "<repo>/.scratch/research/chat-reasoning-replay/pier/batches/formal-xhigh-threeway-20261028/jobs/formal-xhigh-threeway-20261028--wasmi-trap-coredumps--r4--sub2api-a1/wasmi-trap-coredumps__UohRAV2"
+        }
+      ]
+    },
+    {
+      "group_id": "narwhals-rolling-window-suite@r1",
+      "task": "narwhals-rolling-window-suite",
+      "round": 1,
+      "status": "done",
+      "voided_by_route": null,
+      "started_at": 1793187895.221949,
+      "finished_at": 1793191632.5841658,
+      "wall_seconds": 3737.362,
+      "trials": [
+        {
+          "route": "cpa",
+          "slot": 0,
+          "classification": "fail",
+          "reason": "timed_out",
+          "reward": 1.0,
+          "attempts": 1,
+          "agent_wall_seconds": 3606.38,
+          "trial_dir": "<repo>/.scratch/research/chat-reasoning-replay/pier/batches/formal-xhigh-threeway-20261028/jobs/formal-xhigh-threeway-20261028--narwhals-rolling-window-suite--r1--cpa-a1/narwhals-rolling-window-suite__qrAzYV6"
+        },
+        {
+          "route": "stravia",
+          "slot": 1,
+          "classification": "pass",
+          "reason": "reward",
+          "reward": 1.0,
+          "attempts": 1,
+          "agent_wall_seconds": 1288.062,
+          "trial_dir": "<repo>/.scratch/research/chat-reasoning-replay/pier/batches/formal-xhigh-threeway-20261028/jobs/formal-xhigh-threeway-20261028--narwhals-rolling-window-suite--r1--stravia-a1/narwhals-rolling-window-suite__P8wpmdh"
+        },
+        {
+          "route": "sub2api",
+          "slot": 2,
+          "classification": "pass",
+          "reason": "reward",
+          "reward": 1.0,
+          "attempts": 1,
+          "agent_wall_seconds": 2849.499,
+          "trial_dir": "<repo>/.scratch/research/chat-reasoning-replay/pier/batches/formal-xhigh-threeway-20261028/jobs/formal-xhigh-threeway-20261028--narwhals-rolling-window-suite--r1--sub2api-a1/narwhals-rolling-window-suite__v6a6x7G"
+        }
+      ]
+    },
+    {
+      "group_id": "go-genai-streamed-function-args@r2",
+      "task": "go-genai-streamed-function-args",
+      "round": 2,
+      "status": "done",
+      "voided_by_route": null,
+      "started_at": 1793190894.850513,
+      "finished_at": 1793194559.3630104,
+      "wall_seconds": 3664.512,
+      "trials": [
+        {
+          "route": "sub2api",
+          "slot": 0,
+          "classification": "pass",
+          "reason": "reward",
+          "reward": 1.0,
+          "attempts": 1,
+          "agent_wall_seconds": 2769.962,
+          "trial_dir": "<repo>/.scratch/research/chat-reasoning-replay/pier/batches/formal-xhigh-threeway-20261028/jobs/formal-xhigh-threeway-20261028--go-genai-streamed-function-args--r2--sub2api-a1/go-genai-streamed-function-args__cruF2Fj"
+        },
+        {
+          "route": "stravia",
+          "slot": 1,
+          "classification": "fail",
+          "reason": "reward",
+          "reward": 0.0,
+          "attempts": 1,
+          "agent_wall_seconds": 752.683,
+          "trial_dir": "<repo>/.scratch/research/chat-reasoning-replay/pier/batches/formal-xhigh-threeway-20261028/jobs/formal-xhigh-threeway-20261028--go-genai-streamed-function-args--r2--stravia-a1/go-genai-streamed-function-args__h9TKGFh"
+        },
+        {
+          "route": "cpa",
+          "slot": 2,
+          "classification": "fail",
+          "reason": "timed_out",
+          "reward": 1.0,
+          "attempts": 1,
+          "agent_wall_seconds": 3600.366,
+          "trial_dir": "<repo>/.scratch/research/chat-reasoning-replay/pier/batches/formal-xhigh-threeway-20261028/jobs/formal-xhigh-threeway-20261028--go-genai-streamed-function-args--r2--cpa-a1/go-genai-streamed-function-args__huXHeqv"
+        }
+      ]
+    },
+    {
+      "group_id": "meriyah-explicit-resource-declarations@r1",
+      "task": "meriyah-explicit-resource-declarations",
+      "round": 1,
+      "status": "done",
+      "voided_by_route": null,
+      "started_at": 1793191362.8980484,
+      "finished_at": 1793195059.1971574,
+      "wall_seconds": 3696.299,
+      "trials": [
+        {
+          "route": "cpa",
+          "slot": 0,
+          "classification": "fail",
+          "reason": "timed_out",
+          "reward": 0.0,
+          "attempts": 1,
+          "agent_wall_seconds": 3601.819,
+          "trial_dir": "<repo>/.scratch/research/chat-reasoning-replay/pier/batches/formal-xhigh-threeway-20261028/jobs/formal-xhigh-threeway-20261028--meriyah-explicit-resource-declarations--r1--cpa-a1/meriyah-explicit-resource-declar__5ir5YHj"
+        },
+        {
+          "route": "sub2api",
+          "slot": 1,
+          "classification": "fail",
+          "reason": "reward",
+          "reward": 0.0,
+          "attempts": 1,
+          "agent_wall_seconds": 2652.877,
+          "trial_dir": "<repo>/.scratch/research/chat-reasoning-replay/pier/batches/formal-xhigh-threeway-20261028/jobs/formal-xhigh-threeway-20261028--meriyah-explicit-resource-declarations--r1--sub2api-a1/meriyah-explicit-resource-declar__9Qi2jFj"
+        },
+        {
+          "route": "stravia",
+          "slot": 2,
+          "classification": "pass",
+          "reason": "reward",
+          "reward": 1.0,
+          "attempts": 1,
+          "agent_wall_seconds": 895.682,
+          "trial_dir": "<repo>/.scratch/research/chat-reasoning-replay/pier/batches/formal-xhigh-threeway-20261028/jobs/formal-xhigh-threeway-20261028--meriyah-explicit-resource-declarations--r1--stravia-a1/meriyah-explicit-resource-declar__iGruuYK"
+        }
+      ]
+    },
+    {
+      "group_id": "koota-composite-trait-aspects@r4",
+      "task": "koota-composite-trait-aspects",
+      "round": 4,
+      "status": "done",
+      "voided_by_route": null,
+      "started_at": 1793191377.2280326,
+      "finished_at": 1793195042.1816044,
+      "wall_seconds": 3664.954,
+      "trials": [
+        {
+          "route": "stravia",
+          "slot": 0,
+          "classification": "pass",
+          "reason": "reward",
+          "reward": 1.0,
+          "attempts": 1,
+          "agent_wall_seconds": 3401.89,
+          "trial_dir": "<repo>/.scratch/research/chat-reasoning-replay/pier/batches/formal-xhigh-threeway-20261028/jobs/formal-xhigh-threeway-20261028--koota-composite-trait-aspects--r4--stravia-a1/koota-composite-trait-aspects__tcSATBi"
+        },
+        {
+          "route": "cpa",
+          "slot": 1,
+          "classification": "fail",
+          "reason": "timed_out",
+          "reward": 0.0,
+          "attempts": 1,
+          "agent_wall_seconds": 3600.314,
+          "trial_dir": "<repo>/.scratch/research/chat-reasoning-replay/pier/batches/formal-xhigh-threeway-20261028/jobs/formal-xhigh-threeway-20261028--koota-composite-trait-aspects--r4--cpa-a1/koota-composite-trait-aspects__bptrW4E"
+        },
+        {
+          "route": "sub2api",
+          "slot": 2,
+          "classification": "fail",
+          "reason": "timed_out",
+          "reward": 0.0,
+          "attempts": 1,
+          "agent_wall_seconds": 3600.447,
+          "trial_dir": "<repo>/.scratch/research/chat-reasoning-replay/pier/batches/formal-xhigh-threeway-20261028/jobs/formal-xhigh-threeway-20261028--koota-composite-trait-aspects--r4--sub2api-a1/koota-composite-trait-aspects__VkKACiW"
+        }
+      ]
+    },
+    {
+      "group_id": "happy-dom-deterministic-intersectionobserver@r1",
+      "task": "happy-dom-deterministic-intersectionobserver",
+      "round": 1,
+      "status": "done",
+      "voided_by_route": null,
+      "started_at": 1793191504.003304,
+      "finished_at": 1793193077.4806662,
+      "wall_seconds": 1573.477,
+      "trials": [
+        {
+          "route": "stravia",
+          "slot": 0,
+          "classification": "pass",
+          "reason": "reward",
+          "reward": 1.0,
+          "attempts": 1,
+          "agent_wall_seconds": 498.269,
+          "trial_dir": "<repo>/.scratch/research/chat-reasoning-replay/pier/batches/formal-xhigh-threeway-20261028/jobs/formal-xhigh-threeway-20261028--happy-dom-deterministic-intersectionobserver--r1--stravia-a1/happy-dom-deterministic-intersec__c5AK3os"
+        },
+        {
+          "route": "sub2api",
+          "slot": 1,
+          "classification": "fail",
+          "reason": "reward",
+          "reward": 0.0,
+          "attempts": 1,
+          "agent_wall_seconds": 1341.433,
+          "trial_dir": "<repo>/.scratch/research/chat-reasoning-replay/pier/batches/formal-xhigh-threeway-20261028/jobs/formal-xhigh-threeway-20261028--happy-dom-deterministic-intersectionobserver--r1--sub2api-a1/happy-dom-deterministic-intersec__MGtSrYo"
+        },
+        {
+          "route": "cpa",
+          "slot": 2,
+          "classification": "fail",
+          "reason": "reward",
+          "reward": 0.0,
+          "attempts": 1,
+          "agent_wall_seconds": 1528.352,
+          "trial_dir": "<repo>/.scratch/research/chat-reasoning-replay/pier/batches/formal-xhigh-threeway-20261028/jobs/formal-xhigh-threeway-20261028--happy-dom-deterministic-intersectionobserver--r1--cpa-a1/happy-dom-deterministic-intersec__VQ9nJ2D"
+        }
+      ]
+    },
+    {
+      "group_id": "textual-richlog-follow-state@r2",
+      "task": "textual-richlog-follow-state",
+      "round": 2,
+      "status": "done",
+      "voided_by_route": null,
+      "started_at": 1793191632.587816,
+      "finished_at": 1793195300.8646564,
+      "wall_seconds": 3668.277,
+      "trials": [
+        {
+          "route": "cpa",
+          "slot": 0,
+          "classification": "fail",
+          "reason": "timed_out",
+          "reward": 0.0,
+          "attempts": 1,
+          "agent_wall_seconds": 3600.239,
+          "trial_dir": "<repo>/.scratch/research/chat-reasoning-replay/pier/batches/formal-xhigh-threeway-20261028/jobs/formal-xhigh-threeway-20261028--textual-richlog-follow-state--r2--cpa-a1/textual-richlog-follow-state__Q2gW3xT"
+        },
+        {
+          "route": "sub2api",
+          "slot": 1,
+          "classification": "fail",
+          "reason": "agent-error:other:None",
+          "reward": 0.0,
+          "attempts": 1,
+          "agent_wall_seconds": 2621.887,
+          "trial_dir": "<repo>/.scratch/research/chat-reasoning-replay/pier/batches/formal-xhigh-threeway-20261028/jobs/formal-xhigh-threeway-20261028--textual-richlog-follow-state--r2--sub2api-a1/textual-richlog-follow-state__TNNxhkZ"
+        },
+        {
+          "route": "stravia",
+          "slot": 2,
+          "classification": "pass",
+          "reason": "reward",
+          "reward": 1.0,
+          "attempts": 1,
+          "agent_wall_seconds": 921.034,
+          "trial_dir": "<repo>/.scratch/research/chat-reasoning-replay/pier/batches/formal-xhigh-threeway-20261028/jobs/formal-xhigh-threeway-20261028--textual-richlog-follow-state--r2--stravia-a1/textual-richlog-follow-state__ywp9Zvf"
+        }
+      ]
+    },
+    {
+      "group_id": "happy-dom-deterministic-intersectionobserver@r3",
+      "task": "happy-dom-deterministic-intersectionobserver",
+      "round": 3,
+      "status": "done",
+      "voided_by_route": null,
+      "started_at": 1793193077.4841063,
+      "finished_at": 1793194313.9441736,
+      "wall_seconds": 1236.46,
+      "trials": [
+        {
+          "route": "stravia",
+          "slot": 0,
+          "classification": "pass",
+          "reason": "reward",
+          "reward": 1.0,
+          "attempts": 1,
+          "agent_wall_seconds": 955.161,
+          "trial_dir": "<repo>/.scratch/research/chat-reasoning-replay/pier/batches/formal-xhigh-threeway-20261028/jobs/formal-xhigh-threeway-20261028--happy-dom-deterministic-intersectionobserver--r3--stravia-a1/happy-dom-deterministic-intersec__PkaexLe"
+        },
+        {
+          "route": "cpa",
+          "slot": 1,
+          "classification": "pass",
+          "reason": "reward",
+          "reward": 1.0,
+          "attempts": 1,
+          "agent_wall_seconds": 1187.529,
+          "trial_dir": "<repo>/.scratch/research/chat-reasoning-replay/pier/batches/formal-xhigh-threeway-20261028/jobs/formal-xhigh-threeway-20261028--happy-dom-deterministic-intersectionobserver--r3--cpa-a1/happy-dom-deterministic-intersec__ZMBJ862"
+        },
+        {
+          "route": "sub2api",
+          "slot": 2,
+          "classification": "fail",
+          "reason": "reward",
+          "reward": 0.0,
+          "attempts": 1,
+          "agent_wall_seconds": 1013.909,
+          "trial_dir": "<repo>/.scratch/research/chat-reasoning-replay/pier/batches/formal-xhigh-threeway-20261028/jobs/formal-xhigh-threeway-20261028--happy-dom-deterministic-intersectionobserver--r3--sub2api-a1/happy-dom-deterministic-intersec__HNZKYmv"
+        }
+      ]
+    },
+    {
+      "group_id": "numba-stencil-boundary-modes@r3",
+      "task": "numba-stencil-boundary-modes",
+      "round": 3,
+      "status": "done",
+      "voided_by_route": null,
+      "started_at": 1793194313.9522476,
+      "finished_at": 1793198163.7936006,
+      "wall_seconds": 3849.841,
+      "trials": [
+        {
+          "route": "cpa",
+          "slot": 0,
+          "classification": "fail",
+          "reason": "timed_out",
+          "reward": 1.0,
+          "attempts": 1,
+          "agent_wall_seconds": 3600.194,
+          "trial_dir": "<repo>/.scratch/research/chat-reasoning-replay/pier/batches/formal-xhigh-threeway-20261028/jobs/formal-xhigh-threeway-20261028--numba-stencil-boundary-modes--r3--cpa-a1/numba-stencil-boundary-modes__L4MpWyn"
+        },
+        {
+          "route": "sub2api",
+          "slot": 1,
+          "classification": "fail",
+          "reason": "timed_out",
+          "reward": 1.0,
+          "attempts": 1,
+          "agent_wall_seconds": 3600.32,
+          "trial_dir": "<repo>/.scratch/research/chat-reasoning-replay/pier/batches/formal-xhigh-threeway-20261028/jobs/formal-xhigh-threeway-20261028--numba-stencil-boundary-modes--r3--sub2api-a1/numba-stencil-boundary-modes__giBP6Y7"
+        },
+        {
+          "route": "stravia",
+          "slot": 2,
+          "classification": "pass",
+          "reason": "reward",
+          "reward": 1.0,
+          "attempts": 1,
+          "agent_wall_seconds": 1369.791,
+          "trial_dir": "<repo>/.scratch/research/chat-reasoning-replay/pier/batches/formal-xhigh-threeway-20261028/jobs/formal-xhigh-threeway-20261028--numba-stencil-boundary-modes--r3--stravia-a1/numba-stencil-boundary-modes__Tc7CxhD"
+        }
+      ]
+    },
+    {
+      "group_id": "kombu-single-active-consumer-priority@r4",
+      "task": "kombu-single-active-consumer-priority",
+      "round": 4,
+      "status": "done",
+      "voided_by_route": null,
+      "started_at": 1793194559.3673096,
+      "finished_at": 1793197331.0085073,
+      "wall_seconds": 2771.641,
+      "trials": [
+        {
+          "route": "stravia",
+          "slot": 0,
+          "classification": "pass",
+          "reason": "reward",
+          "reward": 1.0,
+          "attempts": 1,
+          "agent_wall_seconds": 1189.646,
+          "trial_dir": "<repo>/.scratch/research/chat-reasoning-replay/pier/batches/formal-xhigh-threeway-20261028/jobs/formal-xhigh-threeway-20261028--kombu-single-active-consumer-priority--r4--stravia-a1/kombu-single-active-consumer-pri__xdyvQqo"
+        },
+        {
+          "route": "cpa",
+          "slot": 1,
+          "classification": "pass",
+          "reason": "reward",
+          "reward": 1.0,
+          "attempts": 1,
+          "agent_wall_seconds": 2230.1,
+          "trial_dir": "<repo>/.scratch/research/chat-reasoning-replay/pier/batches/formal-xhigh-threeway-20261028/jobs/formal-xhigh-threeway-20261028--kombu-single-active-consumer-priority--r4--cpa-a1/kombu-single-active-consumer-pri__pKeQgoG"
+        },
+        {
+          "route": "sub2api",
+          "slot": 2,
+          "classification": "pass",
+          "reason": "reward",
+          "reward": 1.0,
+          "attempts": 1,
+          "agent_wall_seconds": 2704.149,
+          "trial_dir": "<repo>/.scratch/research/chat-reasoning-replay/pier/batches/formal-xhigh-threeway-20261028/jobs/formal-xhigh-threeway-20261028--kombu-single-active-consumer-priority--r4--sub2api-a1/kombu-single-active-consumer-pri__gHUmEUX"
+        }
+      ]
+    },
+    {
+      "group_id": "kea-atomic-signal-selectors@r3",
+      "task": "kea-atomic-signal-selectors",
+      "round": 3,
+      "status": "done",
+      "voided_by_route": null,
+      "started_at": 1793195042.1850863,
+      "finished_at": 1793198685.0382435,
+      "wall_seconds": 3642.853,
+      "trials": [
+        {
+          "route": "sub2api",
+          "slot": 0,
+          "classification": "fail",
+          "reason": "agent-error:other:None",
+          "reward": 1.0,
+          "attempts": 1,
+          "agent_wall_seconds": 1369.1,
+          "trial_dir": "<repo>/.scratch/research/chat-reasoning-replay/pier/batches/formal-xhigh-threeway-20261028/jobs/formal-xhigh-threeway-20261028--kea-atomic-signal-selectors--r3--sub2api-a1/kea-atomic-signal-selectors__HXuABDP"
+        },
+        {
+          "route": "cpa",
+          "slot": 1,
+          "classification": "fail",
+          "reason": "timed_out",
+          "reward": 0.0,
+          "attempts": 1,
+          "agent_wall_seconds": 3600.481,
+          "trial_dir": "<repo>/.scratch/research/chat-reasoning-replay/pier/batches/formal-xhigh-threeway-20261028/jobs/formal-xhigh-threeway-20261028--kea-atomic-signal-selectors--r3--cpa-a1/kea-atomic-signal-selectors__LnKGtse"
+        },
+        {
+          "route": "stravia",
+          "slot": 2,
+          "classification": "fail",
+          "reason": "reward",
+          "reward": 0.0,
+          "attempts": 1,
+          "agent_wall_seconds": 1330.193,
+          "trial_dir": "<repo>/.scratch/research/chat-reasoning-replay/pier/batches/formal-xhigh-threeway-20261028/jobs/formal-xhigh-threeway-20261028--kea-atomic-signal-selectors--r3--stravia-a1/kea-atomic-signal-selectors__NAEB6nQ"
+        }
+      ]
+    },
+    {
+      "group_id": "happy-dom-deterministic-intersectionobserver@r2",
+      "task": "happy-dom-deterministic-intersectionobserver",
+      "round": 2,
+      "status": "done",
+      "voided_by_route": null,
+      "started_at": 1793195059.2954385,
+      "finished_at": 1793196636.560311,
+      "wall_seconds": 1577.265,
+      "trials": [
+        {
+          "route": "stravia",
+          "slot": 0,
+          "classification": "fail",
+          "reason": "reward",
+          "reward": 0.0,
+          "attempts": 1,
+          "agent_wall_seconds": 1355.653,
+          "trial_dir": "<repo>/.scratch/research/chat-reasoning-replay/pier/batches/formal-xhigh-threeway-20261028/jobs/formal-xhigh-threeway-20261028--happy-dom-deterministic-intersectionobserver--r2--stravia-a1/happy-dom-deterministic-intersec__MoPNSPJ"
+        },
+        {
+          "route": "sub2api",
+          "slot": 1,
+          "classification": "fail",
+          "reason": "agent-error:other:None",
+          "reward": 0.0,
+          "attempts": 1,
+          "agent_wall_seconds": 1224.886,
+          "trial_dir": "<repo>/.scratch/research/chat-reasoning-replay/pier/batches/formal-xhigh-threeway-20261028/jobs/formal-xhigh-threeway-20261028--happy-dom-deterministic-intersectionobserver--r2--sub2api-a1/happy-dom-deterministic-intersec__UNLnrW3"
+        },
+        {
+          "route": "cpa",
+          "slot": 2,
+          "classification": "fail",
+          "reason": "reward",
+          "reward": 0.0,
+          "attempts": 1,
+          "agent_wall_seconds": 1518.794,
+          "trial_dir": "<repo>/.scratch/research/chat-reasoning-replay/pier/batches/formal-xhigh-threeway-20261028/jobs/formal-xhigh-threeway-20261028--happy-dom-deterministic-intersectionobserver--r2--cpa-a1/happy-dom-deterministic-intersec__xXrDvkr"
+        }
+      ]
+    },
+    {
+      "group_id": "meriyah-explicit-resource-declarations@r4",
+      "task": "meriyah-explicit-resource-declarations",
+      "round": 4,
+      "status": "done",
+      "voided_by_route": null,
+      "started_at": 1793195300.8747523,
+      "finished_at": 1793198713.4134302,
+      "wall_seconds": 3412.539,
+      "trials": [
+        {
+          "route": "cpa",
+          "slot": 0,
+          "classification": "fail",
+          "reason": "agent-error:other:None",
+          "reward": 0.0,
+          "attempts": 1,
+          "agent_wall_seconds": 830.061,
+          "trial_dir": "<repo>/.scratch/research/chat-reasoning-replay/pier/batches/formal-xhigh-threeway-20261028/jobs/formal-xhigh-threeway-20261028--meriyah-explicit-resource-declarations--r4--cpa-a1/meriyah-explicit-resource-declar__CMGnNEH"
+        },
+        {
+          "route": "stravia",
+          "slot": 1,
+          "classification": "pass",
+          "reason": "reward",
+          "reward": 1.0,
+          "attempts": 1,
+          "agent_wall_seconds": 1315.386,
+          "trial_dir": "<repo>/.scratch/research/chat-reasoning-replay/pier/batches/formal-xhigh-threeway-20261028/jobs/formal-xhigh-threeway-20261028--meriyah-explicit-resource-declarations--r4--stravia-a1/meriyah-explicit-resource-declar__oeCFhtp"
+        },
+        {
+          "route": "sub2api",
+          "slot": 2,
+          "classification": "pass",
+          "reason": "reward",
+          "reward": 1.0,
+          "attempts": 1,
+          "agent_wall_seconds": 3333.923,
+          "trial_dir": "<repo>/.scratch/research/chat-reasoning-replay/pier/batches/formal-xhigh-threeway-20261028/jobs/formal-xhigh-threeway-20261028--meriyah-explicit-resource-declarations--r4--sub2api-a1/meriyah-explicit-resource-declar__V9pTQLd"
+        }
+      ]
+    },
+    {
+      "group_id": "cliffy-config-file-parsing@r1",
+      "task": "cliffy-config-file-parsing",
+      "round": 1,
+      "status": "void",
+      "voided_by_route": "sub2api",
+      "started_at": 1793196636.5760994,
+      "finished_at": 1793200291.3977802,
+      "wall_seconds": 3654.822,
+      "trials": [
+        {
+          "route": "cpa",
+          "slot": 0,
+          "classification": "void",
+          "reason": "group-void: retries-exhausted: sub2api 尝试 3 次仍失败（infra-error:infra:concurrency）",
+          "reward": 1.0,
+          "attempts": 1,
+          "agent_wall_seconds": 3600.387,
+          "trial_dir": "<repo>/.scratch/research/chat-reasoning-replay/pier/batches/formal-xhigh-threeway-20261028/jobs/formal-xhigh-threeway-20261028--cliffy-config-file-parsing--r1--cpa-a1/cliffy-config-file-parsing__7ksvpht"
+        },
+        {
+          "route": "stravia",
+          "slot": 1,
+          "classification": "void",
+          "reason": "group-void: retries-exhausted: sub2api 尝试 3 次仍失败（infra-error:infra:concurrency）",
+          "reward": 0.0,
+          "attempts": 1,
+          "agent_wall_seconds": 1361.991,
+          "trial_dir": "<repo>/.scratch/research/chat-reasoning-replay/pier/batches/formal-xhigh-threeway-20261028/jobs/formal-xhigh-threeway-20261028--cliffy-config-file-parsing--r1--stravia-a1/cliffy-config-file-parsing__V3GkpPF"
+        },
+        {
+          "route": "sub2api",
+          "slot": 2,
+          "classification": "void",
+          "reason": "group-void: retries-exhausted: sub2api 尝试 3 次仍失败（infra-error:infra:concurrency）",
+          "reward": 0.0,
+          "attempts": 3,
+          "agent_wall_seconds": 31.406,
+          "trial_dir": "<repo>/.scratch/research/chat-reasoning-replay/pier/batches/formal-xhigh-threeway-20261028/jobs/formal-xhigh-threeway-20261028--cliffy-config-file-parsing--r1--sub2api-a3/cliffy-config-file-parsing__D3iqQQ3"
+        }
+      ]
+    },
+    {
+      "group_id": "mnamer-daemon-watch-lifecycle@r3",
+      "task": "mnamer-daemon-watch-lifecycle",
+      "round": 3,
+      "status": "done",
+      "voided_by_route": null,
+      "started_at": 1793197331.0119314,
+      "finished_at": 1793199666.6229022,
+      "wall_seconds": 2335.611,
+      "trials": [
+        {
+          "route": "cpa",
+          "slot": 0,
+          "classification": "fail",
+          "reason": "reward",
+          "reward": 0.0,
+          "attempts": 1,
+          "agent_wall_seconds": 2276.25,
+          "trial_dir": "<repo>/.scratch/research/chat-reasoning-replay/pier/batches/formal-xhigh-threeway-20261028/jobs/formal-xhigh-threeway-20261028--mnamer-daemon-watch-lifecycle--r3--cpa-a1/mnamer-daemon-watch-lifecycle__oUfzjQA"
+        },
+        {
+          "route": "sub2api",
+          "slot": 1,
+          "classification": "pass",
+          "reason": "reward",
+          "reward": 1.0,
+          "attempts": 1,
+          "agent_wall_seconds": 2233.916,
+          "trial_dir": "<repo>/.scratch/research/chat-reasoning-replay/pier/batches/formal-xhigh-threeway-20261028/jobs/formal-xhigh-threeway-20261028--mnamer-daemon-watch-lifecycle--r3--sub2api-a1/mnamer-daemon-watch-lifecycle__frjmAyi"
+        },
+        {
+          "route": "stravia",
+          "slot": 2,
+          "classification": "pass",
+          "reason": "reward",
+          "reward": 1.0,
+          "attempts": 1,
+          "agent_wall_seconds": 489.252,
+          "trial_dir": "<repo>/.scratch/research/chat-reasoning-replay/pier/batches/formal-xhigh-threeway-20261028/jobs/formal-xhigh-threeway-20261028--mnamer-daemon-watch-lifecycle--r3--stravia-a1/mnamer-daemon-watch-lifecycle__uvoFvgF"
+        }
+      ]
+    },
+    {
+      "group_id": "cliffy-config-file-parsing@r3",
+      "task": "cliffy-config-file-parsing",
+      "round": 3,
+      "status": "done",
+      "voided_by_route": null,
+      "started_at": 1793198163.8009388,
+      "finished_at": 1793201806.798201,
+      "wall_seconds": 3642.997,
+      "trials": [
+        {
+          "route": "sub2api",
+          "slot": 0,
+          "classification": "pass",
+          "reason": "reward",
+          "reward": 1.0,
+          "attempts": 1,
+          "agent_wall_seconds": 2737.88,
+          "trial_dir": "<repo>/.scratch/research/chat-reasoning-replay/pier/batches/formal-xhigh-threeway-20261028/jobs/formal-xhigh-threeway-20261028--cliffy-config-file-parsing--r3--sub2api-a1/cliffy-config-file-parsing__3uFf3Ha"
+        },
+        {
+          "route": "cpa",
+          "slot": 1,
+          "classification": "fail",
+          "reason": "timed_out",
+          "reward": 0.0,
+          "attempts": 1,
+          "agent_wall_seconds": 3600.217,
+          "trial_dir": "<repo>/.scratch/research/chat-reasoning-replay/pier/batches/formal-xhigh-threeway-20261028/jobs/formal-xhigh-threeway-20261028--cliffy-config-file-parsing--r3--cpa-a1/cliffy-config-file-parsing__mSy76aH"
+        },
+        {
+          "route": "stravia",
+          "slot": 2,
+          "classification": "fail",
+          "reason": "reward",
+          "reward": 0.0,
+          "attempts": 1,
+          "agent_wall_seconds": 1228.305,
+          "trial_dir": "<repo>/.scratch/research/chat-reasoning-replay/pier/batches/formal-xhigh-threeway-20261028/jobs/formal-xhigh-threeway-20261028--cliffy-config-file-parsing--r3--stravia-a1/cliffy-config-file-parsing__WWbfKKC"
+        }
+      ]
+    },
+    {
+      "group_id": "gql-incremental-graphql-delivery@r4",
+      "task": "gql-incremental-graphql-delivery",
+      "round": 4,
+      "status": "done",
+      "voided_by_route": null,
+      "started_at": 1793198685.041742,
+      "finished_at": 1793202340.4808483,
+      "wall_seconds": 3655.439,
+      "trials": [
+        {
+          "route": "stravia",
+          "slot": 0,
+          "classification": "fail",
+          "reason": "reward",
+          "reward": 0.0,
+          "attempts": 1,
+          "agent_wall_seconds": 960.504,
+          "trial_dir": "<repo>/.scratch/research/chat-reasoning-replay/pier/batches/formal-xhigh-threeway-20261028/jobs/formal-xhigh-threeway-20261028--gql-incremental-graphql-delivery--r4--stravia-a1/gql-incremental-graphql-delivery__PfCgwdH"
+        },
+        {
+          "route": "cpa",
+          "slot": 1,
+          "classification": "fail",
+          "reason": "reward",
+          "reward": 0.0,
+          "attempts": 1,
+          "agent_wall_seconds": 2190.989,
+          "trial_dir": "<repo>/.scratch/research/chat-reasoning-replay/pier/batches/formal-xhigh-threeway-20261028/jobs/formal-xhigh-threeway-20261028--gql-incremental-graphql-delivery--r4--cpa-a1/gql-incremental-graphql-delivery__2ZG5kWv"
+        },
+        {
+          "route": "sub2api",
+          "slot": 2,
+          "classification": "fail",
+          "reason": "timed_out",
+          "reward": 0.0,
+          "attempts": 1,
+          "agent_wall_seconds": 3600.287,
+          "trial_dir": "<repo>/.scratch/research/chat-reasoning-replay/pier/batches/formal-xhigh-threeway-20261028/jobs/formal-xhigh-threeway-20261028--gql-incremental-graphql-delivery--r4--sub2api-a1/gql-incremental-graphql-delivery__2kKi9s5"
+        }
+      ]
+    },
+    {
+      "group_id": "expr-try-catch-errors@r2",
+      "task": "expr-try-catch-errors",
+      "round": 2,
+      "status": "done",
+      "voided_by_route": null,
+      "started_at": 1793198713.4988956,
+      "finished_at": 1793205864.679318,
+      "wall_seconds": 7151.18,
+      "trials": [
+        {
+          "route": "sub2api",
+          "slot": 0,
+          "classification": "pass",
+          "reason": "reward",
+          "reward": 1.0,
+          "attempts": 1,
+          "agent_wall_seconds": 2749.546,
+          "trial_dir": "<repo>/.scratch/research/chat-reasoning-replay/pier/batches/formal-xhigh-threeway-20261028/jobs/formal-xhigh-threeway-20261028--expr-try-catch-errors--r2--sub2api-a1/expr-try-catch-errors__NrTF3XF"
+        },
+        {
+          "route": "cpa",
+          "slot": 1,
+          "classification": "fail",
+          "reason": "timed_out",
+          "reward": 0.0,
+          "attempts": 2,
+          "agent_wall_seconds": 3600.197,
+          "trial_dir": "<repo>/.scratch/research/chat-reasoning-replay/pier/batches/formal-xhigh-threeway-20261028/jobs/formal-xhigh-threeway-20261028--expr-try-catch-errors--r2--cpa-a2/expr-try-catch-errors__UhQjQ9r"
+        },
+        {
+          "route": "stravia",
+          "slot": 2,
+          "classification": "pass",
+          "reason": "reward",
+          "reward": 1.0,
+          "attempts": 1,
+          "agent_wall_seconds": 1376.613,
+          "trial_dir": "<repo>/.scratch/research/chat-reasoning-replay/pier/batches/formal-xhigh-threeway-20261028/jobs/formal-xhigh-threeway-20261028--expr-try-catch-errors--r2--stravia-a1/expr-try-catch-errors__gdDXx5F"
+        }
+      ]
+    },
+    {
+      "group_id": "oxvg-structural-selector-preservation@r2",
+      "task": "oxvg-structural-selector-preservation",
+      "round": 2,
+      "status": "done",
+      "voided_by_route": null,
+      "started_at": 1793199666.6284451,
+      "finished_at": 1793206100.3742168,
+      "wall_seconds": 6433.746,
+      "trials": [
+        {
+          "route": "cpa",
+          "slot": 0,
+          "classification": "fail",
+          "reason": "timed_out",
+          "reward": 1.0,
+          "attempts": 2,
+          "agent_wall_seconds": 3600.423,
+          "trial_dir": "<repo>/.scratch/research/chat-reasoning-replay/pier/batches/formal-xhigh-threeway-20261028/jobs/formal-xhigh-threeway-20261028--oxvg-structural-selector-preservation--r2--cpa-a2/oxvg-structural-selector-preserv__FV7Y6WE"
+        },
+        {
+          "route": "stravia",
+          "slot": 1,
+          "classification": "pass",
+          "reason": "reward",
+          "reward": 1.0,
+          "attempts": 1,
+          "agent_wall_seconds": 1503.497,
+          "trial_dir": "<repo>/.scratch/research/chat-reasoning-replay/pier/batches/formal-xhigh-threeway-20261028/jobs/formal-xhigh-threeway-20261028--oxvg-structural-selector-preservation--r2--stravia-a1/oxvg-structural-selector-preserv__wRTZnMK"
+        },
+        {
+          "route": "sub2api",
+          "slot": 2,
+          "classification": "fail",
+          "reason": "timed_out",
+          "reward": 0.0,
+          "attempts": 1,
+          "agent_wall_seconds": 3600.15,
+          "trial_dir": "<repo>/.scratch/research/chat-reasoning-replay/pier/batches/formal-xhigh-threeway-20261028/jobs/formal-xhigh-threeway-20261028--oxvg-structural-selector-preservation--r2--sub2api-a1/oxvg-structural-selector-preserv__tuSZ7wn"
+        }
+      ]
+    },
+    {
+      "group_id": "vitest-duration-sharding@r1",
+      "task": "vitest-duration-sharding",
+      "round": 1,
+      "status": "done",
+      "voided_by_route": null,
+      "started_at": 1793200291.5014358,
+      "finished_at": 1793205848.3332548,
+      "wall_seconds": 5556.832,
+      "trials": [
+        {
+          "route": "sub2api",
+          "slot": 0,
+          "classification": "fail",
+          "reason": "timed_out",
+          "reward": 0.0,
+          "attempts": 1,
+          "agent_wall_seconds": 3600.177,
+          "trial_dir": "<repo>/.scratch/research/chat-reasoning-replay/pier/batches/formal-xhigh-threeway-20261028/jobs/formal-xhigh-threeway-20261028--vitest-duration-sharding--r1--sub2api-a1/vitest-duration-sharding__aQU4mH6"
+        },
+        {
+          "route": "cpa",
+          "slot": 1,
+          "classification": "fail",
+          "reason": "timed_out",
+          "reward": 1.0,
+          "attempts": 2,
+          "agent_wall_seconds": 3600.146,
+          "trial_dir": "<repo>/.scratch/research/chat-reasoning-replay/pier/batches/formal-xhigh-threeway-20261028/jobs/formal-xhigh-threeway-20261028--vitest-duration-sharding--r1--cpa-a2/vitest-duration-sharding__d5XDd6e"
+        },
+        {
+          "route": "stravia",
+          "slot": 2,
+          "classification": "pass",
+          "reason": "reward",
+          "reward": 1.0,
+          "attempts": 1,
+          "agent_wall_seconds": 1064.494,
+          "trial_dir": "<repo>/.scratch/research/chat-reasoning-replay/pier/batches/formal-xhigh-threeway-20261028/jobs/formal-xhigh-threeway-20261028--vitest-duration-sharding--r1--stravia-a1/vitest-duration-sharding__VBNK6gB"
+        }
+      ]
+    },
+    {
+      "group_id": "vitest-duration-sharding@r2",
+      "task": "vitest-duration-sharding",
+      "round": 2,
+      "status": "done",
+      "voided_by_route": null,
+      "started_at": 1793201806.8059292,
+      "finished_at": 1793205874.1131933,
+      "wall_seconds": 4067.307,
+      "trials": [
+        {
+          "route": "stravia",
+          "slot": 0,
+          "classification": "pass",
+          "reason": "reward",
+          "reward": 1.0,
+          "attempts": 1,
+          "agent_wall_seconds": 1377.827,
+          "trial_dir": "<repo>/.scratch/research/chat-reasoning-replay/pier/batches/formal-xhigh-threeway-20261028/jobs/formal-xhigh-threeway-20261028--vitest-duration-sharding--r2--stravia-a1/vitest-duration-sharding__WxkP7Hw"
+        },
+        {
+          "route": "cpa",
+          "slot": 1,
+          "classification": "fail",
+          "reason": "timed_out",
+          "reward": 1.0,
+          "attempts": 2,
+          "agent_wall_seconds": 3600.123,
+          "trial_dir": "<repo>/.scratch/research/chat-reasoning-replay/pier/batches/formal-xhigh-threeway-20261028/jobs/formal-xhigh-threeway-20261028--vitest-duration-sharding--r2--cpa-a2/vitest-duration-sharding__v8Kc4pf"
+        },
+        {
+          "route": "sub2api",
+          "slot": 2,
+          "classification": "fail",
+          "reason": "timed_out",
+          "reward": 0.0,
+          "attempts": 1,
+          "agent_wall_seconds": 3600.159,
+          "trial_dir": "<repo>/.scratch/research/chat-reasoning-replay/pier/batches/formal-xhigh-threeway-20261028/jobs/formal-xhigh-threeway-20261028--vitest-duration-sharding--r2--sub2api-a1/vitest-duration-sharding__B42mLA5"
+        }
+      ]
+    },
+    {
+      "group_id": "textual-richlog-follow-state@r3",
+      "task": "textual-richlog-follow-state",
+      "round": 3,
+      "status": "done",
+      "voided_by_route": null,
+      "started_at": 1793202340.4840236,
+      "finished_at": 1793205974.3581266,
+      "wall_seconds": 3633.874,
+      "trials": [
+        {
+          "route": "stravia",
+          "slot": 0,
+          "classification": "fail",
+          "reason": "reward",
+          "reward": 0.0,
+          "attempts": 1,
+          "agent_wall_seconds": 1063.177,
+          "trial_dir": "<repo>/.scratch/research/chat-reasoning-replay/pier/batches/formal-xhigh-threeway-20261028/jobs/formal-xhigh-threeway-20261028--textual-richlog-follow-state--r3--stravia-a1/textual-richlog-follow-state__rtzyyVo"
+        },
+        {
+          "route": "cpa",
+          "slot": 1,
+          "classification": "fail",
+          "reason": "reward",
+          "reward": 0.0,
+          "attempts": 1,
+          "agent_wall_seconds": 3541.425,
+          "trial_dir": "<repo>/.scratch/research/chat-reasoning-replay/pier/batches/formal-xhigh-threeway-20261028/jobs/formal-xhigh-threeway-20261028--textual-richlog-follow-state--r3--cpa-a1/textual-richlog-follow-state__JL3TQgN"
+        },
+        {
+          "route": "sub2api",
+          "slot": 2,
+          "classification": "fail",
+          "reason": "reward",
+          "reward": 0.0,
+          "attempts": 1,
+          "agent_wall_seconds": 2604.085,
+          "trial_dir": "<repo>/.scratch/research/chat-reasoning-replay/pier/batches/formal-xhigh-threeway-20261028/jobs/formal-xhigh-threeway-20261028--textual-richlog-follow-state--r3--sub2api-a1/textual-richlog-follow-state__uTz7Gxs"
+        }
+      ]
+    },
+    {
+      "group_id": "kombu-single-active-consumer-priority@r3",
+      "task": "kombu-single-active-consumer-priority",
+      "round": 3,
+      "status": "void",
+      "voided_by_route": "sub2api",
+      "started_at": 1793205848.3379493,
+      "finished_at": 1793210161.9558802,
+      "wall_seconds": 4313.618,
+      "trials": [
+        {
+          "route": "stravia",
+          "slot": 0,
+          "classification": "void",
+          "reason": "group-void: retries-exhausted: sub2api 尝试 3 次仍失败（infra-error:infra:concurrency）",
+          "reward": 1.0,
+          "attempts": 1,
+          "agent_wall_seconds": 632.244,
+          "trial_dir": "<repo>/.scratch/research/chat-reasoning-replay/pier/batches/formal-xhigh-threeway-20261028/jobs/formal-xhigh-threeway-20261028--kombu-single-active-consumer-priority--r3--stravia-a1/kombu-single-active-consumer-pri__GapFvVj"
+        },
+        {
+          "route": "cpa",
+          "slot": 1,
+          "classification": "void",
+          "reason": "group-void: retries-exhausted: sub2api 尝试 3 次仍失败（infra-error:infra:concurrency）",
+          "reward": 1.0,
+          "attempts": 1,
+          "agent_wall_seconds": 1446.869,
+          "trial_dir": "<repo>/.scratch/research/chat-reasoning-replay/pier/batches/formal-xhigh-threeway-20261028/jobs/formal-xhigh-threeway-20261028--kombu-single-active-consumer-priority--r3--cpa-a1/kombu-single-active-consumer-pri__sbNoFuX"
+        },
+        {
+          "route": "sub2api",
+          "slot": 2,
+          "classification": "void",
+          "reason": "group-void: retries-exhausted: sub2api 尝试 3 次仍失败（infra-error:infra:concurrency）",
+          "reward": 1.0,
+          "attempts": 3,
+          "agent_wall_seconds": 1837.458,
+          "trial_dir": "<repo>/.scratch/research/chat-reasoning-replay/pier/batches/formal-xhigh-threeway-20261028/jobs/formal-xhigh-threeway-20261028--kombu-single-active-consumer-priority--r3--sub2api-a3/kombu-single-active-consumer-pri__xJMJte5"
+        }
+      ]
+    },
+    {
+      "group_id": "oxvg-structural-selector-preservation@r3",
+      "task": "oxvg-structural-selector-preservation",
+      "round": 3,
+      "status": "done",
+      "voided_by_route": null,
+      "started_at": 1793205864.7598228,
+      "finished_at": 1793209535.4555252,
+      "wall_seconds": 3670.696,
+      "trials": [
+        {
+          "route": "stravia",
+          "slot": 0,
+          "classification": "pass",
+          "reason": "reward",
+          "reward": 1.0,
+          "attempts": 1,
+          "agent_wall_seconds": 1752.819,
+          "trial_dir": "<repo>/.scratch/research/chat-reasoning-replay/pier/batches/formal-xhigh-threeway-20261028/jobs/formal-xhigh-threeway-20261028--oxvg-structural-selector-preservation--r3--stravia-a1/oxvg-structural-selector-preserv__8tU9Dcm"
+        },
+        {
+          "route": "sub2api",
+          "slot": 1,
+          "classification": "fail",
+          "reason": "agent-error:other:None",
+          "reward": 0.0,
+          "attempts": 3,
+          "agent_wall_seconds": 266.799,
+          "trial_dir": "<repo>/.scratch/research/chat-reasoning-replay/pier/batches/formal-xhigh-threeway-20261028/jobs/formal-xhigh-threeway-20261028--oxvg-structural-selector-preservation--r3--sub2api-a3/oxvg-structural-selector-preserv__MGxJ3Fb"
+        },
+        {
+          "route": "cpa",
+          "slot": 2,
+          "classification": "fail",
+          "reason": "timed_out",
+          "reward": 0.0,
+          "attempts": 1,
+          "agent_wall_seconds": 3600.388,
+          "trial_dir": "<repo>/.scratch/research/chat-reasoning-replay/pier/batches/formal-xhigh-threeway-20261028/jobs/formal-xhigh-threeway-20261028--oxvg-structural-selector-preservation--r3--cpa-a1/oxvg-structural-selector-preserv__NMWAtRc"
+        }
+      ]
+    },
+    {
+      "group_id": "kombu-single-active-consumer-priority@r1",
+      "task": "kombu-single-active-consumer-priority",
+      "round": 1,
+      "status": "done",
+      "voided_by_route": null,
+      "started_at": 1793205874.2028756,
+      "finished_at": 1793209130.3505452,
+      "wall_seconds": 3256.148,
+      "trials": [
+        {
+          "route": "cpa",
+          "slot": 0,
+          "classification": "pass",
+          "reason": "reward",
+          "reward": 1.0,
+          "attempts": 1,
+          "agent_wall_seconds": 2473.065,
+          "trial_dir": "<repo>/.scratch/research/chat-reasoning-replay/pier/batches/formal-xhigh-threeway-20261028/jobs/formal-xhigh-threeway-20261028--kombu-single-active-consumer-priority--r1--cpa-a1/kombu-single-active-consumer-pri__HGkVGjn"
+        },
+        {
+          "route": "sub2api",
+          "slot": 1,
+          "classification": "fail",
+          "reason": "reward",
+          "reward": 0.0,
+          "attempts": 2,
+          "agent_wall_seconds": 2212.886,
+          "trial_dir": "<repo>/.scratch/research/chat-reasoning-replay/pier/batches/formal-xhigh-threeway-20261028/jobs/formal-xhigh-threeway-20261028--kombu-single-active-consumer-priority--r1--sub2api-a2/kombu-single-active-consumer-pri__LmF4f8Y"
+        },
+        {
+          "route": "stravia",
+          "slot": 2,
+          "classification": "pass",
+          "reason": "reward",
+          "reward": 1.0,
+          "attempts": 1,
+          "agent_wall_seconds": 622.292,
+          "trial_dir": "<repo>/.scratch/research/chat-reasoning-replay/pier/batches/formal-xhigh-threeway-20261028/jobs/formal-xhigh-threeway-20261028--kombu-single-active-consumer-priority--r1--stravia-a1/kombu-single-active-consumer-pri__58Fzpgk"
+        }
+      ]
+    },
+    {
+      "group_id": "go-genai-streamed-function-args@r1",
+      "task": "go-genai-streamed-function-args",
+      "round": 1,
+      "status": "void",
+      "voided_by_route": "sub2api",
+      "started_at": 1793205974.362253,
+      "finished_at": 1793208640.6274593,
+      "wall_seconds": 2666.265,
+      "trials": [
+        {
+          "route": "sub2api",
+          "slot": 0,
+          "classification": "void",
+          "reason": "group-void: retries-exhausted: sub2api 尝试 3 次仍失败（infra-error:infra:concurrency）",
+          "reward": 0.0,
+          "attempts": 3,
+          "agent_wall_seconds": 30.852,
+          "trial_dir": "<repo>/.scratch/research/chat-reasoning-replay/pier/batches/formal-xhigh-threeway-20261028/jobs/formal-xhigh-threeway-20261028--go-genai-streamed-function-args--r1--sub2api-a3/go-genai-streamed-function-args__VSqZQ4y"
+        },
+        {
+          "route": "stravia",
+          "slot": 1,
+          "classification": "void",
+          "reason": "group-void: retries-exhausted: sub2api 尝试 3 次仍失败（infra-error:infra:concurrency）",
+          "reward": 1.0,
+          "attempts": 1,
+          "agent_wall_seconds": 973.167,
+          "trial_dir": "<repo>/.scratch/research/chat-reasoning-replay/pier/batches/formal-xhigh-threeway-20261028/jobs/formal-xhigh-threeway-20261028--go-genai-streamed-function-args--r1--stravia-a1/go-genai-streamed-function-args__uaeLsBC"
+        },
+        {
+          "route": "cpa",
+          "slot": 2,
+          "classification": "void",
+          "reason": "group-void: retries-exhausted: sub2api 尝试 3 次仍失败（infra-error:infra:concurrency）",
+          "reward": 1.0,
+          "attempts": 1,
+          "agent_wall_seconds": 2603.855,
+          "trial_dir": "<repo>/.scratch/research/chat-reasoning-replay/pier/batches/formal-xhigh-threeway-20261028/jobs/formal-xhigh-threeway-20261028--go-genai-streamed-function-args--r1--cpa-a1/go-genai-streamed-function-args__nX3hi9U"
+        }
+      ]
+    },
+    {
+      "group_id": "testem-bail-on-test-failure@r4",
+      "task": "testem-bail-on-test-failure",
+      "round": 4,
+      "status": "void",
+      "voided_by_route": "sub2api",
+      "started_at": 1793206100.378461,
+      "finished_at": 1793210430.9592745,
+      "wall_seconds": 4330.581,
+      "trials": [
+        {
+          "route": "sub2api",
+          "slot": 0,
+          "classification": "void",
+          "reason": "group-void: retries-exhausted: sub2api 尝试 3 次仍失败（infra-error:infra:concurrency）",
+          "reward": 0.0,
+          "attempts": 3,
+          "agent_wall_seconds": 2157.381,
+          "trial_dir": "<repo>/.scratch/research/chat-reasoning-replay/pier/batches/formal-xhigh-threeway-20261028/jobs/formal-xhigh-threeway-20261028--testem-bail-on-test-failure--r4--sub2api-a3/testem-bail-on-test-failure__6jabYmf"
+        },
+        {
+          "route": "stravia",
+          "slot": 1,
+          "classification": "void",
+          "reason": "group-void: retries-exhausted: sub2api 尝试 3 次仍失败（infra-error:infra:concurrency）",
+          "reward": 1.0,
+          "attempts": 1,
+          "agent_wall_seconds": 1572.401,
+          "trial_dir": "<repo>/.scratch/research/chat-reasoning-replay/pier/batches/formal-xhigh-threeway-20261028/jobs/formal-xhigh-threeway-20261028--testem-bail-on-test-failure--r4--stravia-a1/testem-bail-on-test-failure__ud7v3u2"
+        },
+        {
+          "route": "cpa",
+          "slot": 2,
+          "classification": "void",
+          "reason": "group-void: retries-exhausted: sub2api 尝试 3 次仍失败（infra-error:infra:concurrency）",
+          "reward": 0.0,
+          "attempts": 1,
+          "agent_wall_seconds": 3600.283,
+          "trial_dir": "<repo>/.scratch/research/chat-reasoning-replay/pier/batches/formal-xhigh-threeway-20261028/jobs/formal-xhigh-threeway-20261028--testem-bail-on-test-failure--r4--cpa-a1/testem-bail-on-test-failure__QmFnuiZ"
+        }
+      ]
+    },
+    {
+      "group_id": "koota-composite-trait-aspects@r1",
+      "task": "koota-composite-trait-aspects",
+      "round": 1,
+      "status": "done",
+      "voided_by_route": null,
+      "started_at": 1793208640.648285,
+      "finished_at": 1793213708.0059268,
+      "wall_seconds": 5067.358,
+      "trials": [
+        {
+          "route": "stravia",
+          "slot": 0,
+          "classification": "pass",
+          "reason": "reward",
+          "reward": 1.0,
+          "attempts": 1,
+          "agent_wall_seconds": 2744.388,
+          "trial_dir": "<repo>/.scratch/research/chat-reasoning-replay/pier/batches/formal-xhigh-threeway-20261028/jobs/formal-xhigh-threeway-20261028--koota-composite-trait-aspects--r1--stravia-a1/koota-composite-trait-aspects__bsiZprE"
+        },
+        {
+          "route": "cpa",
+          "slot": 1,
+          "classification": "fail",
+          "reason": "timed_out",
+          "reward": 0.0,
+          "attempts": 1,
+          "agent_wall_seconds": 3600.621,
+          "trial_dir": "<repo>/.scratch/research/chat-reasoning-replay/pier/batches/formal-xhigh-threeway-20261028/jobs/formal-xhigh-threeway-20261028--koota-composite-trait-aspects--r1--cpa-a1/koota-composite-trait-aspects__cQGSfV6"
+        },
+        {
+          "route": "sub2api",
+          "slot": 2,
+          "classification": "fail",
+          "reason": "timed_out",
+          "reward": 1.0,
+          "attempts": 2,
+          "agent_wall_seconds": 3600.24,
+          "trial_dir": "<repo>/.scratch/research/chat-reasoning-replay/pier/batches/formal-xhigh-threeway-20261028/jobs/formal-xhigh-threeway-20261028--koota-composite-trait-aspects--r1--sub2api-a2/koota-composite-trait-aspects__hVHx2Ns"
+        }
+      ]
+    },
+    {
+      "group_id": "gql-incremental-graphql-delivery@r2",
+      "task": "gql-incremental-graphql-delivery",
+      "round": 2,
+      "status": "done",
+      "voided_by_route": null,
+      "started_at": 1793209130.3533642,
+      "finished_at": 1793211636.9946911,
+      "wall_seconds": 2506.641,
+      "trials": [
+        {
+          "route": "cpa",
+          "slot": 0,
+          "classification": "fail",
+          "reason": "reward",
+          "reward": 0.0,
+          "attempts": 1,
+          "agent_wall_seconds": 2451.534,
+          "trial_dir": "<repo>/.scratch/research/chat-reasoning-replay/pier/batches/formal-xhigh-threeway-20261028/jobs/formal-xhigh-threeway-20261028--gql-incremental-graphql-delivery--r2--cpa-a1/gql-incremental-graphql-delivery__EWymQiR"
+        },
+        {
+          "route": "sub2api",
+          "slot": 1,
+          "classification": "fail",
+          "reason": "reward",
+          "reward": 0.0,
+          "attempts": 1,
+          "agent_wall_seconds": 1862.93,
+          "trial_dir": "<repo>/.scratch/research/chat-reasoning-replay/pier/batches/formal-xhigh-threeway-20261028/jobs/formal-xhigh-threeway-20261028--gql-incremental-graphql-delivery--r2--sub2api-a1/gql-incremental-graphql-delivery__XRkarU9"
+        },
+        {
+          "route": "stravia",
+          "slot": 2,
+          "classification": "fail",
+          "reason": "reward",
+          "reward": 0.0,
+          "attempts": 1,
+          "agent_wall_seconds": 914.637,
+          "trial_dir": "<repo>/.scratch/research/chat-reasoning-replay/pier/batches/formal-xhigh-threeway-20261028/jobs/formal-xhigh-threeway-20261028--gql-incremental-graphql-delivery--r2--stravia-a1/gql-incremental-graphql-delivery__zPSBruD"
+        }
+      ]
+    },
+    {
+      "group_id": "testem-bail-on-test-failure@r1",
+      "task": "testem-bail-on-test-failure",
+      "round": 1,
+      "status": "done",
+      "voided_by_route": null,
+      "started_at": 1793209535.4718344,
+      "finished_at": 1793213184.434599,
+      "wall_seconds": 3648.963,
+      "trials": [
+        {
+          "route": "stravia",
+          "slot": 0,
+          "classification": "fail",
+          "reason": "reward",
+          "reward": 0.0,
+          "attempts": 1,
+          "agent_wall_seconds": 1849.172,
+          "trial_dir": "<repo>/.scratch/research/chat-reasoning-replay/pier/batches/formal-xhigh-threeway-20261028/jobs/formal-xhigh-threeway-20261028--testem-bail-on-test-failure--r1--stravia-a1/testem-bail-on-test-failure__kvvn9qZ"
+        },
+        {
+          "route": "sub2api",
+          "slot": 1,
+          "classification": "fail",
+          "reason": "timed_out",
+          "reward": 0.0,
+          "attempts": 1,
+          "agent_wall_seconds": 3600.232,
+          "trial_dir": "<repo>/.scratch/research/chat-reasoning-replay/pier/batches/formal-xhigh-threeway-20261028/jobs/formal-xhigh-threeway-20261028--testem-bail-on-test-failure--r1--sub2api-a1/testem-bail-on-test-failure__FWThWQZ"
+        },
+        {
+          "route": "cpa",
+          "slot": 2,
+          "classification": "fail",
+          "reason": "timed_out",
+          "reward": 0.0,
+          "attempts": 1,
+          "agent_wall_seconds": 3600.291,
+          "trial_dir": "<repo>/.scratch/research/chat-reasoning-replay/pier/batches/formal-xhigh-threeway-20261028/jobs/formal-xhigh-threeway-20261028--testem-bail-on-test-failure--r1--cpa-a1/testem-bail-on-test-failure__3Jknjck"
+        }
+      ]
+    },
+    {
+      "group_id": "ink-grid-box-layout@r4",
+      "task": "ink-grid-box-layout",
+      "round": 4,
+      "status": "done",
+      "voided_by_route": null,
+      "started_at": 1793210161.9602988,
+      "finished_at": 1793212621.6040618,
+      "wall_seconds": 2459.644,
+      "trials": [
+        {
+          "route": "stravia",
+          "slot": 0,
+          "classification": "pass",
+          "reason": "reward",
+          "reward": 1.0,
+          "attempts": 1,
+          "agent_wall_seconds": 1923.239,
+          "trial_dir": "<repo>/.scratch/research/chat-reasoning-replay/pier/batches/formal-xhigh-threeway-20261028/jobs/formal-xhigh-threeway-20261028--ink-grid-box-layout--r4--stravia-a1/ink-grid-box-layout__qJqZYR6"
+        },
+        {
+          "route": "cpa",
+          "slot": 1,
+          "classification": "fail",
+          "reason": "reward",
+          "reward": 0.0,
+          "attempts": 1,
+          "agent_wall_seconds": 2412.464,
+          "trial_dir": "<repo>/.scratch/research/chat-reasoning-replay/pier/batches/formal-xhigh-threeway-20261028/jobs/formal-xhigh-threeway-20261028--ink-grid-box-layout--r4--cpa-a1/ink-grid-box-layout__QWhM9x7"
+        },
+        {
+          "route": "sub2api",
+          "slot": 2,
+          "classification": "fail",
+          "reason": "reward",
+          "reward": 0.0,
+          "attempts": 1,
+          "agent_wall_seconds": 1392.621,
+          "trial_dir": "<repo>/.scratch/research/chat-reasoning-replay/pier/batches/formal-xhigh-threeway-20261028/jobs/formal-xhigh-threeway-20261028--ink-grid-box-layout--r4--sub2api-a1/ink-grid-box-layout__mF8dQmy"
+        }
+      ]
+    },
+    {
+      "group_id": "mnamer-daemon-watch-lifecycle@r2",
+      "task": "mnamer-daemon-watch-lifecycle",
+      "round": 2,
+      "status": "done",
+      "voided_by_route": null,
+      "started_at": 1793210430.962713,
+      "finished_at": 1793212225.9498477,
+      "wall_seconds": 1794.987,
+      "trials": [
+        {
+          "route": "stravia",
+          "slot": 0,
+          "classification": "pass",
+          "reason": "reward",
+          "reward": 1.0,
+          "attempts": 1,
+          "agent_wall_seconds": 677.607,
+          "trial_dir": "<repo>/.scratch/research/chat-reasoning-replay/pier/batches/formal-xhigh-threeway-20261028/jobs/formal-xhigh-threeway-20261028--mnamer-daemon-watch-lifecycle--r2--stravia-a1/mnamer-daemon-watch-lifecycle__rmoau3V"
+        },
+        {
+          "route": "cpa",
+          "slot": 1,
+          "classification": "pass",
+          "reason": "reward",
+          "reward": 1.0,
+          "attempts": 1,
+          "agent_wall_seconds": 1736.053,
+          "trial_dir": "<repo>/.scratch/research/chat-reasoning-replay/pier/batches/formal-xhigh-threeway-20261028/jobs/formal-xhigh-threeway-20261028--mnamer-daemon-watch-lifecycle--r2--cpa-a1/mnamer-daemon-watch-lifecycle__PRjsegz"
+        },
+        {
+          "route": "sub2api",
+          "slot": 2,
+          "classification": "pass",
+          "reason": "reward",
+          "reward": 1.0,
+          "attempts": 2,
+          "agent_wall_seconds": 1175.988,
+          "trial_dir": "<repo>/.scratch/research/chat-reasoning-replay/pier/batches/formal-xhigh-threeway-20261028/jobs/formal-xhigh-threeway-20261028--mnamer-daemon-watch-lifecycle--r2--sub2api-a2/mnamer-daemon-watch-lifecycle__oE6t9Qa"
+        }
+      ]
+    },
+    {
+      "group_id": "termenv-preserve-ansi-resets@r2",
+      "task": "termenv-preserve-ansi-resets",
+      "round": 2,
+      "status": "done",
+      "voided_by_route": null,
+      "started_at": 1793211637.0082061,
+      "finished_at": 1793214650.8320067,
+      "wall_seconds": 3013.824,
+      "trials": [
+        {
+          "route": "cpa",
+          "slot": 0,
+          "classification": "fail",
+          "reason": "reward",
+          "reward": 0.0,
+          "attempts": 1,
+          "agent_wall_seconds": 2966.15,
+          "trial_dir": "<repo>/.scratch/research/chat-reasoning-replay/pier/batches/formal-xhigh-threeway-20261028/jobs/formal-xhigh-threeway-20261028--termenv-preserve-ansi-resets--r2--cpa-a1/termenv-preserve-ansi-resets__hd6ZrAi"
+        },
+        {
+          "route": "stravia",
+          "slot": 1,
+          "classification": "pass",
+          "reason": "reward",
+          "reward": 1.0,
+          "attempts": 1,
+          "agent_wall_seconds": 639.053,
+          "trial_dir": "<repo>/.scratch/research/chat-reasoning-replay/pier/batches/formal-xhigh-threeway-20261028/jobs/formal-xhigh-threeway-20261028--termenv-preserve-ansi-resets--r2--stravia-a1/termenv-preserve-ansi-resets__ovZSRnE"
+        },
+        {
+          "route": "sub2api",
+          "slot": 2,
+          "classification": "fail",
+          "reason": "reward",
+          "reward": 0.0,
+          "attempts": 1,
+          "agent_wall_seconds": 1529.049,
+          "trial_dir": "<repo>/.scratch/research/chat-reasoning-replay/pier/batches/formal-xhigh-threeway-20261028/jobs/formal-xhigh-threeway-20261028--termenv-preserve-ansi-resets--r2--sub2api-a1/termenv-preserve-ansi-resets__QPYh22D"
+        }
+      ]
+    },
+    {
+      "group_id": "koota-composite-trait-aspects@r3",
+      "task": "koota-composite-trait-aspects",
+      "round": 3,
+      "status": "done",
+      "voided_by_route": null,
+      "started_at": 1793212225.9629798,
+      "finished_at": 1793215874.879549,
+      "wall_seconds": 3648.917,
+      "trials": [
+        {
+          "route": "stravia",
+          "slot": 0,
+          "classification": "pass",
+          "reason": "reward",
+          "reward": 1.0,
+          "attempts": 1,
+          "agent_wall_seconds": 1916.459,
+          "trial_dir": "<repo>/.scratch/research/chat-reasoning-replay/pier/batches/formal-xhigh-threeway-20261028/jobs/formal-xhigh-threeway-20261028--koota-composite-trait-aspects--r3--stravia-a1/koota-composite-trait-aspects__iV4K7Qv"
+        },
+        {
+          "route": "cpa",
+          "slot": 1,
+          "classification": "fail",
+          "reason": "timed_out",
+          "reward": 1.0,
+          "attempts": 1,
+          "agent_wall_seconds": 3600.297,
+          "trial_dir": "<repo>/.scratch/research/chat-reasoning-replay/pier/batches/formal-xhigh-threeway-20261028/jobs/formal-xhigh-threeway-20261028--koota-composite-trait-aspects--r3--cpa-a1/koota-composite-trait-aspects__4bzGLnF"
+        },
+        {
+          "route": "sub2api",
+          "slot": 2,
+          "classification": "fail",
+          "reason": "timed_out",
+          "reward": 1.0,
+          "attempts": 1,
+          "agent_wall_seconds": 3600.669,
+          "trial_dir": "<repo>/.scratch/research/chat-reasoning-replay/pier/batches/formal-xhigh-threeway-20261028/jobs/formal-xhigh-threeway-20261028--koota-composite-trait-aspects--r3--sub2api-a1/koota-composite-trait-aspects__YKu5g2Z"
+        }
+      ]
+    },
+    {
+      "group_id": "narwhals-rolling-window-suite@r4",
+      "task": "narwhals-rolling-window-suite",
+      "round": 4,
+      "status": "done",
+      "voided_by_route": null,
+      "started_at": 1793212621.6101274,
+      "finished_at": 1793215259.7264104,
+      "wall_seconds": 2638.116,
+      "trials": [
+        {
+          "route": "stravia",
+          "slot": 0,
+          "classification": "pass",
+          "reason": "reward",
+          "reward": 1.0,
+          "attempts": 1,
+          "agent_wall_seconds": 1070.942,
+          "trial_dir": "<repo>/.scratch/research/chat-reasoning-replay/pier/batches/formal-xhigh-threeway-20261028/jobs/formal-xhigh-threeway-20261028--narwhals-rolling-window-suite--r4--stravia-a1/narwhals-rolling-window-suite__sVbiLBG"
+        },
+        {
+          "route": "sub2api",
+          "slot": 1,
+          "classification": "fail",
+          "reason": "agent-error:other:None",
+          "reward": 1.0,
+          "attempts": 3,
+          "agent_wall_seconds": 2169.242,
+          "trial_dir": "<repo>/.scratch/research/chat-reasoning-replay/pier/batches/formal-xhigh-threeway-20261028/jobs/formal-xhigh-threeway-20261028--narwhals-rolling-window-suite--r4--sub2api-a3/narwhals-rolling-window-suite__RkNLkMP"
+        },
+        {
+          "route": "cpa",
+          "slot": 2,
+          "classification": "fail",
+          "reason": "reward",
+          "reward": 0.0,
+          "attempts": 1,
+          "agent_wall_seconds": 2541.481,
+          "trial_dir": "<repo>/.scratch/research/chat-reasoning-replay/pier/batches/formal-xhigh-threeway-20261028/jobs/formal-xhigh-threeway-20261028--narwhals-rolling-window-suite--r4--cpa-a1/narwhals-rolling-window-suite__KPaDM8U"
+        }
+      ]
+    },
+    {
+      "group_id": "termenv-preserve-ansi-resets@r3",
+      "task": "termenv-preserve-ansi-resets",
+      "round": 3,
+      "status": "done",
+      "voided_by_route": null,
+      "started_at": 1793213184.439535,
+      "finished_at": 1793215192.4190533,
+      "wall_seconds": 2007.98,
+      "trials": [
+        {
+          "route": "cpa",
+          "slot": 0,
+          "classification": "pass",
+          "reason": "reward",
+          "reward": 1.0,
+          "attempts": 1,
+          "agent_wall_seconds": 1936.674,
+          "trial_dir": "<repo>/.scratch/research/chat-reasoning-replay/pier/batches/formal-xhigh-threeway-20261028/jobs/formal-xhigh-threeway-20261028--termenv-preserve-ansi-resets--r3--cpa-a1/termenv-preserve-ansi-resets__Cji4xH8"
+        },
+        {
+          "route": "stravia",
+          "slot": 1,
+          "classification": "pass",
+          "reason": "reward",
+          "reward": 1.0,
+          "attempts": 1,
+          "agent_wall_seconds": 500.276,
+          "trial_dir": "<repo>/.scratch/research/chat-reasoning-replay/pier/batches/formal-xhigh-threeway-20261028/jobs/formal-xhigh-threeway-20261028--termenv-preserve-ansi-resets--r3--stravia-a1/termenv-preserve-ansi-resets__Gojjgtp"
+        },
+        {
+          "route": "sub2api",
+          "slot": 2,
+          "classification": "fail",
+          "reason": "reward",
+          "reward": 0.0,
+          "attempts": 1,
+          "agent_wall_seconds": 1876.782,
+          "trial_dir": "<repo>/.scratch/research/chat-reasoning-replay/pier/batches/formal-xhigh-threeway-20261028/jobs/formal-xhigh-threeway-20261028--termenv-preserve-ansi-resets--r3--sub2api-a1/termenv-preserve-ansi-resets__DwEhmfy"
+        }
+      ]
+    },
+    {
+      "group_id": "testem-bail-on-test-failure@r2",
+      "task": "testem-bail-on-test-failure",
+      "round": 2,
+      "status": "done",
+      "voided_by_route": null,
+      "started_at": 1793213708.0249774,
+      "finished_at": 1793217377.3941035,
+      "wall_seconds": 3669.369,
+      "trials": [
+        {
+          "route": "cpa",
+          "slot": 0,
+          "classification": "fail",
+          "reason": "timed_out",
+          "reward": 0.0,
+          "attempts": 1,
+          "agent_wall_seconds": 3600.307,
+          "trial_dir": "<repo>/.scratch/research/chat-reasoning-replay/pier/batches/formal-xhigh-threeway-20261028/jobs/formal-xhigh-threeway-20261028--testem-bail-on-test-failure--r2--cpa-a1/testem-bail-on-test-failure__MuQqdWU"
+        },
+        {
+          "route": "sub2api",
+          "slot": 1,
+          "classification": "fail",
+          "reason": "agent-error:other:None",
+          "reward": 0.0,
+          "attempts": 2,
+          "agent_wall_seconds": 38.553,
+          "trial_dir": "<repo>/.scratch/research/chat-reasoning-replay/pier/batches/formal-xhigh-threeway-20261028/jobs/formal-xhigh-threeway-20261028--testem-bail-on-test-failure--r2--sub2api-a2/testem-bail-on-test-failure__kjSkdiF"
+        },
+        {
+          "route": "stravia",
+          "slot": 2,
+          "classification": "fail",
+          "reason": "reward",
+          "reward": 0.0,
+          "attempts": 1,
+          "agent_wall_seconds": 1416.458,
+          "trial_dir": "<repo>/.scratch/research/chat-reasoning-replay/pier/batches/formal-xhigh-threeway-20261028/jobs/formal-xhigh-threeway-20261028--testem-bail-on-test-failure--r2--stravia-a1/testem-bail-on-test-failure__4UKddiM"
+        }
+      ]
+    },
+    {
+      "group_id": "kombu-single-active-consumer-priority@r2",
+      "task": "kombu-single-active-consumer-priority",
+      "round": 2,
+      "status": "done",
+      "voided_by_route": null,
+      "started_at": 1793214650.839151,
+      "finished_at": 1793217597.0173001,
+      "wall_seconds": 2946.178,
+      "trials": [
+        {
+          "route": "stravia",
+          "slot": 0,
+          "classification": "pass",
+          "reason": "reward",
+          "reward": 1.0,
+          "attempts": 1,
+          "agent_wall_seconds": 718.765,
+          "trial_dir": "<repo>/.scratch/research/chat-reasoning-replay/pier/batches/formal-xhigh-threeway-20261028/jobs/formal-xhigh-threeway-20261028--kombu-single-active-consumer-priority--r2--stravia-a1/kombu-single-active-consumer-pri__CWPiFtK"
+        },
+        {
+          "route": "cpa",
+          "slot": 1,
+          "classification": "pass",
+          "reason": "reward",
+          "reward": 1.0,
+          "attempts": 1,
+          "agent_wall_seconds": 2863.122,
+          "trial_dir": "<repo>/.scratch/research/chat-reasoning-replay/pier/batches/formal-xhigh-threeway-20261028/jobs/formal-xhigh-threeway-20261028--kombu-single-active-consumer-priority--r2--cpa-a1/kombu-single-active-consumer-pri__iv5oESC"
+        },
+        {
+          "route": "sub2api",
+          "slot": 2,
+          "classification": "fail",
+          "reason": "reward",
+          "reward": 0.0,
+          "attempts": 1,
+          "agent_wall_seconds": 1599.953,
+          "trial_dir": "<repo>/.scratch/research/chat-reasoning-replay/pier/batches/formal-xhigh-threeway-20261028/jobs/formal-xhigh-threeway-20261028--kombu-single-active-consumer-priority--r2--sub2api-a1/kombu-single-active-consumer-pri__VCrh5Mr"
+        }
+      ]
+    },
+    {
+      "group_id": "cliffy-config-file-parsing@r2",
+      "task": "cliffy-config-file-parsing",
+      "round": 2,
+      "status": "done",
+      "voided_by_route": null,
+      "started_at": 1793215192.426166,
+      "finished_at": 1793218836.3552265,
+      "wall_seconds": 3643.929,
+      "trials": [
+        {
+          "route": "cpa",
+          "slot": 0,
+          "classification": "fail",
+          "reason": "timed_out",
+          "reward": 0.0,
+          "attempts": 1,
+          "agent_wall_seconds": 3600.158,
+          "trial_dir": "<repo>/.scratch/research/chat-reasoning-replay/pier/batches/formal-xhigh-threeway-20261028/jobs/formal-xhigh-threeway-20261028--cliffy-config-file-parsing--r2--cpa-a1/cliffy-config-file-parsing__PjJZooc"
+        },
+        {
+          "route": "sub2api",
+          "slot": 1,
+          "classification": "fail",
+          "reason": "reward",
+          "reward": 0.0,
+          "attempts": 2,
+          "agent_wall_seconds": 1877.209,
+          "trial_dir": "<repo>/.scratch/research/chat-reasoning-replay/pier/batches/formal-xhigh-threeway-20261028/jobs/formal-xhigh-threeway-20261028--cliffy-config-file-parsing--r2--sub2api-a2/cliffy-config-file-parsing__NzNiAk7"
+        },
+        {
+          "route": "stravia",
+          "slot": 2,
+          "classification": "fail",
+          "reason": "reward",
+          "reward": 0.0,
+          "attempts": 1,
+          "agent_wall_seconds": 957.797,
+          "trial_dir": "<repo>/.scratch/research/chat-reasoning-replay/pier/batches/formal-xhigh-threeway-20261028/jobs/formal-xhigh-threeway-20261028--cliffy-config-file-parsing--r2--stravia-a1/cliffy-config-file-parsing__T8He62m"
+        }
+      ]
+    },
+    {
+      "group_id": "numba-stencil-boundary-modes@r2",
+      "task": "numba-stencil-boundary-modes",
+      "round": 2,
+      "status": "done",
+      "voided_by_route": null,
+      "started_at": 1793215259.7301726,
+      "finished_at": 1793218536.5746846,
+      "wall_seconds": 3276.845,
+      "trials": [
+        {
+          "route": "sub2api",
+          "slot": 0,
+          "classification": "pass",
+          "reason": "reward",
+          "reward": 1.0,
+          "attempts": 1,
+          "agent_wall_seconds": 3041.042,
+          "trial_dir": "<repo>/.scratch/research/chat-reasoning-replay/pier/batches/formal-xhigh-threeway-20261028/jobs/formal-xhigh-threeway-20261028--numba-stencil-boundary-modes--r2--sub2api-a1/numba-stencil-boundary-modes__fQqRe3M"
+        },
+        {
+          "route": "cpa",
+          "slot": 1,
+          "classification": "fail",
+          "reason": "reward",
+          "reward": 0.0,
+          "attempts": 1,
+          "agent_wall_seconds": 2418.778,
+          "trial_dir": "<repo>/.scratch/research/chat-reasoning-replay/pier/batches/formal-xhigh-threeway-20261028/jobs/formal-xhigh-threeway-20261028--numba-stencil-boundary-modes--r2--cpa-a1/numba-stencil-boundary-modes__e9fBdhd"
+        },
+        {
+          "route": "stravia",
+          "slot": 2,
+          "classification": "fail",
+          "reason": "reward",
+          "reward": 0.0,
+          "attempts": 1,
+          "agent_wall_seconds": 1053.288,
+          "trial_dir": "<repo>/.scratch/research/chat-reasoning-replay/pier/batches/formal-xhigh-threeway-20261028/jobs/formal-xhigh-threeway-20261028--numba-stencil-boundary-modes--r2--stravia-a1/numba-stencil-boundary-modes__ZvQCdDW"
+        }
+      ]
+    },
+    {
+      "group_id": "narwhals-rolling-window-suite@r2",
+      "task": "narwhals-rolling-window-suite",
+      "round": 2,
+      "status": "done",
+      "voided_by_route": null,
+      "started_at": 1793215874.8827405,
+      "finished_at": 1793218638.6079834,
+      "wall_seconds": 2763.725,
+      "trials": [
+        {
+          "route": "stravia",
+          "slot": 0,
+          "classification": "pass",
+          "reason": "reward",
+          "reward": 1.0,
+          "attempts": 1,
+          "agent_wall_seconds": 705.182,
+          "trial_dir": "<repo>/.scratch/research/chat-reasoning-replay/pier/batches/formal-xhigh-threeway-20261028/jobs/formal-xhigh-threeway-20261028--narwhals-rolling-window-suite--r2--stravia-a1/narwhals-rolling-window-suite__d67dnUi"
+        },
+        {
+          "route": "sub2api",
+          "slot": 1,
+          "classification": "pass",
+          "reason": "reward",
+          "reward": 1.0,
+          "attempts": 2,
+          "agent_wall_seconds": 1831.247,
+          "trial_dir": "<repo>/.scratch/research/chat-reasoning-replay/pier/batches/formal-xhigh-threeway-20261028/jobs/formal-xhigh-threeway-20261028--narwhals-rolling-window-suite--r2--sub2api-a2/narwhals-rolling-window-suite__peUGUgx"
+        },
+        {
+          "route": "cpa",
+          "slot": 2,
+          "classification": "pass",
+          "reason": "reward",
+          "reward": 1.0,
+          "attempts": 1,
+          "agent_wall_seconds": 2672.838,
+          "trial_dir": "<repo>/.scratch/research/chat-reasoning-replay/pier/batches/formal-xhigh-threeway-20261028/jobs/formal-xhigh-threeway-20261028--narwhals-rolling-window-suite--r2--cpa-a1/narwhals-rolling-window-suite__MgJg9Dh"
+        }
+      ]
+    }
+  ]
+}

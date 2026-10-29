@@ -1,0 +1,2304 @@
+{
+  "schema": "orchestrate-plan/v1",
+  "batch_id": "formal-xhigh-threeway-20261028",
+  "created_at": "2026-10-28T12:27:09+08:00",
+  "mode": "batch",
+  "seed": 0,
+  "tasks_source": "<repo>/.scratch/research/chat-reasoning-replay/pier/sample.json",
+  "tasks_sha256": "e265786e01fa91315145ea176277f72b66b294cfebb59adad0e5e957b6d8b096",
+  "tasks": [
+    "anko-default-function-arguments",
+    "cliffy-config-file-parsing",
+    "expr-try-catch-errors",
+    "go-genai-streamed-function-args",
+    "gql-incremental-graphql-delivery",
+    "happy-dom-deterministic-intersectionobserver",
+    "ink-grid-box-layout",
+    "kea-atomic-signal-selectors",
+    "kombu-single-active-consumer-priority",
+    "koota-composite-trait-aspects",
+    "meriyah-explicit-resource-declarations",
+    "mnamer-daemon-watch-lifecycle",
+    "narwhals-rolling-window-suite",
+    "numba-stencil-boundary-modes",
+    "oxvg-structural-selector-preservation",
+    "termenv-preserve-ansi-resets",
+    "testem-bail-on-test-failure",
+    "textual-richlog-follow-state",
+    "vitest-duration-sharding",
+    "wasmi-trap-coredumps"
+  ],
+  "rounds": 4,
+  "routes": [
+    {
+      "name": "stravia",
+      "port": 23481,
+      "base_url": "http://127.0.0.1:23481/v1"
+    },
+    {
+      "name": "cpa",
+      "port": 23482,
+      "base_url": "http://127.0.0.1:23482/v1"
+    },
+    {
+      "name": "sub2api",
+      "port": 23483,
+      "base_url": "http://127.0.0.1:23483/v1"
+    }
+  ],
+  "mock_base_url": null,
+  "upstream_host": "127.0.0.1",
+  "model": "gpt-6-luna",
+  "reasoning": "xhigh",
+  "agent_wall_seconds": 3600,
+  "trial_wall_seconds": 5400,
+  "agent_timeout_sec": 3900,
+  "max_attempts": 3,
+  "prepare_route_flag": false,
+  "max_groups": 5,
+  "signature": "733339bff6b84de3d39d1b91e8b727955d2f9990d954abac157d876ab5814aa9",
+  "n_groups": 80,
+  "n_trials": 240,
+  "groups": [
+    {
+      "group_id": "oxvg-structural-selector-preservation@r1",
+      "task": "oxvg-structural-selector-preservation",
+      "round": 1,
+      "trials": [
+        {
+          "route": "stravia",
+          "slot": 0,
+          "port": 23481,
+          "base_url": "http://127.0.0.1:23481/v1",
+          "job_name_prefix": "formal-xhigh-threeway-20261028--oxvg-structural-selector-preservation--r1--stravia"
+        },
+        {
+          "route": "cpa",
+          "slot": 1,
+          "port": 23482,
+          "base_url": "http://127.0.0.1:23482/v1",
+          "job_name_prefix": "formal-xhigh-threeway-20261028--oxvg-structural-selector-preservation--r1--cpa"
+        },
+        {
+          "route": "sub2api",
+          "slot": 2,
+          "port": 23483,
+          "base_url": "http://127.0.0.1:23483/v1",
+          "job_name_prefix": "formal-xhigh-threeway-20261028--oxvg-structural-selector-preservation--r1--sub2api"
+        }
+      ]
+    },
+    {
+      "group_id": "mnamer-daemon-watch-lifecycle@r1",
+      "task": "mnamer-daemon-watch-lifecycle",
+      "round": 1,
+      "trials": [
+        {
+          "route": "sub2api",
+          "slot": 0,
+          "port": 23483,
+          "base_url": "http://127.0.0.1:23483/v1",
+          "job_name_prefix": "formal-xhigh-threeway-20261028--mnamer-daemon-watch-lifecycle--r1--sub2api"
+        },
+        {
+          "route": "stravia",
+          "slot": 1,
+          "port": 23481,
+          "base_url": "http://127.0.0.1:23481/v1",
+          "job_name_prefix": "formal-xhigh-threeway-20261028--mnamer-daemon-watch-lifecycle--r1--stravia"
+        },
+        {
+          "route": "cpa",
+          "slot": 2,
+          "port": 23482,
+          "base_url": "http://127.0.0.1:23482/v1",
+          "job_name_prefix": "formal-xhigh-threeway-20261028--mnamer-daemon-watch-lifecycle--r1--cpa"
+        }
+      ]
+    },
+    {
+      "group_id": "meriyah-explicit-resource-declarations@r3",
+      "task": "meriyah-explicit-resource-declarations",
+      "round": 3,
+      "trials": [
+        {
+          "route": "stravia",
+          "slot": 0,
+          "port": 23481,
+          "base_url": "http://127.0.0.1:23481/v1",
+          "job_name_prefix": "formal-xhigh-threeway-20261028--meriyah-explicit-resource-declarations--r3--stravia"
+        },
+        {
+          "route": "cpa",
+          "slot": 1,
+          "port": 23482,
+          "base_url": "http://127.0.0.1:23482/v1",
+          "job_name_prefix": "formal-xhigh-threeway-20261028--meriyah-explicit-resource-declarations--r3--cpa"
+        },
+        {
+          "route": "sub2api",
+          "slot": 2,
+          "port": 23483,
+          "base_url": "http://127.0.0.1:23483/v1",
+          "job_name_prefix": "formal-xhigh-threeway-20261028--meriyah-explicit-resource-declarations--r3--sub2api"
+        }
+      ]
+    },
+    {
+      "group_id": "narwhals-rolling-window-suite@r3",
+      "task": "narwhals-rolling-window-suite",
+      "round": 3,
+      "trials": [
+        {
+          "route": "sub2api",
+          "slot": 0,
+          "port": 23483,
+          "base_url": "http://127.0.0.1:23483/v1",
+          "job_name_prefix": "formal-xhigh-threeway-20261028--narwhals-rolling-window-suite--r3--sub2api"
+        },
+        {
+          "route": "stravia",
+          "slot": 1,
+          "port": 23481,
+          "base_url": "http://127.0.0.1:23481/v1",
+          "job_name_prefix": "formal-xhigh-threeway-20261028--narwhals-rolling-window-suite--r3--stravia"
+        },
+        {
+          "route": "cpa",
+          "slot": 2,
+          "port": 23482,
+          "base_url": "http://127.0.0.1:23482/v1",
+          "job_name_prefix": "formal-xhigh-threeway-20261028--narwhals-rolling-window-suite--r3--cpa"
+        }
+      ]
+    },
+    {
+      "group_id": "ink-grid-box-layout@r1",
+      "task": "ink-grid-box-layout",
+      "round": 1,
+      "trials": [
+        {
+          "route": "sub2api",
+          "slot": 0,
+          "port": 23483,
+          "base_url": "http://127.0.0.1:23483/v1",
+          "job_name_prefix": "formal-xhigh-threeway-20261028--ink-grid-box-layout--r1--sub2api"
+        },
+        {
+          "route": "stravia",
+          "slot": 1,
+          "port": 23481,
+          "base_url": "http://127.0.0.1:23481/v1",
+          "job_name_prefix": "formal-xhigh-threeway-20261028--ink-grid-box-layout--r1--stravia"
+        },
+        {
+          "route": "cpa",
+          "slot": 2,
+          "port": 23482,
+          "base_url": "http://127.0.0.1:23482/v1",
+          "job_name_prefix": "formal-xhigh-threeway-20261028--ink-grid-box-layout--r1--cpa"
+        }
+      ]
+    },
+    {
+      "group_id": "kea-atomic-signal-selectors@r4",
+      "task": "kea-atomic-signal-selectors",
+      "round": 4,
+      "trials": [
+        {
+          "route": "cpa",
+          "slot": 0,
+          "port": 23482,
+          "base_url": "http://127.0.0.1:23482/v1",
+          "job_name_prefix": "formal-xhigh-threeway-20261028--kea-atomic-signal-selectors--r4--cpa"
+        },
+        {
+          "route": "sub2api",
+          "slot": 1,
+          "port": 23483,
+          "base_url": "http://127.0.0.1:23483/v1",
+          "job_name_prefix": "formal-xhigh-threeway-20261028--kea-atomic-signal-selectors--r4--sub2api"
+        },
+        {
+          "route": "stravia",
+          "slot": 2,
+          "port": 23481,
+          "base_url": "http://127.0.0.1:23481/v1",
+          "job_name_prefix": "formal-xhigh-threeway-20261028--kea-atomic-signal-selectors--r4--stravia"
+        }
+      ]
+    },
+    {
+      "group_id": "textual-richlog-follow-state@r1",
+      "task": "textual-richlog-follow-state",
+      "round": 1,
+      "trials": [
+        {
+          "route": "sub2api",
+          "slot": 0,
+          "port": 23483,
+          "base_url": "http://127.0.0.1:23483/v1",
+          "job_name_prefix": "formal-xhigh-threeway-20261028--textual-richlog-follow-state--r1--sub2api"
+        },
+        {
+          "route": "cpa",
+          "slot": 1,
+          "port": 23482,
+          "base_url": "http://127.0.0.1:23482/v1",
+          "job_name_prefix": "formal-xhigh-threeway-20261028--textual-richlog-follow-state--r1--cpa"
+        },
+        {
+          "route": "stravia",
+          "slot": 2,
+          "port": 23481,
+          "base_url": "http://127.0.0.1:23481/v1",
+          "job_name_prefix": "formal-xhigh-threeway-20261028--textual-richlog-follow-state--r1--stravia"
+        }
+      ]
+    },
+    {
+      "group_id": "expr-try-catch-errors@r4",
+      "task": "expr-try-catch-errors",
+      "round": 4,
+      "trials": [
+        {
+          "route": "sub2api",
+          "slot": 0,
+          "port": 23483,
+          "base_url": "http://127.0.0.1:23483/v1",
+          "job_name_prefix": "formal-xhigh-threeway-20261028--expr-try-catch-errors--r4--sub2api"
+        },
+        {
+          "route": "stravia",
+          "slot": 1,
+          "port": 23481,
+          "base_url": "http://127.0.0.1:23481/v1",
+          "job_name_prefix": "formal-xhigh-threeway-20261028--expr-try-catch-errors--r4--stravia"
+        },
+        {
+          "route": "cpa",
+          "slot": 2,
+          "port": 23482,
+          "base_url": "http://127.0.0.1:23482/v1",
+          "job_name_prefix": "formal-xhigh-threeway-20261028--expr-try-catch-errors--r4--cpa"
+        }
+      ]
+    },
+    {
+      "group_id": "testem-bail-on-test-failure@r3",
+      "task": "testem-bail-on-test-failure",
+      "round": 3,
+      "trials": [
+        {
+          "route": "cpa",
+          "slot": 0,
+          "port": 23482,
+          "base_url": "http://127.0.0.1:23482/v1",
+          "job_name_prefix": "formal-xhigh-threeway-20261028--testem-bail-on-test-failure--r3--cpa"
+        },
+        {
+          "route": "sub2api",
+          "slot": 1,
+          "port": 23483,
+          "base_url": "http://127.0.0.1:23483/v1",
+          "job_name_prefix": "formal-xhigh-threeway-20261028--testem-bail-on-test-failure--r3--sub2api"
+        },
+        {
+          "route": "stravia",
+          "slot": 2,
+          "port": 23481,
+          "base_url": "http://127.0.0.1:23481/v1",
+          "job_name_prefix": "formal-xhigh-threeway-20261028--testem-bail-on-test-failure--r3--stravia"
+        }
+      ]
+    },
+    {
+      "group_id": "meriyah-explicit-resource-declarations@r2",
+      "task": "meriyah-explicit-resource-declarations",
+      "round": 2,
+      "trials": [
+        {
+          "route": "cpa",
+          "slot": 0,
+          "port": 23482,
+          "base_url": "http://127.0.0.1:23482/v1",
+          "job_name_prefix": "formal-xhigh-threeway-20261028--meriyah-explicit-resource-declarations--r2--cpa"
+        },
+        {
+          "route": "sub2api",
+          "slot": 1,
+          "port": 23483,
+          "base_url": "http://127.0.0.1:23483/v1",
+          "job_name_prefix": "formal-xhigh-threeway-20261028--meriyah-explicit-resource-declarations--r2--sub2api"
+        },
+        {
+          "route": "stravia",
+          "slot": 2,
+          "port": 23481,
+          "base_url": "http://127.0.0.1:23481/v1",
+          "job_name_prefix": "formal-xhigh-threeway-20261028--meriyah-explicit-resource-declarations--r2--stravia"
+        }
+      ]
+    },
+    {
+      "group_id": "vitest-duration-sharding@r4",
+      "task": "vitest-duration-sharding",
+      "round": 4,
+      "trials": [
+        {
+          "route": "sub2api",
+          "slot": 0,
+          "port": 23483,
+          "base_url": "http://127.0.0.1:23483/v1",
+          "job_name_prefix": "formal-xhigh-threeway-20261028--vitest-duration-sharding--r4--sub2api"
+        },
+        {
+          "route": "cpa",
+          "slot": 1,
+          "port": 23482,
+          "base_url": "http://127.0.0.1:23482/v1",
+          "job_name_prefix": "formal-xhigh-threeway-20261028--vitest-duration-sharding--r4--cpa"
+        },
+        {
+          "route": "stravia",
+          "slot": 2,
+          "port": 23481,
+          "base_url": "http://127.0.0.1:23481/v1",
+          "job_name_prefix": "formal-xhigh-threeway-20261028--vitest-duration-sharding--r4--stravia"
+        }
+      ]
+    },
+    {
+      "group_id": "expr-try-catch-errors@r1",
+      "task": "expr-try-catch-errors",
+      "round": 1,
+      "trials": [
+        {
+          "route": "stravia",
+          "slot": 0,
+          "port": 23481,
+          "base_url": "http://127.0.0.1:23481/v1",
+          "job_name_prefix": "formal-xhigh-threeway-20261028--expr-try-catch-errors--r1--stravia"
+        },
+        {
+          "route": "cpa",
+          "slot": 1,
+          "port": 23482,
+          "base_url": "http://127.0.0.1:23482/v1",
+          "job_name_prefix": "formal-xhigh-threeway-20261028--expr-try-catch-errors--r1--cpa"
+        },
+        {
+          "route": "sub2api",
+          "slot": 2,
+          "port": 23483,
+          "base_url": "http://127.0.0.1:23483/v1",
+          "job_name_prefix": "formal-xhigh-threeway-20261028--expr-try-catch-errors--r1--sub2api"
+        }
+      ]
+    },
+    {
+      "group_id": "koota-composite-trait-aspects@r2",
+      "task": "koota-composite-trait-aspects",
+      "round": 2,
+      "trials": [
+        {
+          "route": "cpa",
+          "slot": 0,
+          "port": 23482,
+          "base_url": "http://127.0.0.1:23482/v1",
+          "job_name_prefix": "formal-xhigh-threeway-20261028--koota-composite-trait-aspects--r2--cpa"
+        },
+        {
+          "route": "stravia",
+          "slot": 1,
+          "port": 23481,
+          "base_url": "http://127.0.0.1:23481/v1",
+          "job_name_prefix": "formal-xhigh-threeway-20261028--koota-composite-trait-aspects--r2--stravia"
+        },
+        {
+          "route": "sub2api",
+          "slot": 2,
+          "port": 23483,
+          "base_url": "http://127.0.0.1:23483/v1",
+          "job_name_prefix": "formal-xhigh-threeway-20261028--koota-composite-trait-aspects--r2--sub2api"
+        }
+      ]
+    },
+    {
+      "group_id": "kea-atomic-signal-selectors@r2",
+      "task": "kea-atomic-signal-selectors",
+      "round": 2,
+      "trials": [
+        {
+          "route": "sub2api",
+          "slot": 0,
+          "port": 23483,
+          "base_url": "http://127.0.0.1:23483/v1",
+          "job_name_prefix": "formal-xhigh-threeway-20261028--kea-atomic-signal-selectors--r2--sub2api"
+        },
+        {
+          "route": "cpa",
+          "slot": 1,
+          "port": 23482,
+          "base_url": "http://127.0.0.1:23482/v1",
+          "job_name_prefix": "formal-xhigh-threeway-20261028--kea-atomic-signal-selectors--r2--cpa"
+        },
+        {
+          "route": "stravia",
+          "slot": 2,
+          "port": 23481,
+          "base_url": "http://127.0.0.1:23481/v1",
+          "job_name_prefix": "formal-xhigh-threeway-20261028--kea-atomic-signal-selectors--r2--stravia"
+        }
+      ]
+    },
+    {
+      "group_id": "anko-default-function-arguments@r2",
+      "task": "anko-default-function-arguments",
+      "round": 2,
+      "trials": [
+        {
+          "route": "stravia",
+          "slot": 0,
+          "port": 23481,
+          "base_url": "http://127.0.0.1:23481/v1",
+          "job_name_prefix": "formal-xhigh-threeway-20261028--anko-default-function-arguments--r2--stravia"
+        },
+        {
+          "route": "cpa",
+          "slot": 1,
+          "port": 23482,
+          "base_url": "http://127.0.0.1:23482/v1",
+          "job_name_prefix": "formal-xhigh-threeway-20261028--anko-default-function-arguments--r2--cpa"
+        },
+        {
+          "route": "sub2api",
+          "slot": 2,
+          "port": 23483,
+          "base_url": "http://127.0.0.1:23483/v1",
+          "job_name_prefix": "formal-xhigh-threeway-20261028--anko-default-function-arguments--r2--sub2api"
+        }
+      ]
+    },
+    {
+      "group_id": "go-genai-streamed-function-args@r3",
+      "task": "go-genai-streamed-function-args",
+      "round": 3,
+      "trials": [
+        {
+          "route": "stravia",
+          "slot": 0,
+          "port": 23481,
+          "base_url": "http://127.0.0.1:23481/v1",
+          "job_name_prefix": "formal-xhigh-threeway-20261028--go-genai-streamed-function-args--r3--stravia"
+        },
+        {
+          "route": "sub2api",
+          "slot": 1,
+          "port": 23483,
+          "base_url": "http://127.0.0.1:23483/v1",
+          "job_name_prefix": "formal-xhigh-threeway-20261028--go-genai-streamed-function-args--r3--sub2api"
+        },
+        {
+          "route": "cpa",
+          "slot": 2,
+          "port": 23482,
+          "base_url": "http://127.0.0.1:23482/v1",
+          "job_name_prefix": "formal-xhigh-threeway-20261028--go-genai-streamed-function-args--r3--cpa"
+        }
+      ]
+    },
+    {
+      "group_id": "numba-stencil-boundary-modes@r1",
+      "task": "numba-stencil-boundary-modes",
+      "round": 1,
+      "trials": [
+        {
+          "route": "stravia",
+          "slot": 0,
+          "port": 23481,
+          "base_url": "http://127.0.0.1:23481/v1",
+          "job_name_prefix": "formal-xhigh-threeway-20261028--numba-stencil-boundary-modes--r1--stravia"
+        },
+        {
+          "route": "cpa",
+          "slot": 1,
+          "port": 23482,
+          "base_url": "http://127.0.0.1:23482/v1",
+          "job_name_prefix": "formal-xhigh-threeway-20261028--numba-stencil-boundary-modes--r1--cpa"
+        },
+        {
+          "route": "sub2api",
+          "slot": 2,
+          "port": 23483,
+          "base_url": "http://127.0.0.1:23483/v1",
+          "job_name_prefix": "formal-xhigh-threeway-20261028--numba-stencil-boundary-modes--r1--sub2api"
+        }
+      ]
+    },
+    {
+      "group_id": "oxvg-structural-selector-preservation@r4",
+      "task": "oxvg-structural-selector-preservation",
+      "round": 4,
+      "trials": [
+        {
+          "route": "sub2api",
+          "slot": 0,
+          "port": 23483,
+          "base_url": "http://127.0.0.1:23483/v1",
+          "job_name_prefix": "formal-xhigh-threeway-20261028--oxvg-structural-selector-preservation--r4--sub2api"
+        },
+        {
+          "route": "cpa",
+          "slot": 1,
+          "port": 23482,
+          "base_url": "http://127.0.0.1:23482/v1",
+          "job_name_prefix": "formal-xhigh-threeway-20261028--oxvg-structural-selector-preservation--r4--cpa"
+        },
+        {
+          "route": "stravia",
+          "slot": 2,
+          "port": 23481,
+          "base_url": "http://127.0.0.1:23481/v1",
+          "job_name_prefix": "formal-xhigh-threeway-20261028--oxvg-structural-selector-preservation--r4--stravia"
+        }
+      ]
+    },
+    {
+      "group_id": "termenv-preserve-ansi-resets@r4",
+      "task": "termenv-preserve-ansi-resets",
+      "round": 4,
+      "trials": [
+        {
+          "route": "cpa",
+          "slot": 0,
+          "port": 23482,
+          "base_url": "http://127.0.0.1:23482/v1",
+          "job_name_prefix": "formal-xhigh-threeway-20261028--termenv-preserve-ansi-resets--r4--cpa"
+        },
+        {
+          "route": "stravia",
+          "slot": 1,
+          "port": 23481,
+          "base_url": "http://127.0.0.1:23481/v1",
+          "job_name_prefix": "formal-xhigh-threeway-20261028--termenv-preserve-ansi-resets--r4--stravia"
+        },
+        {
+          "route": "sub2api",
+          "slot": 2,
+          "port": 23483,
+          "base_url": "http://127.0.0.1:23483/v1",
+          "job_name_prefix": "formal-xhigh-threeway-20261028--termenv-preserve-ansi-resets--r4--sub2api"
+        }
+      ]
+    },
+    {
+      "group_id": "gql-incremental-graphql-delivery@r3",
+      "task": "gql-incremental-graphql-delivery",
+      "round": 3,
+      "trials": [
+        {
+          "route": "stravia",
+          "slot": 0,
+          "port": 23481,
+          "base_url": "http://127.0.0.1:23481/v1",
+          "job_name_prefix": "formal-xhigh-threeway-20261028--gql-incremental-graphql-delivery--r3--stravia"
+        },
+        {
+          "route": "sub2api",
+          "slot": 1,
+          "port": 23483,
+          "base_url": "http://127.0.0.1:23483/v1",
+          "job_name_prefix": "formal-xhigh-threeway-20261028--gql-incremental-graphql-delivery--r3--sub2api"
+        },
+        {
+          "route": "cpa",
+          "slot": 2,
+          "port": 23482,
+          "base_url": "http://127.0.0.1:23482/v1",
+          "job_name_prefix": "formal-xhigh-threeway-20261028--gql-incremental-graphql-delivery--r3--cpa"
+        }
+      ]
+    },
+    {
+      "group_id": "mnamer-daemon-watch-lifecycle@r4",
+      "task": "mnamer-daemon-watch-lifecycle",
+      "round": 4,
+      "trials": [
+        {
+          "route": "cpa",
+          "slot": 0,
+          "port": 23482,
+          "base_url": "http://127.0.0.1:23482/v1",
+          "job_name_prefix": "formal-xhigh-threeway-20261028--mnamer-daemon-watch-lifecycle--r4--cpa"
+        },
+        {
+          "route": "sub2api",
+          "slot": 1,
+          "port": 23483,
+          "base_url": "http://127.0.0.1:23483/v1",
+          "job_name_prefix": "formal-xhigh-threeway-20261028--mnamer-daemon-watch-lifecycle--r4--sub2api"
+        },
+        {
+          "route": "stravia",
+          "slot": 2,
+          "port": 23481,
+          "base_url": "http://127.0.0.1:23481/v1",
+          "job_name_prefix": "formal-xhigh-threeway-20261028--mnamer-daemon-watch-lifecycle--r4--stravia"
+        }
+      ]
+    },
+    {
+      "group_id": "anko-default-function-arguments@r3",
+      "task": "anko-default-function-arguments",
+      "round": 3,
+      "trials": [
+        {
+          "route": "sub2api",
+          "slot": 0,
+          "port": 23483,
+          "base_url": "http://127.0.0.1:23483/v1",
+          "job_name_prefix": "formal-xhigh-threeway-20261028--anko-default-function-arguments--r3--sub2api"
+        },
+        {
+          "route": "cpa",
+          "slot": 1,
+          "port": 23482,
+          "base_url": "http://127.0.0.1:23482/v1",
+          "job_name_prefix": "formal-xhigh-threeway-20261028--anko-default-function-arguments--r3--cpa"
+        },
+        {
+          "route": "stravia",
+          "slot": 2,
+          "port": 23481,
+          "base_url": "http://127.0.0.1:23481/v1",
+          "job_name_prefix": "formal-xhigh-threeway-20261028--anko-default-function-arguments--r3--stravia"
+        }
+      ]
+    },
+    {
+      "group_id": "wasmi-trap-coredumps@r3",
+      "task": "wasmi-trap-coredumps",
+      "round": 3,
+      "trials": [
+        {
+          "route": "cpa",
+          "slot": 0,
+          "port": 23482,
+          "base_url": "http://127.0.0.1:23482/v1",
+          "job_name_prefix": "formal-xhigh-threeway-20261028--wasmi-trap-coredumps--r3--cpa"
+        },
+        {
+          "route": "sub2api",
+          "slot": 1,
+          "port": 23483,
+          "base_url": "http://127.0.0.1:23483/v1",
+          "job_name_prefix": "formal-xhigh-threeway-20261028--wasmi-trap-coredumps--r3--sub2api"
+        },
+        {
+          "route": "stravia",
+          "slot": 2,
+          "port": 23481,
+          "base_url": "http://127.0.0.1:23481/v1",
+          "job_name_prefix": "formal-xhigh-threeway-20261028--wasmi-trap-coredumps--r3--stravia"
+        }
+      ]
+    },
+    {
+      "group_id": "vitest-duration-sharding@r3",
+      "task": "vitest-duration-sharding",
+      "round": 3,
+      "trials": [
+        {
+          "route": "sub2api",
+          "slot": 0,
+          "port": 23483,
+          "base_url": "http://127.0.0.1:23483/v1",
+          "job_name_prefix": "formal-xhigh-threeway-20261028--vitest-duration-sharding--r3--sub2api"
+        },
+        {
+          "route": "stravia",
+          "slot": 1,
+          "port": 23481,
+          "base_url": "http://127.0.0.1:23481/v1",
+          "job_name_prefix": "formal-xhigh-threeway-20261028--vitest-duration-sharding--r3--stravia"
+        },
+        {
+          "route": "cpa",
+          "slot": 2,
+          "port": 23482,
+          "base_url": "http://127.0.0.1:23482/v1",
+          "job_name_prefix": "formal-xhigh-threeway-20261028--vitest-duration-sharding--r3--cpa"
+        }
+      ]
+    },
+    {
+      "group_id": "happy-dom-deterministic-intersectionobserver@r4",
+      "task": "happy-dom-deterministic-intersectionobserver",
+      "round": 4,
+      "trials": [
+        {
+          "route": "stravia",
+          "slot": 0,
+          "port": 23481,
+          "base_url": "http://127.0.0.1:23481/v1",
+          "job_name_prefix": "formal-xhigh-threeway-20261028--happy-dom-deterministic-intersectionobserver--r4--stravia"
+        },
+        {
+          "route": "sub2api",
+          "slot": 1,
+          "port": 23483,
+          "base_url": "http://127.0.0.1:23483/v1",
+          "job_name_prefix": "formal-xhigh-threeway-20261028--happy-dom-deterministic-intersectionobserver--r4--sub2api"
+        },
+        {
+          "route": "cpa",
+          "slot": 2,
+          "port": 23482,
+          "base_url": "http://127.0.0.1:23482/v1",
+          "job_name_prefix": "formal-xhigh-threeway-20261028--happy-dom-deterministic-intersectionobserver--r4--cpa"
+        }
+      ]
+    },
+    {
+      "group_id": "cliffy-config-file-parsing@r4",
+      "task": "cliffy-config-file-parsing",
+      "round": 4,
+      "trials": [
+        {
+          "route": "cpa",
+          "slot": 0,
+          "port": 23482,
+          "base_url": "http://127.0.0.1:23482/v1",
+          "job_name_prefix": "formal-xhigh-threeway-20261028--cliffy-config-file-parsing--r4--cpa"
+        },
+        {
+          "route": "sub2api",
+          "slot": 1,
+          "port": 23483,
+          "base_url": "http://127.0.0.1:23483/v1",
+          "job_name_prefix": "formal-xhigh-threeway-20261028--cliffy-config-file-parsing--r4--sub2api"
+        },
+        {
+          "route": "stravia",
+          "slot": 2,
+          "port": 23481,
+          "base_url": "http://127.0.0.1:23481/v1",
+          "job_name_prefix": "formal-xhigh-threeway-20261028--cliffy-config-file-parsing--r4--stravia"
+        }
+      ]
+    },
+    {
+      "group_id": "expr-try-catch-errors@r3",
+      "task": "expr-try-catch-errors",
+      "round": 3,
+      "trials": [
+        {
+          "route": "cpa",
+          "slot": 0,
+          "port": 23482,
+          "base_url": "http://127.0.0.1:23482/v1",
+          "job_name_prefix": "formal-xhigh-threeway-20261028--expr-try-catch-errors--r3--cpa"
+        },
+        {
+          "route": "sub2api",
+          "slot": 1,
+          "port": 23483,
+          "base_url": "http://127.0.0.1:23483/v1",
+          "job_name_prefix": "formal-xhigh-threeway-20261028--expr-try-catch-errors--r3--sub2api"
+        },
+        {
+          "route": "stravia",
+          "slot": 2,
+          "port": 23481,
+          "base_url": "http://127.0.0.1:23481/v1",
+          "job_name_prefix": "formal-xhigh-threeway-20261028--expr-try-catch-errors--r3--stravia"
+        }
+      ]
+    },
+    {
+      "group_id": "termenv-preserve-ansi-resets@r1",
+      "task": "termenv-preserve-ansi-resets",
+      "round": 1,
+      "trials": [
+        {
+          "route": "cpa",
+          "slot": 0,
+          "port": 23482,
+          "base_url": "http://127.0.0.1:23482/v1",
+          "job_name_prefix": "formal-xhigh-threeway-20261028--termenv-preserve-ansi-resets--r1--cpa"
+        },
+        {
+          "route": "sub2api",
+          "slot": 1,
+          "port": 23483,
+          "base_url": "http://127.0.0.1:23483/v1",
+          "job_name_prefix": "formal-xhigh-threeway-20261028--termenv-preserve-ansi-resets--r1--sub2api"
+        },
+        {
+          "route": "stravia",
+          "slot": 2,
+          "port": 23481,
+          "base_url": "http://127.0.0.1:23481/v1",
+          "job_name_prefix": "formal-xhigh-threeway-20261028--termenv-preserve-ansi-resets--r1--stravia"
+        }
+      ]
+    },
+    {
+      "group_id": "ink-grid-box-layout@r3",
+      "task": "ink-grid-box-layout",
+      "round": 3,
+      "trials": [
+        {
+          "route": "cpa",
+          "slot": 0,
+          "port": 23482,
+          "base_url": "http://127.0.0.1:23482/v1",
+          "job_name_prefix": "formal-xhigh-threeway-20261028--ink-grid-box-layout--r3--cpa"
+        },
+        {
+          "route": "sub2api",
+          "slot": 1,
+          "port": 23483,
+          "base_url": "http://127.0.0.1:23483/v1",
+          "job_name_prefix": "formal-xhigh-threeway-20261028--ink-grid-box-layout--r3--sub2api"
+        },
+        {
+          "route": "stravia",
+          "slot": 2,
+          "port": 23481,
+          "base_url": "http://127.0.0.1:23481/v1",
+          "job_name_prefix": "formal-xhigh-threeway-20261028--ink-grid-box-layout--r3--stravia"
+        }
+      ]
+    },
+    {
+      "group_id": "go-genai-streamed-function-args@r4",
+      "task": "go-genai-streamed-function-args",
+      "round": 4,
+      "trials": [
+        {
+          "route": "cpa",
+          "slot": 0,
+          "port": 23482,
+          "base_url": "http://127.0.0.1:23482/v1",
+          "job_name_prefix": "formal-xhigh-threeway-20261028--go-genai-streamed-function-args--r4--cpa"
+        },
+        {
+          "route": "stravia",
+          "slot": 1,
+          "port": 23481,
+          "base_url": "http://127.0.0.1:23481/v1",
+          "job_name_prefix": "formal-xhigh-threeway-20261028--go-genai-streamed-function-args--r4--stravia"
+        },
+        {
+          "route": "sub2api",
+          "slot": 2,
+          "port": 23483,
+          "base_url": "http://127.0.0.1:23483/v1",
+          "job_name_prefix": "formal-xhigh-threeway-20261028--go-genai-streamed-function-args--r4--sub2api"
+        }
+      ]
+    },
+    {
+      "group_id": "numba-stencil-boundary-modes@r4",
+      "task": "numba-stencil-boundary-modes",
+      "round": 4,
+      "trials": [
+        {
+          "route": "cpa",
+          "slot": 0,
+          "port": 23482,
+          "base_url": "http://127.0.0.1:23482/v1",
+          "job_name_prefix": "formal-xhigh-threeway-20261028--numba-stencil-boundary-modes--r4--cpa"
+        },
+        {
+          "route": "stravia",
+          "slot": 1,
+          "port": 23481,
+          "base_url": "http://127.0.0.1:23481/v1",
+          "job_name_prefix": "formal-xhigh-threeway-20261028--numba-stencil-boundary-modes--r4--stravia"
+        },
+        {
+          "route": "sub2api",
+          "slot": 2,
+          "port": 23483,
+          "base_url": "http://127.0.0.1:23483/v1",
+          "job_name_prefix": "formal-xhigh-threeway-20261028--numba-stencil-boundary-modes--r4--sub2api"
+        }
+      ]
+    },
+    {
+      "group_id": "textual-richlog-follow-state@r4",
+      "task": "textual-richlog-follow-state",
+      "round": 4,
+      "trials": [
+        {
+          "route": "sub2api",
+          "slot": 0,
+          "port": 23483,
+          "base_url": "http://127.0.0.1:23483/v1",
+          "job_name_prefix": "formal-xhigh-threeway-20261028--textual-richlog-follow-state--r4--sub2api"
+        },
+        {
+          "route": "stravia",
+          "slot": 1,
+          "port": 23481,
+          "base_url": "http://127.0.0.1:23481/v1",
+          "job_name_prefix": "formal-xhigh-threeway-20261028--textual-richlog-follow-state--r4--stravia"
+        },
+        {
+          "route": "cpa",
+          "slot": 2,
+          "port": 23482,
+          "base_url": "http://127.0.0.1:23482/v1",
+          "job_name_prefix": "formal-xhigh-threeway-20261028--textual-richlog-follow-state--r4--cpa"
+        }
+      ]
+    },
+    {
+      "group_id": "ink-grid-box-layout@r2",
+      "task": "ink-grid-box-layout",
+      "round": 2,
+      "trials": [
+        {
+          "route": "sub2api",
+          "slot": 0,
+          "port": 23483,
+          "base_url": "http://127.0.0.1:23483/v1",
+          "job_name_prefix": "formal-xhigh-threeway-20261028--ink-grid-box-layout--r2--sub2api"
+        },
+        {
+          "route": "stravia",
+          "slot": 1,
+          "port": 23481,
+          "base_url": "http://127.0.0.1:23481/v1",
+          "job_name_prefix": "formal-xhigh-threeway-20261028--ink-grid-box-layout--r2--stravia"
+        },
+        {
+          "route": "cpa",
+          "slot": 2,
+          "port": 23482,
+          "base_url": "http://127.0.0.1:23482/v1",
+          "job_name_prefix": "formal-xhigh-threeway-20261028--ink-grid-box-layout--r2--cpa"
+        }
+      ]
+    },
+    {
+      "group_id": "wasmi-trap-coredumps@r2",
+      "task": "wasmi-trap-coredumps",
+      "round": 2,
+      "trials": [
+        {
+          "route": "cpa",
+          "slot": 0,
+          "port": 23482,
+          "base_url": "http://127.0.0.1:23482/v1",
+          "job_name_prefix": "formal-xhigh-threeway-20261028--wasmi-trap-coredumps--r2--cpa"
+        },
+        {
+          "route": "sub2api",
+          "slot": 1,
+          "port": 23483,
+          "base_url": "http://127.0.0.1:23483/v1",
+          "job_name_prefix": "formal-xhigh-threeway-20261028--wasmi-trap-coredumps--r2--sub2api"
+        },
+        {
+          "route": "stravia",
+          "slot": 2,
+          "port": 23481,
+          "base_url": "http://127.0.0.1:23481/v1",
+          "job_name_prefix": "formal-xhigh-threeway-20261028--wasmi-trap-coredumps--r2--stravia"
+        }
+      ]
+    },
+    {
+      "group_id": "anko-default-function-arguments@r1",
+      "task": "anko-default-function-arguments",
+      "round": 1,
+      "trials": [
+        {
+          "route": "cpa",
+          "slot": 0,
+          "port": 23482,
+          "base_url": "http://127.0.0.1:23482/v1",
+          "job_name_prefix": "formal-xhigh-threeway-20261028--anko-default-function-arguments--r1--cpa"
+        },
+        {
+          "route": "sub2api",
+          "slot": 1,
+          "port": 23483,
+          "base_url": "http://127.0.0.1:23483/v1",
+          "job_name_prefix": "formal-xhigh-threeway-20261028--anko-default-function-arguments--r1--sub2api"
+        },
+        {
+          "route": "stravia",
+          "slot": 2,
+          "port": 23481,
+          "base_url": "http://127.0.0.1:23481/v1",
+          "job_name_prefix": "formal-xhigh-threeway-20261028--anko-default-function-arguments--r1--stravia"
+        }
+      ]
+    },
+    {
+      "group_id": "anko-default-function-arguments@r4",
+      "task": "anko-default-function-arguments",
+      "round": 4,
+      "trials": [
+        {
+          "route": "cpa",
+          "slot": 0,
+          "port": 23482,
+          "base_url": "http://127.0.0.1:23482/v1",
+          "job_name_prefix": "formal-xhigh-threeway-20261028--anko-default-function-arguments--r4--cpa"
+        },
+        {
+          "route": "stravia",
+          "slot": 1,
+          "port": 23481,
+          "base_url": "http://127.0.0.1:23481/v1",
+          "job_name_prefix": "formal-xhigh-threeway-20261028--anko-default-function-arguments--r4--stravia"
+        },
+        {
+          "route": "sub2api",
+          "slot": 2,
+          "port": 23483,
+          "base_url": "http://127.0.0.1:23483/v1",
+          "job_name_prefix": "formal-xhigh-threeway-20261028--anko-default-function-arguments--r4--sub2api"
+        }
+      ]
+    },
+    {
+      "group_id": "gql-incremental-graphql-delivery@r1",
+      "task": "gql-incremental-graphql-delivery",
+      "round": 1,
+      "trials": [
+        {
+          "route": "sub2api",
+          "slot": 0,
+          "port": 23483,
+          "base_url": "http://127.0.0.1:23483/v1",
+          "job_name_prefix": "formal-xhigh-threeway-20261028--gql-incremental-graphql-delivery--r1--sub2api"
+        },
+        {
+          "route": "stravia",
+          "slot": 1,
+          "port": 23481,
+          "base_url": "http://127.0.0.1:23481/v1",
+          "job_name_prefix": "formal-xhigh-threeway-20261028--gql-incremental-graphql-delivery--r1--stravia"
+        },
+        {
+          "route": "cpa",
+          "slot": 2,
+          "port": 23482,
+          "base_url": "http://127.0.0.1:23482/v1",
+          "job_name_prefix": "formal-xhigh-threeway-20261028--gql-incremental-graphql-delivery--r1--cpa"
+        }
+      ]
+    },
+    {
+      "group_id": "wasmi-trap-coredumps@r1",
+      "task": "wasmi-trap-coredumps",
+      "round": 1,
+      "trials": [
+        {
+          "route": "cpa",
+          "slot": 0,
+          "port": 23482,
+          "base_url": "http://127.0.0.1:23482/v1",
+          "job_name_prefix": "formal-xhigh-threeway-20261028--wasmi-trap-coredumps--r1--cpa"
+        },
+        {
+          "route": "stravia",
+          "slot": 1,
+          "port": 23481,
+          "base_url": "http://127.0.0.1:23481/v1",
+          "job_name_prefix": "formal-xhigh-threeway-20261028--wasmi-trap-coredumps--r1--stravia"
+        },
+        {
+          "route": "sub2api",
+          "slot": 2,
+          "port": 23483,
+          "base_url": "http://127.0.0.1:23483/v1",
+          "job_name_prefix": "formal-xhigh-threeway-20261028--wasmi-trap-coredumps--r1--sub2api"
+        }
+      ]
+    },
+    {
+      "group_id": "kea-atomic-signal-selectors@r1",
+      "task": "kea-atomic-signal-selectors",
+      "round": 1,
+      "trials": [
+        {
+          "route": "cpa",
+          "slot": 0,
+          "port": 23482,
+          "base_url": "http://127.0.0.1:23482/v1",
+          "job_name_prefix": "formal-xhigh-threeway-20261028--kea-atomic-signal-selectors--r1--cpa"
+        },
+        {
+          "route": "stravia",
+          "slot": 1,
+          "port": 23481,
+          "base_url": "http://127.0.0.1:23481/v1",
+          "job_name_prefix": "formal-xhigh-threeway-20261028--kea-atomic-signal-selectors--r1--stravia"
+        },
+        {
+          "route": "sub2api",
+          "slot": 2,
+          "port": 23483,
+          "base_url": "http://127.0.0.1:23483/v1",
+          "job_name_prefix": "formal-xhigh-threeway-20261028--kea-atomic-signal-selectors--r1--sub2api"
+        }
+      ]
+    },
+    {
+      "group_id": "wasmi-trap-coredumps@r4",
+      "task": "wasmi-trap-coredumps",
+      "round": 4,
+      "trials": [
+        {
+          "route": "stravia",
+          "slot": 0,
+          "port": 23481,
+          "base_url": "http://127.0.0.1:23481/v1",
+          "job_name_prefix": "formal-xhigh-threeway-20261028--wasmi-trap-coredumps--r4--stravia"
+        },
+        {
+          "route": "cpa",
+          "slot": 1,
+          "port": 23482,
+          "base_url": "http://127.0.0.1:23482/v1",
+          "job_name_prefix": "formal-xhigh-threeway-20261028--wasmi-trap-coredumps--r4--cpa"
+        },
+        {
+          "route": "sub2api",
+          "slot": 2,
+          "port": 23483,
+          "base_url": "http://127.0.0.1:23483/v1",
+          "job_name_prefix": "formal-xhigh-threeway-20261028--wasmi-trap-coredumps--r4--sub2api"
+        }
+      ]
+    },
+    {
+      "group_id": "narwhals-rolling-window-suite@r1",
+      "task": "narwhals-rolling-window-suite",
+      "round": 1,
+      "trials": [
+        {
+          "route": "cpa",
+          "slot": 0,
+          "port": 23482,
+          "base_url": "http://127.0.0.1:23482/v1",
+          "job_name_prefix": "formal-xhigh-threeway-20261028--narwhals-rolling-window-suite--r1--cpa"
+        },
+        {
+          "route": "stravia",
+          "slot": 1,
+          "port": 23481,
+          "base_url": "http://127.0.0.1:23481/v1",
+          "job_name_prefix": "formal-xhigh-threeway-20261028--narwhals-rolling-window-suite--r1--stravia"
+        },
+        {
+          "route": "sub2api",
+          "slot": 2,
+          "port": 23483,
+          "base_url": "http://127.0.0.1:23483/v1",
+          "job_name_prefix": "formal-xhigh-threeway-20261028--narwhals-rolling-window-suite--r1--sub2api"
+        }
+      ]
+    },
+    {
+      "group_id": "go-genai-streamed-function-args@r2",
+      "task": "go-genai-streamed-function-args",
+      "round": 2,
+      "trials": [
+        {
+          "route": "sub2api",
+          "slot": 0,
+          "port": 23483,
+          "base_url": "http://127.0.0.1:23483/v1",
+          "job_name_prefix": "formal-xhigh-threeway-20261028--go-genai-streamed-function-args--r2--sub2api"
+        },
+        {
+          "route": "stravia",
+          "slot": 1,
+          "port": 23481,
+          "base_url": "http://127.0.0.1:23481/v1",
+          "job_name_prefix": "formal-xhigh-threeway-20261028--go-genai-streamed-function-args--r2--stravia"
+        },
+        {
+          "route": "cpa",
+          "slot": 2,
+          "port": 23482,
+          "base_url": "http://127.0.0.1:23482/v1",
+          "job_name_prefix": "formal-xhigh-threeway-20261028--go-genai-streamed-function-args--r2--cpa"
+        }
+      ]
+    },
+    {
+      "group_id": "meriyah-explicit-resource-declarations@r1",
+      "task": "meriyah-explicit-resource-declarations",
+      "round": 1,
+      "trials": [
+        {
+          "route": "cpa",
+          "slot": 0,
+          "port": 23482,
+          "base_url": "http://127.0.0.1:23482/v1",
+          "job_name_prefix": "formal-xhigh-threeway-20261028--meriyah-explicit-resource-declarations--r1--cpa"
+        },
+        {
+          "route": "sub2api",
+          "slot": 1,
+          "port": 23483,
+          "base_url": "http://127.0.0.1:23483/v1",
+          "job_name_prefix": "formal-xhigh-threeway-20261028--meriyah-explicit-resource-declarations--r1--sub2api"
+        },
+        {
+          "route": "stravia",
+          "slot": 2,
+          "port": 23481,
+          "base_url": "http://127.0.0.1:23481/v1",
+          "job_name_prefix": "formal-xhigh-threeway-20261028--meriyah-explicit-resource-declarations--r1--stravia"
+        }
+      ]
+    },
+    {
+      "group_id": "koota-composite-trait-aspects@r4",
+      "task": "koota-composite-trait-aspects",
+      "round": 4,
+      "trials": [
+        {
+          "route": "stravia",
+          "slot": 0,
+          "port": 23481,
+          "base_url": "http://127.0.0.1:23481/v1",
+          "job_name_prefix": "formal-xhigh-threeway-20261028--koota-composite-trait-aspects--r4--stravia"
+        },
+        {
+          "route": "cpa",
+          "slot": 1,
+          "port": 23482,
+          "base_url": "http://127.0.0.1:23482/v1",
+          "job_name_prefix": "formal-xhigh-threeway-20261028--koota-composite-trait-aspects--r4--cpa"
+        },
+        {
+          "route": "sub2api",
+          "slot": 2,
+          "port": 23483,
+          "base_url": "http://127.0.0.1:23483/v1",
+          "job_name_prefix": "formal-xhigh-threeway-20261028--koota-composite-trait-aspects--r4--sub2api"
+        }
+      ]
+    },
+    {
+      "group_id": "happy-dom-deterministic-intersectionobserver@r1",
+      "task": "happy-dom-deterministic-intersectionobserver",
+      "round": 1,
+      "trials": [
+        {
+          "route": "stravia",
+          "slot": 0,
+          "port": 23481,
+          "base_url": "http://127.0.0.1:23481/v1",
+          "job_name_prefix": "formal-xhigh-threeway-20261028--happy-dom-deterministic-intersectionobserver--r1--stravia"
+        },
+        {
+          "route": "sub2api",
+          "slot": 1,
+          "port": 23483,
+          "base_url": "http://127.0.0.1:23483/v1",
+          "job_name_prefix": "formal-xhigh-threeway-20261028--happy-dom-deterministic-intersectionobserver--r1--sub2api"
+        },
+        {
+          "route": "cpa",
+          "slot": 2,
+          "port": 23482,
+          "base_url": "http://127.0.0.1:23482/v1",
+          "job_name_prefix": "formal-xhigh-threeway-20261028--happy-dom-deterministic-intersectionobserver--r1--cpa"
+        }
+      ]
+    },
+    {
+      "group_id": "textual-richlog-follow-state@r2",
+      "task": "textual-richlog-follow-state",
+      "round": 2,
+      "trials": [
+        {
+          "route": "cpa",
+          "slot": 0,
+          "port": 23482,
+          "base_url": "http://127.0.0.1:23482/v1",
+          "job_name_prefix": "formal-xhigh-threeway-20261028--textual-richlog-follow-state--r2--cpa"
+        },
+        {
+          "route": "sub2api",
+          "slot": 1,
+          "port": 23483,
+          "base_url": "http://127.0.0.1:23483/v1",
+          "job_name_prefix": "formal-xhigh-threeway-20261028--textual-richlog-follow-state--r2--sub2api"
+        },
+        {
+          "route": "stravia",
+          "slot": 2,
+          "port": 23481,
+          "base_url": "http://127.0.0.1:23481/v1",
+          "job_name_prefix": "formal-xhigh-threeway-20261028--textual-richlog-follow-state--r2--stravia"
+        }
+      ]
+    },
+    {
+      "group_id": "happy-dom-deterministic-intersectionobserver@r3",
+      "task": "happy-dom-deterministic-intersectionobserver",
+      "round": 3,
+      "trials": [
+        {
+          "route": "stravia",
+          "slot": 0,
+          "port": 23481,
+          "base_url": "http://127.0.0.1:23481/v1",
+          "job_name_prefix": "formal-xhigh-threeway-20261028--happy-dom-deterministic-intersectionobserver--r3--stravia"
+        },
+        {
+          "route": "cpa",
+          "slot": 1,
+          "port": 23482,
+          "base_url": "http://127.0.0.1:23482/v1",
+          "job_name_prefix": "formal-xhigh-threeway-20261028--happy-dom-deterministic-intersectionobserver--r3--cpa"
+        },
+        {
+          "route": "sub2api",
+          "slot": 2,
+          "port": 23483,
+          "base_url": "http://127.0.0.1:23483/v1",
+          "job_name_prefix": "formal-xhigh-threeway-20261028--happy-dom-deterministic-intersectionobserver--r3--sub2api"
+        }
+      ]
+    },
+    {
+      "group_id": "numba-stencil-boundary-modes@r3",
+      "task": "numba-stencil-boundary-modes",
+      "round": 3,
+      "trials": [
+        {
+          "route": "cpa",
+          "slot": 0,
+          "port": 23482,
+          "base_url": "http://127.0.0.1:23482/v1",
+          "job_name_prefix": "formal-xhigh-threeway-20261028--numba-stencil-boundary-modes--r3--cpa"
+        },
+        {
+          "route": "sub2api",
+          "slot": 1,
+          "port": 23483,
+          "base_url": "http://127.0.0.1:23483/v1",
+          "job_name_prefix": "formal-xhigh-threeway-20261028--numba-stencil-boundary-modes--r3--sub2api"
+        },
+        {
+          "route": "stravia",
+          "slot": 2,
+          "port": 23481,
+          "base_url": "http://127.0.0.1:23481/v1",
+          "job_name_prefix": "formal-xhigh-threeway-20261028--numba-stencil-boundary-modes--r3--stravia"
+        }
+      ]
+    },
+    {
+      "group_id": "kombu-single-active-consumer-priority@r4",
+      "task": "kombu-single-active-consumer-priority",
+      "round": 4,
+      "trials": [
+        {
+          "route": "stravia",
+          "slot": 0,
+          "port": 23481,
+          "base_url": "http://127.0.0.1:23481/v1",
+          "job_name_prefix": "formal-xhigh-threeway-20261028--kombu-single-active-consumer-priority--r4--stravia"
+        },
+        {
+          "route": "cpa",
+          "slot": 1,
+          "port": 23482,
+          "base_url": "http://127.0.0.1:23482/v1",
+          "job_name_prefix": "formal-xhigh-threeway-20261028--kombu-single-active-consumer-priority--r4--cpa"
+        },
+        {
+          "route": "sub2api",
+          "slot": 2,
+          "port": 23483,
+          "base_url": "http://127.0.0.1:23483/v1",
+          "job_name_prefix": "formal-xhigh-threeway-20261028--kombu-single-active-consumer-priority--r4--sub2api"
+        }
+      ]
+    },
+    {
+      "group_id": "kea-atomic-signal-selectors@r3",
+      "task": "kea-atomic-signal-selectors",
+      "round": 3,
+      "trials": [
+        {
+          "route": "sub2api",
+          "slot": 0,
+          "port": 23483,
+          "base_url": "http://127.0.0.1:23483/v1",
+          "job_name_prefix": "formal-xhigh-threeway-20261028--kea-atomic-signal-selectors--r3--sub2api"
+        },
+        {
+          "route": "cpa",
+          "slot": 1,
+          "port": 23482,
+          "base_url": "http://127.0.0.1:23482/v1",
+          "job_name_prefix": "formal-xhigh-threeway-20261028--kea-atomic-signal-selectors--r3--cpa"
+        },
+        {
+          "route": "stravia",
+          "slot": 2,
+          "port": 23481,
+          "base_url": "http://127.0.0.1:23481/v1",
+          "job_name_prefix": "formal-xhigh-threeway-20261028--kea-atomic-signal-selectors--r3--stravia"
+        }
+      ]
+    },
+    {
+      "group_id": "happy-dom-deterministic-intersectionobserver@r2",
+      "task": "happy-dom-deterministic-intersectionobserver",
+      "round": 2,
+      "trials": [
+        {
+          "route": "stravia",
+          "slot": 0,
+          "port": 23481,
+          "base_url": "http://127.0.0.1:23481/v1",
+          "job_name_prefix": "formal-xhigh-threeway-20261028--happy-dom-deterministic-intersectionobserver--r2--stravia"
+        },
+        {
+          "route": "sub2api",
+          "slot": 1,
+          "port": 23483,
+          "base_url": "http://127.0.0.1:23483/v1",
+          "job_name_prefix": "formal-xhigh-threeway-20261028--happy-dom-deterministic-intersectionobserver--r2--sub2api"
+        },
+        {
+          "route": "cpa",
+          "slot": 2,
+          "port": 23482,
+          "base_url": "http://127.0.0.1:23482/v1",
+          "job_name_prefix": "formal-xhigh-threeway-20261028--happy-dom-deterministic-intersectionobserver--r2--cpa"
+        }
+      ]
+    },
+    {
+      "group_id": "meriyah-explicit-resource-declarations@r4",
+      "task": "meriyah-explicit-resource-declarations",
+      "round": 4,
+      "trials": [
+        {
+          "route": "cpa",
+          "slot": 0,
+          "port": 23482,
+          "base_url": "http://127.0.0.1:23482/v1",
+          "job_name_prefix": "formal-xhigh-threeway-20261028--meriyah-explicit-resource-declarations--r4--cpa"
+        },
+        {
+          "route": "stravia",
+          "slot": 1,
+          "port": 23481,
+          "base_url": "http://127.0.0.1:23481/v1",
+          "job_name_prefix": "formal-xhigh-threeway-20261028--meriyah-explicit-resource-declarations--r4--stravia"
+        },
+        {
+          "route": "sub2api",
+          "slot": 2,
+          "port": 23483,
+          "base_url": "http://127.0.0.1:23483/v1",
+          "job_name_prefix": "formal-xhigh-threeway-20261028--meriyah-explicit-resource-declarations--r4--sub2api"
+        }
+      ]
+    },
+    {
+      "group_id": "cliffy-config-file-parsing@r1",
+      "task": "cliffy-config-file-parsing",
+      "round": 1,
+      "trials": [
+        {
+          "route": "cpa",
+          "slot": 0,
+          "port": 23482,
+          "base_url": "http://127.0.0.1:23482/v1",
+          "job_name_prefix": "formal-xhigh-threeway-20261028--cliffy-config-file-parsing--r1--cpa"
+        },
+        {
+          "route": "stravia",
+          "slot": 1,
+          "port": 23481,
+          "base_url": "http://127.0.0.1:23481/v1",
+          "job_name_prefix": "formal-xhigh-threeway-20261028--cliffy-config-file-parsing--r1--stravia"
+        },
+        {
+          "route": "sub2api",
+          "slot": 2,
+          "port": 23483,
+          "base_url": "http://127.0.0.1:23483/v1",
+          "job_name_prefix": "formal-xhigh-threeway-20261028--cliffy-config-file-parsing--r1--sub2api"
+        }
+      ]
+    },
+    {
+      "group_id": "mnamer-daemon-watch-lifecycle@r3",
+      "task": "mnamer-daemon-watch-lifecycle",
+      "round": 3,
+      "trials": [
+        {
+          "route": "cpa",
+          "slot": 0,
+          "port": 23482,
+          "base_url": "http://127.0.0.1:23482/v1",
+          "job_name_prefix": "formal-xhigh-threeway-20261028--mnamer-daemon-watch-lifecycle--r3--cpa"
+        },
+        {
+          "route": "sub2api",
+          "slot": 1,
+          "port": 23483,
+          "base_url": "http://127.0.0.1:23483/v1",
+          "job_name_prefix": "formal-xhigh-threeway-20261028--mnamer-daemon-watch-lifecycle--r3--sub2api"
+        },
+        {
+          "route": "stravia",
+          "slot": 2,
+          "port": 23481,
+          "base_url": "http://127.0.0.1:23481/v1",
+          "job_name_prefix": "formal-xhigh-threeway-20261028--mnamer-daemon-watch-lifecycle--r3--stravia"
+        }
+      ]
+    },
+    {
+      "group_id": "cliffy-config-file-parsing@r3",
+      "task": "cliffy-config-file-parsing",
+      "round": 3,
+      "trials": [
+        {
+          "route": "sub2api",
+          "slot": 0,
+          "port": 23483,
+          "base_url": "http://127.0.0.1:23483/v1",
+          "job_name_prefix": "formal-xhigh-threeway-20261028--cliffy-config-file-parsing--r3--sub2api"
+        },
+        {
+          "route": "cpa",
+          "slot": 1,
+          "port": 23482,
+          "base_url": "http://127.0.0.1:23482/v1",
+          "job_name_prefix": "formal-xhigh-threeway-20261028--cliffy-config-file-parsing--r3--cpa"
+        },
+        {
+          "route": "stravia",
+          "slot": 2,
+          "port": 23481,
+          "base_url": "http://127.0.0.1:23481/v1",
+          "job_name_prefix": "formal-xhigh-threeway-20261028--cliffy-config-file-parsing--r3--stravia"
+        }
+      ]
+    },
+    {
+      "group_id": "gql-incremental-graphql-delivery@r4",
+      "task": "gql-incremental-graphql-delivery",
+      "round": 4,
+      "trials": [
+        {
+          "route": "stravia",
+          "slot": 0,
+          "port": 23481,
+          "base_url": "http://127.0.0.1:23481/v1",
+          "job_name_prefix": "formal-xhigh-threeway-20261028--gql-incremental-graphql-delivery--r4--stravia"
+        },
+        {
+          "route": "cpa",
+          "slot": 1,
+          "port": 23482,
+          "base_url": "http://127.0.0.1:23482/v1",
+          "job_name_prefix": "formal-xhigh-threeway-20261028--gql-incremental-graphql-delivery--r4--cpa"
+        },
+        {
+          "route": "sub2api",
+          "slot": 2,
+          "port": 23483,
+          "base_url": "http://127.0.0.1:23483/v1",
+          "job_name_prefix": "formal-xhigh-threeway-20261028--gql-incremental-graphql-delivery--r4--sub2api"
+        }
+      ]
+    },
+    {
+      "group_id": "expr-try-catch-errors@r2",
+      "task": "expr-try-catch-errors",
+      "round": 2,
+      "trials": [
+        {
+          "route": "sub2api",
+          "slot": 0,
+          "port": 23483,
+          "base_url": "http://127.0.0.1:23483/v1",
+          "job_name_prefix": "formal-xhigh-threeway-20261028--expr-try-catch-errors--r2--sub2api"
+        },
+        {
+          "route": "cpa",
+          "slot": 1,
+          "port": 23482,
+          "base_url": "http://127.0.0.1:23482/v1",
+          "job_name_prefix": "formal-xhigh-threeway-20261028--expr-try-catch-errors--r2--cpa"
+        },
+        {
+          "route": "stravia",
+          "slot": 2,
+          "port": 23481,
+          "base_url": "http://127.0.0.1:23481/v1",
+          "job_name_prefix": "formal-xhigh-threeway-20261028--expr-try-catch-errors--r2--stravia"
+        }
+      ]
+    },
+    {
+      "group_id": "oxvg-structural-selector-preservation@r2",
+      "task": "oxvg-structural-selector-preservation",
+      "round": 2,
+      "trials": [
+        {
+          "route": "cpa",
+          "slot": 0,
+          "port": 23482,
+          "base_url": "http://127.0.0.1:23482/v1",
+          "job_name_prefix": "formal-xhigh-threeway-20261028--oxvg-structural-selector-preservation--r2--cpa"
+        },
+        {
+          "route": "stravia",
+          "slot": 1,
+          "port": 23481,
+          "base_url": "http://127.0.0.1:23481/v1",
+          "job_name_prefix": "formal-xhigh-threeway-20261028--oxvg-structural-selector-preservation--r2--stravia"
+        },
+        {
+          "route": "sub2api",
+          "slot": 2,
+          "port": 23483,
+          "base_url": "http://127.0.0.1:23483/v1",
+          "job_name_prefix": "formal-xhigh-threeway-20261028--oxvg-structural-selector-preservation--r2--sub2api"
+        }
+      ]
+    },
+    {
+      "group_id": "vitest-duration-sharding@r1",
+      "task": "vitest-duration-sharding",
+      "round": 1,
+      "trials": [
+        {
+          "route": "sub2api",
+          "slot": 0,
+          "port": 23483,
+          "base_url": "http://127.0.0.1:23483/v1",
+          "job_name_prefix": "formal-xhigh-threeway-20261028--vitest-duration-sharding--r1--sub2api"
+        },
+        {
+          "route": "cpa",
+          "slot": 1,
+          "port": 23482,
+          "base_url": "http://127.0.0.1:23482/v1",
+          "job_name_prefix": "formal-xhigh-threeway-20261028--vitest-duration-sharding--r1--cpa"
+        },
+        {
+          "route": "stravia",
+          "slot": 2,
+          "port": 23481,
+          "base_url": "http://127.0.0.1:23481/v1",
+          "job_name_prefix": "formal-xhigh-threeway-20261028--vitest-duration-sharding--r1--stravia"
+        }
+      ]
+    },
+    {
+      "group_id": "vitest-duration-sharding@r2",
+      "task": "vitest-duration-sharding",
+      "round": 2,
+      "trials": [
+        {
+          "route": "stravia",
+          "slot": 0,
+          "port": 23481,
+          "base_url": "http://127.0.0.1:23481/v1",
+          "job_name_prefix": "formal-xhigh-threeway-20261028--vitest-duration-sharding--r2--stravia"
+        },
+        {
+          "route": "cpa",
+          "slot": 1,
+          "port": 23482,
+          "base_url": "http://127.0.0.1:23482/v1",
+          "job_name_prefix": "formal-xhigh-threeway-20261028--vitest-duration-sharding--r2--cpa"
+        },
+        {
+          "route": "sub2api",
+          "slot": 2,
+          "port": 23483,
+          "base_url": "http://127.0.0.1:23483/v1",
+          "job_name_prefix": "formal-xhigh-threeway-20261028--vitest-duration-sharding--r2--sub2api"
+        }
+      ]
+    },
+    {
+      "group_id": "textual-richlog-follow-state@r3",
+      "task": "textual-richlog-follow-state",
+      "round": 3,
+      "trials": [
+        {
+          "route": "stravia",
+          "slot": 0,
+          "port": 23481,
+          "base_url": "http://127.0.0.1:23481/v1",
+          "job_name_prefix": "formal-xhigh-threeway-20261028--textual-richlog-follow-state--r3--stravia"
+        },
+        {
+          "route": "cpa",
+          "slot": 1,
+          "port": 23482,
+          "base_url": "http://127.0.0.1:23482/v1",
+          "job_name_prefix": "formal-xhigh-threeway-20261028--textual-richlog-follow-state--r3--cpa"
+        },
+        {
+          "route": "sub2api",
+          "slot": 2,
+          "port": 23483,
+          "base_url": "http://127.0.0.1:23483/v1",
+          "job_name_prefix": "formal-xhigh-threeway-20261028--textual-richlog-follow-state--r3--sub2api"
+        }
+      ]
+    },
+    {
+      "group_id": "kombu-single-active-consumer-priority@r3",
+      "task": "kombu-single-active-consumer-priority",
+      "round": 3,
+      "trials": [
+        {
+          "route": "stravia",
+          "slot": 0,
+          "port": 23481,
+          "base_url": "http://127.0.0.1:23481/v1",
+          "job_name_prefix": "formal-xhigh-threeway-20261028--kombu-single-active-consumer-priority--r3--stravia"
+        },
+        {
+          "route": "cpa",
+          "slot": 1,
+          "port": 23482,
+          "base_url": "http://127.0.0.1:23482/v1",
+          "job_name_prefix": "formal-xhigh-threeway-20261028--kombu-single-active-consumer-priority--r3--cpa"
+        },
+        {
+          "route": "sub2api",
+          "slot": 2,
+          "port": 23483,
+          "base_url": "http://127.0.0.1:23483/v1",
+          "job_name_prefix": "formal-xhigh-threeway-20261028--kombu-single-active-consumer-priority--r3--sub2api"
+        }
+      ]
+    },
+    {
+      "group_id": "oxvg-structural-selector-preservation@r3",
+      "task": "oxvg-structural-selector-preservation",
+      "round": 3,
+      "trials": [
+        {
+          "route": "stravia",
+          "slot": 0,
+          "port": 23481,
+          "base_url": "http://127.0.0.1:23481/v1",
+          "job_name_prefix": "formal-xhigh-threeway-20261028--oxvg-structural-selector-preservation--r3--stravia"
+        },
+        {
+          "route": "sub2api",
+          "slot": 1,
+          "port": 23483,
+          "base_url": "http://127.0.0.1:23483/v1",
+          "job_name_prefix": "formal-xhigh-threeway-20261028--oxvg-structural-selector-preservation--r3--sub2api"
+        },
+        {
+          "route": "cpa",
+          "slot": 2,
+          "port": 23482,
+          "base_url": "http://127.0.0.1:23482/v1",
+          "job_name_prefix": "formal-xhigh-threeway-20261028--oxvg-structural-selector-preservation--r3--cpa"
+        }
+      ]
+    },
+    {
+      "group_id": "kombu-single-active-consumer-priority@r1",
+      "task": "kombu-single-active-consumer-priority",
+      "round": 1,
+      "trials": [
+        {
+          "route": "cpa",
+          "slot": 0,
+          "port": 23482,
+          "base_url": "http://127.0.0.1:23482/v1",
+          "job_name_prefix": "formal-xhigh-threeway-20261028--kombu-single-active-consumer-priority--r1--cpa"
+        },
+        {
+          "route": "sub2api",
+          "slot": 1,
+          "port": 23483,
+          "base_url": "http://127.0.0.1:23483/v1",
+          "job_name_prefix": "formal-xhigh-threeway-20261028--kombu-single-active-consumer-priority--r1--sub2api"
+        },
+        {
+          "route": "stravia",
+          "slot": 2,
+          "port": 23481,
+          "base_url": "http://127.0.0.1:23481/v1",
+          "job_name_prefix": "formal-xhigh-threeway-20261028--kombu-single-active-consumer-priority--r1--stravia"
+        }
+      ]
+    },
+    {
+      "group_id": "go-genai-streamed-function-args@r1",
+      "task": "go-genai-streamed-function-args",
+      "round": 1,
+      "trials": [
+        {
+          "route": "sub2api",
+          "slot": 0,
+          "port": 23483,
+          "base_url": "http://127.0.0.1:23483/v1",
+          "job_name_prefix": "formal-xhigh-threeway-20261028--go-genai-streamed-function-args--r1--sub2api"
+        },
+        {
+          "route": "stravia",
+          "slot": 1,
+          "port": 23481,
+          "base_url": "http://127.0.0.1:23481/v1",
+          "job_name_prefix": "formal-xhigh-threeway-20261028--go-genai-streamed-function-args--r1--stravia"
+        },
+        {
+          "route": "cpa",
+          "slot": 2,
+          "port": 23482,
+          "base_url": "http://127.0.0.1:23482/v1",
+          "job_name_prefix": "formal-xhigh-threeway-20261028--go-genai-streamed-function-args--r1--cpa"
+        }
+      ]
+    },
+    {
+      "group_id": "testem-bail-on-test-failure@r4",
+      "task": "testem-bail-on-test-failure",
+      "round": 4,
+      "trials": [
+        {
+          "route": "sub2api",
+          "slot": 0,
+          "port": 23483,
+          "base_url": "http://127.0.0.1:23483/v1",
+          "job_name_prefix": "formal-xhigh-threeway-20261028--testem-bail-on-test-failure--r4--sub2api"
+        },
+        {
+          "route": "stravia",
+          "slot": 1,
+          "port": 23481,
+          "base_url": "http://127.0.0.1:23481/v1",
+          "job_name_prefix": "formal-xhigh-threeway-20261028--testem-bail-on-test-failure--r4--stravia"
+        },
+        {
+          "route": "cpa",
+          "slot": 2,
+          "port": 23482,
+          "base_url": "http://127.0.0.1:23482/v1",
+          "job_name_prefix": "formal-xhigh-threeway-20261028--testem-bail-on-test-failure--r4--cpa"
+        }
+      ]
+    },
+    {
+      "group_id": "koota-composite-trait-aspects@r1",
+      "task": "koota-composite-trait-aspects",
+      "round": 1,
+      "trials": [
+        {
+          "route": "stravia",
+          "slot": 0,
+          "port": 23481,
+          "base_url": "http://127.0.0.1:23481/v1",
+          "job_name_prefix": "formal-xhigh-threeway-20261028--koota-composite-trait-aspects--r1--stravia"
+        },
+        {
+          "route": "cpa",
+          "slot": 1,
+          "port": 23482,
+          "base_url": "http://127.0.0.1:23482/v1",
+          "job_name_prefix": "formal-xhigh-threeway-20261028--koota-composite-trait-aspects--r1--cpa"
+        },
+        {
+          "route": "sub2api",
+          "slot": 2,
+          "port": 23483,
+          "base_url": "http://127.0.0.1:23483/v1",
+          "job_name_prefix": "formal-xhigh-threeway-20261028--koota-composite-trait-aspects--r1--sub2api"
+        }
+      ]
+    },
+    {
+      "group_id": "gql-incremental-graphql-delivery@r2",
+      "task": "gql-incremental-graphql-delivery",
+      "round": 2,
+      "trials": [
+        {
+          "route": "cpa",
+          "slot": 0,
+          "port": 23482,
+          "base_url": "http://127.0.0.1:23482/v1",
+          "job_name_prefix": "formal-xhigh-threeway-20261028--gql-incremental-graphql-delivery--r2--cpa"
+        },
+        {
+          "route": "sub2api",
+          "slot": 1,
+          "port": 23483,
+          "base_url": "http://127.0.0.1:23483/v1",
+          "job_name_prefix": "formal-xhigh-threeway-20261028--gql-incremental-graphql-delivery--r2--sub2api"
+        },
+        {
+          "route": "stravia",
+          "slot": 2,
+          "port": 23481,
+          "base_url": "http://127.0.0.1:23481/v1",
+          "job_name_prefix": "formal-xhigh-threeway-20261028--gql-incremental-graphql-delivery--r2--stravia"
+        }
+      ]
+    },
+    {
+      "group_id": "testem-bail-on-test-failure@r1",
+      "task": "testem-bail-on-test-failure",
+      "round": 1,
+      "trials": [
+        {
+          "route": "stravia",
+          "slot": 0,
+          "port": 23481,
+          "base_url": "http://127.0.0.1:23481/v1",
+          "job_name_prefix": "formal-xhigh-threeway-20261028--testem-bail-on-test-failure--r1--stravia"
+        },
+        {
+          "route": "sub2api",
+          "slot": 1,
+          "port": 23483,
+          "base_url": "http://127.0.0.1:23483/v1",
+          "job_name_prefix": "formal-xhigh-threeway-20261028--testem-bail-on-test-failure--r1--sub2api"
+        },
+        {
+          "route": "cpa",
+          "slot": 2,
+          "port": 23482,
+          "base_url": "http://127.0.0.1:23482/v1",
+          "job_name_prefix": "formal-xhigh-threeway-20261028--testem-bail-on-test-failure--r1--cpa"
+        }
+      ]
+    },
+    {
+      "group_id": "ink-grid-box-layout@r4",
+      "task": "ink-grid-box-layout",
+      "round": 4,
+      "trials": [
+        {
+          "route": "stravia",
+          "slot": 0,
+          "port": 23481,
+          "base_url": "http://127.0.0.1:23481/v1",
+          "job_name_prefix": "formal-xhigh-threeway-20261028--ink-grid-box-layout--r4--stravia"
+        },
+        {
+          "route": "cpa",
+          "slot": 1,
+          "port": 23482,
+          "base_url": "http://127.0.0.1:23482/v1",
+          "job_name_prefix": "formal-xhigh-threeway-20261028--ink-grid-box-layout--r4--cpa"
+        },
+        {
+          "route": "sub2api",
+          "slot": 2,
+          "port": 23483,
+          "base_url": "http://127.0.0.1:23483/v1",
+          "job_name_prefix": "formal-xhigh-threeway-20261028--ink-grid-box-layout--r4--sub2api"
+        }
+      ]
+    },
+    {
+      "group_id": "mnamer-daemon-watch-lifecycle@r2",
+      "task": "mnamer-daemon-watch-lifecycle",
+      "round": 2,
+      "trials": [
+        {
+          "route": "stravia",
+          "slot": 0,
+          "port": 23481,
+          "base_url": "http://127.0.0.1:23481/v1",
+          "job_name_prefix": "formal-xhigh-threeway-20261028--mnamer-daemon-watch-lifecycle--r2--stravia"
+        },
+        {
+          "route": "cpa",
+          "slot": 1,
+          "port": 23482,
+          "base_url": "http://127.0.0.1:23482/v1",
+          "job_name_prefix": "formal-xhigh-threeway-20261028--mnamer-daemon-watch-lifecycle--r2--cpa"
+        },
+        {
+          "route": "sub2api",
+          "slot": 2,
+          "port": 23483,
+          "base_url": "http://127.0.0.1:23483/v1",
+          "job_name_prefix": "formal-xhigh-threeway-20261028--mnamer-daemon-watch-lifecycle--r2--sub2api"
+        }
+      ]
+    },
+    {
+      "group_id": "termenv-preserve-ansi-resets@r2",
+      "task": "termenv-preserve-ansi-resets",
+      "round": 2,
+      "trials": [
+        {
+          "route": "cpa",
+          "slot": 0,
+          "port": 23482,
+          "base_url": "http://127.0.0.1:23482/v1",
+          "job_name_prefix": "formal-xhigh-threeway-20261028--termenv-preserve-ansi-resets--r2--cpa"
+        },
+        {
+          "route": "stravia",
+          "slot": 1,
+          "port": 23481,
+          "base_url": "http://127.0.0.1:23481/v1",
+          "job_name_prefix": "formal-xhigh-threeway-20261028--termenv-preserve-ansi-resets--r2--stravia"
+        },
+        {
+          "route": "sub2api",
+          "slot": 2,
+          "port": 23483,
+          "base_url": "http://127.0.0.1:23483/v1",
+          "job_name_prefix": "formal-xhigh-threeway-20261028--termenv-preserve-ansi-resets--r2--sub2api"
+        }
+      ]
+    },
+    {
+      "group_id": "koota-composite-trait-aspects@r3",
+      "task": "koota-composite-trait-aspects",
+      "round": 3,
+      "trials": [
+        {
+          "route": "stravia",
+          "slot": 0,
+          "port": 23481,
+          "base_url": "http://127.0.0.1:23481/v1",
+          "job_name_prefix": "formal-xhigh-threeway-20261028--koota-composite-trait-aspects--r3--stravia"
+        },
+        {
+          "route": "cpa",
+          "slot": 1,
+          "port": 23482,
+          "base_url": "http://127.0.0.1:23482/v1",
+          "job_name_prefix": "formal-xhigh-threeway-20261028--koota-composite-trait-aspects--r3--cpa"
+        },
+        {
+          "route": "sub2api",
+          "slot": 2,
+          "port": 23483,
+          "base_url": "http://127.0.0.1:23483/v1",
+          "job_name_prefix": "formal-xhigh-threeway-20261028--koota-composite-trait-aspects--r3--sub2api"
+        }
+      ]
+    },
+    {
+      "group_id": "narwhals-rolling-window-suite@r4",
+      "task": "narwhals-rolling-window-suite",
+      "round": 4,
+      "trials": [
+        {
+          "route": "stravia",
+          "slot": 0,
+          "port": 23481,
+          "base_url": "http://127.0.0.1:23481/v1",
+          "job_name_prefix": "formal-xhigh-threeway-20261028--narwhals-rolling-window-suite--r4--stravia"
+        },
+        {
+          "route": "sub2api",
+          "slot": 1,
+          "port": 23483,
+          "base_url": "http://127.0.0.1:23483/v1",
+          "job_name_prefix": "formal-xhigh-threeway-20261028--narwhals-rolling-window-suite--r4--sub2api"
+        },
+        {
+          "route": "cpa",
+          "slot": 2,
+          "port": 23482,
+          "base_url": "http://127.0.0.1:23482/v1",
+          "job_name_prefix": "formal-xhigh-threeway-20261028--narwhals-rolling-window-suite--r4--cpa"
+        }
+      ]
+    },
+    {
+      "group_id": "termenv-preserve-ansi-resets@r3",
+      "task": "termenv-preserve-ansi-resets",
+      "round": 3,
+      "trials": [
+        {
+          "route": "cpa",
+          "slot": 0,
+          "port": 23482,
+          "base_url": "http://127.0.0.1:23482/v1",
+          "job_name_prefix": "formal-xhigh-threeway-20261028--termenv-preserve-ansi-resets--r3--cpa"
+        },
+        {
+          "route": "stravia",
+          "slot": 1,
+          "port": 23481,
+          "base_url": "http://127.0.0.1:23481/v1",
+          "job_name_prefix": "formal-xhigh-threeway-20261028--termenv-preserve-ansi-resets--r3--stravia"
+        },
+        {
+          "route": "sub2api",
+          "slot": 2,
+          "port": 23483,
+          "base_url": "http://127.0.0.1:23483/v1",
+          "job_name_prefix": "formal-xhigh-threeway-20261028--termenv-preserve-ansi-resets--r3--sub2api"
+        }
+      ]
+    },
+    {
+      "group_id": "testem-bail-on-test-failure@r2",
+      "task": "testem-bail-on-test-failure",
+      "round": 2,
+      "trials": [
+        {
+          "route": "cpa",
+          "slot": 0,
+          "port": 23482,
+          "base_url": "http://127.0.0.1:23482/v1",
+          "job_name_prefix": "formal-xhigh-threeway-20261028--testem-bail-on-test-failure--r2--cpa"
+        },
+        {
+          "route": "sub2api",
+          "slot": 1,
+          "port": 23483,
+          "base_url": "http://127.0.0.1:23483/v1",
+          "job_name_prefix": "formal-xhigh-threeway-20261028--testem-bail-on-test-failure--r2--sub2api"
+        },
+        {
+          "route": "stravia",
+          "slot": 2,
+          "port": 23481,
+          "base_url": "http://127.0.0.1:23481/v1",
+          "job_name_prefix": "formal-xhigh-threeway-20261028--testem-bail-on-test-failure--r2--stravia"
+        }
+      ]
+    },
+    {
+      "group_id": "kombu-single-active-consumer-priority@r2",
+      "task": "kombu-single-active-consumer-priority",
+      "round": 2,
+      "trials": [
+        {
+          "route": "stravia",
+          "slot": 0,
+          "port": 23481,
+          "base_url": "http://127.0.0.1:23481/v1",
+          "job_name_prefix": "formal-xhigh-threeway-20261028--kombu-single-active-consumer-priority--r2--stravia"
+        },
+        {
+          "route": "cpa",
+          "slot": 1,
+          "port": 23482,
+          "base_url": "http://127.0.0.1:23482/v1",
+          "job_name_prefix": "formal-xhigh-threeway-20261028--kombu-single-active-consumer-priority--r2--cpa"
+        },
+        {
+          "route": "sub2api",
+          "slot": 2,
+          "port": 23483,
+          "base_url": "http://127.0.0.1:23483/v1",
+          "job_name_prefix": "formal-xhigh-threeway-20261028--kombu-single-active-consumer-priority--r2--sub2api"
+        }
+      ]
+    },
+    {
+      "group_id": "cliffy-config-file-parsing@r2",
+      "task": "cliffy-config-file-parsing",
+      "round": 2,
+      "trials": [
+        {
+          "route": "cpa",
+          "slot": 0,
+          "port": 23482,
+          "base_url": "http://127.0.0.1:23482/v1",
+          "job_name_prefix": "formal-xhigh-threeway-20261028--cliffy-config-file-parsing--r2--cpa"
+        },
+        {
+          "route": "sub2api",
+          "slot": 1,
+          "port": 23483,
+          "base_url": "http://127.0.0.1:23483/v1",
+          "job_name_prefix": "formal-xhigh-threeway-20261028--cliffy-config-file-parsing--r2--sub2api"
+        },
+        {
+          "route": "stravia",
+          "slot": 2,
+          "port": 23481,
+          "base_url": "http://127.0.0.1:23481/v1",
+          "job_name_prefix": "formal-xhigh-threeway-20261028--cliffy-config-file-parsing--r2--stravia"
+        }
+      ]
+    },
+    {
+      "group_id": "numba-stencil-boundary-modes@r2",
+      "task": "numba-stencil-boundary-modes",
+      "round": 2,
+      "trials": [
+        {
+          "route": "sub2api",
+          "slot": 0,
+          "port": 23483,
+          "base_url": "http://127.0.0.1:23483/v1",
+          "job_name_prefix": "formal-xhigh-threeway-20261028--numba-stencil-boundary-modes--r2--sub2api"
+        },
+        {
+          "route": "cpa",
+          "slot": 1,
+          "port": 23482,
+          "base_url": "http://127.0.0.1:23482/v1",
+          "job_name_prefix": "formal-xhigh-threeway-20261028--numba-stencil-boundary-modes--r2--cpa"
+        },
+        {
+          "route": "stravia",
+          "slot": 2,
+          "port": 23481,
+          "base_url": "http://127.0.0.1:23481/v1",
+          "job_name_prefix": "formal-xhigh-threeway-20261028--numba-stencil-boundary-modes--r2--stravia"
+        }
+      ]
+    },
+    {
+      "group_id": "narwhals-rolling-window-suite@r2",
+      "task": "narwhals-rolling-window-suite",
+      "round": 2,
+      "trials": [
+        {
+          "route": "stravia",
+          "slot": 0,
+          "port": 23481,
+          "base_url": "http://127.0.0.1:23481/v1",
+          "job_name_prefix": "formal-xhigh-threeway-20261028--narwhals-rolling-window-suite--r2--stravia"
+        },
+        {
+          "route": "sub2api",
+          "slot": 1,
+          "port": 23483,
+          "base_url": "http://127.0.0.1:23483/v1",
+          "job_name_prefix": "formal-xhigh-threeway-20261028--narwhals-rolling-window-suite--r2--sub2api"
+        },
+        {
+          "route": "cpa",
+          "slot": 2,
+          "port": 23482,
+          "base_url": "http://127.0.0.1:23482/v1",
+          "job_name_prefix": "formal-xhigh-threeway-20261028--narwhals-rolling-window-suite--r2--cpa"
+        }
+      ]
+    }
+  ]
+}

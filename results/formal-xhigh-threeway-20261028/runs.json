@@ -1,0 +1,2513 @@
+[
+  {
+    "route": "stravia",
+    "experiment": "ink-grid-box-layout@r1",
+    "started_at": 1793161632.269,
+    "finished_at": 1793162567.836,
+    "task": "ink-grid-box-layout",
+    "round": 1,
+    "attempt": 1
+  },
+  {
+    "route": "stravia",
+    "experiment": "oxvg-structural-selector-preservation@r1",
+    "started_at": 1793161632.269,
+    "finished_at": 1793163780.465,
+    "task": "oxvg-structural-selector-preservation",
+    "round": 1,
+    "attempt": 1
+  },
+  {
+    "route": "sub2api",
+    "experiment": "narwhals-rolling-window-suite@r3",
+    "started_at": 1793161632.33,
+    "finished_at": 1793162830.592,
+    "task": "narwhals-rolling-window-suite",
+    "round": 3,
+    "attempt": 1
+  },
+  {
+    "route": "cpa",
+    "experiment": "narwhals-rolling-window-suite@r3",
+    "started_at": 1793161632.64,
+    "finished_at": 1793163105.054,
+    "task": "narwhals-rolling-window-suite",
+    "round": 3,
+    "attempt": 1
+  },
+  {
+    "route": "stravia",
+    "experiment": "mnamer-daemon-watch-lifecycle@r1",
+    "started_at": 1793161632.663,
+    "finished_at": 1793162387.102,
+    "task": "mnamer-daemon-watch-lifecycle",
+    "round": 1,
+    "attempt": 1
+  },
+  {
+    "route": "cpa",
+    "experiment": "mnamer-daemon-watch-lifecycle@r1",
+    "started_at": 1793161632.709,
+    "finished_at": 1793163106.943,
+    "task": "mnamer-daemon-watch-lifecycle",
+    "round": 1,
+    "attempt": 1
+  },
+  {
+    "route": "sub2api",
+    "experiment": "oxvg-structural-selector-preservation@r1",
+    "started_at": 1793161632.91,
+    "finished_at": 1793165532.053,
+    "task": "oxvg-structural-selector-preservation",
+    "round": 1,
+    "attempt": 1
+  },
+  {
+    "route": "cpa",
+    "experiment": "oxvg-structural-selector-preservation@r1",
+    "started_at": 1793161632.931,
+    "finished_at": 1793165336.654,
+    "task": "oxvg-structural-selector-preservation",
+    "round": 1,
+    "attempt": 1
+  },
+  {
+    "route": "sub2api",
+    "experiment": "mnamer-daemon-watch-lifecycle@r1",
+    "started_at": 1793161632.994,
+    "finished_at": 1793162871.273,
+    "task": "mnamer-daemon-watch-lifecycle",
+    "round": 1,
+    "attempt": 1
+  },
+  {
+    "route": "sub2api",
+    "experiment": "ink-grid-box-layout@r1",
+    "started_at": 1793161633.057,
+    "finished_at": 1793163000.394,
+    "task": "ink-grid-box-layout",
+    "round": 1,
+    "attempt": 1
+  },
+  {
+    "route": "sub2api",
+    "experiment": "meriyah-explicit-resource-declarations@r3",
+    "started_at": 1793161633.094,
+    "finished_at": 1793162312.442,
+    "task": "meriyah-explicit-resource-declarations",
+    "round": 3,
+    "attempt": 1
+  },
+  {
+    "route": "cpa",
+    "experiment": "meriyah-explicit-resource-declarations@r3",
+    "started_at": 1793161633.123,
+    "finished_at": 1793165394.46,
+    "task": "meriyah-explicit-resource-declarations",
+    "round": 3,
+    "attempt": 1
+  },
+  {
+    "route": "cpa",
+    "experiment": "ink-grid-box-layout@r1",
+    "started_at": 1793161633.141,
+    "finished_at": 1793163923.602,
+    "task": "ink-grid-box-layout",
+    "round": 1,
+    "attempt": 1
+  },
+  {
+    "route": "stravia",
+    "experiment": "narwhals-rolling-window-suite@r3",
+    "started_at": 1793161633.172,
+    "finished_at": 1793162462.349,
+    "task": "narwhals-rolling-window-suite",
+    "round": 3,
+    "attempt": 1
+  },
+  {
+    "route": "stravia",
+    "experiment": "meriyah-explicit-resource-declarations@r3",
+    "started_at": 1793161633.179,
+    "finished_at": 1793162759.511,
+    "task": "meriyah-explicit-resource-declarations",
+    "round": 3,
+    "attempt": 1
+  },
+  {
+    "route": "stravia",
+    "experiment": "kea-atomic-signal-selectors@r4",
+    "started_at": 1793163108.48,
+    "finished_at": 1793165579.138,
+    "task": "kea-atomic-signal-selectors",
+    "round": 4,
+    "attempt": 1
+  },
+  {
+    "route": "sub2api",
+    "experiment": "kea-atomic-signal-selectors@r4",
+    "started_at": 1793163108.491,
+    "finished_at": 1793166484.464,
+    "task": "kea-atomic-signal-selectors",
+    "round": 4,
+    "attempt": 1
+  },
+  {
+    "route": "cpa",
+    "experiment": "kea-atomic-signal-selectors@r4",
+    "started_at": 1793163108.591,
+    "finished_at": 1793166753.369,
+    "task": "kea-atomic-signal-selectors",
+    "round": 4,
+    "attempt": 1
+  },
+  {
+    "route": "stravia",
+    "experiment": "textual-richlog-follow-state@r1",
+    "started_at": 1793163110.1,
+    "finished_at": 1793164040.643,
+    "task": "textual-richlog-follow-state",
+    "round": 1,
+    "attempt": 1
+  },
+  {
+    "route": "cpa",
+    "experiment": "textual-richlog-follow-state@r1",
+    "started_at": 1793163110.131,
+    "finished_at": 1793166779.068,
+    "task": "textual-richlog-follow-state",
+    "round": 1,
+    "attempt": 1
+  },
+  {
+    "route": "sub2api",
+    "experiment": "textual-richlog-follow-state@r1",
+    "started_at": 1793163110.377,
+    "finished_at": 1793165737.617,
+    "task": "textual-richlog-follow-state",
+    "round": 1,
+    "attempt": 1
+  },
+  {
+    "route": "stravia",
+    "experiment": "expr-try-catch-errors@r4",
+    "started_at": 1793163926.814,
+    "finished_at": 1793165790.182,
+    "task": "expr-try-catch-errors",
+    "round": 4,
+    "attempt": 1
+  },
+  {
+    "route": "sub2api",
+    "experiment": "expr-try-catch-errors@r4",
+    "started_at": 1793163926.857,
+    "finished_at": 1793166992.405,
+    "task": "expr-try-catch-errors",
+    "round": 4,
+    "attempt": 1
+  },
+  {
+    "route": "cpa",
+    "experiment": "expr-try-catch-errors@r4",
+    "started_at": 1793163926.887,
+    "finished_at": 1793167927.502,
+    "task": "expr-try-catch-errors",
+    "round": 4,
+    "attempt": 1
+  },
+  {
+    "route": "stravia",
+    "experiment": "testem-bail-on-test-failure@r3",
+    "started_at": 1793165398.064,
+    "finished_at": 1793166658.258,
+    "task": "testem-bail-on-test-failure",
+    "round": 3,
+    "attempt": 1
+  },
+  {
+    "route": "cpa",
+    "experiment": "testem-bail-on-test-failure@r3",
+    "started_at": 1793165398.065,
+    "finished_at": 1793169053.138,
+    "task": "testem-bail-on-test-failure",
+    "round": 3,
+    "attempt": 1
+  },
+  {
+    "route": "sub2api",
+    "experiment": "testem-bail-on-test-failure@r3",
+    "started_at": 1793165398.069,
+    "finished_at": 1793167458.231,
+    "task": "testem-bail-on-test-failure",
+    "round": 3,
+    "attempt": 1
+  },
+  {
+    "route": "stravia",
+    "experiment": "meriyah-explicit-resource-declarations@r2",
+    "started_at": 1793165535.775,
+    "finished_at": 1793166529.706,
+    "task": "meriyah-explicit-resource-declarations",
+    "round": 2,
+    "attempt": 1
+  },
+  {
+    "route": "sub2api",
+    "experiment": "meriyah-explicit-resource-declarations@r2",
+    "started_at": 1793165536.083,
+    "finished_at": 1793166987.391,
+    "task": "meriyah-explicit-resource-declarations",
+    "round": 2,
+    "attempt": 1
+  },
+  {
+    "route": "cpa",
+    "experiment": "meriyah-explicit-resource-declarations@r2",
+    "started_at": 1793165536.268,
+    "finished_at": 1793169220.01,
+    "task": "meriyah-explicit-resource-declarations",
+    "round": 2,
+    "attempt": 1
+  },
+  {
+    "route": "stravia",
+    "experiment": "vitest-duration-sharding@r4",
+    "started_at": 1793166756.517,
+    "finished_at": 1793168155.645,
+    "task": "vitest-duration-sharding",
+    "round": 4,
+    "attempt": 1
+  },
+  {
+    "route": "sub2api",
+    "experiment": "vitest-duration-sharding@r4",
+    "started_at": 1793166756.946,
+    "finished_at": 1793170404.307,
+    "task": "vitest-duration-sharding",
+    "round": 4,
+    "attempt": 1
+  },
+  {
+    "route": "cpa",
+    "experiment": "vitest-duration-sharding@r4",
+    "started_at": 1793166757.103,
+    "finished_at": 1793170424.742,
+    "task": "vitest-duration-sharding",
+    "round": 4,
+    "attempt": 1
+  },
+  {
+    "route": "sub2api",
+    "experiment": "expr-try-catch-errors@r1",
+    "started_at": 1793166782.368,
+    "finished_at": 1793167961.423,
+    "task": "expr-try-catch-errors",
+    "round": 1,
+    "attempt": 1
+  },
+  {
+    "route": "cpa",
+    "experiment": "expr-try-catch-errors@r1",
+    "started_at": 1793166782.586,
+    "finished_at": 1793170437.148,
+    "task": "expr-try-catch-errors",
+    "round": 1,
+    "attempt": 1
+  },
+  {
+    "route": "stravia",
+    "experiment": "expr-try-catch-errors@r1",
+    "started_at": 1793166782.605,
+    "finished_at": 1793167968.161,
+    "task": "expr-try-catch-errors",
+    "round": 1,
+    "attempt": 1
+  },
+  {
+    "route": "sub2api",
+    "experiment": "koota-composite-trait-aspects@r2",
+    "started_at": 1793167932.231,
+    "finished_at": 1793171573.184,
+    "task": "koota-composite-trait-aspects",
+    "round": 2,
+    "attempt": 1
+  },
+  {
+    "route": "cpa",
+    "experiment": "koota-composite-trait-aspects@r2",
+    "started_at": 1793167932.235,
+    "finished_at": 1793173339.523,
+    "task": "koota-composite-trait-aspects",
+    "round": 2,
+    "attempt": 1
+  },
+  {
+    "route": "stravia",
+    "experiment": "koota-composite-trait-aspects@r2",
+    "started_at": 1793167932.235,
+    "finished_at": 1793169970.452,
+    "task": "koota-composite-trait-aspects",
+    "round": 2,
+    "attempt": 1
+  },
+  {
+    "route": "sub2api",
+    "experiment": "kea-atomic-signal-selectors@r2",
+    "started_at": 1793169056.186,
+    "finished_at": 1793170230.539,
+    "task": "kea-atomic-signal-selectors",
+    "round": 2,
+    "attempt": 1
+  },
+  {
+    "route": "cpa",
+    "experiment": "kea-atomic-signal-selectors@r2",
+    "started_at": 1793169056.187,
+    "finished_at": 1793172694.328,
+    "task": "kea-atomic-signal-selectors",
+    "round": 2,
+    "attempt": 1
+  },
+  {
+    "route": "stravia",
+    "experiment": "kea-atomic-signal-selectors@r2",
+    "started_at": 1793169056.493,
+    "finished_at": 1793169902.489,
+    "task": "kea-atomic-signal-selectors",
+    "round": 2,
+    "attempt": 1
+  },
+  {
+    "route": "stravia",
+    "experiment": "anko-default-function-arguments@r2",
+    "started_at": 1793169223.157,
+    "finished_at": 1793170120.444,
+    "task": "anko-default-function-arguments",
+    "round": 2,
+    "attempt": 1
+  },
+  {
+    "route": "sub2api",
+    "experiment": "anko-default-function-arguments@r2",
+    "started_at": 1793169223.542,
+    "finished_at": 1793171654.711,
+    "task": "anko-default-function-arguments",
+    "round": 2,
+    "attempt": 1
+  },
+  {
+    "route": "cpa",
+    "experiment": "anko-default-function-arguments@r2",
+    "started_at": 1793169224.203,
+    "finished_at": 1793172872.013,
+    "task": "anko-default-function-arguments",
+    "round": 2,
+    "attempt": 1
+  },
+  {
+    "route": "cpa",
+    "experiment": "go-genai-streamed-function-args@r3",
+    "started_at": 1793170427.497,
+    "finished_at": 1793173991.142,
+    "task": "go-genai-streamed-function-args",
+    "round": 3,
+    "attempt": 1
+  },
+  {
+    "route": "sub2api",
+    "experiment": "go-genai-streamed-function-args@r3",
+    "started_at": 1793170427.497,
+    "finished_at": 1793172585.692,
+    "task": "go-genai-streamed-function-args",
+    "round": 3,
+    "attempt": 1
+  },
+  {
+    "route": "stravia",
+    "experiment": "go-genai-streamed-function-args@r3",
+    "started_at": 1793170427.506,
+    "finished_at": 1793171427.381,
+    "task": "go-genai-streamed-function-args",
+    "round": 3,
+    "attempt": 1
+  },
+  {
+    "route": "stravia",
+    "experiment": "numba-stencil-boundary-modes@r1",
+    "started_at": 1793170440.298,
+    "finished_at": 1793171661.093,
+    "task": "numba-stencil-boundary-modes",
+    "round": 1,
+    "attempt": 1
+  },
+  {
+    "route": "sub2api",
+    "experiment": "numba-stencil-boundary-modes@r1",
+    "started_at": 1793170440.35,
+    "finished_at": 1793173409.021,
+    "task": "numba-stencil-boundary-modes",
+    "round": 1,
+    "attempt": 1
+  },
+  {
+    "route": "cpa",
+    "experiment": "numba-stencil-boundary-modes@r1",
+    "started_at": 1793170440.417,
+    "finished_at": 1793173569.044,
+    "task": "numba-stencil-boundary-modes",
+    "round": 1,
+    "attempt": 1
+  },
+  {
+    "route": "stravia",
+    "experiment": "oxvg-structural-selector-preservation@r4",
+    "started_at": 1793172697.155,
+    "finished_at": 1793174777.027,
+    "task": "oxvg-structural-selector-preservation",
+    "round": 4,
+    "attempt": 1
+  },
+  {
+    "route": "cpa",
+    "experiment": "oxvg-structural-selector-preservation@r4",
+    "started_at": 1793172697.17,
+    "finished_at": 1793175094.193,
+    "task": "oxvg-structural-selector-preservation",
+    "round": 4,
+    "attempt": 1
+  },
+  {
+    "route": "sub2api",
+    "experiment": "oxvg-structural-selector-preservation@r4",
+    "started_at": 1793172697.182,
+    "finished_at": 1793175168.985,
+    "task": "oxvg-structural-selector-preservation",
+    "round": 4,
+    "attempt": 1
+  },
+  {
+    "route": "sub2api",
+    "experiment": "termenv-preserve-ansi-resets@r4",
+    "started_at": 1793172875.181,
+    "finished_at": 1793175157.177,
+    "task": "termenv-preserve-ansi-resets",
+    "round": 4,
+    "attempt": 1
+  },
+  {
+    "route": "stravia",
+    "experiment": "termenv-preserve-ansi-resets@r4",
+    "started_at": 1793172875.24,
+    "finished_at": 1793173572.005,
+    "task": "termenv-preserve-ansi-resets",
+    "round": 4,
+    "attempt": 1
+  },
+  {
+    "route": "cpa",
+    "experiment": "termenv-preserve-ansi-resets@r4",
+    "started_at": 1793172875.3,
+    "finished_at": 1793174883.308,
+    "task": "termenv-preserve-ansi-resets",
+    "round": 4,
+    "attempt": 1
+  },
+  {
+    "route": "cpa",
+    "experiment": "koota-composite-trait-aspects@r2",
+    "started_at": 1793173342.142,
+    "finished_at": 1793174993.55,
+    "task": "koota-composite-trait-aspects",
+    "round": 2,
+    "attempt": 2
+  },
+  {
+    "route": "stravia",
+    "experiment": "gql-incremental-graphql-delivery@r3",
+    "started_at": 1793173572.598,
+    "finished_at": 1793174807.343,
+    "task": "gql-incremental-graphql-delivery",
+    "round": 3,
+    "attempt": 1
+  },
+  {
+    "route": "sub2api",
+    "experiment": "gql-incremental-graphql-delivery@r3",
+    "started_at": 1793173572.602,
+    "finished_at": 1793176416.152,
+    "task": "gql-incremental-graphql-delivery",
+    "round": 3,
+    "attempt": 1
+  },
+  {
+    "route": "cpa",
+    "experiment": "gql-incremental-graphql-delivery@r3",
+    "started_at": 1793173572.658,
+    "finished_at": 1793175003.143,
+    "task": "gql-incremental-graphql-delivery",
+    "round": 3,
+    "attempt": 1
+  },
+  {
+    "route": "cpa",
+    "experiment": "mnamer-daemon-watch-lifecycle@r4",
+    "started_at": 1793173995.781,
+    "finished_at": 1793175022.284,
+    "task": "mnamer-daemon-watch-lifecycle",
+    "round": 4,
+    "attempt": 1
+  },
+  {
+    "route": "sub2api",
+    "experiment": "mnamer-daemon-watch-lifecycle@r4",
+    "started_at": 1793173995.781,
+    "finished_at": 1793176591.659,
+    "task": "mnamer-daemon-watch-lifecycle",
+    "round": 4,
+    "attempt": 1
+  },
+  {
+    "route": "stravia",
+    "experiment": "mnamer-daemon-watch-lifecycle@r4",
+    "started_at": 1793173995.782,
+    "finished_at": 1793174820.62,
+    "task": "mnamer-daemon-watch-lifecycle",
+    "round": 4,
+    "attempt": 1
+  },
+  {
+    "route": "cpa",
+    "experiment": "koota-composite-trait-aspects@r2",
+    "started_at": 1793174997.022,
+    "finished_at": 1793177619.576,
+    "task": "koota-composite-trait-aspects",
+    "round": 2,
+    "attempt": 3
+  },
+  {
+    "route": "cpa",
+    "experiment": "gql-incremental-graphql-delivery@r3",
+    "started_at": 1793175006.184,
+    "finished_at": 1793177509.466,
+    "task": "gql-incremental-graphql-delivery",
+    "round": 3,
+    "attempt": 2
+  },
+  {
+    "route": "cpa",
+    "experiment": "mnamer-daemon-watch-lifecycle@r4",
+    "started_at": 1793175025.649,
+    "finished_at": 1793176208.93,
+    "task": "mnamer-daemon-watch-lifecycle",
+    "round": 4,
+    "attempt": 2
+  },
+  {
+    "route": "cpa",
+    "experiment": "oxvg-structural-selector-preservation@r4",
+    "started_at": 1793175097.288,
+    "finished_at": 1793178586.344,
+    "task": "oxvg-structural-selector-preservation",
+    "round": 4,
+    "attempt": 2
+  },
+  {
+    "route": "sub2api",
+    "experiment": "anko-default-function-arguments@r3",
+    "started_at": 1793175160.195,
+    "finished_at": 1793177445.879,
+    "task": "anko-default-function-arguments",
+    "round": 3,
+    "attempt": 1
+  },
+  {
+    "route": "stravia",
+    "experiment": "anko-default-function-arguments@r3",
+    "started_at": 1793175160.197,
+    "finished_at": 1793176013.7,
+    "task": "anko-default-function-arguments",
+    "round": 3,
+    "attempt": 1
+  },
+  {
+    "route": "cpa",
+    "experiment": "anko-default-function-arguments@r3",
+    "started_at": 1793175160.216,
+    "finished_at": 1793177635.378,
+    "task": "anko-default-function-arguments",
+    "round": 3,
+    "attempt": 1
+  },
+  {
+    "route": "sub2api",
+    "experiment": "wasmi-trap-coredumps@r3",
+    "started_at": 1793176594.894,
+    "finished_at": 1793178430.787,
+    "task": "wasmi-trap-coredumps",
+    "round": 3,
+    "attempt": 1
+  },
+  {
+    "route": "cpa",
+    "experiment": "wasmi-trap-coredumps@r3",
+    "started_at": 1793176594.897,
+    "finished_at": 1793178431.915,
+    "task": "wasmi-trap-coredumps",
+    "round": 3,
+    "attempt": 1
+  },
+  {
+    "route": "stravia",
+    "experiment": "wasmi-trap-coredumps@r3",
+    "started_at": 1793176594.9,
+    "finished_at": 1793179282.863,
+    "task": "wasmi-trap-coredumps",
+    "round": 3,
+    "attempt": 1
+  },
+  {
+    "route": "stravia",
+    "experiment": "vitest-duration-sharding@r3",
+    "started_at": 1793177512.231,
+    "finished_at": 1793178904.658,
+    "task": "vitest-duration-sharding",
+    "round": 3,
+    "attempt": 1
+  },
+  {
+    "route": "sub2api",
+    "experiment": "vitest-duration-sharding@r3",
+    "started_at": 1793177512.231,
+    "finished_at": 1793181170.598,
+    "task": "vitest-duration-sharding",
+    "round": 3,
+    "attempt": 1
+  },
+  {
+    "route": "cpa",
+    "experiment": "vitest-duration-sharding@r3",
+    "started_at": 1793177512.278,
+    "finished_at": 1793177658.673,
+    "task": "vitest-duration-sharding",
+    "round": 3,
+    "attempt": 1
+  },
+  {
+    "route": "cpa",
+    "experiment": "happy-dom-deterministic-intersectionobserver@r4",
+    "started_at": 1793177622.149,
+    "finished_at": 1793178427.544,
+    "task": "happy-dom-deterministic-intersectionobserver",
+    "round": 4,
+    "attempt": 1
+  },
+  {
+    "route": "sub2api",
+    "experiment": "happy-dom-deterministic-intersectionobserver@r4",
+    "started_at": 1793177622.164,
+    "finished_at": 1793179462.616,
+    "task": "happy-dom-deterministic-intersectionobserver",
+    "round": 4,
+    "attempt": 1
+  },
+  {
+    "route": "stravia",
+    "experiment": "happy-dom-deterministic-intersectionobserver@r4",
+    "started_at": 1793177622.168,
+    "finished_at": 1793178914.227,
+    "task": "happy-dom-deterministic-intersectionobserver",
+    "round": 4,
+    "attempt": 1
+  },
+  {
+    "route": "cpa",
+    "experiment": "anko-default-function-arguments@r3",
+    "started_at": 1793177638.809,
+    "finished_at": 1793178436.132,
+    "task": "anko-default-function-arguments",
+    "round": 3,
+    "attempt": 2
+  },
+  {
+    "route": "cpa",
+    "experiment": "vitest-duration-sharding@r3",
+    "started_at": 1793177661.419,
+    "finished_at": 1793178453.355,
+    "task": "vitest-duration-sharding",
+    "round": 3,
+    "attempt": 2
+  },
+  {
+    "route": "cpa",
+    "experiment": "cliffy-config-file-parsing@r4",
+    "started_at": 1793178439.298,
+    "finished_at": 1793182103.368,
+    "task": "cliffy-config-file-parsing",
+    "round": 4,
+    "attempt": 1
+  },
+  {
+    "route": "sub2api",
+    "experiment": "cliffy-config-file-parsing@r4",
+    "started_at": 1793178439.307,
+    "finished_at": 1793178709.119,
+    "task": "cliffy-config-file-parsing",
+    "round": 4,
+    "attempt": 1
+  },
+  {
+    "route": "stravia",
+    "experiment": "cliffy-config-file-parsing@r4",
+    "started_at": 1793178439.373,
+    "finished_at": 1793180643.891,
+    "task": "cliffy-config-file-parsing",
+    "round": 4,
+    "attempt": 1
+  },
+  {
+    "route": "stravia",
+    "experiment": "expr-try-catch-errors@r3",
+    "started_at": 1793178588.972,
+    "finished_at": 1793180290.855,
+    "task": "expr-try-catch-errors",
+    "round": 3,
+    "attempt": 1
+  },
+  {
+    "route": "cpa",
+    "experiment": "expr-try-catch-errors@r3",
+    "started_at": 1793178588.973,
+    "finished_at": 1793182296.405,
+    "task": "expr-try-catch-errors",
+    "round": 3,
+    "attempt": 1
+  },
+  {
+    "route": "sub2api",
+    "experiment": "expr-try-catch-errors@r3",
+    "started_at": 1793178589.311,
+    "finished_at": 1793180207.242,
+    "task": "expr-try-catch-errors",
+    "round": 3,
+    "attempt": 1
+  },
+  {
+    "route": "sub2api",
+    "experiment": "cliffy-config-file-parsing@r4",
+    "started_at": 1793178711.961,
+    "finished_at": 1793182215.582,
+    "task": "cliffy-config-file-parsing",
+    "round": 4,
+    "attempt": 2
+  },
+  {
+    "route": "stravia",
+    "experiment": "termenv-preserve-ansi-resets@r1",
+    "started_at": 1793179285.624,
+    "finished_at": 1793180228.246,
+    "task": "termenv-preserve-ansi-resets",
+    "round": 1,
+    "attempt": 1
+  },
+  {
+    "route": "cpa",
+    "experiment": "termenv-preserve-ansi-resets@r1",
+    "started_at": 1793179285.646,
+    "finished_at": 1793182847.649,
+    "task": "termenv-preserve-ansi-resets",
+    "round": 1,
+    "attempt": 1
+  },
+  {
+    "route": "sub2api",
+    "experiment": "termenv-preserve-ansi-resets@r1",
+    "started_at": 1793179285.656,
+    "finished_at": 1793181338.281,
+    "task": "termenv-preserve-ansi-resets",
+    "round": 1,
+    "attempt": 1
+  },
+  {
+    "route": "sub2api",
+    "experiment": "ink-grid-box-layout@r3",
+    "started_at": 1793179466.02,
+    "finished_at": 1793181296.765,
+    "task": "ink-grid-box-layout",
+    "round": 3,
+    "attempt": 1
+  },
+  {
+    "route": "cpa",
+    "experiment": "ink-grid-box-layout@r3",
+    "started_at": 1793179466.045,
+    "finished_at": 1793181772.593,
+    "task": "ink-grid-box-layout",
+    "round": 3,
+    "attempt": 1
+  },
+  {
+    "route": "stravia",
+    "experiment": "ink-grid-box-layout@r3",
+    "started_at": 1793179466.051,
+    "finished_at": 1793182131.282,
+    "task": "ink-grid-box-layout",
+    "round": 3,
+    "attempt": 1
+  },
+  {
+    "route": "stravia",
+    "experiment": "go-genai-streamed-function-args@r4",
+    "started_at": 1793181173.565,
+    "finished_at": 1793182013.83,
+    "task": "go-genai-streamed-function-args",
+    "round": 4,
+    "attempt": 1
+  },
+  {
+    "route": "sub2api",
+    "experiment": "go-genai-streamed-function-args@r4",
+    "started_at": 1793181173.579,
+    "finished_at": 1793183709.55,
+    "task": "go-genai-streamed-function-args",
+    "round": 4,
+    "attempt": 1
+  },
+  {
+    "route": "cpa",
+    "experiment": "go-genai-streamed-function-args@r4",
+    "started_at": 1793181173.586,
+    "finished_at": 1793184369.406,
+    "task": "go-genai-streamed-function-args",
+    "round": 4,
+    "attempt": 1
+  },
+  {
+    "route": "cpa",
+    "experiment": "numba-stencil-boundary-modes@r4",
+    "started_at": 1793182134.707,
+    "finished_at": 1793185349.531,
+    "task": "numba-stencil-boundary-modes",
+    "round": 4,
+    "attempt": 1
+  },
+  {
+    "route": "stravia",
+    "experiment": "numba-stencil-boundary-modes@r4",
+    "started_at": 1793182134.707,
+    "finished_at": 1793183514.438,
+    "task": "numba-stencil-boundary-modes",
+    "round": 4,
+    "attempt": 1
+  },
+  {
+    "route": "sub2api",
+    "experiment": "numba-stencil-boundary-modes@r4",
+    "started_at": 1793182134.717,
+    "finished_at": 1793183822.478,
+    "task": "numba-stencil-boundary-modes",
+    "round": 4,
+    "attempt": 1
+  },
+  {
+    "route": "cpa",
+    "experiment": "textual-richlog-follow-state@r4",
+    "started_at": 1793182219.638,
+    "finished_at": 1793185871.234,
+    "task": "textual-richlog-follow-state",
+    "round": 4,
+    "attempt": 1
+  },
+  {
+    "route": "stravia",
+    "experiment": "textual-richlog-follow-state@r4",
+    "started_at": 1793182219.658,
+    "finished_at": 1793183473.973,
+    "task": "textual-richlog-follow-state",
+    "round": 4,
+    "attempt": 1
+  },
+  {
+    "route": "sub2api",
+    "experiment": "textual-richlog-follow-state@r4",
+    "started_at": 1793182219.658,
+    "finished_at": 1793182990.935,
+    "task": "textual-richlog-follow-state",
+    "round": 4,
+    "attempt": 1
+  },
+  {
+    "route": "sub2api",
+    "experiment": "ink-grid-box-layout@r2",
+    "started_at": 1793182299.35,
+    "finished_at": 1793183896.075,
+    "task": "ink-grid-box-layout",
+    "round": 2,
+    "attempt": 1
+  },
+  {
+    "route": "stravia",
+    "experiment": "ink-grid-box-layout@r2",
+    "started_at": 1793182299.351,
+    "finished_at": 1793183354.709,
+    "task": "ink-grid-box-layout",
+    "round": 2,
+    "attempt": 1
+  },
+  {
+    "route": "cpa",
+    "experiment": "ink-grid-box-layout@r2",
+    "started_at": 1793182299.359,
+    "finished_at": 1793185412.689,
+    "task": "ink-grid-box-layout",
+    "round": 2,
+    "attempt": 1
+  },
+  {
+    "route": "cpa",
+    "experiment": "wasmi-trap-coredumps@r2",
+    "started_at": 1793182851.186,
+    "finished_at": 1793186506.527,
+    "task": "wasmi-trap-coredumps",
+    "round": 2,
+    "attempt": 1
+  },
+  {
+    "route": "stravia",
+    "experiment": "wasmi-trap-coredumps@r2",
+    "started_at": 1793182851.186,
+    "finished_at": 1793185242.274,
+    "task": "wasmi-trap-coredumps",
+    "round": 2,
+    "attempt": 1
+  },
+  {
+    "route": "sub2api",
+    "experiment": "wasmi-trap-coredumps@r2",
+    "started_at": 1793182851.188,
+    "finished_at": 1793186514.632,
+    "task": "wasmi-trap-coredumps",
+    "round": 2,
+    "attempt": 1
+  },
+  {
+    "route": "sub2api",
+    "experiment": "textual-richlog-follow-state@r4",
+    "started_at": 1793182995.713,
+    "finished_at": 1793183107.339,
+    "task": "textual-richlog-follow-state",
+    "round": 4,
+    "attempt": 2
+  },
+  {
+    "route": "sub2api",
+    "experiment": "textual-richlog-follow-state@r4",
+    "started_at": 1793183110.118,
+    "finished_at": 1793185819.89,
+    "task": "textual-richlog-follow-state",
+    "round": 4,
+    "attempt": 3
+  },
+  {
+    "route": "sub2api",
+    "experiment": "go-genai-streamed-function-args@r4",
+    "started_at": 1793183713.856,
+    "finished_at": 1793186569.249,
+    "task": "go-genai-streamed-function-args",
+    "round": 4,
+    "attempt": 2
+  },
+  {
+    "route": "sub2api",
+    "experiment": "numba-stencil-boundary-modes@r4",
+    "started_at": 1793183825.424,
+    "finished_at": 1793186549.942,
+    "task": "numba-stencil-boundary-modes",
+    "round": 4,
+    "attempt": 2
+  },
+  {
+    "route": "sub2api",
+    "experiment": "ink-grid-box-layout@r2",
+    "started_at": 1793183901.007,
+    "finished_at": 1793184011.217,
+    "task": "ink-grid-box-layout",
+    "round": 2,
+    "attempt": 2
+  },
+  {
+    "route": "sub2api",
+    "experiment": "ink-grid-box-layout@r2",
+    "started_at": 1793184015.983,
+    "finished_at": 1793187219.227,
+    "task": "ink-grid-box-layout",
+    "round": 2,
+    "attempt": 3
+  },
+  {
+    "route": "sub2api",
+    "experiment": "anko-default-function-arguments@r1",
+    "started_at": 1793185876.449,
+    "finished_at": 1793187697.332,
+    "task": "anko-default-function-arguments",
+    "round": 1,
+    "attempt": 1
+  },
+  {
+    "route": "cpa",
+    "experiment": "anko-default-function-arguments@r1",
+    "started_at": 1793185876.452,
+    "finished_at": 1793187681.386,
+    "task": "anko-default-function-arguments",
+    "round": 1,
+    "attempt": 1
+  },
+  {
+    "route": "stravia",
+    "experiment": "anko-default-function-arguments@r1",
+    "started_at": 1793185876.452,
+    "finished_at": 1793186615.04,
+    "task": "anko-default-function-arguments",
+    "round": 1,
+    "attempt": 1
+  },
+  {
+    "route": "cpa",
+    "experiment": "anko-default-function-arguments@r4",
+    "started_at": 1793186522.138,
+    "finished_at": 1793187698.756,
+    "task": "anko-default-function-arguments",
+    "round": 4,
+    "attempt": 1
+  },
+  {
+    "route": "sub2api",
+    "experiment": "anko-default-function-arguments@r4",
+    "started_at": 1793186522.145,
+    "finished_at": 1793187698.753,
+    "task": "anko-default-function-arguments",
+    "round": 4,
+    "attempt": 1
+  },
+  {
+    "route": "stravia",
+    "experiment": "anko-default-function-arguments@r4",
+    "started_at": 1793186522.865,
+    "finished_at": 1793187313.307,
+    "task": "anko-default-function-arguments",
+    "round": 4,
+    "attempt": 1
+  },
+  {
+    "route": "sub2api",
+    "experiment": "numba-stencil-boundary-modes@r4",
+    "started_at": 1793186556.341,
+    "finished_at": 1793187893.021,
+    "task": "numba-stencil-boundary-modes",
+    "round": 4,
+    "attempt": 3
+  },
+  {
+    "route": "stravia",
+    "experiment": "gql-incremental-graphql-delivery@r1",
+    "started_at": 1793186572.862,
+    "finished_at": 1793187833.129,
+    "task": "gql-incremental-graphql-delivery",
+    "round": 1,
+    "attempt": 1
+  },
+  {
+    "route": "cpa",
+    "experiment": "gql-incremental-graphql-delivery@r1",
+    "started_at": 1793186573.041,
+    "finished_at": 1793187698.768,
+    "task": "gql-incremental-graphql-delivery",
+    "round": 1,
+    "attempt": 1
+  },
+  {
+    "route": "sub2api",
+    "experiment": "gql-incremental-graphql-delivery@r1",
+    "started_at": 1793186573.769,
+    "finished_at": 1793187433.566,
+    "task": "gql-incremental-graphql-delivery",
+    "round": 1,
+    "attempt": 1
+  },
+  {
+    "route": "sub2api",
+    "experiment": "wasmi-trap-coredumps@r1",
+    "started_at": 1793187225.605,
+    "finished_at": 1793187672.759,
+    "task": "wasmi-trap-coredumps",
+    "round": 1,
+    "attempt": 1
+  },
+  {
+    "route": "stravia",
+    "experiment": "wasmi-trap-coredumps@r1",
+    "started_at": 1793187225.606,
+    "finished_at": 1793190893.906,
+    "task": "wasmi-trap-coredumps",
+    "round": 1,
+    "attempt": 1
+  },
+  {
+    "route": "cpa",
+    "experiment": "wasmi-trap-coredumps@r1",
+    "started_at": 1793187225.608,
+    "finished_at": 1793187670.56,
+    "task": "wasmi-trap-coredumps",
+    "round": 1,
+    "attempt": 1
+  },
+  {
+    "route": "sub2api",
+    "experiment": "gql-incremental-graphql-delivery@r1",
+    "started_at": 1793187438.004,
+    "finished_at": 1793187698.753,
+    "task": "gql-incremental-graphql-delivery",
+    "round": 1,
+    "attempt": 2
+  },
+  {
+    "route": "stravia",
+    "experiment": "kea-atomic-signal-selectors@r1",
+    "started_at": 1793187702.101,
+    "finished_at": 1793189140.772,
+    "task": "kea-atomic-signal-selectors",
+    "round": 1,
+    "attempt": 1
+  },
+  {
+    "route": "cpa",
+    "experiment": "kea-atomic-signal-selectors@r1",
+    "started_at": 1793187702.107,
+    "finished_at": 1793191362.006,
+    "task": "kea-atomic-signal-selectors",
+    "round": 1,
+    "attempt": 1
+  },
+  {
+    "route": "sub2api",
+    "experiment": "kea-atomic-signal-selectors@r1",
+    "started_at": 1793187702.165,
+    "finished_at": 1793190197.596,
+    "task": "kea-atomic-signal-selectors",
+    "round": 1,
+    "attempt": 1
+  },
+  {
+    "route": "cpa",
+    "experiment": "anko-default-function-arguments@r4",
+    "started_at": 1793187702.639,
+    "finished_at": 1793191376.365,
+    "task": "anko-default-function-arguments",
+    "round": 4,
+    "attempt": 2
+  },
+  {
+    "route": "sub2api",
+    "experiment": "wasmi-trap-coredumps@r4",
+    "started_at": 1793187840.876,
+    "finished_at": 1793191503.111,
+    "task": "wasmi-trap-coredumps",
+    "round": 4,
+    "attempt": 1
+  },
+  {
+    "route": "stravia",
+    "experiment": "wasmi-trap-coredumps@r4",
+    "started_at": 1793187840.946,
+    "finished_at": 1793191396.865,
+    "task": "wasmi-trap-coredumps",
+    "round": 4,
+    "attempt": 1
+  },
+  {
+    "route": "cpa",
+    "experiment": "wasmi-trap-coredumps@r4",
+    "started_at": 1793187841.155,
+    "finished_at": 1793191492.797,
+    "task": "wasmi-trap-coredumps",
+    "round": 4,
+    "attempt": 1
+  },
+  {
+    "route": "stravia",
+    "experiment": "narwhals-rolling-window-suite@r1",
+    "started_at": 1793187900.273,
+    "finished_at": 1793189287.431,
+    "task": "narwhals-rolling-window-suite",
+    "round": 1,
+    "attempt": 1
+  },
+  {
+    "route": "sub2api",
+    "experiment": "narwhals-rolling-window-suite@r1",
+    "started_at": 1793187900.681,
+    "finished_at": 1793190858.869,
+    "task": "narwhals-rolling-window-suite",
+    "round": 1,
+    "attempt": 1
+  },
+  {
+    "route": "cpa",
+    "experiment": "narwhals-rolling-window-suite@r1",
+    "started_at": 1793187901.092,
+    "finished_at": 1793191631.773,
+    "task": "narwhals-rolling-window-suite",
+    "round": 1,
+    "attempt": 1
+  },
+  {
+    "route": "cpa",
+    "experiment": "go-genai-streamed-function-args@r2",
+    "started_at": 1793190897.819,
+    "finished_at": 1793194558.482,
+    "task": "go-genai-streamed-function-args",
+    "round": 2,
+    "attempt": 1
+  },
+  {
+    "route": "stravia",
+    "experiment": "go-genai-streamed-function-args@r2",
+    "started_at": 1793190897.819,
+    "finished_at": 1793191722.392,
+    "task": "go-genai-streamed-function-args",
+    "round": 2,
+    "attempt": 1
+  },
+  {
+    "route": "sub2api",
+    "experiment": "go-genai-streamed-function-args@r2",
+    "started_at": 1793190897.819,
+    "finished_at": 1793193728.193,
+    "task": "go-genai-streamed-function-args",
+    "round": 2,
+    "attempt": 1
+  },
+  {
+    "route": "stravia",
+    "experiment": "meriyah-explicit-resource-declarations@r1",
+    "started_at": 1793191365.626,
+    "finished_at": 1793192350.767,
+    "task": "meriyah-explicit-resource-declarations",
+    "round": 1,
+    "attempt": 1
+  },
+  {
+    "route": "sub2api",
+    "experiment": "meriyah-explicit-resource-declarations@r1",
+    "started_at": 1793191365.628,
+    "finished_at": 1793194111.925,
+    "task": "meriyah-explicit-resource-declarations",
+    "round": 1,
+    "attempt": 1
+  },
+  {
+    "route": "cpa",
+    "experiment": "meriyah-explicit-resource-declarations@r1",
+    "started_at": 1793191365.64,
+    "finished_at": 1793195058.142,
+    "task": "meriyah-explicit-resource-declarations",
+    "round": 1,
+    "attempt": 1
+  },
+  {
+    "route": "sub2api",
+    "experiment": "koota-composite-trait-aspects@r4",
+    "started_at": 1793191379.857,
+    "finished_at": 1793195041.509,
+    "task": "koota-composite-trait-aspects",
+    "round": 4,
+    "attempt": 1
+  },
+  {
+    "route": "cpa",
+    "experiment": "koota-composite-trait-aspects@r4",
+    "started_at": 1793191380.06,
+    "finished_at": 1793195041.502,
+    "task": "koota-composite-trait-aspects",
+    "round": 4,
+    "attempt": 1
+  },
+  {
+    "route": "stravia",
+    "experiment": "koota-composite-trait-aspects@r4",
+    "started_at": 1793191380.154,
+    "finished_at": 1793194840.182,
+    "task": "koota-composite-trait-aspects",
+    "round": 4,
+    "attempt": 1
+  },
+  {
+    "route": "cpa",
+    "experiment": "happy-dom-deterministic-intersectionobserver@r1",
+    "started_at": 1793191506.291,
+    "finished_at": 1793193076.583,
+    "task": "happy-dom-deterministic-intersectionobserver",
+    "round": 1,
+    "attempt": 1
+  },
+  {
+    "route": "sub2api",
+    "experiment": "happy-dom-deterministic-intersectionobserver@r1",
+    "started_at": 1793191506.426,
+    "finished_at": 1793192888.064,
+    "task": "happy-dom-deterministic-intersectionobserver",
+    "round": 1,
+    "attempt": 1
+  },
+  {
+    "route": "stravia",
+    "experiment": "happy-dom-deterministic-intersectionobserver@r1",
+    "started_at": 1793191506.427,
+    "finished_at": 1793192048.222,
+    "task": "happy-dom-deterministic-intersectionobserver",
+    "round": 1,
+    "attempt": 1
+  },
+  {
+    "route": "cpa",
+    "experiment": "textual-richlog-follow-state@r2",
+    "started_at": 1793191634.869,
+    "finished_at": 1793195299.875,
+    "task": "textual-richlog-follow-state",
+    "round": 2,
+    "attempt": 1
+  },
+  {
+    "route": "sub2api",
+    "experiment": "textual-richlog-follow-state@r2",
+    "started_at": 1793191634.936,
+    "finished_at": 1793194316.014,
+    "task": "textual-richlog-follow-state",
+    "round": 2,
+    "attempt": 1
+  },
+  {
+    "route": "stravia",
+    "experiment": "textual-richlog-follow-state@r2",
+    "started_at": 1793191634.939,
+    "finished_at": 1793192599.506,
+    "task": "textual-richlog-follow-state",
+    "round": 2,
+    "attempt": 1
+  },
+  {
+    "route": "sub2api",
+    "experiment": "happy-dom-deterministic-intersectionobserver@r3",
+    "started_at": 1793193080.76,
+    "finished_at": 1793194139.802,
+    "task": "happy-dom-deterministic-intersectionobserver",
+    "round": 3,
+    "attempt": 1
+  },
+  {
+    "route": "stravia",
+    "experiment": "happy-dom-deterministic-intersectionobserver@r3",
+    "started_at": 1793193080.883,
+    "finished_at": 1793194085.229,
+    "task": "happy-dom-deterministic-intersectionobserver",
+    "round": 3,
+    "attempt": 1
+  },
+  {
+    "route": "cpa",
+    "experiment": "happy-dom-deterministic-intersectionobserver@r3",
+    "started_at": 1793193081.04,
+    "finished_at": 1793194313.302,
+    "task": "happy-dom-deterministic-intersectionobserver",
+    "round": 3,
+    "attempt": 1
+  },
+  {
+    "route": "sub2api",
+    "experiment": "numba-stencil-boundary-modes@r3",
+    "started_at": 1793194317.44,
+    "finished_at": 1793198160.127,
+    "task": "numba-stencil-boundary-modes",
+    "round": 3,
+    "attempt": 1
+  },
+  {
+    "route": "stravia",
+    "experiment": "numba-stencil-boundary-modes@r3",
+    "started_at": 1793194317.442,
+    "finished_at": 1793195930.782,
+    "task": "numba-stencil-boundary-modes",
+    "round": 3,
+    "attempt": 1
+  },
+  {
+    "route": "cpa",
+    "experiment": "numba-stencil-boundary-modes@r3",
+    "started_at": 1793194317.539,
+    "finished_at": 1793198163.013,
+    "task": "numba-stencil-boundary-modes",
+    "round": 3,
+    "attempt": 1
+  },
+  {
+    "route": "stravia",
+    "experiment": "kombu-single-active-consumer-priority@r4",
+    "started_at": 1793194562.465,
+    "finished_at": 1793195819.407,
+    "task": "kombu-single-active-consumer-priority",
+    "round": 4,
+    "attempt": 1
+  },
+  {
+    "route": "sub2api",
+    "experiment": "kombu-single-active-consumer-priority@r4",
+    "started_at": 1793194562.522,
+    "finished_at": 1793197330.336,
+    "task": "kombu-single-active-consumer-priority",
+    "round": 4,
+    "attempt": 1
+  },
+  {
+    "route": "cpa",
+    "experiment": "kombu-single-active-consumer-priority@r4",
+    "started_at": 1793194563.127,
+    "finished_at": 1793196859.273,
+    "task": "kombu-single-active-consumer-priority",
+    "round": 4,
+    "attempt": 1
+  },
+  {
+    "route": "cpa",
+    "experiment": "kea-atomic-signal-selectors@r3",
+    "started_at": 1793195044.638,
+    "finished_at": 1793198684.339,
+    "task": "kea-atomic-signal-selectors",
+    "round": 3,
+    "attempt": 1
+  },
+  {
+    "route": "stravia",
+    "experiment": "kea-atomic-signal-selectors@r3",
+    "started_at": 1793195044.638,
+    "finished_at": 1793196415.384,
+    "task": "kea-atomic-signal-selectors",
+    "round": 3,
+    "attempt": 1
+  },
+  {
+    "route": "sub2api",
+    "experiment": "kea-atomic-signal-selectors@r3",
+    "started_at": 1793195044.638,
+    "finished_at": 1793196455.494,
+    "task": "kea-atomic-signal-selectors",
+    "round": 3,
+    "attempt": 1
+  },
+  {
+    "route": "cpa",
+    "experiment": "happy-dom-deterministic-intersectionobserver@r2",
+    "started_at": 1793195061.83,
+    "finished_at": 1793196634.86,
+    "task": "happy-dom-deterministic-intersectionobserver",
+    "round": 2,
+    "attempt": 1
+  },
+  {
+    "route": "sub2api",
+    "experiment": "happy-dom-deterministic-intersectionobserver@r2",
+    "started_at": 1793195062.556,
+    "finished_at": 1793196338.324,
+    "task": "happy-dom-deterministic-intersectionobserver",
+    "round": 2,
+    "attempt": 1
+  },
+  {
+    "route": "stravia",
+    "experiment": "happy-dom-deterministic-intersectionobserver@r2",
+    "started_at": 1793195062.969,
+    "finished_at": 1793196468.777,
+    "task": "happy-dom-deterministic-intersectionobserver",
+    "round": 2,
+    "attempt": 1
+  },
+  {
+    "route": "sub2api",
+    "experiment": "meriyah-explicit-resource-declarations@r4",
+    "started_at": 1793195303.423,
+    "finished_at": 1793198712.654,
+    "task": "meriyah-explicit-resource-declarations",
+    "round": 4,
+    "attempt": 1
+  },
+  {
+    "route": "cpa",
+    "experiment": "meriyah-explicit-resource-declarations@r4",
+    "started_at": 1793195303.506,
+    "finished_at": 1793196205.184,
+    "task": "meriyah-explicit-resource-declarations",
+    "round": 4,
+    "attempt": 1
+  },
+  {
+    "route": "stravia",
+    "experiment": "meriyah-explicit-resource-declarations@r4",
+    "started_at": 1793195303.554,
+    "finished_at": 1793196722.976,
+    "task": "meriyah-explicit-resource-declarations",
+    "round": 4,
+    "attempt": 1
+  },
+  {
+    "route": "stravia",
+    "experiment": "cliffy-config-file-parsing@r1",
+    "started_at": 1793196641.739,
+    "finished_at": 1793198050.263,
+    "task": "cliffy-config-file-parsing",
+    "round": 1,
+    "attempt": 1
+  },
+  {
+    "route": "cpa",
+    "experiment": "cliffy-config-file-parsing@r1",
+    "started_at": 1793196641.743,
+    "finished_at": 1793200289.403,
+    "task": "cliffy-config-file-parsing",
+    "round": 1,
+    "attempt": 1
+  },
+  {
+    "route": "sub2api",
+    "experiment": "cliffy-config-file-parsing@r1",
+    "started_at": 1793196641.752,
+    "finished_at": 1793198850.681,
+    "task": "cliffy-config-file-parsing",
+    "round": 1,
+    "attempt": 1
+  },
+  {
+    "route": "cpa",
+    "experiment": "mnamer-daemon-watch-lifecycle@r3",
+    "started_at": 1793197333.4,
+    "finished_at": 1793199665.901,
+    "task": "mnamer-daemon-watch-lifecycle",
+    "round": 3,
+    "attempt": 1
+  },
+  {
+    "route": "stravia",
+    "experiment": "mnamer-daemon-watch-lifecycle@r3",
+    "started_at": 1793197333.407,
+    "finished_at": 1793197905.475,
+    "task": "mnamer-daemon-watch-lifecycle",
+    "round": 3,
+    "attempt": 1
+  },
+  {
+    "route": "sub2api",
+    "experiment": "mnamer-daemon-watch-lifecycle@r3",
+    "started_at": 1793197333.985,
+    "finished_at": 1793199649.942,
+    "task": "mnamer-daemon-watch-lifecycle",
+    "round": 3,
+    "attempt": 1
+  },
+  {
+    "route": "sub2api",
+    "experiment": "cliffy-config-file-parsing@r3",
+    "started_at": 1793198166.266,
+    "finished_at": 1793200946.459,
+    "task": "cliffy-config-file-parsing",
+    "round": 3,
+    "attempt": 1
+  },
+  {
+    "route": "stravia",
+    "experiment": "cliffy-config-file-parsing@r3",
+    "started_at": 1793198166.291,
+    "finished_at": 1793199435.264,
+    "task": "cliffy-config-file-parsing",
+    "round": 3,
+    "attempt": 1
+  },
+  {
+    "route": "cpa",
+    "experiment": "cliffy-config-file-parsing@r3",
+    "started_at": 1793198166.446,
+    "finished_at": 1793201805.956,
+    "task": "cliffy-config-file-parsing",
+    "round": 3,
+    "attempt": 1
+  },
+  {
+    "route": "cpa",
+    "experiment": "gql-incremental-graphql-delivery@r4",
+    "started_at": 1793198687.723,
+    "finished_at": 1793200932.25,
+    "task": "gql-incremental-graphql-delivery",
+    "round": 4,
+    "attempt": 1
+  },
+  {
+    "route": "stravia",
+    "experiment": "gql-incremental-graphql-delivery@r4",
+    "started_at": 1793198687.723,
+    "finished_at": 1793199710.124,
+    "task": "gql-incremental-graphql-delivery",
+    "round": 4,
+    "attempt": 1
+  },
+  {
+    "route": "sub2api",
+    "experiment": "gql-incremental-graphql-delivery@r4",
+    "started_at": 1793198687.728,
+    "finished_at": 1793202339.772,
+    "task": "gql-incremental-graphql-delivery",
+    "round": 4,
+    "attempt": 1
+  },
+  {
+    "route": "stravia",
+    "experiment": "expr-try-catch-errors@r2",
+    "started_at": 1793198716.1,
+    "finished_at": 1793200190.957,
+    "task": "expr-try-catch-errors",
+    "round": 2,
+    "attempt": 1
+  },
+  {
+    "route": "sub2api",
+    "experiment": "expr-try-catch-errors@r2",
+    "started_at": 1793198716.367,
+    "finished_at": 1793201562.532,
+    "task": "expr-try-catch-errors",
+    "round": 2,
+    "attempt": 1
+  },
+  {
+    "route": "cpa",
+    "experiment": "expr-try-catch-errors@r2",
+    "started_at": 1793198716.439,
+    "finished_at": 1793202208.639,
+    "task": "expr-try-catch-errors",
+    "round": 2,
+    "attempt": 1
+  },
+  {
+    "route": "sub2api",
+    "experiment": "cliffy-config-file-parsing@r1",
+    "started_at": 1793198854.007,
+    "finished_at": 1793198946.923,
+    "task": "cliffy-config-file-parsing",
+    "round": 1,
+    "attempt": 2
+  },
+  {
+    "route": "sub2api",
+    "experiment": "cliffy-config-file-parsing@r1",
+    "started_at": 1793198949.939,
+    "finished_at": 1793199020.638,
+    "task": "cliffy-config-file-parsing",
+    "round": 1,
+    "attempt": 3
+  },
+  {
+    "route": "stravia",
+    "experiment": "oxvg-structural-selector-preservation@r2",
+    "started_at": 1793199669.266,
+    "finished_at": 1793201372.422,
+    "task": "oxvg-structural-selector-preservation",
+    "round": 2,
+    "attempt": 1
+  },
+  {
+    "route": "sub2api",
+    "experiment": "oxvg-structural-selector-preservation@r2",
+    "started_at": 1793199669.44,
+    "finished_at": 1793203470.697,
+    "task": "oxvg-structural-selector-preservation",
+    "round": 2,
+    "attempt": 1
+  },
+  {
+    "route": "cpa",
+    "experiment": "oxvg-structural-selector-preservation@r2",
+    "started_at": 1793199669.508,
+    "finished_at": 1793202251.684,
+    "task": "oxvg-structural-selector-preservation",
+    "round": 2,
+    "attempt": 1
+  },
+  {
+    "route": "sub2api",
+    "experiment": "vitest-duration-sharding@r1",
+    "started_at": 1793200294.519,
+    "finished_at": 1793203956.446,
+    "task": "vitest-duration-sharding",
+    "round": 1,
+    "attempt": 1
+  },
+  {
+    "route": "stravia",
+    "experiment": "vitest-duration-sharding@r1",
+    "started_at": 1793200294.662,
+    "finished_at": 1793201420.407,
+    "task": "vitest-duration-sharding",
+    "round": 1,
+    "attempt": 1
+  },
+  {
+    "route": "cpa",
+    "experiment": "vitest-duration-sharding@r1",
+    "started_at": 1793200295.112,
+    "finished_at": 1793202184.298,
+    "task": "vitest-duration-sharding",
+    "round": 1,
+    "attempt": 1
+  },
+  {
+    "route": "cpa",
+    "experiment": "vitest-duration-sharding@r2",
+    "started_at": 1793201809.669,
+    "finished_at": 1793202204.263,
+    "task": "vitest-duration-sharding",
+    "round": 2,
+    "attempt": 1
+  },
+  {
+    "route": "stravia",
+    "experiment": "vitest-duration-sharding@r2",
+    "started_at": 1793201809.669,
+    "finished_at": 1793203249.472,
+    "task": "vitest-duration-sharding",
+    "round": 2,
+    "attempt": 1
+  },
+  {
+    "route": "sub2api",
+    "experiment": "vitest-duration-sharding@r2",
+    "started_at": 1793201809.675,
+    "finished_at": 1793205472.596,
+    "task": "vitest-duration-sharding",
+    "round": 2,
+    "attempt": 1
+  },
+  {
+    "route": "cpa",
+    "experiment": "vitest-duration-sharding@r1",
+    "started_at": 1793202188.111,
+    "finished_at": 1793205847.67,
+    "task": "vitest-duration-sharding",
+    "round": 1,
+    "attempt": 2
+  },
+  {
+    "route": "cpa",
+    "experiment": "vitest-duration-sharding@r2",
+    "started_at": 1793202207.371,
+    "finished_at": 1793205873.036,
+    "task": "vitest-duration-sharding",
+    "round": 2,
+    "attempt": 2
+  },
+  {
+    "route": "cpa",
+    "experiment": "expr-try-catch-errors@r2",
+    "started_at": 1793202211.884,
+    "finished_at": 1793205863.66,
+    "task": "expr-try-catch-errors",
+    "round": 2,
+    "attempt": 2
+  },
+  {
+    "route": "cpa",
+    "experiment": "oxvg-structural-selector-preservation@r2",
+    "started_at": 1793202254.958,
+    "finished_at": 1793206099.418,
+    "task": "oxvg-structural-selector-preservation",
+    "round": 2,
+    "attempt": 2
+  },
+  {
+    "route": "cpa",
+    "experiment": "textual-richlog-follow-state@r3",
+    "started_at": 1793202342.969,
+    "finished_at": 1793205973.827,
+    "task": "textual-richlog-follow-state",
+    "round": 3,
+    "attempt": 1
+  },
+  {
+    "route": "stravia",
+    "experiment": "textual-richlog-follow-state@r3",
+    "started_at": 1793202342.97,
+    "finished_at": 1793203461.155,
+    "task": "textual-richlog-follow-state",
+    "round": 3,
+    "attempt": 1
+  },
+  {
+    "route": "sub2api",
+    "experiment": "textual-richlog-follow-state@r3",
+    "started_at": 1793202343.12,
+    "finished_at": 1793205008.113,
+    "task": "textual-richlog-follow-state",
+    "round": 3,
+    "attempt": 1
+  },
+  {
+    "route": "sub2api",
+    "experiment": "kombu-single-active-consumer-priority@r3",
+    "started_at": 1793205850.796,
+    "finished_at": 1793206580.538,
+    "task": "kombu-single-active-consumer-priority",
+    "round": 3,
+    "attempt": 1
+  },
+  {
+    "route": "cpa",
+    "experiment": "kombu-single-active-consumer-priority@r3",
+    "started_at": 1793205850.898,
+    "finished_at": 1793207365.012,
+    "task": "kombu-single-active-consumer-priority",
+    "round": 3,
+    "attempt": 1
+  },
+  {
+    "route": "stravia",
+    "experiment": "kombu-single-active-consumer-priority@r3",
+    "started_at": 1793205852.204,
+    "finished_at": 1793206550.343,
+    "task": "kombu-single-active-consumer-priority",
+    "round": 3,
+    "attempt": 1
+  },
+  {
+    "route": "cpa",
+    "experiment": "oxvg-structural-selector-preservation@r3",
+    "started_at": 1793205867.562,
+    "finished_at": 1793209534.92,
+    "task": "oxvg-structural-selector-preservation",
+    "round": 3,
+    "attempt": 1
+  },
+  {
+    "route": "sub2api",
+    "experiment": "oxvg-structural-selector-preservation@r3",
+    "started_at": 1793205867.735,
+    "finished_at": 1793206287.122,
+    "task": "oxvg-structural-selector-preservation",
+    "round": 3,
+    "attempt": 1
+  },
+  {
+    "route": "stravia",
+    "experiment": "oxvg-structural-selector-preservation@r3",
+    "started_at": 1793205867.861,
+    "finished_at": 1793207841.387,
+    "task": "oxvg-structural-selector-preservation",
+    "round": 3,
+    "attempt": 1
+  },
+  {
+    "route": "stravia",
+    "experiment": "kombu-single-active-consumer-priority@r1",
+    "started_at": 1793205876.833,
+    "finished_at": 1793206602.773,
+    "task": "kombu-single-active-consumer-priority",
+    "round": 1,
+    "attempt": 1
+  },
+  {
+    "route": "sub2api",
+    "experiment": "kombu-single-active-consumer-priority@r1",
+    "started_at": 1793205877.011,
+    "finished_at": 1793206849.658,
+    "task": "kombu-single-active-consumer-priority",
+    "round": 1,
+    "attempt": 1
+  },
+  {
+    "route": "cpa",
+    "experiment": "kombu-single-active-consumer-priority@r1",
+    "started_at": 1793205877.205,
+    "finished_at": 1793208451.501,
+    "task": "kombu-single-active-consumer-priority",
+    "round": 1,
+    "attempt": 1
+  },
+  {
+    "route": "stravia",
+    "experiment": "go-genai-streamed-function-args@r1",
+    "started_at": 1793205976.692,
+    "finished_at": 1793207009.977,
+    "task": "go-genai-streamed-function-args",
+    "round": 1,
+    "attempt": 1
+  },
+  {
+    "route": "sub2api",
+    "experiment": "go-genai-streamed-function-args@r1",
+    "started_at": 1793205976.835,
+    "finished_at": 1793206682.201,
+    "task": "go-genai-streamed-function-args",
+    "round": 1,
+    "attempt": 1
+  },
+  {
+    "route": "cpa",
+    "experiment": "go-genai-streamed-function-args@r1",
+    "started_at": 1793205976.888,
+    "finished_at": 1793208639.881,
+    "task": "go-genai-streamed-function-args",
+    "round": 1,
+    "attempt": 1
+  },
+  {
+    "route": "sub2api",
+    "experiment": "testem-bail-on-test-failure@r4",
+    "started_at": 1793206102.974,
+    "finished_at": 1793206678.359,
+    "task": "testem-bail-on-test-failure",
+    "round": 4,
+    "attempt": 1
+  },
+  {
+    "route": "stravia",
+    "experiment": "testem-bail-on-test-failure@r4",
+    "started_at": 1793206103.097,
+    "finished_at": 1793207717.257,
+    "task": "testem-bail-on-test-failure",
+    "round": 4,
+    "attempt": 1
+  },
+  {
+    "route": "cpa",
+    "experiment": "testem-bail-on-test-failure@r4",
+    "started_at": 1793206103.607,
+    "finished_at": 1793209747.787,
+    "task": "testem-bail-on-test-failure",
+    "round": 4,
+    "attempt": 1
+  },
+  {
+    "route": "sub2api",
+    "experiment": "oxvg-structural-selector-preservation@r3",
+    "started_at": 1793206291.43,
+    "finished_at": 1793206435.107,
+    "task": "oxvg-structural-selector-preservation",
+    "round": 3,
+    "attempt": 2
+  },
+  {
+    "route": "sub2api",
+    "experiment": "oxvg-structural-selector-preservation@r3",
+    "started_at": 1793206438.097,
+    "finished_at": 1793206825.124,
+    "task": "oxvg-structural-selector-preservation",
+    "round": 3,
+    "attempt": 3
+  },
+  {
+    "route": "sub2api",
+    "experiment": "kombu-single-active-consumer-priority@r3",
+    "started_at": 1793206583.965,
+    "finished_at": 1793208257.771,
+    "task": "kombu-single-active-consumer-priority",
+    "round": 3,
+    "attempt": 2
+  },
+  {
+    "route": "sub2api",
+    "experiment": "testem-bail-on-test-failure@r4",
+    "started_at": 1793206681.259,
+    "finished_at": 1793208228.798,
+    "task": "testem-bail-on-test-failure",
+    "round": 4,
+    "attempt": 2
+  },
+  {
+    "route": "sub2api",
+    "experiment": "go-genai-streamed-function-args@r1",
+    "started_at": 1793206685.729,
+    "finished_at": 1793208455.461,
+    "task": "go-genai-streamed-function-args",
+    "round": 1,
+    "attempt": 2
+  },
+  {
+    "route": "sub2api",
+    "experiment": "kombu-single-active-consumer-priority@r1",
+    "started_at": 1793206853.107,
+    "finished_at": 1793209129.568,
+    "task": "kombu-single-active-consumer-priority",
+    "round": 1,
+    "attempt": 2
+  },
+  {
+    "route": "sub2api",
+    "experiment": "testem-bail-on-test-failure@r4",
+    "started_at": 1793208231.661,
+    "finished_at": 1793210430.026,
+    "task": "testem-bail-on-test-failure",
+    "round": 4,
+    "attempt": 3
+  },
+  {
+    "route": "sub2api",
+    "experiment": "kombu-single-active-consumer-priority@r3",
+    "started_at": 1793208260.773,
+    "finished_at": 1793210161.137,
+    "task": "kombu-single-active-consumer-priority",
+    "round": 3,
+    "attempt": 3
+  },
+  {
+    "route": "sub2api",
+    "experiment": "go-genai-streamed-function-args@r1",
+    "started_at": 1793208458.068,
+    "finished_at": 1793208543.817,
+    "task": "go-genai-streamed-function-args",
+    "round": 1,
+    "attempt": 3
+  },
+  {
+    "route": "stravia",
+    "experiment": "koota-composite-trait-aspects@r1",
+    "started_at": 1793208642.874,
+    "finished_at": 1793211429.152,
+    "task": "koota-composite-trait-aspects",
+    "round": 1,
+    "attempt": 1
+  },
+  {
+    "route": "sub2api",
+    "experiment": "koota-composite-trait-aspects@r1",
+    "started_at": 1793208642.906,
+    "finished_at": 1793210061.734,
+    "task": "koota-composite-trait-aspects",
+    "round": 1,
+    "attempt": 1
+  },
+  {
+    "route": "cpa",
+    "experiment": "koota-composite-trait-aspects@r1",
+    "started_at": 1793208642.948,
+    "finished_at": 1793212298.602,
+    "task": "koota-composite-trait-aspects",
+    "round": 1,
+    "attempt": 1
+  },
+  {
+    "route": "cpa",
+    "experiment": "gql-incremental-graphql-delivery@r2",
+    "started_at": 1793209132.268,
+    "finished_at": 1793211636.46,
+    "task": "gql-incremental-graphql-delivery",
+    "round": 2,
+    "attempt": 1
+  },
+  {
+    "route": "stravia",
+    "experiment": "gql-incremental-graphql-delivery@r2",
+    "started_at": 1793209132.274,
+    "finished_at": 1793210101.337,
+    "task": "gql-incremental-graphql-delivery",
+    "round": 2,
+    "attempt": 1
+  },
+  {
+    "route": "sub2api",
+    "experiment": "gql-incremental-graphql-delivery@r2",
+    "started_at": 1793209132.303,
+    "finished_at": 1793211046.936,
+    "task": "gql-incremental-graphql-delivery",
+    "round": 2,
+    "attempt": 1
+  },
+  {
+    "route": "cpa",
+    "experiment": "testem-bail-on-test-failure@r1",
+    "started_at": 1793209537.473,
+    "finished_at": 1793213183.823,
+    "task": "testem-bail-on-test-failure",
+    "round": 1,
+    "attempt": 1
+  },
+  {
+    "route": "stravia",
+    "experiment": "testem-bail-on-test-failure@r1",
+    "started_at": 1793209537.491,
+    "finished_at": 1793211431.239,
+    "task": "testem-bail-on-test-failure",
+    "round": 1,
+    "attempt": 1
+  },
+  {
+    "route": "sub2api",
+    "experiment": "testem-bail-on-test-failure@r1",
+    "started_at": 1793209537.495,
+    "finished_at": 1793213183.705,
+    "task": "testem-bail-on-test-failure",
+    "round": 1,
+    "attempt": 1
+  },
+  {
+    "route": "sub2api",
+    "experiment": "koota-composite-trait-aspects@r1",
+    "started_at": 1793210064.939,
+    "finished_at": 1793213707.184,
+    "task": "koota-composite-trait-aspects",
+    "round": 1,
+    "attempt": 2
+  },
+  {
+    "route": "cpa",
+    "experiment": "ink-grid-box-layout@r4",
+    "started_at": 1793210163.921,
+    "finished_at": 1793212620.678,
+    "task": "ink-grid-box-layout",
+    "round": 4,
+    "attempt": 1
+  },
+  {
+    "route": "stravia",
+    "experiment": "ink-grid-box-layout@r4",
+    "started_at": 1793210163.921,
+    "finished_at": 1793212132.016,
+    "task": "ink-grid-box-layout",
+    "round": 4,
+    "attempt": 1
+  },
+  {
+    "route": "sub2api",
+    "experiment": "ink-grid-box-layout@r4",
+    "started_at": 1793210163.921,
+    "finished_at": 1793211598.336,
+    "task": "ink-grid-box-layout",
+    "round": 4,
+    "attempt": 1
+  },
+  {
+    "route": "cpa",
+    "experiment": "mnamer-daemon-watch-lifecycle@r2",
+    "started_at": 1793210433.006,
+    "finished_at": 1793212225.082,
+    "task": "mnamer-daemon-watch-lifecycle",
+    "round": 2,
+    "attempt": 1
+  },
+  {
+    "route": "stravia",
+    "experiment": "mnamer-daemon-watch-lifecycle@r2",
+    "started_at": 1793210433.006,
+    "finished_at": 1793211166.245,
+    "task": "mnamer-daemon-watch-lifecycle",
+    "round": 2,
+    "attempt": 1
+  },
+  {
+    "route": "sub2api",
+    "experiment": "mnamer-daemon-watch-lifecycle@r2",
+    "started_at": 1793210433.01,
+    "finished_at": 1793210578.189,
+    "task": "mnamer-daemon-watch-lifecycle",
+    "round": 2,
+    "attempt": 1
+  },
+  {
+    "route": "sub2api",
+    "experiment": "mnamer-daemon-watch-lifecycle@r2",
+    "started_at": 1793210580.97,
+    "finished_at": 1793211812.145,
+    "task": "mnamer-daemon-watch-lifecycle",
+    "round": 2,
+    "attempt": 2
+  },
+  {
+    "route": "cpa",
+    "experiment": "termenv-preserve-ansi-resets@r2",
+    "started_at": 1793211639.582,
+    "finished_at": 1793214649.996,
+    "task": "termenv-preserve-ansi-resets",
+    "round": 2,
+    "attempt": 1
+  },
+  {
+    "route": "stravia",
+    "experiment": "termenv-preserve-ansi-resets@r2",
+    "started_at": 1793211639.582,
+    "finished_at": 1793212323.843,
+    "task": "termenv-preserve-ansi-resets",
+    "round": 2,
+    "attempt": 1
+  },
+  {
+    "route": "sub2api",
+    "experiment": "termenv-preserve-ansi-resets@r2",
+    "started_at": 1793211639.582,
+    "finished_at": 1793213235.561,
+    "task": "termenv-preserve-ansi-resets",
+    "round": 2,
+    "attempt": 1
+  },
+  {
+    "route": "sub2api",
+    "experiment": "koota-composite-trait-aspects@r3",
+    "started_at": 1793212227.783,
+    "finished_at": 1793215874.164,
+    "task": "koota-composite-trait-aspects",
+    "round": 3,
+    "attempt": 1
+  },
+  {
+    "route": "stravia",
+    "experiment": "koota-composite-trait-aspects@r3",
+    "started_at": 1793212227.784,
+    "finished_at": 1793214190.813,
+    "task": "koota-composite-trait-aspects",
+    "round": 3,
+    "attempt": 1
+  },
+  {
+    "route": "cpa",
+    "experiment": "koota-composite-trait-aspects@r3",
+    "started_at": 1793212227.788,
+    "finished_at": 1793215874.158,
+    "task": "koota-composite-trait-aspects",
+    "round": 3,
+    "attempt": 1
+  },
+  {
+    "route": "cpa",
+    "experiment": "narwhals-rolling-window-suite@r4",
+    "started_at": 1793212623.407,
+    "finished_at": 1793215258.782,
+    "task": "narwhals-rolling-window-suite",
+    "round": 4,
+    "attempt": 1
+  },
+  {
+    "route": "sub2api",
+    "experiment": "narwhals-rolling-window-suite@r4",
+    "started_at": 1793212623.408,
+    "finished_at": 1793212797.424,
+    "task": "narwhals-rolling-window-suite",
+    "round": 4,
+    "attempt": 1
+  },
+  {
+    "route": "stravia",
+    "experiment": "narwhals-rolling-window-suite@r4",
+    "started_at": 1793212623.416,
+    "finished_at": 1793213808.895,
+    "task": "narwhals-rolling-window-suite",
+    "round": 4,
+    "attempt": 1
+  },
+  {
+    "route": "sub2api",
+    "experiment": "narwhals-rolling-window-suite@r4",
+    "started_at": 1793212800.02,
+    "finished_at": 1793212960.756,
+    "task": "narwhals-rolling-window-suite",
+    "round": 4,
+    "attempt": 2
+  },
+  {
+    "route": "sub2api",
+    "experiment": "narwhals-rolling-window-suite@r4",
+    "started_at": 1793212963.257,
+    "finished_at": 1793215229.167,
+    "task": "narwhals-rolling-window-suite",
+    "round": 4,
+    "attempt": 3
+  },
+  {
+    "route": "stravia",
+    "experiment": "termenv-preserve-ansi-resets@r3",
+    "started_at": 1793213186.266,
+    "finished_at": 1793213772.21,
+    "task": "termenv-preserve-ansi-resets",
+    "round": 3,
+    "attempt": 1
+  },
+  {
+    "route": "cpa",
+    "experiment": "termenv-preserve-ansi-resets@r3",
+    "started_at": 1793213186.272,
+    "finished_at": 1793215191.674,
+    "task": "termenv-preserve-ansi-resets",
+    "round": 3,
+    "attempt": 1
+  },
+  {
+    "route": "sub2api",
+    "experiment": "termenv-preserve-ansi-resets@r3",
+    "started_at": 1793213186.275,
+    "finished_at": 1793215120.678,
+    "task": "termenv-preserve-ansi-resets",
+    "round": 3,
+    "attempt": 1
+  },
+  {
+    "route": "cpa",
+    "experiment": "testem-bail-on-test-failure@r2",
+    "started_at": 1793213709.915,
+    "finished_at": 1793217376.818,
+    "task": "testem-bail-on-test-failure",
+    "round": 2,
+    "attempt": 1
+  },
+  {
+    "route": "sub2api",
+    "experiment": "testem-bail-on-test-failure@r2",
+    "started_at": 1793213709.919,
+    "finished_at": 1793215395.989,
+    "task": "testem-bail-on-test-failure",
+    "round": 2,
+    "attempt": 1
+  },
+  {
+    "route": "stravia",
+    "experiment": "testem-bail-on-test-failure@r2",
+    "started_at": 1793213709.921,
+    "finished_at": 1793215191.791,
+    "task": "testem-bail-on-test-failure",
+    "round": 2,
+    "attempt": 1
+  },
+  {
+    "route": "cpa",
+    "experiment": "kombu-single-active-consumer-priority@r2",
+    "started_at": 1793214653.3,
+    "finished_at": 1793217596.182,
+    "task": "kombu-single-active-consumer-priority",
+    "round": 2,
+    "attempt": 1
+  },
+  {
+    "route": "sub2api",
+    "experiment": "kombu-single-active-consumer-priority@r2",
+    "started_at": 1793214653.302,
+    "finished_at": 1793216327.84,
+    "task": "kombu-single-active-consumer-priority",
+    "round": 2,
+    "attempt": 1
+  },
+  {
+    "route": "stravia",
+    "experiment": "kombu-single-active-consumer-priority@r2",
+    "started_at": 1793214653.303,
+    "finished_at": 1793215445.407,
+    "task": "kombu-single-active-consumer-priority",
+    "round": 2,
+    "attempt": 1
+  },
+  {
+    "route": "cpa",
+    "experiment": "cliffy-config-file-parsing@r2",
+    "started_at": 1793215194.273,
+    "finished_at": 1793218835.67,
+    "task": "cliffy-config-file-parsing",
+    "round": 2,
+    "attempt": 1
+  },
+  {
+    "route": "sub2api",
+    "experiment": "cliffy-config-file-parsing@r2",
+    "started_at": 1793215194.273,
+    "finished_at": 1793216091.696,
+    "task": "cliffy-config-file-parsing",
+    "round": 2,
+    "attempt": 1
+  },
+  {
+    "route": "stravia",
+    "experiment": "cliffy-config-file-parsing@r2",
+    "started_at": 1793215194.285,
+    "finished_at": 1793216192.69,
+    "task": "cliffy-config-file-parsing",
+    "round": 2,
+    "attempt": 1
+  },
+  {
+    "route": "stravia",
+    "experiment": "numba-stencil-boundary-modes@r2",
+    "started_at": 1793215261.546,
+    "finished_at": 1793216553.261,
+    "task": "numba-stencil-boundary-modes",
+    "round": 2,
+    "attempt": 1
+  },
+  {
+    "route": "cpa",
+    "experiment": "numba-stencil-boundary-modes@r2",
+    "started_at": 1793215261.549,
+    "finished_at": 1793217916.296,
+    "task": "numba-stencil-boundary-modes",
+    "round": 2,
+    "attempt": 1
+  },
+  {
+    "route": "sub2api",
+    "experiment": "numba-stencil-boundary-modes@r2",
+    "started_at": 1793215261.555,
+    "finished_at": 1793218535.641,
+    "task": "numba-stencil-boundary-modes",
+    "round": 2,
+    "attempt": 1
+  },
+  {
+    "route": "sub2api",
+    "experiment": "testem-bail-on-test-failure@r2",
+    "started_at": 1793215399.087,
+    "finished_at": 1793215482.175,
+    "task": "testem-bail-on-test-failure",
+    "round": 2,
+    "attempt": 2
+  },
+  {
+    "route": "stravia",
+    "experiment": "narwhals-rolling-window-suite@r2",
+    "started_at": 1793215876.793,
+    "finished_at": 1793216672.818,
+    "task": "narwhals-rolling-window-suite",
+    "round": 2,
+    "attempt": 1
+  },
+  {
+    "route": "sub2api",
+    "experiment": "narwhals-rolling-window-suite@r2",
+    "started_at": 1793215876.819,
+    "finished_at": 1793216239.611,
+    "task": "narwhals-rolling-window-suite",
+    "round": 2,
+    "attempt": 1
+  },
+  {
+    "route": "cpa",
+    "experiment": "narwhals-rolling-window-suite@r2",
+    "started_at": 1793215876.835,
+    "finished_at": 1793218637.993,
+    "task": "narwhals-rolling-window-suite",
+    "round": 2,
+    "attempt": 1
+  },
+  {
+    "route": "sub2api",
+    "experiment": "cliffy-config-file-parsing@r2",
+    "started_at": 1793216094.543,
+    "finished_at": 1793218011.312,
+    "task": "cliffy-config-file-parsing",
+    "round": 2,
+    "attempt": 2
+  },
+  {
+    "route": "sub2api",
+    "experiment": "narwhals-rolling-window-suite@r2",
+    "started_at": 1793216243.013,
+    "finished_at": 1793218166.337,
+    "task": "narwhals-rolling-window-suite",
+    "round": 2,
+    "attempt": 2
+  }
+]

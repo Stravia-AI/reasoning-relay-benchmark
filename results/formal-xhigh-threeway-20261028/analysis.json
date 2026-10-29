@@ -1,0 +1,66 @@
+{
+  "schema": "orchestrate-analysis/v1",
+  "scored_trials": 222,
+  "excluded_trials": {
+    "void": 18
+  },
+  "tasks": 20,
+  "routes": {
+    "cpa": {
+      "trials": 74,
+      "passes": 13,
+      "pass_rate": 0.1757
+    },
+    "stravia": {
+      "trials": 74,
+      "passes": 47,
+      "pass_rate": 0.6351
+    },
+    "sub2api": {
+      "trials": 74,
+      "passes": 18,
+      "pass_rate": 0.2432
+    }
+  },
+  "contrast": {
+    "route": "stravia",
+    "baselines": [
+      "cpa",
+      "sub2api"
+    ],
+    "missing_baselines": [],
+    "route_rate": 0.6351,
+    "baseline_mean": 0.2094,
+    "diff": 0.4256,
+    "ci95": [
+      0.2905,
+      0.5625
+    ],
+    "bootstrap": {
+      "iterations": 10000,
+      "seed": 0,
+      "alpha": 0.05,
+      "clusters": 20,
+      "valid_replicates": 10000,
+      "invalid_replicates": 0,
+      "diff_ci": [
+        0.2905,
+        0.5625
+      ],
+      "route_ci": {
+        "cpa": [
+          0.0694,
+          0.3
+        ],
+        "stravia": [
+          0.4857,
+          0.7792
+        ],
+        "sub2api": [
+          0.1169,
+          0.3889
+        ]
+      }
+    }
+  }
+}

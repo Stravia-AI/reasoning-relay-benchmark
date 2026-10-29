@@ -1,0 +1,719 @@
+{
+  "schema": "reproduction/v1",
+  "checks": 28,
+  "failed": [],
+  "items": [
+    {
+      "name": "xhigh: analysis.json 与 analyze.py 重算一致",
+      "expected": {
+        "schema": "orchestrate-analysis/v1",
+        "scored_trials": 222,
+        "excluded_trials": {
+          "void": 18
+        },
+        "tasks": 20,
+        "routes": {
+          "cpa": {
+            "trials": 74,
+            "passes": 13,
+            "pass_rate": 0.1757
+          },
+          "stravia": {
+            "trials": 74,
+            "passes": 47,
+            "pass_rate": 0.6351
+          },
+          "sub2api": {
+            "trials": 74,
+            "passes": 18,
+            "pass_rate": 0.2432
+          }
+        },
+        "contrast": {
+          "route": "stravia",
+          "baselines": [
+            "cpa",
+            "sub2api"
+          ],
+          "missing_baselines": [],
+          "route_rate": 0.6351,
+          "baseline_mean": 0.2094,
+          "diff": 0.4256,
+          "ci95": [
+            0.2905,
+            0.5625
+          ],
+          "bootstrap": {
+            "iterations": 10000,
+            "seed": 0,
+            "alpha": 0.05,
+            "clusters": 20,
+            "valid_replicates": 10000,
+            "invalid_replicates": 0,
+            "diff_ci": [
+              0.2905,
+              0.5625
+            ],
+            "route_ci": {
+              "cpa": [
+                0.0694,
+                0.3
+              ],
+              "stravia": [
+                0.4857,
+                0.7792
+              ],
+              "sub2api": [
+                0.1169,
+                0.3889
+              ]
+            }
+          }
+        }
+      },
+      "actual": {
+        "schema": "orchestrate-analysis/v1",
+        "scored_trials": 222,
+        "excluded_trials": {
+          "void": 18
+        },
+        "tasks": 20,
+        "routes": {
+          "cpa": {
+            "trials": 74,
+            "passes": 13,
+            "pass_rate": 0.1757
+          },
+          "stravia": {
+            "trials": 74,
+            "passes": 47,
+            "pass_rate": 0.6351
+          },
+          "sub2api": {
+            "trials": 74,
+            "passes": 18,
+            "pass_rate": 0.2432
+          }
+        },
+        "contrast": {
+          "route": "stravia",
+          "baselines": [
+            "cpa",
+            "sub2api"
+          ],
+          "missing_baselines": [],
+          "route_rate": 0.6351,
+          "baseline_mean": 0.2094,
+          "diff": 0.4256,
+          "ci95": [
+            0.2905,
+            0.5625
+          ],
+          "bootstrap": {
+            "iterations": 10000,
+            "seed": 0,
+            "alpha": 0.05,
+            "clusters": 20,
+            "valid_replicates": 10000,
+            "invalid_replicates": 0,
+            "diff_ci": [
+              0.2905,
+              0.5625
+            ],
+            "route_ci": {
+              "cpa": [
+                0.0694,
+                0.3
+              ],
+              "stravia": [
+                0.4857,
+                0.7792
+              ],
+              "sub2api": [
+                0.1169,
+                0.3889
+              ]
+            }
+          }
+        }
+      },
+      "ok": true
+    },
+    {
+      "name": "xhigh: analysis-stravia-vs-cpa.json 与 analyze.py 重算一致",
+      "expected": {
+        "schema": "orchestrate-analysis/v1",
+        "scored_trials": 222,
+        "excluded_trials": {
+          "void": 18
+        },
+        "tasks": 20,
+        "routes": {
+          "cpa": {
+            "trials": 74,
+            "passes": 13,
+            "pass_rate": 0.1757
+          },
+          "stravia": {
+            "trials": 74,
+            "passes": 47,
+            "pass_rate": 0.6351
+          },
+          "sub2api": {
+            "trials": 74,
+            "passes": 18,
+            "pass_rate": 0.2432
+          }
+        },
+        "contrast": {
+          "route": "stravia",
+          "baselines": [
+            "cpa"
+          ],
+          "missing_baselines": [],
+          "route_rate": 0.6351,
+          "baseline_mean": 0.1757,
+          "diff": 0.4594,
+          "ci95": [
+            0.3151,
+            0.6053
+          ],
+          "bootstrap": {
+            "iterations": 10000,
+            "seed": 0,
+            "alpha": 0.05,
+            "clusters": 20,
+            "valid_replicates": 10000,
+            "invalid_replicates": 0,
+            "diff_ci": [
+              0.3151,
+              0.6053
+            ],
+            "route_ci": {
+              "cpa": [
+                0.0694,
+                0.3
+              ],
+              "stravia": [
+                0.4857,
+                0.7792
+              ],
+              "sub2api": [
+                0.1169,
+                0.3889
+              ]
+            }
+          }
+        }
+      },
+      "actual": {
+        "schema": "orchestrate-analysis/v1",
+        "scored_trials": 222,
+        "excluded_trials": {
+          "void": 18
+        },
+        "tasks": 20,
+        "routes": {
+          "cpa": {
+            "trials": 74,
+            "passes": 13,
+            "pass_rate": 0.1757
+          },
+          "stravia": {
+            "trials": 74,
+            "passes": 47,
+            "pass_rate": 0.6351
+          },
+          "sub2api": {
+            "trials": 74,
+            "passes": 18,
+            "pass_rate": 0.2432
+          }
+        },
+        "contrast": {
+          "route": "stravia",
+          "baselines": [
+            "cpa"
+          ],
+          "missing_baselines": [],
+          "route_rate": 0.6351,
+          "baseline_mean": 0.1757,
+          "diff": 0.4594,
+          "ci95": [
+            0.3151,
+            0.6053
+          ],
+          "bootstrap": {
+            "iterations": 10000,
+            "seed": 0,
+            "alpha": 0.05,
+            "clusters": 20,
+            "valid_replicates": 10000,
+            "invalid_replicates": 0,
+            "diff_ci": [
+              0.3151,
+              0.6053
+            ],
+            "route_ci": {
+              "cpa": [
+                0.0694,
+                0.3
+              ],
+              "stravia": [
+                0.4857,
+                0.7792
+              ],
+              "sub2api": [
+                0.1169,
+                0.3889
+              ]
+            }
+          }
+        }
+      },
+      "ok": true
+    },
+    {
+      "name": "xhigh: analysis-stravia-vs-sub2api.json 与 analyze.py 重算一致",
+      "expected": {
+        "schema": "orchestrate-analysis/v1",
+        "scored_trials": 222,
+        "excluded_trials": {
+          "void": 18
+        },
+        "tasks": 20,
+        "routes": {
+          "cpa": {
+            "trials": 74,
+            "passes": 13,
+            "pass_rate": 0.1757
+          },
+          "stravia": {
+            "trials": 74,
+            "passes": 47,
+            "pass_rate": 0.6351
+          },
+          "sub2api": {
+            "trials": 74,
+            "passes": 18,
+            "pass_rate": 0.2432
+          }
+        },
+        "contrast": {
+          "route": "stravia",
+          "baselines": [
+            "sub2api"
+          ],
+          "missing_baselines": [],
+          "route_rate": 0.6351,
+          "baseline_mean": 0.2432,
+          "diff": 0.3919,
+          "ci95": [
+            0.2267,
+            0.5541
+          ],
+          "bootstrap": {
+            "iterations": 10000,
+            "seed": 0,
+            "alpha": 0.05,
+            "clusters": 20,
+            "valid_replicates": 10000,
+            "invalid_replicates": 0,
+            "diff_ci": [
+              0.2267,
+              0.5541
+            ],
+            "route_ci": {
+              "cpa": [
+                0.0694,
+                0.3
+              ],
+              "stravia": [
+                0.4857,
+                0.7792
+              ],
+              "sub2api": [
+                0.1169,
+                0.3889
+              ]
+            }
+          }
+        }
+      },
+      "actual": {
+        "schema": "orchestrate-analysis/v1",
+        "scored_trials": 222,
+        "excluded_trials": {
+          "void": 18
+        },
+        "tasks": 20,
+        "routes": {
+          "cpa": {
+            "trials": 74,
+            "passes": 13,
+            "pass_rate": 0.1757
+          },
+          "stravia": {
+            "trials": 74,
+            "passes": 47,
+            "pass_rate": 0.6351
+          },
+          "sub2api": {
+            "trials": 74,
+            "passes": 18,
+            "pass_rate": 0.2432
+          }
+        },
+        "contrast": {
+          "route": "stravia",
+          "baselines": [
+            "sub2api"
+          ],
+          "missing_baselines": [],
+          "route_rate": 0.6351,
+          "baseline_mean": 0.2432,
+          "diff": 0.3919,
+          "ci95": [
+            0.2267,
+            0.5541
+          ],
+          "bootstrap": {
+            "iterations": 10000,
+            "seed": 0,
+            "alpha": 0.05,
+            "clusters": 20,
+            "valid_replicates": 10000,
+            "invalid_replicates": 0,
+            "diff_ci": [
+              0.2267,
+              0.5541
+            ],
+            "route_ci": {
+              "cpa": [
+                0.0694,
+                0.3
+              ],
+              "stravia": [
+                0.4857,
+                0.7792
+              ],
+              "sub2api": [
+                0.1169,
+                0.3889
+              ]
+            }
+          }
+        }
+      },
+      "ok": true
+    },
+    {
+      "name": "xhigh: 实际尝试数",
+      "expected": 279,
+      "actual": 279,
+      "ok": true
+    },
+    {
+      "name": "xhigh: attempts/ 与账本逐次一致（279 次尝试）",
+      "expected": [],
+      "actual": [],
+      "ok": true
+    },
+    {
+      "name": "xhigh/stravia: 通过数与分母",
+      "expected": [
+        47,
+        74
+      ],
+      "actual": [
+        47,
+        74
+      ],
+      "ok": true
+    },
+    {
+      "name": "xhigh/stravia: 全部尝试 token 与调用数",
+      "expected": [
+        21245180,
+        1311161088,
+        5778389,
+        11815
+      ],
+      "actual": [
+        21245180,
+        1311161088,
+        5778389,
+        11815
+      ],
+      "ok": true
+    },
+    {
+      "name": "xhigh/stravia: 全部尝试超时数",
+      "expected": 1,
+      "actual": 1,
+      "ok": true
+    },
+    {
+      "name": "xhigh/stravia: 计分试验超时数",
+      "expected": 1,
+      "actual": 1,
+      "ok": true
+    },
+    {
+      "name": "xhigh/stravia: agent 耗时（每试验含重试）中位数 / P90 / 合计",
+      "expected": [
+        1092.382,
+        2174.8456000000015,
+        103574.115
+      ],
+      "actual": [
+        1092.382,
+        2174.8456000000015,
+        103574.115
+      ],
+      "ok": true
+    },
+    {
+      "name": "xhigh/stravia: 官方测试计数",
+      "expected": {
+        "f2p_total": 2858,
+        "f2p_passed": 2788,
+        "p2p_total": 528306,
+        "p2p_passed": 528243
+      },
+      "actual": {
+        "f2p_total": 2858,
+        "f2p_passed": 2788,
+        "p2p_total": 528306,
+        "p2p_passed": 528243
+      },
+      "ok": true
+    },
+    {
+      "name": "xhigh/cpa: 通过数与分母",
+      "expected": [
+        13,
+        74
+      ],
+      "actual": [
+        13,
+        74
+      ],
+      "ok": true
+    },
+    {
+      "name": "xhigh/cpa: 全部尝试 token 与调用数",
+      "expected": [
+        19882060,
+        1054855680,
+        11233708,
+        13764
+      ],
+      "actual": [
+        19882060,
+        1054855680,
+        11233708,
+        13764
+      ],
+      "ok": true
+    },
+    {
+      "name": "xhigh/cpa: 全部尝试超时数",
+      "expected": 38,
+      "actual": 38,
+      "ok": true
+    },
+    {
+      "name": "xhigh/cpa: 计分试验超时数",
+      "expected": 35,
+      "actual": 35,
+      "ok": true
+    },
+    {
+      "name": "xhigh/cpa: agent 耗时（每试验含重试）中位数 / P90 / 合计",
+      "expected": [
+        3576.804,
+        3628.549900000002,
+        246493.493
+      ],
+      "actual": [
+        3576.804,
+        3628.549900000002,
+        246493.493
+      ],
+      "ok": true
+    },
+    {
+      "name": "xhigh/cpa: 官方测试计数",
+      "expected": {
+        "f2p_total": 2858,
+        "f2p_passed": 2283,
+        "p2p_total": 528306,
+        "p2p_passed": 460867
+      },
+      "actual": {
+        "f2p_total": 2858,
+        "f2p_passed": 2283,
+        "p2p_total": 528306,
+        "p2p_passed": 460867
+      },
+      "ok": true
+    },
+    {
+      "name": "xhigh/sub2api: 通过数与分母",
+      "expected": [
+        18,
+        74
+      ],
+      "actual": [
+        18,
+        74
+      ],
+      "ok": true
+    },
+    {
+      "name": "xhigh/sub2api: 全部尝试 token 与调用数",
+      "expected": [
+        19993136,
+        1316103808,
+        13272713,
+        15170
+      ],
+      "actual": [
+        19993136,
+        1316103808,
+        13272713,
+        15170
+      ],
+      "ok": true
+    },
+    {
+      "name": "xhigh/sub2api: 全部尝试超时数",
+      "expected": 15,
+      "actual": 15,
+      "ok": true
+    },
+    {
+      "name": "xhigh/sub2api: 计分试验超时数",
+      "expected": 14,
+      "actual": 14,
+      "ok": true
+    },
+    {
+      "name": "xhigh/sub2api: agent 耗时（每试验含重试）中位数 / P90 / 合计",
+      "expected": [
+        2461.4655000000002,
+        3602.6935,
+        200181.997
+      ],
+      "actual": [
+        2461.4655000000002,
+        3602.6935,
+        200181.997
+      ],
+      "ok": true
+    },
+    {
+      "name": "xhigh/sub2api: 官方测试计数",
+      "expected": {
+        "f2p_total": 2858,
+        "f2p_passed": 2362,
+        "p2p_total": 528306,
+        "p2p_passed": 528269
+      },
+      "actual": {
+        "f2p_total": 2858,
+        "f2p_passed": 2362,
+        "p2p_total": 528306,
+        "p2p_passed": 528269
+      },
+      "ok": true
+    },
+    {
+      "name": "xhigh: 与 cpa 的配对格",
+      "expected": {
+        "both_pass": 12,
+        "stravia_only": 35,
+        "both_fail": 26,
+        "baseline_only": 1
+      },
+      "actual": {
+        "both_pass": 12,
+        "stravia_only": 35,
+        "both_fail": 26,
+        "baseline_only": 1
+      },
+      "ok": true
+    },
+    {
+      "name": "xhigh: 与 sub2api 的配对格",
+      "expected": {
+        "both_pass": 14,
+        "stravia_only": 33,
+        "baseline_only": 4,
+        "both_fail": 23
+      },
+      "actual": {
+        "stravia_only": 33,
+        "both_pass": 14,
+        "both_fail": 23,
+        "baseline_only": 4
+      },
+      "ok": true
+    },
+    {
+      "name": "xhigh/stravia: 计量窗口内上游请求 / 带工具主循环请求 / 强度分布",
+      "expected": [
+        11845,
+        11773,
+        {
+          "xhigh": 11773
+        }
+      ],
+      "actual": [
+        11845,
+        11773,
+        {
+          "xhigh": 11773
+        }
+      ],
+      "ok": true
+    },
+    {
+      "name": "xhigh/cpa: 计量窗口内上游请求 / 带工具主循环请求 / 强度分布",
+      "expected": [
+        13772,
+        13769,
+        {
+          "xhigh": 13769
+        }
+      ],
+      "actual": [
+        13772,
+        13769,
+        {
+          "xhigh": 13769
+        }
+      ],
+      "ok": true
+    },
+    {
+      "name": "xhigh/sub2api: 计量窗口内上游请求 / 带工具主循环请求 / 强度分布",
+      "expected": [
+        15220,
+        15130,
+        {
+          "xhigh": 15130
+        }
+      ],
+      "actual": [
+        15220,
+        15130,
+        {
+          "xhigh": 15130
+        }
+      ],
+      "ok": true
+    }
+  ]
+}

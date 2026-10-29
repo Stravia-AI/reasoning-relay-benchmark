@@ -1,0 +1,93 @@
+{
+  "schema": "chat-reasoning-xhigh-cpa-incomplete-upload/v1",
+  "status": "measurement-gap-confirmed",
+  "flows": [
+    "cpa-35464",
+    "cpa-37209",
+    "cpa-44245"
+  ],
+  "rows": [
+    {
+      "at": 1793186465.353982,
+      "event": "error",
+      "flow": "cpa-35464",
+      "route": "cpa",
+      "error_kind": "request-cancellation",
+      "raw_line_number": 2947211,
+      "raw_line_sha256": "8bebe8ae6ffd62a22cf4a95d6a30bb2a4125d9a7d228b7f65c27dd1be9c89c31"
+    },
+    {
+      "at": 1793186465.3539922,
+      "started_at": 1793186465.2999806,
+      "event": "http-request",
+      "flow": "cpa-35464",
+      "route": "cpa",
+      "error_kind": "incomplete-stream",
+      "error": "unexpected EOF",
+      "request_shape": "invalid-json",
+      "body_wire_bytes": 81920,
+      "body_decoded_bytes": 81920,
+      "content_encoding": "",
+      "model_request": true,
+      "http_version": "HTTP/2.0",
+      "raw_line_number": 2947212,
+      "raw_line_sha256": "4b99676237c78cdbd1dafa9382ae01fbaf7c70aa31f1e173f767e72468e13402"
+    },
+    {
+      "at": 1793191321.6487572,
+      "event": "error",
+      "flow": "cpa-37209",
+      "route": "cpa",
+      "error_kind": "request-cancellation",
+      "raw_line_number": 3157202,
+      "raw_line_sha256": "fe83d45702bfbc038e255e98745ce9ca99aec1095f100c8715462809d6f2e761"
+    },
+    {
+      "at": 1793191321.6487846,
+      "started_at": 1793191321.5792012,
+      "event": "http-request",
+      "flow": "cpa-37209",
+      "route": "cpa",
+      "error_kind": "incomplete-stream",
+      "error": "unexpected EOF",
+      "request_shape": "invalid-json",
+      "body_wire_bytes": 147456,
+      "body_decoded_bytes": 147456,
+      "content_encoding": "",
+      "model_request": true,
+      "http_version": "HTTP/2.0",
+      "raw_line_number": 3157203,
+      "raw_line_sha256": "c62e087332ed1678697d46109f89238bc527488300d8c17256b6763110b1e366"
+    },
+    {
+      "at": 1793205863.877954,
+      "event": "error",
+      "flow": "cpa-44245",
+      "route": "cpa",
+      "error_kind": "request-cancellation",
+      "raw_line_number": 3523829,
+      "raw_line_sha256": "ae65064d555465a969bd646738e54fdfd920be959dbafdf9d209f2d900f91257"
+    },
+    {
+      "at": 1793205863.8779652,
+      "started_at": 1793205859.2295952,
+      "event": "http-request",
+      "flow": "cpa-44245",
+      "route": "cpa",
+      "error_kind": "incomplete-stream",
+      "error": "unexpected EOF",
+      "request_shape": "invalid-json",
+      "body_wire_bytes": 606208,
+      "body_decoded_bytes": 606208,
+      "content_encoding": "",
+      "model_request": true,
+      "http_version": "HTTP/2.0",
+      "raw_line_number": 3523830,
+      "raw_line_sha256": "ae03d35f4eb33ef95947c88e7376c2676ad4730980ca3df2653ef62bf5fca1bb"
+    }
+  ],
+  "finding": "Three CPA uploads were canceled while streaming; captured bodies ended with unexpected EOF, so effort/model remain unknown. No complete provider request or response is established for these flows.",
+  "capture_limit_exceeded": false,
+  "raw_request_bodies_not_stored": true,
+  "no_rerun_or_reclassification": true
+}

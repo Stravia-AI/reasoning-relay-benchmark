@@ -1,0 +1,210 @@
+{
+  "schema": "harness-manifest/v1",
+  "layout": "harness/ 复刻原仓库的相对路径，脚本按 parents[N] 定位根目录，因此把 harness/ 当作运行根目录",
+  "formal_xhigh_preflight_sha256": "正式 xhigh 批次启动前冻结的输入哈希；null 表示该文件不在冻结输入里（构建、验收或辅助脚本）",
+  "running_meterd_binary_sha256": "05465de0024d61ab1f067932d5bf8900461d07280b9e409f149a6536a4922290",
+  "files": [
+    {
+      "path": "harness/video/chat-reasoning-replay/project/meterd/decode.go",
+      "sha256": "407f2cbfc1c52e10f2e98bc12fc7b378fbffc76395a12fa427ef8ec4bd1db973",
+      "formal_xhigh_preflight_sha256": null,
+      "matches_frozen_input": null
+    },
+    {
+      "path": "harness/video/chat-reasoning-replay/project/meterd/go.mod",
+      "sha256": "24d61553ab617c78ccb6c4ad20c07792356dcca43df737918a5f3e077290bdd4",
+      "formal_xhigh_preflight_sha256": null,
+      "matches_frozen_input": null
+    },
+    {
+      "path": "harness/video/chat-reasoning-replay/project/meterd/go.sum",
+      "sha256": "5dccda9179bd6410359be9f6a0c285fbbd035a646cff2ac156a7733057cd2f67",
+      "formal_xhigh_preflight_sha256": null,
+      "matches_frozen_input": null
+    },
+    {
+      "path": "harness/video/chat-reasoning-replay/project/meterd/main.go",
+      "sha256": "c2d53dc67b1959cc9f3e2be4ea5e07ffa1f7426e7dafc413d8e2ec567a3d441b",
+      "formal_xhigh_preflight_sha256": null,
+      "matches_frozen_input": null
+    },
+    {
+      "path": "harness/video/chat-reasoning-replay/project/meterd/main_test.go",
+      "sha256": "b29f416caf9421d4e77ab05cfc7a32320323becc2c8b3135239e977993c67611",
+      "formal_xhigh_preflight_sha256": null,
+      "matches_frozen_input": null
+    },
+    {
+      "path": "harness/video/chat-reasoning-replay/project/meterd/meter_test.go",
+      "sha256": "d78f6ffcc361d78533bc5de8536a105e4390ad64c3c9e38d2d99b9786f091ac3",
+      "formal_xhigh_preflight_sha256": null,
+      "matches_frozen_input": null
+    },
+    {
+      "path": "harness/video/chat-reasoning-replay/project/meterd/shape.go",
+      "sha256": "36102a5990260800e2ff5b6ee5ee6ef11a2eb5c3f26ce8af9d4a29ad2d4aaf8c",
+      "formal_xhigh_preflight_sha256": null,
+      "matches_frozen_input": null
+    },
+    {
+      "path": "harness/video/chat-reasoning-replay/project/scripts/meter/summarize.py",
+      "sha256": "1cc0a08c66ef36a4f8fb6fc84c7b7c1e641cb05e13c5a729770b4fd7a9d0d93d",
+      "formal_xhigh_preflight_sha256": "1cc0a08c66ef36a4f8fb6fc84c7b7c1e641cb05e13c5a729770b4fd7a9d0d93d",
+      "matches_frozen_input": true
+    },
+    {
+      "path": "harness/video/chat-reasoning-replay/project/scripts/pier/build_dsh_bundle.sh",
+      "sha256": "9ef2cdcfd97895ea7ff7bf382f59740768c65c1b0e4bd74c8f85fd13c46be7cf",
+      "formal_xhigh_preflight_sha256": null,
+      "matches_frozen_input": null
+    },
+    {
+      "path": "harness/video/chat-reasoning-replay/project/scripts/pier/dsh_agent.py",
+      "sha256": "d493517b1ee8877027c35402c4f8a62b94e38ef96bd30d01815cec42f3f960aa",
+      "formal_xhigh_preflight_sha256": "d493517b1ee8877027c35402c4f8a62b94e38ef96bd30d01815cec42f3f960aa",
+      "matches_frozen_input": true
+    },
+    {
+      "path": "harness/video/chat-reasoning-replay/project/scripts/pier/measure_run.sh",
+      "sha256": "c495a33dc6802a547a9f035f2db2e86e05e1009d3e3514f88eb01e54d8c672ef",
+      "formal_xhigh_preflight_sha256": null,
+      "matches_frozen_input": null
+    },
+    {
+      "path": "harness/video/chat-reasoning-replay/project/scripts/pier/mock_openai_server.py",
+      "sha256": "1ffcef254895a33debabd581642f40a65391a32138965343c9651ede8f085c74",
+      "formal_xhigh_preflight_sha256": null,
+      "matches_frozen_input": null
+    },
+    {
+      "path": "harness/video/chat-reasoning-replay/project/scripts/pier/prepare_pilot_task.py",
+      "sha256": "dfcb868498a82d257d593ab193d21277b797aa94c35aeeaebe427178f7c678bf",
+      "formal_xhigh_preflight_sha256": "dfcb868498a82d257d593ab193d21277b797aa94c35aeeaebe427178f7c678bf",
+      "matches_frozen_input": true
+    },
+    {
+      "path": "harness/video/chat-reasoning-replay/project/scripts/pier/rootless_compat/sitecustomize.py",
+      "sha256": "f1e9abb0f4327b927b421916bdd51b25b44f6a808373edff39657bbb8fed2b5a",
+      "formal_xhigh_preflight_sha256": "f1e9abb0f4327b927b421916bdd51b25b44f6a808373edff39657bbb8fed2b5a",
+      "matches_frozen_input": true
+    },
+    {
+      "path": "harness/video/chat-reasoning-replay/project/scripts/pier/run_pier.sh",
+      "sha256": "9320b7c8bef6c153e6dcc61163f0016f6775398e22cce881cb4f556fa2986e9f",
+      "formal_xhigh_preflight_sha256": "9320b7c8bef6c153e6dcc61163f0016f6775398e22cce881cb4f556fa2986e9f",
+      "matches_frozen_input": true
+    },
+    {
+      "path": "harness/video/chat-reasoning-replay/project/scripts/pier/sample_tasks.py",
+      "sha256": "1e75c39d30ab7314a63f96078e2ee59acf84c731e0721a92aa984b8fa956eadc",
+      "formal_xhigh_preflight_sha256": null,
+      "matches_frozen_input": null
+    },
+    {
+      "path": "harness/video/chat-reasoning-replay/project/scripts/pier/survey_images.py",
+      "sha256": "c42442e5e2cdf287f2fc615b9647dbc0010ce2fe32c52fc0bd1572293cf0c6d7",
+      "formal_xhigh_preflight_sha256": null,
+      "matches_frozen_input": null
+    },
+    {
+      "path": "harness/video/chat-reasoning-replay/project/scripts/pier/upstream-relay.js",
+      "sha256": "02a66835f7d87fde19d423b713f06fe68b803f74f626f1e76b9a2200f6f94bac",
+      "formal_xhigh_preflight_sha256": "02a66835f7d87fde19d423b713f06fe68b803f74f626f1e76b9a2200f6f94bac",
+      "matches_frozen_input": true
+    },
+    {
+      "path": "harness/video/chat-reasoning-replay/project/scripts/pier/upstream_relay.py",
+      "sha256": "df54e60765873f5e67851826204f6951737494a7dc2afb0a6610bb0131136112",
+      "formal_xhigh_preflight_sha256": "df54e60765873f5e67851826204f6951737494a7dc2afb0a6610bb0131136112",
+      "matches_frozen_input": true
+    },
+    {
+      "path": "harness/video/chat-reasoning-replay/project/scripts/pier/validate_environment.py",
+      "sha256": "d2a18bf8eab0affba030ddb78968f15ee73cbceea590984d4f40a2c0692d053f",
+      "formal_xhigh_preflight_sha256": null,
+      "matches_frozen_input": null
+    },
+    {
+      "path": "harness/video/chat-reasoning-replay/project/scripts/pier/validate_oracles.py",
+      "sha256": "67b0c59748b99cc8dc6692dc2dcf3d909c950d0b3ff27e5dc341e90f68a69e02",
+      "formal_xhigh_preflight_sha256": null,
+      "matches_frozen_input": null
+    },
+    {
+      "path": "harness/video/chat-reasoning-replay/project/scripts/orchestrate/analyze.py",
+      "sha256": "0e35254d9af1a858bb4f0812d33c91fa48b8c93a58a25a3d00acb294e0a25f2b",
+      "formal_xhigh_preflight_sha256": "0e35254d9af1a858bb4f0812d33c91fa48b8c93a58a25a3d00acb294e0a25f2b",
+      "matches_frozen_input": true
+    },
+    {
+      "path": "harness/video/chat-reasoning-replay/project/scripts/orchestrate/run_batch.py",
+      "sha256": "80262a7e2e6ce7e35c86876123959a4b3b87fc129fba33a73dd59ea9b374e4f7",
+      "formal_xhigh_preflight_sha256": "80262a7e2e6ce7e35c86876123959a4b3b87fc129fba33a73dd59ea9b374e4f7",
+      "matches_frozen_input": true
+    },
+    {
+      "path": "harness/video/chat-reasoning-replay/project/scripts/orchestrate/selftest/fake_pier.py",
+      "sha256": "bb4441b78f0cdaf0f2089ab5fca514ca5fe0bb80d3af720cb3c059deb1053041",
+      "formal_xhigh_preflight_sha256": null,
+      "matches_frozen_input": null
+    },
+    {
+      "path": "harness/video/chat-reasoning-replay/project/scripts/orchestrate/selftest.py",
+      "sha256": "f679b0c0a0bafe17b1fb192afb13099b1d8bc7e783f542a2831df7a131f32be0",
+      "formal_xhigh_preflight_sha256": "f679b0c0a0bafe17b1fb192afb13099b1d8bc7e783f542a2831df7a131f32be0",
+      "matches_frozen_input": true
+    },
+    {
+      "path": "harness/video/chat-reasoning-replay/project/scripts/gate/gate.py",
+      "sha256": "209deefae0dfbaf44e46be956552940b87641240824635d2a9dc4025adef51b7",
+      "formal_xhigh_preflight_sha256": "209deefae0dfbaf44e46be956552940b87641240824635d2a9dc4025adef51b7",
+      "matches_frozen_input": true
+    },
+    {
+      "path": "harness/video/chat-reasoning-replay/project/scripts/gate/gen_task.py",
+      "sha256": "45a7549022f128fe86a25c54da79b4e53b2bdb4a6809f699e78d77d8959549c7",
+      "formal_xhigh_preflight_sha256": null,
+      "matches_frozen_input": null
+    },
+    {
+      "path": "harness/video/chat-reasoning-replay/project/scripts/gate/mock_stravia_upstream.py",
+      "sha256": "457eba9b089b8b04618ebf475a34dbfd40bf8ae15770a7bdd1a5a269ccc82eba",
+      "formal_xhigh_preflight_sha256": null,
+      "matches_frozen_input": null
+    },
+    {
+      "path": "harness/video/chat-reasoning-replay/project/scripts/gate/probe_dsh_replay.py",
+      "sha256": "980dbe89621a8b7d1716397065e29c6757ca8ffc55702ab9196bb2341dbfdfb0",
+      "formal_xhigh_preflight_sha256": null,
+      "matches_frozen_input": null
+    },
+    {
+      "path": "harness/video/chat-reasoning-replay/project/scripts/gate/prompt.md",
+      "sha256": "bffe46d9a91e9582e7c3c3cb6e3670c65885bae5aa9854f1a6bd5edcce11029b",
+      "formal_xhigh_preflight_sha256": null,
+      "matches_frozen_input": null
+    },
+    {
+      "path": "harness/video/chat-reasoning-replay/project/scripts/services/threeway-services.py",
+      "sha256": "335170fe0ae2031fea9a9ca5162edd4023d019800773a2920847439f3f832276",
+      "formal_xhigh_preflight_sha256": "335170fe0ae2031fea9a9ca5162edd4023d019800773a2920847439f3f832276",
+      "matches_frozen_input": true
+    },
+    {
+      "path": "harness/runtime/dsh-bundle/package.json",
+      "sha256": "55dd0d67a8832fcc6164b15a94defb717229fb69fbf1f27f51b83ff251668c9a",
+      "formal_xhigh_preflight_sha256": null,
+      "matches_frozen_input": null,
+      "note": "打包 DSH 离线包时使用的依赖清单与锁文件；正式批冻结的是打好的离线包本身"
+    },
+    {
+      "path": "harness/runtime/dsh-bundle/package-lock.json",
+      "sha256": "eb474fef550a01b6e2155e2f7c5d57b5900a07c542e4bca5c05cb6128b6df976",
+      "formal_xhigh_preflight_sha256": null,
+      "matches_frozen_input": null,
+      "note": "打包 DSH 离线包时使用的依赖清单与锁文件；正式批冻结的是打好的离线包本身"
+    }
+  ],
+  "frozen_dsh_bundle_sha256": "445ca38aad5e6da4458b38f5134c50c0d813005a14cde3b02be8ad0727a88ec4",
+  "frozen_sample_sha256": "e265786e01fa91315145ea176277f72b66b294cfebb59adad0e5e957b6d8b096"
+}

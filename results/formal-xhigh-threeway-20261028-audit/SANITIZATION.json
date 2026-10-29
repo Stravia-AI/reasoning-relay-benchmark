@@ -1,0 +1,65 @@
+{
+  "schema": "sanitization/v2",
+  "source_batch": "xhigh-threeway-20261028",
+  "files": 5,
+  "attempt_files_missing": [],
+  "transforms": {
+    "strict-audit-result.json": "drop references to batches outside this release",
+    "completion-accounting.json": "drop references to batches outside this release",
+    "final-runtime.json": "drop references to batches outside this release",
+    "closure.json": "drop references to batches outside this release"
+  },
+  "replacement_counts": {
+    "repo path": 0,
+    "private path": 0,
+    "home path": 0,
+    "runtime dir": 0,
+    "tmp path": 0,
+    "shm path": 0,
+    "cgnat address": 0,
+    "lan address": 0,
+    "email": 0,
+    "github token": 0,
+    "github pat": 0,
+    "api key": 0,
+    "jwt": 0,
+    "bearer token": 0,
+    "token field": 0,
+    "private key": 0
+  },
+  "numeric_structure_preserved": true,
+  "residual_hits": [],
+  "combined_sha256": "1997c2b1f4b1a3a92dd3f54545c27b5f909bcfffe4739acf4f77dfb3a02d79f8",
+  "manifest": [
+    {
+      "path": "results/formal-xhigh-threeway-20261028-audit/strict-audit-result.json",
+      "bytes": 578963,
+      "sha256": "610e046ee9311966626c24dcc9a704d71c4a3aeb8f9a0ca20403a8370dbd49ee",
+      "source_sha256": "2188a5c56a55b984905b3320c14af4ff0c043fff652c605148bc1ce186341f5c"
+    },
+    {
+      "path": "results/formal-xhigh-threeway-20261028-audit/completion-accounting.json",
+      "bytes": 9103,
+      "sha256": "2140e21e43285d1941833cfbb859f6cefeca4d7954699c75fcfa4e38046280e4",
+      "source_sha256": "370d270e3663166d6af74fc032b481868a1aeb38ed8a2ab89a3d4ecca6889401"
+    },
+    {
+      "path": "results/formal-xhigh-threeway-20261028-audit/cpa-incomplete-upload-evidence.json",
+      "bytes": 3076,
+      "sha256": "152962910275d287285af7e7e1f3f3c3b75a07bc3caa21f36e1c195d032c2bf7",
+      "source_sha256": "152962910275d287285af7e7e1f3f3c3b75a07bc3caa21f36e1c195d032c2bf7"
+    },
+    {
+      "path": "results/formal-xhigh-threeway-20261028-audit/final-runtime.json",
+      "bytes": 2208,
+      "sha256": "c9dd3d2bf08e04f41dbb0ed072f4e24b1ef69369990ee08365df41940873b9bc",
+      "source_sha256": "81b40db4094c564f501bd1de1c4dae29d75d777aff8c5518ec36da83cc78bcce"
+    },
+    {
+      "path": "results/formal-xhigh-threeway-20261028-audit/closure.json",
+      "bytes": 2603,
+      "sha256": "a02b9caee6987553a45b3547aad12e2327a8f5eb8f09276a2037b538ce2e024b",
+      "source_sha256": "f30173bf8cc269ac1a69cdb954c620d6f4aa5eb9d8bfe15d045aaf9f85573809"
+    }
+  ]
+}

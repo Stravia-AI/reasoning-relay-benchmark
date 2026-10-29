@@ -1,0 +1,11 @@
+__pycache__/
+*.py[cod]
+node_modules/
+.DS_Store
+# 运行时目录：任务副本、作业输出、DSH 离线包、被测二进制都在这里生成，不入库。
+harness/.scratch/
+harness/.devenv/
+harness/video/chat-reasoning-replay/project/meterd/meterd
+*.log
+*.mp4
+*.webm

@@ -1,0 +1,325 @@
+{
+  "schema": "chat-reasoning-xhigh-completion-accounting/v1",
+  "execution_status": "completed",
+  "wall_seconds_scheduler": 57206.63894867897,
+  "valid_paired_groups": 74,
+  "void_groups": 6,
+  "scored_trials": 222,
+  "attempts": 279,
+  "retry_attempts": 39,
+  "automatic_only_no_manual_reopen": true,
+  "agent_timeout_counts_all_attempts": {
+    "stravia": 1,
+    "cpa": 38,
+    "sub2api": 15
+  },
+  "error_reason_counts_all_attempts": {
+    "stravia": {
+      "terminal-other": 1,
+      "agent-timeout": 1
+    },
+    "cpa": {
+      "policy-or-invalid-prompt": 1,
+      "agent-timeout": 38,
+      "terminal-http": 12,
+      "stream-failure": 9
+    },
+    "sub2api": {
+      "policy-or-invalid-prompt": 11,
+      "agent-timeout": 15,
+      "stream-failure": 7,
+      "concurrency-limit": 32
+    }
+  },
+  "scored_failure_reason_counts_by_route": {
+    "stravia": {
+      "official-reward-fail": 25,
+      "agent-timeout": 1,
+      "terminal-other": 1
+    },
+    "cpa": {
+      "official-reward-fail": 16,
+      "agent-timeout": 35,
+      "stream-failure": 9,
+      "policy-or-invalid-prompt": 1
+    },
+    "sub2api": {
+      "official-reward-fail": 24,
+      "stream-failure": 7,
+      "policy-or-invalid-prompt": 11,
+      "agent-timeout": 14
+    }
+  },
+  "stream_failure_counts_all_attempts": {
+    "cpa": 9,
+    "sub2api": 7
+  },
+  "paired_cells": {
+    "cpa": {
+      "both_pass": 12,
+      "stravia_only": 35,
+      "both_fail": 26,
+      "baseline_only": 1
+    },
+    "sub2api": {
+      "both_pass": 14,
+      "stravia_only": 33,
+      "baseline_only": 4,
+      "both_fail": 23
+    }
+  },
+  "void_group_audit": [
+    {
+      "group_id": "koota-composite-trait-aspects@r2",
+      "voided_by_route": "cpa",
+      "reason": "group-void: retries-exhausted: cpa 尝试 3 次仍失败（infra-error:infra:http:503）",
+      "latest_actual_before_void": {
+        "stravia": {
+          "attempt": 1,
+          "classification": "pass",
+          "reward": 1.0,
+          "reason": "reward",
+          "timed_out": false
+        },
+        "cpa": {
+          "attempt": 3,
+          "classification": "infra-error",
+          "reward": 0.0,
+          "reason": "infra:http:503",
+          "timed_out": false
+        },
+        "sub2api": {
+          "attempt": 1,
+          "classification": "fail",
+          "reward": 0.0,
+          "reason": "timed_out",
+          "timed_out": true
+        }
+      }
+    },
+    {
+      "group_id": "numba-stencil-boundary-modes@r4",
+      "voided_by_route": "sub2api",
+      "reason": "group-void: retries-exhausted: sub2api 尝试 3 次仍失败（infra-error:infra:concurrency）",
+      "latest_actual_before_void": {
+        "stravia": {
+          "attempt": 1,
+          "classification": "pass",
+          "reward": 1.0,
+          "reason": "reward",
+          "timed_out": false
+        },
+        "cpa": {
+          "attempt": 1,
+          "classification": "pass",
+          "reward": 1.0,
+          "reason": "reward",
+          "timed_out": false
+        },
+        "sub2api": {
+          "attempt": 3,
+          "classification": "infra-error",
+          "reward": 1.0,
+          "reason": "infra:concurrency",
+          "timed_out": false
+        }
+      }
+    },
+    {
+      "group_id": "cliffy-config-file-parsing@r1",
+      "voided_by_route": "sub2api",
+      "reason": "group-void: retries-exhausted: sub2api 尝试 3 次仍失败（infra-error:infra:concurrency）",
+      "latest_actual_before_void": {
+        "stravia": {
+          "attempt": 1,
+          "classification": "fail",
+          "reward": 0.0,
+          "reason": "reward",
+          "timed_out": false
+        },
+        "cpa": {
+          "attempt": 1,
+          "classification": "fail",
+          "reward": 1.0,
+          "reason": "timed_out",
+          "timed_out": true
+        },
+        "sub2api": {
+          "attempt": 3,
+          "classification": "infra-error",
+          "reward": 0.0,
+          "reason": "infra:concurrency",
+          "timed_out": false
+        }
+      }
+    },
+    {
+      "group_id": "go-genai-streamed-function-args@r1",
+      "voided_by_route": "sub2api",
+      "reason": "group-void: retries-exhausted: sub2api 尝试 3 次仍失败（infra-error:infra:concurrency）",
+      "latest_actual_before_void": {
+        "stravia": {
+          "attempt": 1,
+          "classification": "pass",
+          "reward": 1.0,
+          "reason": "reward",
+          "timed_out": false
+        },
+        "cpa": {
+          "attempt": 1,
+          "classification": "pass",
+          "reward": 1.0,
+          "reason": "reward",
+          "timed_out": false
+        },
+        "sub2api": {
+          "attempt": 3,
+          "classification": "infra-error",
+          "reward": 0.0,
+          "reason": "infra:concurrency",
+          "timed_out": false
+        }
+      }
+    },
+    {
+      "group_id": "kombu-single-active-consumer-priority@r3",
+      "voided_by_route": "sub2api",
+      "reason": "group-void: retries-exhausted: sub2api 尝试 3 次仍失败（infra-error:infra:concurrency）",
+      "latest_actual_before_void": {
+        "stravia": {
+          "attempt": 1,
+          "classification": "pass",
+          "reward": 1.0,
+          "reason": "reward",
+          "timed_out": false
+        },
+        "cpa": {
+          "attempt": 1,
+          "classification": "pass",
+          "reward": 1.0,
+          "reason": "reward",
+          "timed_out": false
+        },
+        "sub2api": {
+          "attempt": 3,
+          "classification": "infra-error",
+          "reward": 1.0,
+          "reason": "infra:concurrency",
+          "timed_out": false
+        }
+      }
+    },
+    {
+      "group_id": "testem-bail-on-test-failure@r4",
+      "voided_by_route": "sub2api",
+      "reason": "group-void: retries-exhausted: sub2api 尝试 3 次仍失败（infra-error:infra:concurrency）",
+      "latest_actual_before_void": {
+        "stravia": {
+          "attempt": 1,
+          "classification": "pass",
+          "reward": 1.0,
+          "reason": "reward",
+          "timed_out": false
+        },
+        "cpa": {
+          "attempt": 1,
+          "classification": "fail",
+          "reward": 0.0,
+          "reason": "timed_out",
+          "timed_out": true
+        },
+        "sub2api": {
+          "attempt": 3,
+          "classification": "infra-error",
+          "reward": 0.0,
+          "reason": "infra:concurrency",
+          "timed_out": false
+        }
+      }
+    }
+  ],
+  "context_retention": {
+    "stravia": {
+      "accepted_requests": 11845,
+      "known_reasoning_requests": 11845,
+      "unknown_request_shapes": 0,
+      "requests_with_encrypted_reasoning": 11640,
+      "reasoning_items_sum_known": 1068706,
+      "status_distribution": {
+        "101": 11845
+      }
+    },
+    "cpa": {
+      "accepted_requests": 13772,
+      "known_reasoning_requests": 13769,
+      "unknown_request_shapes": 3,
+      "requests_with_encrypted_reasoning": 0,
+      "reasoning_items_sum_known": 0,
+      "status_distribution": {
+        "200": 13760,
+        "None": 12
+      }
+    },
+    "sub2api": {
+      "accepted_requests": 15220,
+      "known_reasoning_requests": 15220,
+      "unknown_request_shapes": 0,
+      "requests_with_encrypted_reasoning": 0,
+      "reasoning_items_sum_known": 0,
+      "status_distribution": {
+        "200": 15217,
+        "None": 3
+      }
+    }
+  },
+  "strict_audit_status": "failed_audit",
+  "strict_audit_only_mismatch": "meter.unknown-tools-shape.cpa",
+  "strict_audit_unknown_uploads": 3,
+  "strict_audit_original_sha256": "2188a5c56a55b984905b3320c14af4ff0c043fff652c605148bc1ce186341f5c",
+  "task_artifact_audit": {
+    "status": "passed",
+    "actual_outcomes": 279,
+    "actual_dsh_metadata": 279,
+    "latest_scored_official_rewards": 222,
+    "artifact_mismatches": 0,
+    "missing_artifacts": 0
+  },
+  "limits": [
+    "16 stream-failure attempts retain existing other→fail classification; no reruns.",
+    "3 CPA request bodies were canceled mid-upload and retain unknown effort/shape; strict all-request meter acceptance did not pass.",
+    "Shared account, per-route implementation/defaults, 1h agent limit and exclusions prevent attribution to reasoning-context retention alone."
+  ],
+  "void_stravia_official_rewards_verified": [
+    {
+      "group_id": "koota-composite-trait-aspects@r2",
+      "official_reward": 1,
+      "excluded_from_main_score": true
+    },
+    {
+      "group_id": "numba-stencil-boundary-modes@r4",
+      "official_reward": 1,
+      "excluded_from_main_score": true
+    },
+    {
+      "group_id": "cliffy-config-file-parsing@r1",
+      "official_reward": 0,
+      "excluded_from_main_score": true
+    },
+    {
+      "group_id": "go-genai-streamed-function-args@r1",
+      "official_reward": 1,
+      "excluded_from_main_score": true
+    },
+    {
+      "group_id": "kombu-single-active-consumer-priority@r3",
+      "official_reward": 1,
+      "excluded_from_main_score": true
+    },
+    {
+      "group_id": "testem-bail-on-test-failure@r4",
+      "official_reward": 1,
+      "excluded_from_main_score": true
+    }
+  ],
+  "excluded_stravia_official_passes": 5
+}

@@ -1,0 +1,31 @@
+Creative Commons Attribution 4.0 International (CC BY 4.0)
+
+Copyright (c) 2026 Stravia-AI
+
+本仓库 `results/` 与 `workload/` 目录下的数据（批次账本、逐次尝试的结果文件、
+计量汇总、审计记录、派生汇总 `results/summary/`，以及冻结任务清单与其清单文件）
+采用 Creative Commons Attribution 4.0 International（CC BY 4.0）许可。
+
+许可证全文（legal code）：
+https://creativecommons.org/licenses/by/4.0/legalcode
+
+许可证摘要（human-readable summary）：
+https://creativecommons.org/licenses/by/4.0/
+
+你可以复制、分发、修改这些数据，用于任何目的（包括商业用途），但必须：
+
+1. 保留署名：注明来源为 “Stravia-AI, reasoning-relay-benchmark (2026)”，
+   并附上本仓库地址或本许可文件的链接；
+2. 附上许可证链接 https://creativecommons.org/licenses/by/4.0/ ；
+3. 说明是否作了修改；
+4. 不得暗示许可方为你或你的使用背书。
+
+本许可不覆盖：
+
+- `harness/`、`tools/` 下的代码（采用 MIT，见 `LICENSE`）；
+- DeepSWE 任务本体（不在本仓库，权利与许可以上游仓库为准）；
+- 任何第三方工具、商标、标志或文档（其权利归各自所有者）；
+- 本仓库未包含的录屏、会话记录、补丁、测试输出、第三方二进制与依赖。
+
+数据按“现状”提供，不附带任何明示或默示的担保。测试结果只对应
+`results/` 中记录的版本、机器、账户与时间条件。

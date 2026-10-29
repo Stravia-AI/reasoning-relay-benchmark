@@ -1,0 +1,58 @@
+{
+  "schema": "chat-reasoning-xhigh-threeway-closure/v1",
+  "status": "completed_with_measurement_and_stream_classification_gaps",
+  "closed_at": "2026-10-29T04:52:11.346811+08:00",
+  "batch_id": "formal-xhigh-threeway-20261028",
+  "execution_status": "completed",
+  "strict_meter_audit_status": "failed_audit",
+  "task_artifact_audit_status": "passed",
+  "planned_trials": 240,
+  "scored_trials": 222,
+  "valid_paired_groups": 74,
+  "void_groups": 6,
+  "actual_attempts": 279,
+  "retry_attempts": 39,
+  "one_natural_batch_no_manual_reopen": true,
+  "final_report": {
+    "path": ".scratch/research/chat-reasoning-replay/pier/batches/formal-xhigh-threeway-20261028/final-report.json",
+    "sha256": "e3d3f5a3dd1131957d8f7ac2461020439ea063bcade4bcddf750ebd1fcd01b65"
+  },
+  "final_archive": {
+    "path": ".scratch/research/chat-reasoning-replay/pier/probes/xhigh-threeway-20261028/final-evidence-and-docs-v1.tar.gz",
+    "sha256": "ba1ae76e64df57b64082f56a1604cf8eae4a51391ede90da6ccaffd6eac142a8",
+    "verified_members": 124
+  },
+  "final_evidence_receipt": ".scratch/research/chat-reasoning-replay/pier/probes/xhigh-threeway-20261028/final-evidence.json",
+  "cleanup": {
+    "task_temp_removed": true,
+    "current_regression_temp_removed": true,
+    "archived_controls": 7,
+    "final_archive_members_verified": 124,
+    "raw_formal_batch_preserved": true,
+    "private_runtime_and_upgrade_backup_not_touched": true,
+    "other_historical_temporary_directories_not_touched": true
+  },
+  "services_kept_running": {
+    "meterd": true,
+    "stravia": true,
+    "cpa": true,
+    "sub2api-postgres": true,
+    "sub2api-redis": true,
+    "sub2api": true
+  },
+  "stravia_readyz_status_at_final_observation": 200,
+  "remaining_limitations": [
+    "3 CPA canceled mid-upload request bodies retain unknown effort/shape; strict all-request meter audit remains failed.",
+    "9 CPA and 7 sub2api stream failures retain their existing ordinary-fail classification; no extra reruns.",
+    "6 groups excluded according to frozen exhaustion rule, including 5 official Stravia passes.",
+    "Input/cached/output token totals known for 276/279 attempts; separate reasoning tokens unknown for all attempts."
+  ],
+  "safety": {
+    "known_real_credential_scan_passed_for_selected_archive_inputs": true,
+    "no_request_message_bodies_in_selected_evidence": true,
+    "private_runtime_and_full_upgrade_backups_excluded": true,
+    "no_service_restart_or_business_setting_change_in_this_retest": true,
+    "no_extra_real_inference_after_batch_completion": true,
+    "no_product_worktree_write_or_git_commit": true
+  }
+}

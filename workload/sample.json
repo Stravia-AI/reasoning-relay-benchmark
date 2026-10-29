@@ -1,0 +1,49 @@
+{
+  "rules_version": "1",
+  "generated_at": "2026-10-26T11:51:52Z",
+  "seed": 0,
+  "n": 20,
+  "rules": [
+    "gpus == 0（本机无 GPU）",
+    "memory_mb <= 8192（单任务 8 GB 上限）",
+    "镜像 pull 失败（来自 probes/image-survey.json）",
+    "task.toml 无法解析",
+    "不按难度 / 语言 / 历史通过率过滤"
+  ],
+  "pool_size": 113,
+  "candidate_count": 113,
+  "excluded": [],
+  "selected": [
+    "anko-default-function-arguments",
+    "cliffy-config-file-parsing",
+    "expr-try-catch-errors",
+    "go-genai-streamed-function-args",
+    "gql-incremental-graphql-delivery",
+    "happy-dom-deterministic-intersectionobserver",
+    "ink-grid-box-layout",
+    "kea-atomic-signal-selectors",
+    "kombu-single-active-consumer-priority",
+    "koota-composite-trait-aspects",
+    "meriyah-explicit-resource-declarations",
+    "mnamer-daemon-watch-lifecycle",
+    "narwhals-rolling-window-suite",
+    "numba-stencil-boundary-modes",
+    "oxvg-structural-selector-preservation",
+    "termenv-preserve-ansi-resets",
+    "testem-bail-on-test-failure",
+    "textual-richlog-follow-state",
+    "vitest-duration-sharding",
+    "wasmi-trap-coredumps"
+  ],
+  "selected_languages": {
+    "go": 4,
+    "typescript": 7,
+    "python": 6,
+    "rust": 2,
+    "javascript": 1
+  },
+  "pier_args": {
+    "n_tasks": 20,
+    "sample_seed": 0
+  }
+}

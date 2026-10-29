@@ -1,0 +1,194 @@
+{
+  "schema": "chat-reasoning-xhigh-environment/v1",
+  "batch_id": "formal-xhigh-threeway-20261028",
+  "prepared_at": "2026-10-28T04:27:09.767028+00:00",
+  "preflight_sha256": "cc8908da647a8c1a605b1269f53cb33eaafaf75749696a82df847f83a7f5dd5c",
+  "preflight": {
+    "schema": "chat-reasoning-xhigh-threeway-preflight/v1",
+    "status": "accepted",
+    "accepted_at": "2026-10-28T12:27:04.103037+08:00",
+    "reasoning": "xhigh",
+    "model": "gpt-6-luna",
+    "routes": [
+      "stravia",
+      "cpa",
+      "sub2api"
+    ],
+    "contract_sha256": "e78a0c9deb13b503afa0b008595448d1a4370cf2ae2a7638c0b65e2c5497a05c",
+    "input_sha256": {
+      "video/chat-reasoning-replay/project/scripts/orchestrate/run_batch.py": "80262a7e2e6ce7e35c86876123959a4b3b87fc129fba33a73dd59ea9b374e4f7",
+      "video/chat-reasoning-replay/project/scripts/orchestrate/selftest.py": "f679b0c0a0bafe17b1fb192afb13099b1d8bc7e783f542a2831df7a131f32be0",
+      "video/chat-reasoning-replay/project/scripts/orchestrate/analyze.py": "0e35254d9af1a858bb4f0812d33c91fa48b8c93a58a25a3d00acb294e0a25f2b",
+      "video/chat-reasoning-replay/project/scripts/pier/dsh_agent.py": "d493517b1ee8877027c35402c4f8a62b94e38ef96bd30d01815cec42f3f960aa",
+      "video/chat-reasoning-replay/project/scripts/pier/run_pier.sh": "9320b7c8bef6c153e6dcc61163f0016f6775398e22cce881cb4f556fa2986e9f",
+      "video/chat-reasoning-replay/project/scripts/pier/prepare_pilot_task.py": "dfcb868498a82d257d593ab193d21277b797aa94c35aeeaebe427178f7c678bf",
+      "video/chat-reasoning-replay/project/scripts/pier/upstream_relay.py": "df54e60765873f5e67851826204f6951737494a7dc2afb0a6610bb0131136112",
+      "video/chat-reasoning-replay/project/scripts/pier/upstream-relay.js": "02a66835f7d87fde19d423b713f06fe68b803f74f626f1e76b9a2200f6f94bac",
+      "video/chat-reasoning-replay/project/scripts/pier/rootless_compat/sitecustomize.py": "f1e9abb0f4327b927b421916bdd51b25b44f6a808373edff39657bbb8fed2b5a",
+      "video/chat-reasoning-replay/project/scripts/gate/gate.py": "209deefae0dfbaf44e46be956552940b87641240824635d2a9dc4025adef51b7",
+      "video/chat-reasoning-replay/project/scripts/meter/summarize.py": "1cc0a08c66ef36a4f8fb6fc84c7b7c1e641cb05e13c5a729770b4fd7a9d0d93d",
+      "video/chat-reasoning-replay/project/scripts/services/threeway-services.py": "335170fe0ae2031fea9a9ca5162edd4023d019800773a2920847439f3f832276",
+      ".scratch/research/chat-reasoning-replay/pier/sample.json": "e265786e01fa91315145ea176277f72b66b294cfebb59adad0e5e957b6d8b096",
+      ".scratch/research/chat-reasoning-replay/pier/dsh-bundle.tar.gz": "445ca38aad5e6da4458b38f5134c50c0d813005a14cde3b02be8ad0727a88ec4",
+      ".devenv/state/desktop/Desktop/20261028-xhigh-threeway-retest/scripts/run_xhigh.py": "3469db48c4602944109adfaabccf49c114378df7cc67db8fdccc31014f8eabdc",
+      ".devenv/state/desktop/Desktop/20261028-xhigh-threeway-retest/scripts/xhigh_common.py": "44b4cdbc4955459c7649ffe560113c4b114d918c5f0bf3487dabe2fc31632aaf",
+      ".scratch/research/chat-reasoning-replay/tools/meterd/meterd": "05465de0024d61ab1f067932d5bf8900461d07280b9e409f149a6536a4922290",
+      ".scratch/research/chat-reasoning-replay/tools/stravia-e67b6e0f/target/release/stravia-server": "b993afe3f33dd16ee4d473dbbe11ce07426a1ee8a7b8e3ac2cc5ec5380975c29",
+      ".scratch/research/chat-reasoning-replay/tools/cpa-8.0.43/cli-proxy-api": "0e6445974aca0fd46c85847f3d06d950c8a67f6936af4584a01b9866388128ff",
+      ".scratch/research/chat-reasoning-replay/tools/sub2api-0.2.18/sub2api": "ffd1b1fc769ed9dc32f9a6166d313a67eb162da6a2237b371caba4780493594e"
+    },
+    "services_pids": {
+      "meterd": 31411,
+      "stravia": 3606056,
+      "cpa": 31448,
+      "sub2api-postgres": 31468,
+      "sub2api-redis": 31485,
+      "sub2api": 31492
+    },
+    "source_versions": {
+      "stravia": "e67b6e0f0e4117a308a2ea1947ed93a46c3fc817",
+      "cpa": "8.0.43 / 30780351",
+      "sub2api": "0.2.18 / ac1b8f1271be0d674fa6f074403c1410f30a3a81"
+    },
+    "gates": {
+      "stravia": {
+        "accepted": true,
+        "path": ".scratch/research/chat-reasoning-replay/gate/xhigh-threeway-20261028-stravia-gate/result.json",
+        "returncode": 0,
+        "wall_seconds": 36.9,
+        "dsh_exit_code": 0,
+        "tool_calls": 8,
+        "upstream_tool_requests": 9,
+        "native_reasoning_efforts": [
+          "xhigh"
+        ],
+        "answer_correct": true,
+        "gate_valid": true,
+        "encrypted_context_gate_pass": true,
+        "unscored": true,
+        "sha256": "8308c179dced6424775d48123ffbf8240613cad8ab7259f49bb06cace5a230b7"
+      },
+      "cpa": {
+        "accepted": true,
+        "path": ".scratch/research/chat-reasoning-replay/gate/xhigh-threeway-20261028-cpa-gate/result.json",
+        "returncode": 0,
+        "wall_seconds": 34.36,
+        "dsh_exit_code": 0,
+        "tool_calls": 7,
+        "upstream_tool_requests": 8,
+        "native_reasoning_efforts": [
+          "xhigh"
+        ],
+        "answer_correct": true,
+        "gate_valid": true,
+        "encrypted_context_gate_pass": null,
+        "unscored": true,
+        "sha256": "10e5764097bbd6f9fb09b79781f96dbb46640f761330603dea52d2255400dad5"
+      },
+      "sub2api": {
+        "accepted": true,
+        "path": ".scratch/research/chat-reasoning-replay/gate/xhigh-threeway-20261028-sub2api-gate/result.json",
+        "returncode": 0,
+        "wall_seconds": 36.68,
+        "dsh_exit_code": 0,
+        "tool_calls": 7,
+        "upstream_tool_requests": 8,
+        "native_reasoning_efforts": [
+          "xhigh"
+        ],
+        "answer_correct": true,
+        "gate_valid": true,
+        "encrypted_context_gate_pass": null,
+        "unscored": true,
+        "sha256": "9554fdbef690eb46d8c0d35e19458e3d0c9dcc189ee999970d2f82fe9ec6376f"
+      }
+    },
+    "local_cli_dsh_smoke": {
+      "schema": "chat-reasoning-xhigh-local-cli-dsh-smoke/v1",
+      "status": "accepted",
+      "real_inference": false,
+      "real_dsh_and_container": true,
+      "unscored": true,
+      "route_count": 1,
+      "attempts": 1,
+      "dsh_exit_code": 0,
+      "actual_http_main_requests": 2,
+      "native_reasoning_efforts": [
+        "xhigh"
+      ],
+      "metadata_reasoning": "xhigh",
+      "official_noop_reward": 0,
+      "private_request_bodies_removed": true,
+      "note": "No-op mock reward is environment evidence, not a task-success score."
+    },
+    "regressions": {
+      "passed": 183,
+      "failed": 0,
+      "run_dir": ".devenv/state/desktop/Desktop/20261026-chat-reasoning-replay/orchestrate-selftest/20261028T121609",
+      "public_cli_red_exit": 1,
+      "green_wall_seconds": 33.52
+    },
+    "prelaunch_running_containers": 0,
+    "classification_unchanged": true,
+    "no_extra_manual_reruns": true
+  },
+  "services": {
+    "meterd": {
+      "pid": 31411,
+      "start_ticks": 133948,
+      "executable": "<repo>/.scratch/research/chat-reasoning-replay/tools/meterd/meterd",
+      "sha256": "05465de0024d61ab1f067932d5bf8900461d07280b9e409f149a6536a4922290"
+    },
+    "stravia": {
+      "pid": 3606056,
+      "start_ticks": 8735690,
+      "executable": "<repo>/.scratch/research/chat-reasoning-replay/tools/stravia-e67b6e0f/target/release/stravia-server",
+      "sha256": "b993afe3f33dd16ee4d473dbbe11ce07426a1ee8a7b8e3ac2cc5ec5380975c29"
+    },
+    "cpa": {
+      "pid": 31448,
+      "start_ticks": 133988,
+      "executable": "<repo>/.scratch/research/chat-reasoning-replay/tools/cpa-8.0.43/cli-proxy-api",
+      "sha256": "0e6445974aca0fd46c85847f3d06d950c8a67f6936af4584a01b9866388128ff"
+    },
+    "sub2api-postgres": {
+      "pid": 31468,
+      "start_ticks": 134008,
+      "executable": "/nix/store/wm063nf09jrvk2kxa3hp7dncy5qjxjy0-postgresql-17.11/bin/postgres",
+      "sha256": "6c1e36e55275baafdac1d714001a751fdba22faf3bc82f6447d2888ce0adeb1c"
+    },
+    "sub2api-redis": {
+      "pid": 31485,
+      "start_ticks": 134050,
+      "executable": "/nix/store/28jy5l07i29y2w2czbdy86h9wj7858an-valkey-9.1.2/bin/valkey-server",
+      "sha256": "16fb2a9f518a3f8c1117c94853ad2171d1d23800655e091388707d73e5ad3dee"
+    },
+    "sub2api": {
+      "pid": 31492,
+      "start_ticks": 134071,
+      "executable": "<repo>/.scratch/research/chat-reasoning-replay/tools/sub2api-0.2.18/sub2api",
+      "sha256": "ffd1b1fc769ed9dc32f9a6166d313a67eb162da6a2237b371caba4780493594e"
+    }
+  },
+  "versions": {
+    "stravia": "e67b6e0f",
+    "cpa": "8.0.43",
+    "sub2api": "0.2.18"
+  },
+  "client": "DSH 0.1.0-rc.8",
+  "api": "Chat Completions",
+  "model": "gpt-6-luna",
+  "reasoning": "xhigh",
+  "rounds": 4,
+  "tasks": 20,
+  "groups": 80,
+  "trials_planned": 240,
+  "max_groups": 5,
+  "max_trials": 15,
+  "max_trials_per_route": 5,
+  "agent_wall_seconds": 3600,
+  "agent_timeout_sec": 3900,
+  "trial_wall_seconds": 5400,
+  "max_attempts": 3,
+  "parent_environment_inherited": true
+}

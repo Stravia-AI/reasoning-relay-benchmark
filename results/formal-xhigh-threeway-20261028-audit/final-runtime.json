@@ -1,0 +1,40 @@
+{
+  "schema": "chat-reasoning-xhigh-final-runtime/v1",
+  "observed_at": "2026-10-29T04:31:50.969839+08:00",
+  "scheduler_exited": true,
+  "scheduler_returncode": 0,
+  "batch_owned_running_containers": 0,
+  "all_running_containers_at_observation": 0,
+  "services_pid_unchanged_and_alive": {
+    "meterd": true,
+    "stravia": true,
+    "cpa": true,
+    "sub2api-postgres": true,
+    "sub2api-redis": true,
+    "sub2api": true
+  },
+  "stravia_readyz_status": 200,
+  "frozen_inference_input_hash_checks": {
+    "video/chat-reasoning-replay/project/scripts/orchestrate/run_batch.py": true,
+    "video/chat-reasoning-replay/project/scripts/orchestrate/selftest.py": true,
+    "video/chat-reasoning-replay/project/scripts/orchestrate/analyze.py": true,
+    "video/chat-reasoning-replay/project/scripts/pier/dsh_agent.py": true,
+    "video/chat-reasoning-replay/project/scripts/pier/run_pier.sh": true,
+    "video/chat-reasoning-replay/project/scripts/pier/prepare_pilot_task.py": true,
+    "video/chat-reasoning-replay/project/scripts/pier/upstream_relay.py": true,
+    "video/chat-reasoning-replay/project/scripts/pier/upstream-relay.js": true,
+    "video/chat-reasoning-replay/project/scripts/pier/rootless_compat/sitecustomize.py": true,
+    "video/chat-reasoning-replay/project/scripts/gate/gate.py": true,
+    "video/chat-reasoning-replay/project/scripts/meter/summarize.py": true,
+    "video/chat-reasoning-replay/project/scripts/services/threeway-services.py": true,
+    ".scratch/research/chat-reasoning-replay/pier/sample.json": true,
+    ".scratch/research/chat-reasoning-replay/pier/dsh-bundle.tar.gz": true,
+    ".devenv/state/desktop/Desktop/20261028-xhigh-threeway-retest/scripts/run_xhigh.py": true,
+    ".devenv/state/desktop/Desktop/20261028-xhigh-threeway-retest/scripts/xhigh_common.py": true,
+    ".scratch/research/chat-reasoning-replay/tools/meterd/meterd": true,
+    ".scratch/research/chat-reasoning-replay/tools/stravia-e67b6e0f/target/release/stravia-server": true,
+    ".scratch/research/chat-reasoning-replay/tools/cpa-8.0.43/cli-proxy-api": true,
+    ".scratch/research/chat-reasoning-replay/tools/sub2api-0.2.18/sub2api": true
+  },
+  "no_resource_stop_or_global_prune_needed": true
+}
