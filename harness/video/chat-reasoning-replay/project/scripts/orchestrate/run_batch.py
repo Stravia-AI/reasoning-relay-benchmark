@@ -348,7 +348,8 @@ def classify(
 ) -> tuple[str, str, int | None]:
     """按设计判定一次尝试。返回 (classification, reason, status_code)。
 
-    顺序即优先级：先判「这次尝试本身有没有跑完」，再判模型侧终态错误，最后才看分数。
+    先排除编排器与可重试基础设施错误，再以 verifier 满分判通过。
+    agent 超时或异常退出仍保留在 outcome 中，不覆盖已经验证通过的工作区。
     """
     if interrupted:
         return "interrupted", "interrupted:signal", None
@@ -380,16 +381,17 @@ def classify(
             return "infra-error", "infra:concurrency", status if isinstance(status, int) else None
         if kind == "http" and isinstance(status, int) and (status == 429 or status >= 500):
             return "infra-error", f"infra:http:{status}", status
-        # 401/400 之类按设计算任务失败（不是模型侧基础设施错误），但把状态码记下来，
-        # 让 summary 的 status_codes 能暴露凭据/配置问题。
+    # verifier 在 agent 停止后检查最终工作区；进程未正常结束不等于补丁未通过测试。
+    if reward >= 1.0:
+        return "pass", "reward", None
+    if terminal:
+        # 未通过验证时，401/400 等仍按任务失败记录，状态码保留供排查。
         return "fail", f"agent-error:{kind}:{status}", status
     if outcome.get("timed_out"):
         return "fail", "timed_out", None
     exit_code = outcome.get("exit_code")
     if exit_code not in (None, 0):
         return "fail", f"agent-exit-{exit_code}", None
-    if reward >= 1.0:
-        return "pass", "reward", None
     return "fail", "reward", None
 
 

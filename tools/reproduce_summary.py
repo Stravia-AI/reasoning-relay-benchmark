@@ -2,7 +2,7 @@
 """从 results/ 的脱敏证据重建公开数字，并与提交的汇总逐项比对。
 
 用法（仓库根目录，Python 3.11+，只用标准库）：
-  python3 tools/reproduce_summary.py          重建 results/summary/ 下两个文件
+  python3 tools/reproduce_summary.py          重建 results/summary/ 下的历史复核与修正结果
   python3 tools/reproduce_summary.py --check  重建后与已提交文件比对；任一不一致退出 1
 
 做什么
@@ -17,6 +17,7 @@
 输出
   results/summary/reproduction.json  每项检查的期望值、实际值与结果
   results/summary/headline.json      视频与 README 使用的派生数字
+  results/summary/corrected.json     分类修正、逐项变更清单及分口径耗时；当前结论以此为准
 """
 
 import argparse
@@ -37,14 +38,15 @@ TOKEN_FIELDS = ('input', 'cached', 'output')
 BOOTSTRAP = {'iterations': 10000, 'seed': 0, 'alpha': 0.05}
 
 
-def load_analyze():
-    spec = importlib.util.spec_from_file_location('analyze', ANALYZE)
+def load_script(name: str, path: Path):
+    spec = importlib.util.spec_from_file_location(name, path)
     module = importlib.util.module_from_spec(spec)
     spec.loader.exec_module(module)
     return module
 
 
-analyze = load_analyze()
+analyze = load_script('analyze', ANALYZE)
+corrected_summary = load_script('corrected_summary', REPO / 'tools/corrected_summary.py')
 checks = []
 
 
@@ -261,7 +263,8 @@ def build():
     }
     failed = [item['name'] for item in checks if not item['ok']]
     reproduction = {'schema': 'reproduction/v1', 'checks': len(checks), 'failed': failed, 'items': checks}
-    return {'reproduction.json': reproduction, 'headline.json': headline}
+    return {'reproduction.json': reproduction, 'headline.json': headline,
+            'corrected.json': corrected_summary.build(MAIN, read_jsonl(MAIN / 'results.jsonl'))}
 
 
 def main():
@@ -277,7 +280,7 @@ def main():
         return 1 if failed or stale else 0
     SUMMARY.mkdir(parents=True, exist_ok=True)
     for name, text in outputs.items():
-        (SUMMARY / name).write_text(text, encoding='utf-8')
+        (SUMMARY / name).write_text(text, encoding='utf-8', newline='\n')
     print(f'checks={len(checks)} failed={len(failed)}')
     for name in failed:
         print(f'FAIL {name}')

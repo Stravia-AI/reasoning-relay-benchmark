@@ -1,6 +1,12 @@
 # reasoning-relay-benchmark
 
-**English abstract.** On 2026-10-28 we ran the same 20 DeepSWE v1.1 coding tasks, four rounds each, through three local relays — Stravia, CLIProxyAPI (CPA) and sub2api — with the same DSH client speaking Chat Completions, the same model (`gpt-6-luna`, reasoning effort `xhigh`), the same ChatGPT account, the same machine and a one-hour agent limit per task. After voiding 6 of 80 task-rounds for all three routes alike, Stravia passed 47/74 (63.5%), CPA 13/74 (17.6%) and sub2api 18/74 (24.3%); Stravia minus the mean of the other two is +42.6 pp (task-clustered bootstrap 95% CI +29.05 to +56.25 pp). 98.3% of Stravia's upstream requests carried the model's encrypted reasoning back to the model; none of CPA's or sub2api's did. This repository publishes the harness, the frozen task list, sanitized per-attempt evidence for the batch (3.77 billion tokens across 279 attempts, 97.6% of them cached input) and a script that rebuilds every published number from that evidence. Code is MIT; data is CC BY 4.0.
+**English abstract.** On 2026-10-28 we ran the same 20 DeepSWE v1.1 coding tasks, four rounds each, through Stravia, CLIProxyAPI (CPA) and sub2api, using DSH with Chat Completions, `gpt-6-luna` / `xhigh`, one ChatGPT account, one machine and a one-hour agent limit. The 2026-11-01 correction gives verifier full reward priority over agent timeout and non-infrastructure terminal errors. Keeping the same six voided task-rounds, the corrected scores are 49/74 (66.2%), 23/74 (31.1%) and 27/74 (36.5%): Stravia minus the baseline mean is +32.4 pp (task-clustered bootstrap 95% CI +18.49 to +46.05 pp), with a pass-rate ratio of 1.96. Runtime and normal-exit duration are now reported separately; a timeout does not establish completion time. Original evidence and historical summaries remain available. Upstream reasoning replay, transport, shared-account contention and time limits remain confounded. This is a vendor self-evaluation, not evidence that the underlying model becomes more intelligent. Code is MIT; data is CC BY 4.0.
+
+**2026-11-01 更正：** 满分判定优先于 agent 超时及非基础设施终态错误；当前统计见 [corrected.json](results/summary/corrected.json)，变更与耗时口径见 [CORRECTIONS.md](CORRECTIONS.md)。原始账本、报告及视频汇总保留作历史证据，原 3.03 倍不再作为修正后的结论。
+
+**利益相关声明：** 本评测由 Stravia 开发方自行实施和发布，并非独立第三方评测。结论仅适用于本批次配置。
+
+**时限反思与后续：** 60 分钟上限参考了试跑和基准公开指标，但未先验证 CPA、sub2api 的完整任务耗时，设计不够充分，在此致歉。后续计划补做 180 分钟 agent 上限的完整对照测试；当前更正仅为已有数据重算，尚未开展该重测。输出等待与完成用时仍属于使用体验指标，将与正确率分别报告。
 
 ## 目录
 
@@ -13,7 +19,7 @@
 │   ├── sample.json                 冻结的 20 个任务（seed 0，113 选 20，无排除）
 │   └── workload-manifest.json      DeepSWE 上游仓库、commit 与清单哈希
 ├── harness/                        测试代码，目录结构与原仓库一致，harness/ 即运行根目录
-│   ├── MANIFEST.json               每个文件的 SHA-256，及是否与正式批启动前冻结的哈希一致
+│   ├── MANIFEST.json               首次发布时的 SHA-256 与正式批冻结哈希；当前修正见 CORRECTIONS.md
 │   ├── video/chat-reasoning-replay/project/
 │   │   ├── meterd/                 出站计量代理（Go），只记录请求结构，不记录正文和密钥
 │   │   └── scripts/
@@ -35,11 +41,13 @@
 │   │   └── SANITIZATION.json       脱敏清单、替换计数、原文件与脱敏后哈希
 │   ├── formal-xhigh-threeway-20261028-audit/  严格审计原始输出、作废与计量缺口证据、收尾记录
 │   └── summary/
-│       ├── reproduction.json       28 项重算比对，全部通过
-│       └── headline.json           README 与视频使用的派生数字
+│       ├── reproduction.json       28 项历史重算比对，全部通过
+│       ├── headline.json           原视频使用的派生数字，保留作历史证据
+│       └── corrected.json          当前通过率、逐项更正与分口径耗时
 └── tools/
     ├── sanitize_evidence.py        脱敏复制并断言无残留
-    └── reproduce_summary.py        从证据重建并比对全部公开数字
+    ├── reproduce_summary.py        从证据重建并比对历史及修正后的公开数字
+    └── corrected_summary.py        调用修正分类器，重算通过率与完成耗时
 ```
 
 仓库不包含任何二进制、依赖、录屏、DSH 会话记录、模型生成的补丁、测试原始输出或凭据。
@@ -48,18 +56,30 @@
 
 正式 xhigh 批：20 个任务 × 4 轮 × 3 路，计划 240 个试验；6 个任务轮被三路一并作废，每路剩 74 个计分试验。
 
-| 路线 | 版本 | 通过 | 通过率 | 95% CI | agent 耗时中位数 | 计分试验中超时 | 上游请求带回加密推理 |
+| 路线 | 版本 | 通过 | 通过率 | 95% CI | 计分末次 agent 运行时长中位数（含超时） | 计分试验中超时 | 上游请求带回加密推理 |
 |---|---|---:|---:|---:|---:|---:|---:|
-| Stravia | dev `e67b6e0f`（0.5.3） | 47/74 | 63.5% | 48.6%–77.9% | 18.2 min | 1 | 11,640 / 11,845（98.3%） |
-| CPA | v8.0.43 | 13/74 | 17.6% | 6.9%–30.0% | 59.6 min | 35 | 0 / 13,772 |
-| sub2api | v0.2.18 | 18/74 | 24.3% | 11.7%–38.9% | 41.0 min | 14 | 0 / 15,220 |
+| Stravia | dev `e67b6e0f`（0.5.3） | 49/74 | 66.2% | 51.4%–80.3% | 17.8 min | 1 | 11,640 / 11,845（98.3%） |
+| CPA | v8.0.43 | 23/74 | 31.1% | 18.4%–44.6% | 58.8 min | 35 | 0 / 13,772 |
+| sub2api | v0.2.18 | 27/74 | 36.5% | 22.7%–52.1% | 37.6 min | 14 | 0 / 15,220 |
 
-- Stravia 通过率 − 另两路平均 = **+42.6 个百分点**，95% CI [+29.05, +56.25]（按 20 个任务聚类，10,000 次 bootstrap，seed 0）。分别对 CPA +45.9 [+31.5, +60.5]、对 sub2api +39.2 [+22.7, +55.4]。
-- 通过率是另两路平均的 **3.03 倍**（63.5% ÷ 20.9%）。单看每一家：CPA 的 3.6 倍，sub2api 的 2.6 倍。
-- 配对：同一任务同一轮，Stravia 过而 CPA 没过 35 次，反过来 1 次；对 sub2api 是 33 比 4。
-- agent 耗时中位数（每个试验把重试时间加在一起）：另两路中位数的平均是 Stravia 的 2.76 倍；CPA 3.27 倍，sub2api 2.25 倍。
+- Stravia 通过率 − 另两路平均 = **+32.4 个百分点**，95% CI [+18.49, +46.05]（按 20 个任务聚类，10,000 次 bootstrap，seed 0）。分别对 CPA +35.1 [+20.00, +50.67]、对 sub2api +29.7 [+13.51, +45.95]。
+- 通过率是另两路平均的 **1.96 倍**（49 ÷ ((23 + 27) ÷ 2)）；这是本批样本的描述性比值，不是模型能力倍数。
+- 配对：同一任务同一轮，Stravia 过而 CPA 没过 29 次，反过来 3 次；对 sub2api 是 29 比 7。
+- 上表时长只含每路 74 个最新计分条目的最后一次 agent 运行，排除作废组和先前重试。超时值是截断运行时长，不称为完成时间；原含 80 组及重试的耗时仍可从历史汇总复核。
 - 每次模型调用的平均输出 token：Stravia 489，CPA 816，sub2api 875。
 - 官方测试（最新计分记录）：应修复测试（F2P）共 2,858 个，Stravia 过 2,788、CPA 2,283、sub2api 2,362。
+
+### 正常结束耗时
+
+正常结束要求 `timed_out=false`、无 `terminal_error` 且 `exit_code=0`，不要求题目通过。正常结束耗时与实际首次得到正确补丁的时间不同，后者没有时间序列证据，无法回算。
+
+| 路线 | 正常结束样本 | 正常结束耗时中位数 | 正常结束且通过样本 | 其耗时中位数 | 三路均正常结束的共有样本 / 中位数 |
+|---|---:|---:|---:|---:|---:|
+| Stravia | 72/74 | 17.8 min | 47 | 16.7 min | 25 / 14.3 min |
+| CPA | 29/74 | 40.3 min | 13 | 37.7 min | 25 / 40.3 min |
+| sub2api | 42/74 | 37.3 min | 18 | 45.4 min | 25 / 33.5 min |
+
+各路正常结束子集不同；25 组共有样本也经过完成条件筛选。这些值用于解释耗时分布，不替代全体任务的通过率，也不据此给出全体任务的速度倍数。计分超时中已有满分的次数为 1 / 10 / 5，仍保留超时标记，不推定提前完成。
 
 ## 观测到的差别
 
@@ -72,7 +92,7 @@
 
 OpenAI 的推理模型文档建议在函数调用时把上一轮的推理项一起传回（[Keeping reasoning items in context](https://developers.openai.com/api/docs/guides/reasoning)）。`store: false` 时，推理项要靠 `encrypted_content` 往下一轮传。
 
-**耗时与超时。** Stravia 每次调用平均输出 489 个 token，另两路 816 和 875 个（输出 token 包含推理 token；上游没有单独报告推理 token，记为未知）。按全部尝试的 agent 耗时除以模型调用次数，平均每一步（模型回一次加上执行这一步的工具）Stravia 8.8 s，CPA 17.9 s，sub2api 13.2 s。CPA 有 35 个、sub2api 有 14 个计分试验在 1 小时内没做完，Stravia 有 1 个。
+**耗时与超时。** Stravia 每次调用平均输出 489 个 token，另两路 816 和 875 个（输出 token 包含推理 token；上游没有单独报告推理 token，记为未知）。按全部尝试的 agent 耗时除以模型调用次数，平均每一步（模型回一次加上执行这一步的工具）Stravia 8.8 s，CPA 17.9 s，sub2api 13.2 s。它们包含工具执行、重试与作废尝试，不是纯模型响应延迟。CPA 有 35 个、sub2api 有 14 个、Stravia 有 1 个计分试验触发 agent 超时；其中 10 / 5 / 1 个最终工作区已通过 verifier。不能把所有超时均称为题目未解出。
 
 **传输。** Stravia 的上游请求全部走 WebSocket，CPA 与 sub2api 全部走 HTTP。三路都没有用 `previous_response_id`。传输方式不同也是耗时差别的一个可能来源，本批没有把它单独拆开。
 
@@ -81,11 +101,12 @@ OpenAI 的推理模型文档建议在函数调用时把上一轮的推理项一�
 - 基准：DeepSWE v1.1（[datacurve-ai/deep-swe](https://github.com/datacurve-ai/deep-swe)，commit `0b9fabbb63b9104d678fe965e1632f2dd9eaa2ea`，113 个任务）。用 seed 0 选 20 个，排除规则（需要 GPU、单任务内存超过 8 GB、镜像拉取失败、`task.toml` 无法解析）实际没有排除任何任务，也不按难度、语言或历史通过率筛选。语言分布：TypeScript 7、Python 6、Go 4、Rust 2、JavaScript 1。
 - 执行器：Pier `datacurve-pier==0.3.1` + 自写 DSH agent。任务容器 `network_mode=none`，DSH 经宿主挂进容器的 Unix socket 访问本路工具。
 - 客户端：DSH `0.1.0-rc.8` headless，`api: openai-completions`，三路请求形态完全相同，只改 base URL 与 key。
+- 协议范围：这里测试中继对 Chat Completions 客户端的兼容转换，上游实际均为 Codex Responses。OpenAI 官方对直连 Chat Completions 的模型能力限制，不能直接当作这一转换链路无效的证据。原生 Responses 的另一组传输评测见 [codex-relay-benchmark](https://github.com/Stravia-AI/codex-relay-benchmark)，其任务、强度与版本不同，不能替代同一批 DeepSWE 任务的协议对照。
 - 模型：`gpt-6-luna`，reasoning effort `xhigh`。
 - 时限：agent 墙钟 3,600 s（Pier 超时 3,900 s），单个试验总墙钟 5,400 s。
 - 并发：一次最多 5 组 × 3 路 = 15 个试验，每路最多 5 个。组顺序与组内启动顺序由 seed 决定，先写进 `plan.json` 再执行。
 - 重试：模型侧基础设施错误（连接错误、429、5xx、并发上限）在全新容器里整次重跑，最多 3 次；任何一路 3 次仍失败，该任务轮三路一并作废。
-- 评分：每个试验取账本中该（任务, 轮, 路线）的最后一条记录，不挑最好的一次。reward 为 1 才算通过；`partial` 只记录。
+- 评分：每个试验取账本中该（任务, 轮, 路线）的最后一条记录，不挑最好的一次。排除编排器及可重试基础设施错误后，`reward >= 1.0` 优先于 agent 超时、异常退出或其他非基础设施终态；`partial` 只记录。历史账本不回写，当前统计由修正分类器重放最新计分条目得到。
 - 工具配置：各工具用默认配置，只加接入所需的监听地址、客户端 key、出站代理和 OAuth 登录；默认的请求级重试保持开启。
 - 计量：每路出站都经过自写的 `meterd`，只记录请求结构（推理项个数、密文长度、强度、传输、状态码），不记录正文和密钥。
 
@@ -106,9 +127,9 @@ OpenAI 的推理模型文档建议在函数调用时把上一轮的推理项一�
 
 ## 作废与缺口
 
-- **作废 6 个任务轮**（三路一并排除，原始尝试与用量全部保留）：`koota-composite-trait-aspects@r2` 因 CPA 3 次 HTTP 503 与外层墙钟；`numba-stencil-boundary-modes@r4`、`cliffy-config-file-parsing@r1`、`go-genai-streamed-function-args@r1`、`kombu-single-active-consumer-priority@r3`、`testem-bail-on-test-failure@r4` 因 sub2api 3 次触发并发上限。这 6 轮里 Stravia 有 5 次官方通过，同样被排除；不作废时 Stravia 为 52/80。
+- **作废 6 个任务轮**（三路一并排除，原始尝试与用量全部保留）：`koota-composite-trait-aspects@r2` 因 CPA 3 次 HTTP 503 与外层墙钟；`numba-stencil-boundary-modes@r4`、`cliffy-config-file-parsing@r1`、`go-genai-streamed-function-args@r1`、`kombu-single-active-consumer-priority@r3`、`testem-bail-on-test-failure@r4` 因 sub2api 3 次触发并发上限。这 6 轮里 Stravia 有 5 次按原分类通过，同样被排除。当前更正不恢复任何作废组，三路分母仍为 74。
 - **全部尝试**：Stravia 80 次、0 次重试；CPA 92 次（12 次 HTTP 503、1 次外层墙钟）；sub2api 107 次（32 次并发上限）。
-- **流错误**：CPA 9 次、sub2api 7 次流中断按现有分类器记为普通失败，没有重试，也没有事后改判。
+- **流错误与其他 agent 终态**：原分类中 CPA 9 次、sub2api 7 次流中断记为普通失败，未重试。当前仅将非基础设施终态但 verifier 满分的计分条目改判通过；具体 21 项变更见 `corrected.json`，其余错误原样保留。
 - **严格计量审计未通过**：CPA 有 3 个上传在中途被取消，计量只拿到部分请求体，无法确认这 3 个请求的强度与工具形态。审计原始输出保留在 `results/formal-xhigh-threeway-20261028-audit/strict-audit-result.json`，`final-report.json` 顶层状态保持 `failed_audit`。任务产物审计（279 份 outcome、279 份 DSH 元数据、222 个最新 reward）全部一致。
 - **token 覆盖**：279 次尝试里 276 次有 token 记录（sub2api 有 3 次缺失）；推理 token 上游未单独报告，全部记为未知（null），不当作 0。
 
@@ -128,13 +149,16 @@ OpenAI 的推理模型文档建议在函数调用时把上一轮的推理项一�
 python3 tools/reproduce_summary.py --check
 ```
 
-只用 Python 3.11+ 标准库，几秒钟跑完。脚本做三件事：
+只用 Python 3.11+ 标准库，不调用真实模型。脚本做四件事：
 
 1. 加载 `harness/` 里正式批实际使用的 `analyze.py`，在脱敏后的 `results.jsonl` 上重算通过率与 bootstrap 区间，要求与批次目录里的 `analysis*.json` 逐字段相同；
 2. 从账本、`attempts/` 与计量汇总重算配对格、超时、token、耗时分位数、官方测试计数和上游请求里的加密推理，与 `final-report.json` 比对；逐次核对 `attempts/` 的用量、超时、模型、强度、客户端版本和 reward；
-3. 重建 `results/summary/` 下的两个文件并与已提交版本比对。
+3. 保留原统计的复核流程，并用当前分类器重放最新计分条目，重算当前通过率、bootstrap 区间、逐项变更与各口径耗时；
+4. 重建 `results/summary/` 下的三个文件并与已提交版本比对。
 
 任何一项不一致都会以非零状态退出。不带 `--check` 会重写 `results/summary/`。
+
+回归测试：`python3 -m unittest discover -s tests -v`。覆盖满分后超时/异常退出、基础设施错误优先级、作废组保留、重试去重和空耗时子集。
 
 ## 如何重跑测试（自担额度）
 
@@ -223,4 +247,4 @@ python3 $P/orchestrate/analyze.py $S/pier/batches/<你的批次名>/results.json
 
 ## 与视频的关系
 
-本仓库是 Stravia 推理上下文实测视频的公开代码与数据；视频里的结果数字都取自 `results/summary/headline.json`，可以用上面的复现命令自己核对。
+本仓库是 Stravia 推理上下文实测视频的公开代码与数据；原视频数字来自 `results/summary/headline.json`。2026-11-01 后的当前结论以 `results/summary/corrected.json` 为准。两套数字均可用上面的复现命令核对；旧视频中的 3.03 倍不再作为修正后的结论。

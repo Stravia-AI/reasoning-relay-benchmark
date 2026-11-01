@@ -1,0 +1,726 @@
+{
+  "batch": "formal-xhigh-threeway-20261028",
+  "source_results_sha256": "f9f1311be65260f76d3370789b84ac95ec69faca8e5a2657c6aaa88fcdcd6487",
+  "classifier_sha256": "76972f8ab3529b9b6a78f3ba38824ae54d3cdcad7e3098ae4041b428ccd86372",
+  "policy": "保留原计分分母及三路作废规则；排除编排器和可重试基础设施错误后，verifier 满分优先于 agent 终态。",
+  "routes": {
+    "stravia": {
+      "passes": 49,
+      "scored": 74,
+      "pass_rate": 0.6621621621621622,
+      "new_passes": 2
+    },
+    "cpa": {
+      "passes": 23,
+      "scored": 74,
+      "pass_rate": 0.3108108108108108,
+      "new_passes": 10
+    },
+    "sub2api": {
+      "passes": 27,
+      "scored": 74,
+      "pass_rate": 0.36486486486486486,
+      "new_passes": 9
+    }
+  },
+  "stravia_over_baseline_mean_pass_rate": 1.9600000000000002,
+  "analysis": {
+    "threeway": {
+      "schema": "orchestrate-analysis/v1",
+      "scored_trials": 222,
+      "excluded_trials": {
+        "void": 18
+      },
+      "tasks": 20,
+      "routes": {
+        "cpa": {
+          "trials": 74,
+          "passes": 23,
+          "pass_rate": 0.3108
+        },
+        "stravia": {
+          "trials": 74,
+          "passes": 49,
+          "pass_rate": 0.6622
+        },
+        "sub2api": {
+          "trials": 74,
+          "passes": 27,
+          "pass_rate": 0.3649
+        }
+      },
+      "contrast": {
+        "route": "stravia",
+        "baselines": [
+          "cpa",
+          "sub2api"
+        ],
+        "missing_baselines": [],
+        "route_rate": 0.6622,
+        "baseline_mean": 0.3378,
+        "diff": 0.3244,
+        "ci95": [
+          0.1849,
+          0.4605
+        ],
+        "bootstrap": {
+          "iterations": 10000,
+          "seed": 0,
+          "alpha": 0.05,
+          "clusters": 20,
+          "valid_replicates": 10000,
+          "invalid_replicates": 0,
+          "diff_ci": [
+            0.1849,
+            0.4605
+          ],
+          "route_ci": {
+            "cpa": [
+              0.1842,
+              0.4459
+            ],
+            "stravia": [
+              0.5135,
+              0.8026
+            ],
+            "sub2api": [
+              0.2267,
+              0.5211
+            ]
+          }
+        }
+      }
+    },
+    "stravia_vs_cpa": {
+      "schema": "orchestrate-analysis/v1",
+      "scored_trials": 222,
+      "excluded_trials": {
+        "void": 18
+      },
+      "tasks": 20,
+      "routes": {
+        "cpa": {
+          "trials": 74,
+          "passes": 23,
+          "pass_rate": 0.3108
+        },
+        "stravia": {
+          "trials": 74,
+          "passes": 49,
+          "pass_rate": 0.6622
+        },
+        "sub2api": {
+          "trials": 74,
+          "passes": 27,
+          "pass_rate": 0.3649
+        }
+      },
+      "contrast": {
+        "route": "stravia",
+        "baselines": [
+          "cpa"
+        ],
+        "missing_baselines": [],
+        "route_rate": 0.6622,
+        "baseline_mean": 0.3108,
+        "diff": 0.3514,
+        "ci95": [
+          0.2,
+          0.5067
+        ],
+        "bootstrap": {
+          "iterations": 10000,
+          "seed": 0,
+          "alpha": 0.05,
+          "clusters": 20,
+          "valid_replicates": 10000,
+          "invalid_replicates": 0,
+          "diff_ci": [
+            0.2,
+            0.5067
+          ],
+          "route_ci": {
+            "cpa": [
+              0.1842,
+              0.4459
+            ],
+            "stravia": [
+              0.5135,
+              0.8026
+            ],
+            "sub2api": [
+              0.2267,
+              0.5211
+            ]
+          }
+        }
+      }
+    },
+    "stravia_vs_sub2api": {
+      "schema": "orchestrate-analysis/v1",
+      "scored_trials": 222,
+      "excluded_trials": {
+        "void": 18
+      },
+      "tasks": 20,
+      "routes": {
+        "cpa": {
+          "trials": 74,
+          "passes": 23,
+          "pass_rate": 0.3108
+        },
+        "stravia": {
+          "trials": 74,
+          "passes": 49,
+          "pass_rate": 0.6622
+        },
+        "sub2api": {
+          "trials": 74,
+          "passes": 27,
+          "pass_rate": 0.3649
+        }
+      },
+      "contrast": {
+        "route": "stravia",
+        "baselines": [
+          "sub2api"
+        ],
+        "missing_baselines": [],
+        "route_rate": 0.6622,
+        "baseline_mean": 0.3649,
+        "diff": 0.2973,
+        "ci95": [
+          0.1351,
+          0.4595
+        ],
+        "bootstrap": {
+          "iterations": 10000,
+          "seed": 0,
+          "alpha": 0.05,
+          "clusters": 20,
+          "valid_replicates": 10000,
+          "invalid_replicates": 0,
+          "diff_ci": [
+            0.1351,
+            0.4595
+          ],
+          "route_ci": {
+            "cpa": [
+              0.1842,
+              0.4459
+            ],
+            "stravia": [
+              0.5135,
+              0.8026
+            ],
+            "sub2api": [
+              0.2267,
+              0.5211
+            ]
+          }
+        }
+      }
+    }
+  },
+  "paired_with_stravia": {
+    "cpa": {
+      "both_pass": 20,
+      "stravia_only": 29,
+      "both_fail": 22,
+      "baseline_only": 3
+    },
+    "sub2api": {
+      "stravia_only": 29,
+      "both_pass": 20,
+      "both_fail": 18,
+      "baseline_only": 7
+    }
+  },
+  "timing": {
+    "unit": "seconds",
+    "scope": "仅含最新计分条目的最后一次 agent 运行；排除作废组与先前重试。",
+    "completion_rule": "正常结束要求 timed_out=false、terminal_error 为空且 exit_code=0；不要求 reward=1。",
+    "timeout_rule": "超时样本仅有截断运行时长；即使最终工作区满分，也无法推定首次正确完成时间。",
+    "comparison_limit": "各路正常结束子集不同；共有子集同样受完成条件筛选，均不能代替全体任务的速度结论。",
+    "by_route": {
+      "stravia": {
+        "scored_final_attempt_agent_seconds": {
+          "count": 74,
+          "median": 1070.8415,
+          "p90": 2283.7852000000007
+        },
+        "normal_exit_agent_seconds": {
+          "count": 72,
+          "median": 1070.8415,
+          "p90": 2133.3439999999996
+        },
+        "normal_exit_pass_agent_seconds": {
+          "count": 47,
+          "median": 1003.501,
+          "p90": 2258.6349999999998
+        },
+        "timed_out": 1,
+        "timed_out_with_full_reward": 1,
+        "other_abnormal_end": 1
+      },
+      "cpa": {
+        "scored_final_attempt_agent_seconds": {
+          "count": 74,
+          "median": 3529.5425,
+          "p90": 3600.5403
+        },
+        "normal_exit_agent_seconds": {
+          "count": 29,
+          "median": 2418.778,
+          "p90": 3495.9808000000003
+        },
+        "normal_exit_pass_agent_seconds": {
+          "count": 13,
+          "median": 2260.687,
+          "p90": 3368.3010000000004
+        },
+        "timed_out": 35,
+        "timed_out_with_full_reward": 10,
+        "other_abnormal_end": 10
+      },
+      "sub2api": {
+        "scored_final_attempt_agent_seconds": {
+          "count": 74,
+          "median": 2254.6904999999997,
+          "p90": 3600.2376
+        },
+        "normal_exit_agent_seconds": {
+          "count": 42,
+          "median": 2237.0280000000002,
+          "p90": 3033.6989999999996
+        },
+        "normal_exit_pass_agent_seconds": {
+          "count": 18,
+          "median": 2723.8735,
+          "p90": 3128.9063
+        },
+        "timed_out": 14,
+        "timed_out_with_full_reward": 5,
+        "other_abnormal_end": 18
+      }
+    },
+    "all_routes_normal_exit": {
+      "groups": 25,
+      "by_route": {
+        "stravia": {
+          "count": 25,
+          "median": 856.995,
+          "p90": 1186.9579999999999,
+          "passes": 19
+        },
+        "cpa": {
+          "count": 25,
+          "median": 2418.778,
+          "p90": 3344.9658000000004,
+          "passes": 13
+        },
+        "sub2api": {
+          "count": 25,
+          "median": 2007.189,
+          "p90": 2786.3451999999997,
+          "passes": 9
+        }
+      }
+    }
+  },
+  "changes": [
+    {
+      "group_id": "anko-default-function-arguments@r1",
+      "route": "stravia",
+      "job_name": "formal-xhigh-threeway-20261028--anko-default-function-arguments--r1--stravia-a1",
+      "before": {
+        "classification": "fail",
+        "reason": "agent-error:other:None"
+      },
+      "after": {
+        "classification": "pass",
+        "reason": "reward"
+      },
+      "reward": 1.0,
+      "timed_out": false,
+      "terminal_error": {
+        "kind": "other",
+        "status": null
+      },
+      "exit_code": 1,
+      "agent_wall_seconds": 663.322
+    },
+    {
+      "group_id": "anko-default-function-arguments@r1",
+      "route": "sub2api",
+      "job_name": "formal-xhigh-threeway-20261028--anko-default-function-arguments--r1--sub2api-a1",
+      "before": {
+        "classification": "fail",
+        "reason": "agent-error:other:None"
+      },
+      "after": {
+        "classification": "pass",
+        "reason": "reward"
+      },
+      "reward": 1.0,
+      "timed_out": false,
+      "terminal_error": {
+        "kind": "other",
+        "status": null
+      },
+      "exit_code": 1,
+      "agent_wall_seconds": 1707.898
+    },
+    {
+      "group_id": "cliffy-config-file-parsing@r4",
+      "route": "cpa",
+      "job_name": "formal-xhigh-threeway-20261028--cliffy-config-file-parsing--r4--cpa-a1",
+      "before": {
+        "classification": "fail",
+        "reason": "timed_out"
+      },
+      "after": {
+        "classification": "pass",
+        "reason": "reward"
+      },
+      "reward": 1.0,
+      "timed_out": true,
+      "terminal_error": null,
+      "exit_code": null,
+      "agent_wall_seconds": 3600.543
+    },
+    {
+      "group_id": "go-genai-streamed-function-args@r2",
+      "route": "cpa",
+      "job_name": "formal-xhigh-threeway-20261028--go-genai-streamed-function-args--r2--cpa-a1",
+      "before": {
+        "classification": "fail",
+        "reason": "timed_out"
+      },
+      "after": {
+        "classification": "pass",
+        "reason": "reward"
+      },
+      "reward": 1.0,
+      "timed_out": true,
+      "terminal_error": null,
+      "exit_code": null,
+      "agent_wall_seconds": 3600.366
+    },
+    {
+      "group_id": "kea-atomic-signal-selectors@r3",
+      "route": "sub2api",
+      "job_name": "formal-xhigh-threeway-20261028--kea-atomic-signal-selectors--r3--sub2api-a1",
+      "before": {
+        "classification": "fail",
+        "reason": "agent-error:other:None"
+      },
+      "after": {
+        "classification": "pass",
+        "reason": "reward"
+      },
+      "reward": 1.0,
+      "timed_out": false,
+      "terminal_error": {
+        "kind": "other",
+        "status": null
+      },
+      "exit_code": 1,
+      "agent_wall_seconds": 1369.1
+    },
+    {
+      "group_id": "koota-composite-trait-aspects@r1",
+      "route": "sub2api",
+      "job_name": "formal-xhigh-threeway-20261028--koota-composite-trait-aspects--r1--sub2api-a2",
+      "before": {
+        "classification": "fail",
+        "reason": "timed_out"
+      },
+      "after": {
+        "classification": "pass",
+        "reason": "reward"
+      },
+      "reward": 1.0,
+      "timed_out": true,
+      "terminal_error": null,
+      "exit_code": null,
+      "agent_wall_seconds": 3600.24
+    },
+    {
+      "group_id": "koota-composite-trait-aspects@r3",
+      "route": "cpa",
+      "job_name": "formal-xhigh-threeway-20261028--koota-composite-trait-aspects--r3--cpa-a1",
+      "before": {
+        "classification": "fail",
+        "reason": "timed_out"
+      },
+      "after": {
+        "classification": "pass",
+        "reason": "reward"
+      },
+      "reward": 1.0,
+      "timed_out": true,
+      "terminal_error": null,
+      "exit_code": null,
+      "agent_wall_seconds": 3600.297
+    },
+    {
+      "group_id": "koota-composite-trait-aspects@r3",
+      "route": "sub2api",
+      "job_name": "formal-xhigh-threeway-20261028--koota-composite-trait-aspects--r3--sub2api-a1",
+      "before": {
+        "classification": "fail",
+        "reason": "timed_out"
+      },
+      "after": {
+        "classification": "pass",
+        "reason": "reward"
+      },
+      "reward": 1.0,
+      "timed_out": true,
+      "terminal_error": null,
+      "exit_code": null,
+      "agent_wall_seconds": 3600.669
+    },
+    {
+      "group_id": "narwhals-rolling-window-suite@r1",
+      "route": "cpa",
+      "job_name": "formal-xhigh-threeway-20261028--narwhals-rolling-window-suite--r1--cpa-a1",
+      "before": {
+        "classification": "fail",
+        "reason": "timed_out"
+      },
+      "after": {
+        "classification": "pass",
+        "reason": "reward"
+      },
+      "reward": 1.0,
+      "timed_out": true,
+      "terminal_error": null,
+      "exit_code": null,
+      "agent_wall_seconds": 3606.38
+    },
+    {
+      "group_id": "narwhals-rolling-window-suite@r4",
+      "route": "sub2api",
+      "job_name": "formal-xhigh-threeway-20261028--narwhals-rolling-window-suite--r4--sub2api-a3",
+      "before": {
+        "classification": "fail",
+        "reason": "agent-error:other:None"
+      },
+      "after": {
+        "classification": "pass",
+        "reason": "reward"
+      },
+      "reward": 1.0,
+      "timed_out": false,
+      "terminal_error": {
+        "kind": "other",
+        "status": null
+      },
+      "exit_code": 1,
+      "agent_wall_seconds": 2169.242
+    },
+    {
+      "group_id": "numba-stencil-boundary-modes@r3",
+      "route": "cpa",
+      "job_name": "formal-xhigh-threeway-20261028--numba-stencil-boundary-modes--r3--cpa-a1",
+      "before": {
+        "classification": "fail",
+        "reason": "timed_out"
+      },
+      "after": {
+        "classification": "pass",
+        "reason": "reward"
+      },
+      "reward": 1.0,
+      "timed_out": true,
+      "terminal_error": null,
+      "exit_code": null,
+      "agent_wall_seconds": 3600.194
+    },
+    {
+      "group_id": "numba-stencil-boundary-modes@r3",
+      "route": "sub2api",
+      "job_name": "formal-xhigh-threeway-20261028--numba-stencil-boundary-modes--r3--sub2api-a1",
+      "before": {
+        "classification": "fail",
+        "reason": "timed_out"
+      },
+      "after": {
+        "classification": "pass",
+        "reason": "reward"
+      },
+      "reward": 1.0,
+      "timed_out": true,
+      "terminal_error": null,
+      "exit_code": null,
+      "agent_wall_seconds": 3600.32
+    },
+    {
+      "group_id": "oxvg-structural-selector-preservation@r2",
+      "route": "cpa",
+      "job_name": "formal-xhigh-threeway-20261028--oxvg-structural-selector-preservation--r2--cpa-a2",
+      "before": {
+        "classification": "fail",
+        "reason": "timed_out"
+      },
+      "after": {
+        "classification": "pass",
+        "reason": "reward"
+      },
+      "reward": 1.0,
+      "timed_out": true,
+      "terminal_error": null,
+      "exit_code": null,
+      "agent_wall_seconds": 3600.423
+    },
+    {
+      "group_id": "oxvg-structural-selector-preservation@r4",
+      "route": "sub2api",
+      "job_name": "formal-xhigh-threeway-20261028--oxvg-structural-selector-preservation--r4--sub2api-a1",
+      "before": {
+        "classification": "fail",
+        "reason": "agent-error:other:None"
+      },
+      "after": {
+        "classification": "pass",
+        "reason": "reward"
+      },
+      "reward": 1.0,
+      "timed_out": false,
+      "terminal_error": {
+        "kind": "other",
+        "status": null
+      },
+      "exit_code": 1,
+      "agent_wall_seconds": 2269.241
+    },
+    {
+      "group_id": "textual-richlog-follow-state@r4",
+      "route": "cpa",
+      "job_name": "formal-xhigh-threeway-20261028--textual-richlog-follow-state--r4--cpa-a1",
+      "before": {
+        "classification": "fail",
+        "reason": "timed_out"
+      },
+      "after": {
+        "classification": "pass",
+        "reason": "reward"
+      },
+      "reward": 1.0,
+      "timed_out": true,
+      "terminal_error": null,
+      "exit_code": null,
+      "agent_wall_seconds": 3600.938
+    },
+    {
+      "group_id": "vitest-duration-sharding@r1",
+      "route": "cpa",
+      "job_name": "formal-xhigh-threeway-20261028--vitest-duration-sharding--r1--cpa-a2",
+      "before": {
+        "classification": "fail",
+        "reason": "timed_out"
+      },
+      "after": {
+        "classification": "pass",
+        "reason": "reward"
+      },
+      "reward": 1.0,
+      "timed_out": true,
+      "terminal_error": null,
+      "exit_code": null,
+      "agent_wall_seconds": 3600.146
+    },
+    {
+      "group_id": "vitest-duration-sharding@r2",
+      "route": "cpa",
+      "job_name": "formal-xhigh-threeway-20261028--vitest-duration-sharding--r2--cpa-a2",
+      "before": {
+        "classification": "fail",
+        "reason": "timed_out"
+      },
+      "after": {
+        "classification": "pass",
+        "reason": "reward"
+      },
+      "reward": 1.0,
+      "timed_out": true,
+      "terminal_error": null,
+      "exit_code": null,
+      "agent_wall_seconds": 3600.123
+    },
+    {
+      "group_id": "vitest-duration-sharding@r3",
+      "route": "sub2api",
+      "job_name": "formal-xhigh-threeway-20261028--vitest-duration-sharding--r3--sub2api-a1",
+      "before": {
+        "classification": "fail",
+        "reason": "timed_out"
+      },
+      "after": {
+        "classification": "pass",
+        "reason": "reward"
+      },
+      "reward": 1.0,
+      "timed_out": true,
+      "terminal_error": null,
+      "exit_code": null,
+      "agent_wall_seconds": 3600.21
+    },
+    {
+      "group_id": "vitest-duration-sharding@r4",
+      "route": "cpa",
+      "job_name": "formal-xhigh-threeway-20261028--vitest-duration-sharding--r4--cpa-a1",
+      "before": {
+        "classification": "fail",
+        "reason": "timed_out"
+      },
+      "after": {
+        "classification": "pass",
+        "reason": "reward"
+      },
+      "reward": 1.0,
+      "timed_out": true,
+      "terminal_error": null,
+      "exit_code": null,
+      "agent_wall_seconds": 3600.402
+    },
+    {
+      "group_id": "wasmi-trap-coredumps@r1",
+      "route": "stravia",
+      "job_name": "formal-xhigh-threeway-20261028--wasmi-trap-coredumps--r1--stravia-a1",
+      "before": {
+        "classification": "fail",
+        "reason": "timed_out"
+      },
+      "after": {
+        "classification": "pass",
+        "reason": "reward"
+      },
+      "reward": 1.0,
+      "timed_out": true,
+      "terminal_error": null,
+      "exit_code": null,
+      "agent_wall_seconds": 3602.073
+    },
+    {
+      "group_id": "wasmi-trap-coredumps@r2",
+      "route": "sub2api",
+      "job_name": "formal-xhigh-threeway-20261028--wasmi-trap-coredumps--r2--sub2api-a1",
+      "before": {
+        "classification": "fail",
+        "reason": "timed_out"
+      },
+      "after": {
+        "classification": "pass",
+        "reason": "reward"
+      },
+      "reward": 1.0,
+      "timed_out": true,
+      "terminal_error": null,
+      "exit_code": null,
+      "agent_wall_seconds": 3600.416
+    }
+  ]
+}
